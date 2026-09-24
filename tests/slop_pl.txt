@@ -1,0 +1,14 @@
+# regex ;; powód  (lista startowa — rozszerzana po researchu 09)
+\bodkryj\w*;; puste wezwanie, typowe dla AI i korpo
+\bkompleksow\w*;; ogólnik bez informacji
+\bw dzisiejszych czasach\b;; banał otwierający
+\bw dobie\b;; banał otwierający
+\bnajwyższ\w* jakoś\w*;; deklaracja bez dowodu
+\bzaufaj\w*;; prośba o zaufanie zamiast dowodu
+\bindywidualn\w* potrzeb\w*;; ogólnik
+\bprofesjonali\w*;; deklaracja bez dowodu
+\bwieloletni\w* doświadczeni\w*;; ogólnik zamiast liczby lat
+\bjuż dziś\b;; sztuczna pilność
+\brewolucj\w*;; hype
+\bzmienia wszystko\b;; hype
+\bzasługuj\w* na więcej\b;; frazes

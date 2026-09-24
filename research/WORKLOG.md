@@ -15,3 +15,9 @@
 - [ ] 6. Red team → poprawki (iteracje)
 - [ ] 7. Dokumentacja, paczka instalacyjna, CHANGELOG
 - [ ] 8. Commit + push, e-mail (draft Gmail)
+
+## Decyzje użytkownika
+- 2026-09-24: Paweł: "pomiń moje skille, one są do usunięcia. Chcę zupełnie nowe. Nie sugeruj się moimi". → Istniejące skille KWIATEKmedia (kampania-lead-meta-pl, meta-ads-optymalizacja itd.) NIE są źródłem ani wzorem. System budowany od zera z researchu i zasad z briefu zadania.
+
+## Agenci researchowi (uruchomieni 2026-09-24, wyniki → research/raw/)
+01 meta-delivery-andromeda | 02 meta-creative-placements-leadads | 03 attention-mobile-visual | 04 persuasion-trust-memory | 05 practitioners-creative-strategy | 06 video-hooks-formats | 07 leadgen-quality-pl-law | 08 testing-fatigue-iteration | 09 copy-pl-aislop-image-prompts | 10 claude-plugin-format | 11 ad-library-pl-analysis
