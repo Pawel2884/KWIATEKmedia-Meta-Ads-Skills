@@ -117,6 +117,8 @@ Rodzaj wychodzi w czasie przeszłym, trybie przypuszczającym i przymiotniku po 
 | Gotowy na zmianę? | Zacznij od pomiaru. |
 | Nie znałem tej kwoty (odpowiedź w formularzu) | Ta kwota jest dla mnie nowa |
 | Jestem zainteresowany | Chcę dostać wycenę |
+| Zanim spróbujesz sam | Zanim złożysz wniosek samodzielnie |
+| Będziesz pewny | Będziesz mieć pewność |
 
 To samo dotyczy komentarzy w odpowiedzi skilla: bez „zrobiłem”, „przygotowałem”, „założyłem”. Pisz bezosobowo („Założenie: kolor marki #2F6F4E”) albo od razu dawaj materiał.
 
