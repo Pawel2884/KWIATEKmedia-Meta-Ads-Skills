@@ -120,6 +120,41 @@ Zakres: przypadki z największą liczbą błędów w R1 (e-commerce: statyki, wi
 
 9 wyników: wstęp 0, formy męskie 0, opis ponad 30 znaków 0, AI slop 1 (hook „to nie X, to Y”), nagłówek o 1–2 znaki ponad 40: 2, pauzy poza zakresami 4 (listy braków).
 
-## Runda R4
+## Runda R4 (5 uruchomień, wszystkie udane)
 
-(uzupełniane po zakończeniu rundy)
+Zakres: tylko punkty, które w R3 nadal się pojawiały (wierność dowodu w e-commerce, poprawiona wersja audytora, wstęp, powtarzalność tekstu między reklamami).
+
+- Wierność: „38 000 sprzedanych krzeseł od 2021 (marka)” w statykach i dywersyfikacji, bez „R3”, „osób” i „w polskich domach”. Naprawione.
+- Audytor: poprawiona wersja zawiera informację o najniższej cenie z 30 dni, bez obietnicy zdrowotnej, bez przycisku na grafice, opis nie powtarza przycisku. Naprawione.
+- Agencja: bez wstępu, jedna statyka typograficzna i jedna ze zdjęciem Pawła, korzyść nazwana („co działa, co kosztuje Cię pieniądze i co zmienić najpierw”). Naprawione.
+- Copy B2B: trzy różne kąty z własnymi faktami. Test pokazał, że reguła z R2 („wspólne fakty najwyżej 1–2 zdania”) była za ostra: odbiorca widzi zwykle jedną reklamę, więc blok oferty (cena, warunek, co dalej) musi być w każdej. Reguła doprecyzowana: różni się część z kątem i dowodem, blok oferty może się powtarzać.
+- Nowa drobna poprawka: skille wykonawcze nie wypisują Karty Oferty na początku odpowiedzi.
+
+Lint R4: wstęp 0, formy męskie 0, AI slop 0, opis ponad 30 znaków 0; nagłówek 43 znaki: 1; zdanie ponad 16 słów: 2.
+
+## Podsumowanie rund
+
+| Wskaźnik (lint) | R1 (20 wyników) | R2 (15) | R3 (9) | R4 (5) |
+|---|---|---|---|---|
+| Wstęp „Przygotowałem…” | 3 | 2 | 0 | 0 |
+| Formy męskie w 1. osobie | 9 | 3 | 0 | 0 |
+| Opis ponad 30 znaków | 8 | 0 | 0 | 0 |
+| Trafienia słownika AI slop | 1 | 0 | 1 | 0 |
+
+Najważniejsze problemy jakościowe (krytyk) i kiedy zniknęły:
+- przeinaczanie dowodów i dopisywanie faktów: główny problem R1, rzadszy w R2 i R3 (nowe postacie), w R4 nie wystąpił,
+- hook z nazwą firmy i brak „co zyskam”: naprawione w R2,
+- cechy osobiste w hookach i zakazane pytania w formularzach (finanse, zdrowie): naprawione w R2 (strateg, hooki, copy) i R3 (planer),
+- ekrany, dokumenty i ozdobniki w kadrze: naprawione w R2,
+- kalibracja audytora: naprawiona w R2 (werdykty) i R4 (poprawiona wersja),
+- silnik iteracji: poprawny od pierwszego uruchomienia (R2) na wszystkich 3 zestawach danych; dopisano zgodność i rozróżnienie kąt/wykonanie.
+
+Dlaczego koniec iteracji: w R4 zostały wyłącznie drobiazgi, których poprawa nie zmieni wyniku reklam (nagłówek o 3 znaki za długi, pojedyncze dłuższe zdanie). Kolejna runda kosztowałaby limit konta bez istotnego zysku.
+
+## Jak powtórzyć testy
+
+- Cała macierz: `tests/run_matrix.sh r5 3` (30 uruchomień, zużywa limit konta Claude).
+- Wybrane: `tests/run_matrix.sh r5 3 '^(static-ads-creator|meta-ad-copy)'`.
+- Lint rundy: `tests/lint_round.sh r5`.
+- Niezależny krytyk: `tests/judge.sh r5 2`.
+- Szybka regresja pluginu: `cd plugins/kwiatekmedia-meta-ads && claude plugin eval . --runs 1` (5 przypadków w `evals/`).

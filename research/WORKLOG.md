@@ -12,8 +12,8 @@
 - [x] 3. Architektura systemu + plugin (shared/ → references/ przez scripts/build.py)
 - [x] 4. Skille (10)
 - [x] 5. Testy: R1 (30), R2 (15), R3 (9), R4 (5); runda R1 (tests/run_matrix.sh r1), krytyk (tests/judge.sh r1), lint (tests/lint.py). Poprawki R1 w shared/ zapisane, skille po zakończeniu R1.
-- [ ] 6. Red team → poprawki (iteracje)
-- [ ] 7. Dokumentacja, paczka instalacyjna, CHANGELOG
+- [x] 6. Red team → poprawki (iteracje R1–R4)
+- [x] 7. Dokumentacja, paczka instalacyjna, CHANGELOG
 - [ ] 8. Commit + push, e-mail (draft Gmail)
 
 ## Decyzje użytkownika
@@ -27,3 +27,4 @@
 - Znalezione w R1 (systemowe): dopowiadanie faktów (jednostka dowodu, szczegóły historii, „bo…”), wstęp „Przygotowałem…” i formy męskie, nazwa firmy jako hook i pierwsze słowo, brak „co zyskam”, brak oczywistego kąta kategorii, opis > 30 znaków, ekrany/dokumenty/ikony w pierwszej klatce i ujęciach, pytanie o etap długu (komornik) w formularzu, hook „Zanim weźmiesz kolejną chwilówkę”, odpowiedzi formularza w formie męskiej, kryterium celu bez zamknięcia w formularzu, CTA „Zarejestruj się” przy umawianiu rozmowy.
 
 - R2, R3 zakończone, poprawki wprowadzone (TESTS.md). R4 w toku. Potem: finalny build, TESTS R4, e-mail (draft Gmail), podsumowanie.
+- R4 zakończone. Wersja 1.0.0 zbudowana i wypchnięta. Zostało: draft e-maila w Gmail, podsumowanie.

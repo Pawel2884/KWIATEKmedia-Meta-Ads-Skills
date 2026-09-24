@@ -1,5 +1,7 @@
 # KWIATEKmedia Meta Ads
 
+Wersja 1.0.0 (24 września 2026).
+
 System 10 skilli Claude do tworzenia reklam Meta Ads (Facebook, Instagram) po polsku. Od krótkiego opisu oferty do gotowego pakietu: strategia, plan kreacji, naprawdę różne koncepty, statyki z promptami graficznymi, scenariusze wideo, copy, hooki, teksty formularza, audyt i kolejne partie na podstawie wyników.
 
 Cel systemu: nie tanie leady, tylko ludzie, którzy rozumieją ofertę i mogą zostać klientami.
@@ -64,7 +66,7 @@ Przed użyciem wyłącz stare skille o podobnych wyzwalaczach (np. `kampania-lea
 - `RESEARCH.md`: wnioski z researchu z poziomami dowodu A (Meta, prawo, źródło pierwotne), B (badania, duże dane), C (praktycy), D (hipoteza). Co wiadomo o Andromedzie, a co jest mitem.
 - `PRINCIPLES.md`: 42 zasady systemu z uzasadnieniem.
 - `SOURCES.md`: 888 źródeł z trybem dostępu (pełny tekst, wyszukiwarka, cytat).
-- `TESTS.md`: jak system był testowany, co znalazł krytyk i co poprawiono.
+- `TESTS.md`: jak system był testowany (4 rundy, 59 uruchomień na 6 różnych biznesach), co znalazł krytyk i co poprawiono.
 - `CHANGELOG.md`: historia wersji.
 
 Najważniejsze zasady w skrócie:
@@ -94,7 +96,8 @@ tests/                               przypadki testowe, wyniki rund, lint, kryty
 1. Edytuj plik w `shared/` (nie w `references/` skilli, bo tam są kopie).
 2. Uruchom `python3 scripts/build.py`. Skrypt skopiuje wiedzę do skilli, sprawdzi format i zbuduje paczki w `dist/`.
 3. Sprawdź: `claude plugin validate . --strict`.
-4. Test: `tests/run_matrix.sh <runda> 3 '<filtr>'`, potem `python3 tests/lint.py <wynik> --brief <brief>`.
+4. Szybka regresja: `cd plugins/kwiatekmedia-meta-ads && claude plugin eval . --runs 1` (5 przypadków w `evals/`).
+5. Pełny test: `tests/run_matrix.sh <runda> 3 '<filtr>'`, potem `tests/lint_round.sh <runda>`. Uwaga: każde uruchomienie zużywa limit konta Claude.
 
 ## Ograniczenia
 
