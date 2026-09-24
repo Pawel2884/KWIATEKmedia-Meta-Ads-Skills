@@ -27,7 +27,7 @@ SLOP_FILE = HERE / "slop_pl.txt"
 FIELD_PATTERNS = {
     "primary": r"(?:primary text(?: \(wariant[^)]*\))?|tekst główny)",
     "headline": r"(?:nagłówek|headline)",
-    "description": r"(?:opis|description)",
+    "description": r"(?:opis(?!\s+(?:sceny|obrazu|grafiki))|description)",
     "graphic": r"(?:tekst na grafice|napis na grafice|grafika|tekst na ekranie)",
     "hook": r"(?:hook)",
     "audio": r"(?:audio)",

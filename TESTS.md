@@ -52,6 +52,46 @@ Niezależny krytyk potwierdził te same główne problemy (dopowiadanie faktów,
 
 Formy męskie w 1. osobie: 9. Opis dłuższy niż 30 znaków: 8. Akapit dłuższy niż 3 zdania: 7. Liczby spoza briefu do sprawdzenia: 5 (część to przykłady w audycie, część przeinaczenia). Zdanie ponad 16 słów: 4. Tekst na grafice ponad 12 słów: 3. Wstęp: 3. Pauzy poza zakresami liczb: 3. Nagłówek ponad 40 znaków: 2. Podobne hooki: 2. Słownik AI slop: 1 trafienie w 20 wynikach.
 
-## Runda R2
+## Runda R2 (15 uruchomień, wszystkie udane)
+
+Zakres: 10 uruchomień skilli, których R1 nie sprawdziła (planer, silnik iteracji na 3 zestawach danych, master, dywersyfikacja agencji), oraz powtórka 8 przypadków z największą liczbą błędów w R1.
+
+### Co poprawki z R1 naprawiły (potwierdzone)
+- Fizjoterapia: hook to sytuacja pacjenta („Ból karku i pleców od biurka”), nie nazwa gabinetu; Primary Text nie zaczyna się od nazwy; opis w limicie; w wideo zero dokumentów i ekranów w kadrze.
+- Kancelaria: zniknął hook „Zanim weźmiesz kolejną chwilówkę”; zamiast niego „Kolejna pożyczka na spłatę poprzedniej. Czasem lepszą drogą jest upadłość konsumencka.”; formularz pyta o rodzaj sprawy i porę kontaktu, nie o etap długu; konkurencja nie jest zmyślana.
+- B2B: historia Marka bez dopisanych szczegółów, 12% podane jako wynik ankiety, przycisk „Zarezerwuj”, formularz zamyka się przy mniej niż 5 autach.
+- Agencja: jest zdjęcie właściciela (instrukcja zrobienia telefonem), zero ozdobników, zero twierdzeń o rynku.
+- Audytor: słaba reklama dostaje 🔴 NIE WDRAŻAJ; dobra reklama fizjoterapeuty dostaje jedną istotną uwagę (ocena Google w zawodzie medycznym jako ryzyko do sprawdzenia), bez nazywania prawdziwej oceny „podejrzaną”.
+
+### Nowe skille w testach
+- Silnik iteracji, za mało danych (4 dni, 3 leady): „nie, jeszcze nie wyłączać”, status ZA MAŁO DANYCH, przedział CPL, przegląd po pełnym tygodniu, nowe reklamy tylko w rezerwie. Zgodnie z oczekiwaniem.
+- Silnik iteracji, jasne sygnały (pompy ciepła, dane z CRM): zwycięzca wybrany po koszcie audytu (299 zł), a nie po najniższym CPL (reklama z CPL 45 zł dawała audyt za 900 zł); wyłapane ryzyko prawne „dotacja do 100%”; najpierw zmiany poza kreacją (sygnał jakości do Meta, zamykanie formularza).
+- Silnik iteracji, zmęczenie kreacji: poprawnie rozpoznane zmęczenie (frequency 1,5 → 3,4, CTR spada, koszt zakupu ×2,2), zmęczona reklama zostaje aktywna do czasu przejęcia wydatku przez nowe, druga reklama do skalowania.
+- Planer: poprawna arytmetyka budżetu (1500 zł = ok. 25–50 leadów, 1 zestaw, 3 koncepty, ocena w 60–90 dni; 20 000 zł = 1 zestaw, 5 konceptów, próg fazy uczenia policzony), uczciwa sekcja „czego ten budżet nie sprawdzi”.
+- Master: kompletny pakiet (decyzje na start, strategia, plan, 4 reklamy, formularz, rezerwa, checklista publikacji, braki).
+
+### Problemy znalezione w R2 i poprawki
+
+| Problem | Przykład | Poprawka |
+|---|---|---|
+| Wstęp w 1. osobie mimo reguły | „Przygotowałem 2 statyki…”, „Napisałem trzy reklamy…” | reguła przeniesiona z plików wiedzy do sekcji formatu w każdym SKILL.md |
+| Półpauzy jako łączniki | 5 półpauz w sekcji braków strategii | ta sama linia formatu w SKILL.md: pauzy i półpauzy tylko w zakresach liczb |
+| Sklejanie dowodu z grupą docelową | „1300 firm z transportu, budowlanki… przy flotach 5–100 aut” | reguła w `dowody-i-zaufanie.md` |
+| Planer łamał zasady zawodu medycznego | kąt „rezultat”, opinie pacjentów w kreacji, porównanie z NFZ, pytanie o dolegliwość w formularzu | planer dostał moduł zgodności i sekcję „Zgodność konceptów i formularza” |
+| Pytanie o dolegliwość w formularzu zdrowotnym | „czego dotyczy problem: kręgosłup lędźwiowy / szyjny” | zdrowie: bez pytań o dolegliwość, część ciała, zabieg; pytania o pierwszą wizytę, termin, porę kontaktu |
+| Obietnica zdrowotna produktu | „bez bólu pleców po pracy” (krzesło) | nowy moduł: produkty niemedyczne bez obietnic efektu zdrowotnego |
+| Wniosek o kącie z jednej reklamy | „kąt za kulisami nie działa w tej kategorii” po jednym wideo | iteracje: werdykt o kącie po co najmniej 2 wykonaniach |
+| Iteracje nie zgłaszały naruszeń | reklama z opiniami pacjentów w danych fizjoterapeuty bez komentarza | iteracje: zgodność w decyzjach niezależnie od wyników |
+| Audytor dopisywał zakres usługi | „technik sprawdzi dotacje i policzy koszt ogrzewania” | zasady poprawionej wersji w SKILL.md audytora: tylko fakty z reklamy i od klienta, bez narysowanych przycisków |
+| Przycisk „Zarejestruj się” przy umawianiu rozmowy | master, audytor | mapa przycisków we wspólnej `specyfikacje-meta.md` |
+| Master: ten sam tekst w 4 reklamach | każdy Primary Text z tym samym blokiem „9 lat, 400 spraw, bezpłatna rozmowa, cała Polska” | master i copy: każda reklama rozwija swój kąt w całym tekście, wspólne fakty najwyżej 1–2 zdania |
+| Master przepisywał karty na własny format | Primary Text w jednym akapicie, etykieta „Opis sceny” | karty w pakiecie dokładnie w formacie skilli |
+| Dywersyfikacja: formy męskie w nazwach kierunków, K# dla kierunków | „Sam ogarniasz reklamy”, „Pokrycie: K2, K3” | nazwy w formach neutralnych, kierunki numerowane „Kierunek N” |
+
+### Lint R2
+
+Na 15 wyników: wstęp 2 (w R1: 3 na 20), formy męskie 3 (w R1: 9), opis ponad 30 znaków 0 (w R1: 8), akapit ponad 3 zdania 4 (wszystkie w pakiecie mastera), pauzy 3, słownik AI slop 0.
+
+## Runda R3
 
 (uzupełniane po zakończeniu rundy)
