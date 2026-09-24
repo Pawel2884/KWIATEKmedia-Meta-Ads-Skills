@@ -119,3 +119,19 @@
 - Po zwycięzcy: ~50–70% iteracji, ~20–30% nowe persony/formaty, ~10–25% nowe koncepty (C, Motion).
 - Metryka docelowa CPQL / koszt spotkania; formularz często lepszą dźwignią niż kreacja.
 - Detektor zmęczenia R11 (D osadzone w A): ≥14 dni, ≥20 leadów bazowo, ≥10 bieżąco, frequency rośnie, CTR ≤75% bazowego lub CPL ≥1,5× bazowego, wykluczone nasycenie/aukcja/formularz.
+
+## Z 07 (lead gen + prawo PL) — kluczowe (checklista prawna: plik 07 sekcja 4; playbooki: sekcja 3; reguły R1–R24: sekcja 6)
+- A: Qualified leads −21% kosztu leada jakościowego (567 reklamodawców); od 04.2026 wymaga CAPI (nowe kampanie); bez CRM: Leads Center + data sharing (statusy ręcznie).
+- A: filtry jakości Meta (Higher Intent, conditional logic close form, OTP, walidacja e-maila firmowego) podnoszą CPL; Meta sama to przyznaje.
+- C (+A mechanizm): kreacja ma min. 2 z 4 filtrów: DLA KOGO (rola/sytuacja), GDZIE, ILE (cena od/widełki), CO DALEJ.
+- B: przejrzystość kosztów +44% sprzedaży (Mohan, Buell & John 2020, e-commerce) → pokazanie "z czego składa się cena"/widełek = filtr + zaufanie (transfer do usług = hipoteza, test).
+- B: speed-to-lead HBR 2011: kontakt w ciągu godziny ~7× częściej kwalifikacja; "78% kupuje od pierwszego" — bez źródła, nie używać. Obietnica czasu kontaktu tylko przy dotrzymywanym SLA + godziny.
+- C: matryca ofert (wycena/wizja lokalna wysoka intencja; konsultacja z konkretnym wynikiem; audyt; kalkulator; quiz; webinar; e-book niska-średnia; cennik; rabat; konkurs niska).
+- B: B2B 95/5 (Dawes) → edukacja + retargeting, nie oceniać po CPL.
+- Prawo PL (A, przegląd, nie porada): UoPNPR art. 7: fałszywa pilność (pkt 7), "gratis" nie za darmo (pkt 20), certyfikaty/logo instytucji bez uprawnień (pkt 2, 4), fałszywe/zniekształcone opinie, twórca udający klienta (pkt 22, 25, 26), ustawowe prawa jako USP (pkt 10, np. zwrot 14 dni), straszenie (pkt 12), leczenie chorób (pkt 17). Obniżka ceny (towar i usługa) → najniższa cena z 30 dni. Cena konsumencka brutto; B2B oznaczyć netto. Reklama porównawcza rzetelna (UZNK art. 16 ust. 3).
+- Kredyt/raty: RRSO zawsze (art. 7b), koszt → reprezentatywny przykład; od 20.11.2026 CCD2 ostrzeżenie "Pożyczanie pieniędzy kosztuje" (status PL do weryfikacji); SAC credit.
+- Medycyna: podmioty lecznicze — informacja bez cech reklamy (art. 14 u.d.l.); wyroby medyczne — bez personelu medycznego prezentującego wyrób, ostrzeżenie ≥10% grafiki/≥15% wideo, kary do 2 mln zł; apteki — tylko lokalizacja/godziny; leki Rx zakaz. Zawody prawnicze — tylko informacja, bez obietnic wyniku i porównań (KERP art. 31, ZZEA §23 — WIEDZA).
+- OZE: od 27.09.2026 zakaz ogólnych twierdzeń środowiskowych ("eko", "zielony") bez dowodu (dyrektywa 2024/825; status PL do weryfikacji); nie sugerować powiązania z programem publicznym (Czyste Powietrze) — art. 7 pkt 4; obietnice oszczędności tylko z warunkami.
+- AI Act art. 50 od 2.08.2026: realistyczne AI (osoby, zdarzenia) → oznaczenie; wizualizacje oznaczać "wizualizacja".
+- RODO: polityka prywatności, cel kontaktu, osobne niezaznaczone zgody marketingowe (PKE art. 398); bez danych zdrowotnych w formularzu (art. 9).
+- Brak wiarygodnych benchmarków CPL PL → porównywać z danymi konta + ads_insights_industry_benchmark.
