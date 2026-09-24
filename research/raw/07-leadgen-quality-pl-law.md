@@ -1,15 +1,23 @@
 # 07 — Lead generation na Meta: jakość leadów, oferty, branże, polskie prawo reklamy (research surowy)
 
-> Agent researchowy: obszar 07. Data: 2026-09-24. Status: W TOKU (zapis przyrostowy).
-> Legenda trybu dostępu: [PEŁNY] = pełna treść przeczytana w sesji; [WYSZUKIWARKA] = tylko streszczenie/fragment z WebSearch; [WIEDZA] = wiedza modelu niepotwierdzona w sesji.
+> Agent researchowy: obszar 07. Data: 2026-09-24. Status: ZAKOŃCZONY (2026-09-24).
+> Legenda trybu dostępu: [PEŁNY] = pełna treść przeczytana w sesji; [WYSZUKIWARKA] = tylko streszczenie/fragment z WebSearch; [WYSZUKIWARKA-GitHub] = fragment z wyszukiwania kodu na GitHub (np. kopie tekstów, streszczenia); [WIEDZA] = wiedza modelu niepotwierdzona w sesji.
 > Poziomy dowodu: A = źródło pierwotne (Meta, akt prawny, UOKiK); B = badania / duże zbiory danych; C = praktycy z przykładami; D = opinia/hipoteza.
 > ZASTRZEŻENIE: część prawna to przegląd informacyjny, NIE porada prawna.
 
 ## 1. Zakres i metoda
-(uzupełniane na końcu)
+
+**Zakres:** (1) jakość vs ilość leadów na Meta — wpływ kreacji, copy, formularza i sygnałów optymalizacji; (2) speed-to-lead jako kontekst obietnic w reklamie; (3) typy ofert/lead magnetów; (4) specyfika branż (B2B, lokalne, high-ticket, zaufanie, e-commerce); (5) polskie i unijne prawo wpływające na treść reklam (przegląd, nie porada prawna); (6) polskie dane rynkowe.
+
+**Metoda i ograniczenia (ważne dla oceny wiarygodności):**
+- Meta Business Help Center przez Meta Ads MCP `ads_get_help_article` — 20 zapytań, pełne teksty artykułów ([PEŁNY], poziom A). To najsilniejsza część raportu.
+- Akty prawne: strony ISAP/UOKiK/EUR-Lex zablokowane dla WebFetch → teksty pobrane z publicznych repozytoriów GitHub zawierających kopie Dziennika Ustaw (repo `legalize-dev/legalize-pl`, generowane z API Sejmu) i Dziennika Urzędowego UE (`SFHAJJI/lex-*`) oraz kopii AI Act; przeczytane i zacytowane dosłownie ([PEŁNY], poziom A, z zastrzeżeniem aktualności t.j.).
+- WebSearch: tylko 6 zapytań — potem limit sesji (200/200, współdzielony przez równoległych agentów) został wyczerpany. Skutek: słabsze pokrycie case studies praktyków, danych PL (Gemius/NapoleonCat) i zaleceń UOKiK. Luki oznaczono w sekcjach 2.8 i 5.
+- Dodatkowo ~25 wyszukiwań kodu GitHub (fragmenty = [WYSZUKIWARKA-GitHub], traktowane jak wyniki wyszukiwarki) dla weryfikacji dosłownych cytatów (HBR, RODO, DSA, AI Act art. 113) i badań (Mohan/Buell/John, Spiegel, Dawes).
+- Łącznie ok. 60 zapytań/pobrań (6 WebSearch + 20 Meta HC + ~25 GitHub code search + 12 pobranych tekstów aktów + 10 nieudanych prób WebFetch).
+- Oznaczenia: [PEŁNY] / [WYSZUKIWARKA] / [WYSZUKIWARKA-GitHub] (fragment z wyszukiwania kodu GitHub) / [WIEDZA]. Poziomy A–D wg hierarchii z briefu.
 
 ## 2. Kluczowe ustalenia
-(zapis przyrostowy)
 
 ### 2.1 Mechanika Meta: formularze, cele optymalizacji, CRM (źródła pierwotne Meta)
 
@@ -140,6 +148,25 @@
 | Dane/cytat: art. 50 ust. 4: "Deployers of an AI system that generates or manipulates image, audio or video content constituting a deep fake, shall disclose that the content has been artificially generated or manipulated… Where the content forms part of an evidently artistic, creative, satirical, fictional or analogous work… limited to disclosure of the existence of such generated or manipulated content in an appropriate manner…" Ust. 5: informacja "in a clear and distinguishable manner at the latest at the time of the first interaction or exposure". Ust. 1: systemy do bezpośredniej interakcji — osoby informowane, że rozmawiają z AI, "unless this is obvious". Analiza Omnibus: "The Omnibus did not move Article 50… added a transitional in Article 111(4): providers… placed on the market before 2 August 2026 shall… comply with Article 50(2) by 2 December 2026." [WIEDZA] Definicja deep fake (art. 3 pkt 60): treść przypominająca istniejące osoby, obiekty, miejsca, zdarzenia, która "fałszywie wydawałaby się autentyczna".
 | Implikacja: realistyczne wideo/obraz AI z "klientem", "lekarzem", "realizacją", której nie było, lub z sklonowanym głosem prawdziwej osoby → wymaga ujawnienia (np. "Wizualizacja wygenerowana przez AI"); a jeśli sugeruje prawdziwe opinie/realizacje — dodatkowo ryzyko UoPNPR (L1). Czatbot kwalifikujący leady w Messengerze/WhatsApp: pierwsza wiadomość "Jestem automatycznym asystentem firmy X". Grafiki AI będące oczywistą ilustracją (nie udające rzeczywistości) — niższe ryzyko, ale oznaczenie jest dobrą praktyką.
 
+**L9. Prawo farmaceutyczne (t.j. Dz.U. 2024 poz. 686): ZAKAZ reklamy aptek i punktów aptecznych oraz ich działalności (art. 94a — dozwolona tylko informacja o lokalizacji i godzinach); zakaz reklamy publicznej leków Rx i refundowanych (art. 57); w reklamie OTC zakaz udziału osób znanych, naukowców, osób z wykształceniem medycznym/farmaceutycznym (art. 55 ust. 1) oraz treści sugerujących uniknięcie porady lekarskiej, pogorszenie zdrowia przy nieprzyjmowaniu itd. (art. 55 ust. 2).**
+| Poziom: A | Źródła: [PEŁNY] Prawo farmaceutyczne, t.j. Dz.U. 2024 poz. 686 — https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2024-686.md (w repo "expired" — sprawdzić nowszy t.j.)
+| Dane/cytat: art. 94a ust. 1: "Zabroniona jest reklama aptek i punktów aptecznych oraz ich działalności. Nie stanowi reklamy informacja o lokalizacji i godzinach pracy apteki lub punktu aptecznego." Ust. 1a: zakaz reklamy placówek obrotu pozaaptecznego "odnosząca się do produktów leczniczych lub wyrobów medycznych". Art. 55 ust. 2 pkt 2: zakaz zapewniania, że lek "gwarantuje właściwy skutek, nie towarzyszą mu żadne działania niepożądane…"; pkt 3: zakaz treści prowadzących do "błędnej autodiagnozy przez przytaczanie szczegółowych opisów przypadków i objawów choroby".
+| Implikacja: apteka jako klient leadowy = praktycznie wykluczona (poza informacją o lokalizacji/godzinach). Reklama OTC — poza typowym zakresem agencji.
+
+**L10. Dyrektywa o kredycie konsumenckim CCD2 (2023/2225): od 20 listopada 2026 KAŻDA reklama kredytu ma zawierać wyraźne ostrzeżenie "Uwaga! Pożyczanie pieniędzy kosztuje" (lub równoważne) oraz zakazy komunikatów typu "kredyt poprawi Twoją sytuację finansową"; w PL wymaga implementacji — status polskiej ustawy NIEZWERYFIKOWANY w tej sesji.**
+| Poziom: A (tekst dyrektywy) / D (status PL) | Źródła: [PEŁNY] Dyrektywa (UE) 2023/2225, kopia tekstu OJ — https://github.com/SFHAJJI/lex-articles/blob/main/eu-eurlex/works/32023l2225/versions/2023-10-18--bba20d1aa53ce7a2ed31547dfd4d49ec66aebdc82159f5d1a912974b53886d60/en.md
+| Dane/cytat: art. 8 ust. 1: "advertising concerning credit agreements include a clear and prominent warning to make consumers aware that borrowing costs money, using the wording 'Caution! Borrowing money costs money' or an equivalent wording." Art. 8 ust. 7: zakaz reklamy, która "(a) encourages consumers to seek credit by suggesting that credit would improve the financial situation… (c) falsely suggests that credit… can raise a consumer's living standards." Art. 7: zakaz sformułowań "that may create false expectations… regarding the availability or the cost of credit". Art. 48: transpozycja do 20.11.2025, "They shall apply those measures from 20 November 2026." Ust. 6: przy ograniczeniach medium elementy (e) i (f) mogą być dostępne po kliknięciu/przewinięciu.
+| Implikacja: od 20.11.2026 (za ~2 miesiące od daty researchu) kreacje z ratami/finansowaniem (OZE, auta, stomatologia, szkolenia na raty) — dodać ostrzeżenie i unikać narracji "kredyt = lepsze życie". System: flaga "finansowanie" → checklista L4 + L10.
+
+**L11. Dyrektywa "Empowering Consumers for the Green Transition" (2024/825) zmieniająca dyrektywę UCPD: od 27 września 2026 na "czarnej liście" m.in.: ogólne twierdzenia środowiskowe bez wykazania "uznanej doskonałej efektywności środowiskowej", etykiety zrównoważonego rozwoju bez systemu certyfikacji, twierdzenia o neutralności klimatycznej oparte na kompensacji emisji, twierdzenia o całym produkcie/firmie, gdy dotyczą tylko aspektu. Status polskiej transpozycji (termin 27.03.2026) NIEZWERYFIKOWANY.**
+| Poziom: A (tekst) / D (status PL) | Źródła: [PEŁNY] skonsolidowana UCPD (wersja od 2026-09-27), kopia EUR-Lex — https://github.com/SFHAJJI/lex-corpus-eu-eurlex/blob/main/works/32005l0029/versions/2026-09-27--eeed30807d8b388191e57b4962ab62a6747a191c3d4ddc6cad27892d7ed9393a/en.html ; [WYSZUKIWARKA-GitHub] notatki z datami transpozycji/stosowania — https://github.com/Hostilian/VenturaAtlas/blob/main/research/green-claims-cross-border-succession-ruleouts.md ; https://github.com/TVALOUR/website-builder/blob/main/profiles/eu.mjs
+| Dane/cytat: Załącznik I pkt "2a. Displaying a sustainability label that is not based on a certification scheme or not established by public authorities." "4a. Making a generic environmental claim for which the trader is not able to demonstrate recognised excellent environmental performance relevant to the claim." "4b. Making an environmental claim about the entire product or the trader's entire business when it concerns only a certain aspect…" "4c. Claiming, based on the offsetting of greenhouse gas emissions, that a product has a neutral, reduced or positive impact on the environment…" Definicja "generic environmental claim": twierdzenie nie na etykiecie, gdy "the specification of the claim is not provided in clear and prominent terms on the same medium". Art. 6 ust. 2 lit. d: twierdzenia o przyszłej efektywności środowiskowej bez weryfikowalnego planu.
+| Implikacja (kluczowe dla OZE/budownictwa): unikać "eko", "ekologiczny", "zielony", "przyjazny środowisku", "zero emisji", "neutralny klimatycznie" jako ogólników; zamiast tego KONKRETY na tym samym nośniku ("pompa ciepła powietrze-woda, SCOP 4,5 wg karty produktu", "instalacja 6 kWp — szacowana produkcja ~6 000 kWh/rok w warunkach X"). To jednocześnie zwiększa zrozumienie oferty (cel systemu).
+
+**L12. RODO i DSA — uzupełnienie (przepisy UE; w sesji potwierdzone dosłowne brzmienie kluczowych zdań przez wyszukiwanie kodu na GitHub).**
+| Poziom: A | Źródła: [WYSZUKIWARKA-GitHub] RODO art. 7 — dokładne dopasowanie fraz "request for consent shall be presented in a manner which is clearly distinguishable" oraz "It shall be as easy to withdraw as to give consent" (np. https://github.com/enterpriseready/enterpriseready/blob/master/content/gdpr/gdpr-abridged.md) ; [WYSZUKIWARKA-GitHub] DSA art. 26 ust. 3 — dopasowanie frazy "Providers of online platforms shall not present advertisements on their interface based on profiling… using special categories of personal data" ; [WIEDZA] RODO art. 13 (klauzula informacyjna: administrator, cele, podstawa prawna, odbiorcy, okres przechowywania, prawa), art. 9 (dane szczególnej kategorii, w tym o zdrowiu), DSA art. 28 ust. 2 (zakaz reklam profilowanych do małoletnich).
+| Implikacja: zgoda marketingowa — oddzielona od innych treści, dobrowolna, niezaznaczona domyślnie, łatwa do wycofania; klauzula informacyjna przez link do polityki prywatności (Meta wymaga linku — F11); w formularzach zdrowotnych nie zbierać danych o stanie zdrowia bez podstawy z art. 9; targetowanie po "wrażliwych" zainteresowaniach i tak ograniczone przez Meta/DSA.
+
 ### 2.4 Dodatkowe mechanizmy jakości w Meta (źródła pierwotne)
 
 **F12. Weryfikacja numeru telefonu kodem OTP (SMS/WhatsApp) przed wysłaniem formularza — filtr botów, literówek i "fałszywych" leadów; może obniżyć liczbę leadów i podnieść CPL; kolumna `phone_number_verified`; tylko placementy mobilne.**
@@ -170,21 +197,6 @@
 | Poziom: A | Źródła: [PEŁNY] "Advertiser and payer requirements for ads targeting the European Union" — https://www.facebook.com/business/help/605021638170961
 | Dane/cytat: "Advertiser and payer information is required for all new or edited ads targeting the EU… Without this information, your ad cannot be published." DSA wymaga informacji o "the natural or legal person on whose behalf the advertisement is presented" i "who paid".
 | Implikacja: przy obsłudze agencyjnej — beneficjent = klient (np. nazwa firmy klienta), płatnik = kto faktycznie płaci (klient lub agencja). Ustawić domyślnie na poziomie konta.
-
-**L9. Prawo farmaceutyczne (t.j. Dz.U. 2024 poz. 686): ZAKAZ reklamy aptek i punktów aptecznych oraz ich działalności (art. 94a — dozwolona tylko informacja o lokalizacji i godzinach); zakaz reklamy publicznej leków Rx i refundowanych (art. 57); w reklamie OTC zakaz udziału osób znanych, naukowców, osób z wykształceniem medycznym/farmaceutycznym (art. 55 ust. 1) oraz treści sugerujących uniknięcie porady lekarskiej, pogorszenie zdrowia przy nieprzyjmowaniu itd. (art. 55 ust. 2).**
-| Poziom: A | Źródła: [PEŁNY] Prawo farmaceutyczne, t.j. Dz.U. 2024 poz. 686 — https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2024-686.md (w repo "expired" — sprawdzić nowszy t.j.)
-| Dane/cytat: art. 94a ust. 1: "Zabroniona jest reklama aptek i punktów aptecznych oraz ich działalności. Nie stanowi reklamy informacja o lokalizacji i godzinach pracy apteki lub punktu aptecznego." Ust. 1a: zakaz reklamy placówek obrotu pozaaptecznego "odnosząca się do produktów leczniczych lub wyrobów medycznych". Art. 55 ust. 2 pkt 2: zakaz zapewniania, że lek "gwarantuje właściwy skutek, nie towarzyszą mu żadne działania niepożądane…"; pkt 3: zakaz treści prowadzących do "błędnej autodiagnozy przez przytaczanie szczegółowych opisów przypadków i objawów choroby".
-| Implikacja: apteka jako klient leadowy = praktycznie wykluczona (poza informacją o lokalizacji/godzinach). Reklama OTC — poza typowym zakresem agencji.
-
-**L10. Dyrektywa o kredycie konsumenckim CCD2 (2023/2225): od 20 listopada 2026 KAŻDA reklama kredytu ma zawierać wyraźne ostrzeżenie "Uwaga! Pożyczanie pieniędzy kosztuje" (lub równoważne) oraz zakazy komunikatów typu "kredyt poprawi Twoją sytuację finansową"; w PL wymaga implementacji — status polskiej ustawy NIEZWERYFIKOWANY w tej sesji.**
-| Poziom: A (tekst dyrektywy) / D (status PL) | Źródła: [PEŁNY] Dyrektywa (UE) 2023/2225, kopia tekstu OJ — https://github.com/SFHAJJI/lex-articles/blob/main/eu-eurlex/works/32023l2225/versions/2023-10-18--bba20d1aa53ce7a2ed31547dfd4d49ec66aebdc82159f5d1a912974b53886d60/en.md
-| Dane/cytat: art. 8 ust. 1: "advertising concerning credit agreements include a clear and prominent warning to make consumers aware that borrowing costs money, using the wording 'Caution! Borrowing money costs money' or an equivalent wording." Art. 8 ust. 7: zakaz reklamy, która "(a) encourages consumers to seek credit by suggesting that credit would improve the financial situation… (c) falsely suggests that credit… can raise a consumer's living standards." Art. 7: zakaz sformułowań "that may create false expectations… regarding the availability or the cost of credit". Art. 48: transpozycja do 20.11.2025, "They shall apply those measures from 20 November 2026." Ust. 6: przy ograniczeniach medium elementy (e) i (f) mogą być dostępne po kliknięciu/przewinięciu.
-| Implikacja: od 20.11.2026 (za ~2 miesiące od daty researchu) kreacje z ratami/finansowaniem (OZE, auta, stomatologia, szkolenia na raty) — dodać ostrzeżenie i unikać narracji "kredyt = lepsze życie". System: flaga "finansowanie" → checklista L4 + L10.
-
-**L11. Dyrektywa "Empowering Consumers for the Green Transition" (2024/825) zmieniająca dyrektywę UCPD: od 27 września 2026 na "czarnej liście" m.in.: ogólne twierdzenia środowiskowe bez wykazania "uznanej doskonałej efektywności środowiskowej", etykiety zrównoważonego rozwoju bez systemu certyfikacji, twierdzenia o neutralności klimatycznej oparte na kompensacji emisji, twierdzenia o całym produkcie/firmie, gdy dotyczą tylko aspektu. Status polskiej transpozycji (termin 27.03.2026) NIEZWERYFIKOWANY.**
-| Poziom: A (tekst) / D (status PL) | Źródła: [PEŁNY] skonsolidowana UCPD (wersja od 2026-09-27), kopia EUR-Lex — https://github.com/SFHAJJI/lex-corpus-eu-eurlex/blob/main/works/32005l0029/versions/2026-09-27--eeed30807d8b388191e57b4962ab62a6747a191c3d4ddc6cad27892d7ed9393a/en.html ; [WYSZUKIWARKA-GitHub] notatki z datami transpozycji/stosowania — https://github.com/Hostilian/VenturaAtlas/blob/main/research/green-claims-cross-border-succession-ruleouts.md ; https://github.com/TVALOUR/website-builder/blob/main/profiles/eu.mjs
-| Dane/cytat: Załącznik I pkt "2a. Displaying a sustainability label that is not based on a certification scheme or not established by public authorities." "4a. Making a generic environmental claim for which the trader is not able to demonstrate recognised excellent environmental performance relevant to the claim." "4b. Making an environmental claim about the entire product or the trader's entire business when it concerns only a certain aspect…" "4c. Claiming, based on the offsetting of greenhouse gas emissions, that a product has a neutral, reduced or positive impact on the environment…" Definicja "generic environmental claim": twierdzenie nie na etykiecie, gdy "the specification of the claim is not provided in clear and prominent terms on the same medium". Art. 6 ust. 2 lit. d: twierdzenia o przyszłej efektywności środowiskowej bez weryfikowalnego planu.
-| Implikacja (kluczowe dla OZE/budownictwa): unikać "eko", "ekologiczny", "zielony", "przyjazny środowisku", "zero emisji", "neutralny klimatycznie" jako ogólników; zamiast tego KONKRETY na tym samym nośniku ("pompa ciepła powietrze-woda, SCOP 4,5 wg karty produktu", "instalacja 6 kWp — szacowana produkcja ~6 000 kWh/rok w warunkach X"). To jednocześnie zwiększa zrozumienie oferty (cel systemu).
 
 ### 2.5 Kreacja i copy jako filtr jakości (dźwignie kwalifikacji)
 
@@ -274,10 +286,6 @@
 
 **M3. Zaufanie Polaków do reklam i opinii — brak zweryfikowanych polskich danych w sesji (luka). [WIEDZA] Globalnie (Nielsen Trust in Advertising 2021) najwyższe zaufanie mają rekomendacje znajomych i opinie online; dane specyficzne dla PL do uzupełnienia (np. badania UOKiK dot. opinii, IAB Polska, CBOS).**
 | Poziom: D
-
-**L12. RODO i DSA — uzupełnienie (przepisy UE; w sesji potwierdzone dosłowne brzmienie kluczowych zdań przez wyszukiwanie kodu na GitHub).**
-| Poziom: A | Źródła: [WYSZUKIWARKA-GitHub] RODO art. 7 — dokładne dopasowanie fraz "request for consent shall be presented in a manner which is clearly distinguishable" oraz "It shall be as easy to withdraw as to give consent" (np. https://github.com/enterpriseready/enterpriseready/blob/master/content/gdpr/gdpr-abridged.md) ; [WYSZUKIWARKA-GitHub] DSA art. 26 ust. 3 — dopasowanie frazy "Providers of online platforms shall not present advertisements on their interface based on profiling… using special categories of personal data" ; [WIEDZA] RODO art. 13 (klauzula informacyjna: administrator, cele, podstawa prawna, odbiorcy, okres przechowywania, prawa), art. 9 (dane szczególnej kategorii, w tym o zdrowiu), DSA art. 28 ust. 2 (zakaz reklam profilowanych do małoletnich).
-| Implikacja: zgoda marketingowa — oddzielona od innych treści, dobrowolna, niezaznaczona domyślnie, łatwa do wycofania; klauzula informacyjna przez link do polityki prywatności (Meta wymaga linku — F11); w formularzach zdrowotnych nie zbierać danych o stanie zdrowia bez podstawy z art. 9; targetowanie po "wrażliwych" zainteresowaniach i tak ograniczone przez Meta/DSA.
 
 ## 3. Playbooki per typ biznesu
 
@@ -398,6 +406,7 @@
 7. **Zasady etyki zawodowej** (Kodeks Etyki Lekarskiej — możliwa nowa wersja; KERP; ZZEAiGZ) — nie zweryfikowano w sesji (nil.org.pl zablokowane).
 8. **Kontakt telefoniczny w odpowiedzi na formularz a PKE art. 398** — czy oddzwonienie w sprawie wyceny, o którą prosi użytkownik, wymaga osobnej zgody na "marketing bezpośredni". Praktyka: jasny opis celu kontaktu + osobna zgoda marketingowa na dalsze komunikaty. Do potwierdzenia przez prawnika.
 9. **Dane Meta o Conversion leads (−21%, −9,5%)** — dane samej platformy, globalne, krótkie okna (2–3 tygodnie), definicja "quality lead" ustalana przez reklamodawcę; brak niezależnej replikacji.
+9a. **Dostępność celu "qualified leads" bez CAPI** — artykuł o celach (F4) mówi, że od 04.2026 cel nie jest dostępny dla nowych kampanii bez integracji Conversions API; jednocześnie artykuły "How to create a lead ad" i "Best practices to respond to leads" opisują wariant ze źródłem sygnału "Meta source" (sygnały rozmów WhatsApp po formularzu). Możliwe, że wariant WhatsApp/Meta source pozostaje dostępny albo że teksty nie zostały zsynchronizowane — sprawdzić w Ads Managerze na koncie klienta.
 10. **Speed-to-lead mnożniki** (7×, 21×, 100×, 391%) — kierunek spójny, ale dane z USA, sprzed lat, część od dostawców oprogramowania; "78% kupuje od pierwszego" — bez źródła (nie używać).
 11. **Polskie dane rynkowe** (użytkownicy FB/IG 2025/2026, CPL/CTR, zaufanie do reklam/opinii) — luka; wymaga osobnego pozyskania (Gemius/Mediapanel, NapoleonCat, DataReportal, IAB Polska, UOKiK).
 12. **UOKiK — rekomendacje dot. oznaczania treści influencerów (2022) i działania ws. fałszywych opinii** — treść nie zweryfikowana w sesji (uokik.gov.pl zablokowane). [WIEDZA] rekomendowane oznaczenia po polsku, na początku treści (np. "#reklama", "#materiałreklamowy", "#współpracareklamowa"; przy własnych produktach "#autopromocja"), niewystarczające same "#ad", "#collab", "#sp" — do potwierdzenia. Dotyczy reklam typu partnership ads/UGC z twórcami.
@@ -431,3 +440,92 @@
 | R23 | Nie używaj zaszytych benchmarków CPL/CTR dla Polski; porównuj z danymi konta i narzędziem benchmarkowym Meta (MCP `ads_insights_industry_benchmark`). | D (brak danych) | M1, M2 |
 | R24 | Ustaw reklamodawcę i płatnika (DSA) dla kont klientów. | A | F17 |
 
+## 7. Lista źródeł z trybem dostępu
+
+### 7.1 Meta Business Help Center / Meta for Developers — [PEŁNY] (przez Meta Ads MCP `ads_get_help_article`), poziom A
+1. About instant form types — https://www.facebook.com/business/help/252352181957512
+2. Supported features of lead ads with instant form across platforms and devices — https://www.facebook.com/business/help/588763988207510
+3. Create a lead ad with instant form from Meta Business Suite — https://www.facebook.com/business/help/179258984144385
+4. About performance goals for lead ads (Conversion/qualified leads, −21%, −9,5%, zmiany 04/08.2026) — https://www.facebook.com/business/help/782657799338685
+5. Integrate Zapier with Conversions API for CRM — https://www.facebook.com/business/help/848158520256071
+6. Conversions API for CRM for platforms (Meta for Developers) — https://developers.facebook.com/docs/marketing-api/conversions-api/guides/conversions-api-crm-for-platforms
+7. Use a partner to connect your CRM for conversion leads — https://www.facebook.com/business/help/317857030149451
+8. About CRM system integrations for lead ads — https://www.facebook.com/business/help/301355140655035
+9. Add custom questions to your lead ads with instant form — https://www.facebook.com/business/help/774623835981457
+10. About prefill questions — https://www.facebook.com/business/help/438193446367413
+11. Add conditional answers — https://www.facebook.com/business/help/154286325106161
+12. Ask the right questions on your lead ads with instant form — https://www.facebook.com/business/help/1607931762802448
+13. Use conditional logic in instant forms to qualify your leads — https://www.facebook.com/business/help/3373123166040766
+14. Lead generation in Messenger with third-party messaging apps — https://www.facebook.com/business/help/641772747298691
+15. Leads from messaging conversations — https://www.facebook.com/business/help/452433734305335
+16. About lead ads — https://www.facebook.com/business/help/1481110642181372
+17. About ads for financial products and services — https://www.facebook.com/business/help/567423788405762
+18. About audiences for housing, employment or financial products and services campaigns — https://www.facebook.com/business/help/2220749868045706
+19. About ads for housing, employment or financial products and services — https://www.facebook.com/business/help/399587795372584
+20. About ads for housing — https://www.facebook.com/business/help/1198401317374558
+21. About ads for employment — https://www.facebook.com/business/help/1537759006681893
+22. About Meta's health and wellness advertising policy — https://www.facebook.com/business/help/2489235377779939
+23. About Meta's privacy violations and personal attributes advertising policy — https://www.facebook.com/business/help/2557868957763449
+24. About media created or edited with AI — https://www.facebook.com/business/help/1486382031937045
+25. Meta advertising standards — https://www.facebook.com/business/help/117271728356988
+26. About lead ads terms and security (współadministrowanie RODO) — https://www.facebook.com/business/help/829597887147190
+27. Enable the SMS verification feature to help improve lead quality — https://www.facebook.com/business/help/898260175547909
+28. About lead ads with instant form — https://www.facebook.com/business/help/761812391313386
+29. How do I verify my phone number as a new Meta advertiser? — https://www.facebook.com/business/help/1064155054687612
+30. Advertiser and payer requirements for ads targeting the EU (DSA) — https://www.facebook.com/business/help/605021638170961
+31. Request a review of an issue with advertiser or payer information — https://www.facebook.com/business/help/1024444835591336
+32. About Leads Center in Meta Business Suite — https://www.facebook.com/business/help/681540569280613
+33. Manage and download your leads in Leads Center — https://www.facebook.com/business/help/929596264178167
+34. Create a lead ad with website form — https://www.facebook.com/business/help/983639606486840
+35. How to create a lead ad using Meta Ads Manager — https://www.facebook.com/business/help/375478503258484
+36. Supported objectives and placement options for call ads — https://www.facebook.com/business/help/4107704079279896
+37. Enable the callback requests feature in call ads — https://www.facebook.com/business/help/1549971302464645
+38. View metrics for call ads — https://www.facebook.com/business/help/237108475737601
+39. Best practices to respond to leads from your lead ads with instant form — https://www.facebook.com/business/help/2246428158756947
+40. Add a message for leads to your lead ad with instant form — https://www.facebook.com/business/help/314132612401196
+41. Add an intro section to your lead ad with instant form — https://www.facebook.com/business/help/1664458123767694
+42. Create a lead ad with instant form from your Facebook Page — https://www.facebook.com/business/help/397336587121938
+43. How to create a lead ad for Instagram — https://www.facebook.com/business/help/563690893827148
+
+### 7.2 Akty prawne — [PEŁNY] (kopie tekstów w repozytoriach GitHub; źródło pierwotne: API Sejmu / EUR-Lex), poziom A
+44. Ustawa o przeciwdziałaniu nieuczciwym praktykom rynkowym, t.j. Dz.U. 2023 poz. 845 — https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2023-845.md (źródło: https://api.sejm.gov.pl/eli/acts/DU/2023/845)
+45. Ustawa o zwalczaniu nieuczciwej konkurencji, t.j. Dz.U. 2022 poz. 1233 (w repo "expired") — https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2022-1233.md
+46. Ustawa o informowaniu o cenach towarów i usług, t.j. Dz.U. 2023 poz. 168 — https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2023-168.md [WYSZUKIWARKA-GitHub: fragment art. 4 ust. 2–3] oraz nowelizacja Dz.U. 2022 poz. 2581 (art. 4 ust. 1–6 w brzmieniu nowym) — https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2022-2581.md [WYSZUKIWARKA-GitHub]
+47. Ustawa o kredycie konsumenckim, t.j. Dz.U. 2024 poz. 1497 (w repo "expired") — https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2024-1497.md
+48. Ustawa o wyrobach medycznych z 7.04.2022, Dz.U. 2022 poz. 974 — https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2022-974.md
+49. Rozporządzenie MZ z 21.04.2023 w sprawie reklamy wyrobów medycznych, Dz.U. 2023 poz. 817 — https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2023-817.md
+50. Ustawa o działalności leczniczej, t.j. Dz.U. 2024 poz. 799 (w repo "expired") — https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2024-799.md
+51. Prawo farmaceutyczne, t.j. Dz.U. 2024 poz. 686 (w repo "expired") — https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2024-686.md
+52. Prawo komunikacji elektronicznej, Dz.U. 2024 poz. 1221 (art. 398) — https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2024-1221.md ; przepisy wprowadzające, Dz.U. 2024 poz. 1222 (art. 100) — https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2024-1222.md [WYSZUKIWARKA-GitHub]
+53. [WYSZUKIWARKA-GitHub] Dawne brzmienie: ustawa o zakładach opieki zdrowotnej art. 18b, ustawa o ZOZ/praktykach lekarskich art. 56 ("nie mogą mieć cech reklamy") — https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2007-89.md ; https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2008-857.md
+54. Rozporządzenie (UE) 2024/1689 (AI Act), art. 50 — https://github.com/lawve-ai/awesome-legal-skills/blob/main/skills/eu-ai-act-knowledge-base-oliver-schmidt-prietz/references/core/regulation-title-IV-transparency.md ; https://github.com/s4nkar/KlarKI-EU-AI-Act-compliance-auditor/blob/master/data/regulatory/eu_ai_act/article_50.txt ; art. 113 [WYSZUKIWARKA-GitHub] — https://github.com/CommonAccord/Cmacc-Org/blob/master/Doc/G/EU/Artificial_Intelligence_Act/Sec/Article.md
+55. Analiza zmian AI Act przez Rozporządzenie (UE) 2026/1744 ("Digital Omnibus on AI") — [PEŁNY, źródło wtórne, poziom B/C] https://github.com/simonoppowa/OpenNutriTracker/blob/main/docs/ai-legal-constraints.md
+56. Dyrektywa (UE) 2023/2225 (CCD2), art. 7–8, 48 — https://github.com/SFHAJJI/lex-articles/blob/main/eu-eurlex/works/32023l2225/versions/2023-10-18--bba20d1aa53ce7a2ed31547dfd4d49ec66aebdc82159f5d1a912974b53886d60/en.md
+57. Dyrektywa 2005/29/WE (UCPD) skonsolidowana z dyrektywą (UE) 2024/825, wersja od 27.09.2026 — https://github.com/SFHAJJI/lex-corpus-eu-eurlex/blob/main/works/32005l0029/versions/2026-09-27--eeed30807d8b388191e57b4962ab62a6747a191c3d4ddc6cad27892d7ed9393a/en.html ; daty transpozycji/stosowania [WYSZUKIWARKA-GitHub] — https://github.com/Hostilian/VenturaAtlas/blob/main/research/green-claims-cross-border-succession-ruleouts.md ; https://github.com/TVALOUR/website-builder/blob/main/profiles/eu.mjs
+58. RODO art. 7 [WYSZUKIWARKA-GitHub, dopasowanie dosłowne] — np. https://github.com/enterpriseready/enterpriseready/blob/master/content/gdpr/gdpr-abridged.md ; DSA art. 26 ust. 3 [WYSZUKIWARKA-GitHub, dopasowanie frazy]
+
+### 7.3 Badania i dane (speed-to-lead, transparentność, opinie, B2B)
+59. [WYSZUKIWARKA] Oldroyd, McElheran, Elkington, "The Short Life of Online Sales Leads", HBR 2011 — https://hbr.org/2011/03/the-short-life-of-online-sales-leads ; https://www.hbs.edu/faculty/Pages/item.aspx?num=39955 ; https://scholarsarchive.byu.edu/facpub/9711/ ; https://www.researchgate.net/publication/298137032_The_short_life_of_online_sales_leads (B) — próby WebFetch hbr.org i kopii PDF zablokowane; cytat "nearly seven times as likely to qualify the lead… only 37% of companies respond within an hour" potwierdzony dodatkowo [WYSZUKIWARKA-GitHub] w https://github.com/Boltcall/Boltcall/blob/main/src/pages/SpeedToLeadGuide.tsx (uwaga: ta strona błędnie podaje autorów jako "Oldroyd, Widmier, Radford" — właściwi autorzy wg HBS/BYU: Oldroyd, McElheran, Elkington)
+60. [WYSZUKIWARKA] MIT/InsideSales "Lead Response Management Study" — https://25649.fs1.hubspotusercontent-na2.net/hub/25649/file-13535879-pdf/docs/mit_study.pdf ; https://www.mortech.com/hs-fs/hub/25649/file-13535879-pdf/docs/mit_study.pdf ; InsideSales 2014 Lead Response Report — https://resources.insidesales.com/wp-content/uploads/2019/11/2014-Lead-Response-Report.pdf (B/C)
+61. [WYSZUKIWARKA] AInora, "Lead Response Time: Every Study (MIT, HBR, Drift)" — https://ainora.lt/blog/lead-response-time-statistics-every-study-2026 (C, agregator)
+62. [WYSZUKIWARKA] Velocify 391% — https://velocify.com/blog/press-release/infographic-sales-processes-boost-lead-conversion-by-391-percent/ ; https://www.prnewswire.com/news-releases/velocify-research-shows-time-of-day-has-minimal-impact-on-sales-effectiveness-consider-quick-and-strategic-follow-up-instead-300275320.html (C)
+63. [WYSZUKIWARKA] Expertise AI, "Speed-to-Lead Statistics — Verified, With Folklore Debunked" — https://www.expertise.ai/stats/speed-to-lead-statistics (C; dot. braku źródła "78%")
+64. [WYSZUKIWARKA] Rep.ai — https://rep.ai/blog/lead-response ; EmailAnalytics — https://emailanalytics.com/lead-response-time/ ; Vendasta — https://www.vendasta.com/blog/lead-response-time/ (C/D)
+65. [WYSZUKIWARKA] Firmao — https://firmao.pl/blog/jak-skrocic-czas-odpowiedzi-na-zapytanie-ofertowe/ ; Devesol — https://devesol.pl/czas-odpowiedzi-na-zapytanie-ofertowe-a-wygrane-kontrakty/ (D)
+66. [WYSZUKIWARKA] The Digital Exchange, "Meta Ads Instant Forms: How to Get Higher-Quality Leads" — https://www.thedigitalexchange.co/blog/meta-ads-instant-forms ; ASN, "Why your Meta leads don't answer…" — https://americanservicenetwork.com/blog/meta-instant-form-unresponsive-leads (C)
+67. Mohan, Buell, John, "Lifting the Veil: The Benefits of Cost Transparency", Marketing Science (DOI 10.1287/mksc.2019.1200) — [WYSZUKIWARKA-GitHub] https://github.com/fsbtactic-code/marketing-brain-skill/blob/main/skills/marketing-brain/assets/wiki/cards/card_cost_transparency_context.md ; [PEŁNY] kopia artykułu HBS Working Knowledge — https://github.com/kevalmaru-gpu/document-classification/blob/main/ws_data/Finance/264.txt (B)
+68. Spiegel Research Center (Northwestern) / PowerReviews, "How Online Reviews Influence Sales" (2017) i BrightLocal Local Consumer Review Survey 2024 — [WYSZUKIWARKA-GitHub] streszczenie: https://github.com/SeqTechLLC/seqtekdotcom/blob/main/docs/BRAND_STRATEGY_RESEARCH.md ; krytyka: https://github.com/donpino/donpino.github.io/blob/main/public/articles/reviews-and-choice/index.html (B/C)
+69. Dawes / LinkedIn B2B Institute — reguła 95-5 — [WYSZUKIWARKA-GitHub] https://github.com/cgallic/kai-cmo-harness/blob/main/knowledge/frameworks/marketing-science/brand-growth-laws.md (B jako koncepcja; źródło wtórne)
+70. Dane o liczbie użytkowników mediów społecznościowych w PL (NapoleonCat 2026 / Digital 2026 Poland) — [WYSZUKIWARKA-GitHub] slajdy bez nazw platform: https://github.com/pugging/vpn-test/blob/main/marketing/baza_wiedzy.txt (D)
+
+### 7.4 [WIEDZA] (niepotwierdzone w sesji — do weryfikacji)
+- Kodeks Etyki Lekarskiej i uchwały NRL o informowaniu o działalności; Kodeks Etyki Radcy Prawnego art. 31; Zbiór Zasad Etyki Adwokackiej § 23.
+- Rekomendacje Prezesa UOKiK dot. oznaczania treści reklamowych przez influencerów (2022); działania UOKiK wobec fałszywych opinii.
+- Wytyczne KNF dot. reklamy usług finansowych.
+- RODO art. 5, 9, 13; DSA art. 28; definicja deep fake (AI Act art. 3 pkt 60).
+- Status polskich ustaw wdrażających CCD2 i dyrektywę 2024/825; przepisy o jawności cen mieszkań; ewentualne zmiany w reklamie suplementów.
+- Rzędy wielkości liczby użytkowników FB/IG w Polsce; Nielsen Trust in Advertising 2021.
+
+### 7.5 Próby nieudane (dla przejrzystości)
+- WebFetch zablokowany: onecavo.com, isap.sejm.gov.pl, uokik.gov.pl, eur-lex.europa.eu, datareportal.com, nil.org.pl, napoleoncat.com, 25649.fs1.hubspotusercontent-na2.net, thedenmangroupselling.wordpress.com, hbr.org.
+- WebSearch: po 6 zapytaniach komunikat o wyczerpaniu budżetu sesji (200/200, współdzielony) — dalsze wyszukiwania niemożliwe. Zastępczo: 20 wywołań Meta Help Center, ~25 wyszukiwań kodu GitHub, pobranie 12 tekstów aktów prawnych.

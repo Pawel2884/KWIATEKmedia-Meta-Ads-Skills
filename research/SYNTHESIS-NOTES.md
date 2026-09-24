@@ -98,3 +98,12 @@
 - Prawo: fałszywe opinie zakazane (UPNPR art. 7 pkt 25–26); aktor jako klient → oznaczenie (FTC jako wzorzec); współpraca z twórcą oznaczona "Reklama"/"Współpraca reklamowa"; zakaz awatarów AI udających klientów/ekspertów (AI Act art. 50 od 2.08.2026).
 - Metryki: hook rate = 3-s plays/impressions; hold = ThruPlay/3-s plays; progi branżowe C/D; decyzje po CPL/CPQL. Drzewko: niski hook rate → nowe 0–3 s; dobry hook, słaby hold → środek; dobry hold, niski CTR → oferta/CTA; wysoki CTR, słaba jakość → hook przyciąga niewłaściwych.
 - TikTok (A, korelacja): 21–34 s +280% konwersji; tekstowy CTA +152%; VO > ASMR.
+
+## Z 11 (Biblioteka Reklam PL, ~1770 reklam, ~400 reklamodawców; tylko nagłówki) — kluczowe (C/D)
+- Najczęstsze błędy: pusty/domyślny nagłówek (50–70% w medycynie/estetyce/terapii), etykieta zamiast hooka, przymiotniki bez dowodu (kompleksowy/profesjonalny/nowoczesny/rzetelny/wiodący), fałszywa pilność ("🛑 Dziś zapisało się N osób!" — 5 firm, stała liczba), CTA jako nagłówek, Title Case/CAPS/Unicode bold/literówki, obietnice zdrowotne, wiele usług w jednej reklamie, szablony AI ("X, który Y", "To nie X. To Y.", "Twój nowy…").
+- Polski slop w reklamach to częściej przymiotniki i konstrukcje niż "Odkryj".
+- Long-runnery (~20, finanse/prawo): krótkie nagłówki 3–7 słów, pytanie kwalifikujące z progiem, oferta bez ryzyka; zwycięski komunikat zostaje, kreacje się zmieniają. UWAGA: część long-runnerów ("Masz długi powyżej 25 000 zł?", "Komornik zajął Ci wynagrodzenie?") łamie politykę Meta personal attributes (Meta przykład "are you bankrupt?") — długie działanie ≠ zgodność. System: kwalifikuj progiem w formie 3. osoby/sytuacji ("Długi powyżej 25 000 zł? Jak działa upadłość konsumencka" też ryzykowne) → bezpieczniej: "Upadłość konsumencka przy zadłużeniu od 25 000 zł: jak wygląda krok po kroku".
+- Przejedzone w niszach: "Bezpłatna analiza/wycena" jako cały nagłówek, "Odzyskaj pieniądze", "Sprawdź, czy należy Ci się…", "Ostatnia szansa/Tylko dziś", "Szukamy N osób z [miasto]", "Przeczytaj to, jeśli…".
+- Agencje lead gen PL: "klienci/umowy, nie leady" + wyłączność regionalna = standard → KWIATEKmedia potrzebuje innego wyróżnika (konkretny case + przejrzysty proces).
+- Najlepsi (MSEnergy, Mediator CRN, Modern Wages, aboutmedica) testują różne kąty; słabsi kopiują ten sam nagłówek 5–20×.
+- Reguły R1–R20 w pliku 11 sekcja 4 (nagłówek nigdy pusty; 5 typów nagłówka; lokalność; zakaz liczników; Omnibus; 1 problem = 1 reklama; emoji ≤1 funkcyjne; tryb informacyjny w medycynie; moduł analizy konkurencji).

@@ -331,6 +331,94 @@ Reguła QA "nowej kreacji" (łącząca F11, F15 i A: "materially different"): no
 
 ## 5. Spory i mity
 
+**S1. Ile reklam w ad secie?**
+- Strona "dużo": Reddit/blogi — "Start with around 40-50 different creatives in a single ad set" (r/PPC, D); P.D.A./Pilothouse "8–20 conceptually distinct creatives per ad set" (C/D); Motion — więcej wypuszczanych kreacji ↔ więcej winnerów (B, korelacja, ale *w skali tygodni/miesięcy*, nie "naraz w ad secie").
+- Strona "mało": Meta (A) — "too many ads can result in worse performance", "decrease ads per ad set, but maintain diverse creative assets per ad set"; limit twardy 50 reklam/ad set, 250 aktywnych reklam na stronę dla małych reklamodawców; Ben Heath (C) — przy 10–20 USD/dzień "two ads, three ads, even one ad sometimes"; Jade Heritage (C) — mały budżet: 2–3 najmocniejsze przekazy.
+- Rozstrzygnięcie dla systemu: *liczba jednocześnie aktywnych reklam* skalowana do budżetu i wolumenu konwersji (mało), *różnorodność* realizowana przez (a) różne koncepty między reklamami, (b) wiele assetów w reklamie, (c) rotację w czasie. "Wolumen" z danych Motion to wolumen *tygodniowy/miesięczny*, nie liczba reklam naraz. Jon Loomer: dawna reguła "max 6" jest "out the window" — ale nie znaczy to "im więcej, tym lepiej".
+
+**S2. Osobna kampania testowa (ABO) czy test w głównej kampanii (CBO/ASC)?**
+- Faris (C): "Do not have a separate creative testing campaign"; nowe reklamy do głównej kampanii z manual bid; spend = sygnał; kampanie testowe jako "one of the biggest cost centers". Niuans: jeśli już, to z tym samym bidem co skalowanie.
+- Heath (C): osobna kampania testowa z budżetami ad setu, żeby "force Meta to spend on new ad creative", test 7–10 dni.
+- Gość Farisa (C): ABO "scale it where it lies" — kampania testowa bywa najlepiej wydającą.
+- Meta (A): do porównań zalecane narzędzie A/B, a nie "turning ad sets or campaigns on and off manually".
+- Rozstrzygnięcie: brak dowodów rozstrzygających (tylko anegdoty). Dla lead-gen z małym budżetem: domyślnie nowe koncepty wchodzą do istniejącej struktury (mniej fragmentacji, zgodne z A "combine ad sets"); osobny test (ABO lub A/B Meta) gdy stare reklamy "zjadają" budżet i nowe nie dostają wyświetleń, lub gdy trzeba porównać dwa koncepty w czysty sposób. Decyzja → agent 08 (testowanie) + moduł struktury.
+
+**S3. Advantage+ creative — włączać czy nie?**
+- Meta (A): ulepszenia mogą zmienić "media and text you upload"; część włączona domyślnie; Meta raportuje wzrosty (np. +22% ROAS z Advantage+ creative — cytowane w obiegu, liczba Meta dla e-commerce; nie weryfikowałem w źródle pierwotnym → D w tej sesji).
+- Praktycy/reklamodawcy (C/D): skargi na "AI sheen", przycięte logo, dodaną muzykę, zmianę tekstu, ponowne włączanie się wyłączonych opcji (Marketing Brew 2026-04-21, 2.13).
+- Rozstrzygnięcie: w lead-gen usług z kontrolą przekazu — domyślnie przegląd każdej opcji w "advanced preview"; włączać tylko te, które nie zmieniają sensu (np. dopasowanie formatu do placementu), wyłączać generowanie tekstu/tła/muzyki, chyba że świadomy test.
+
+**S4. Dynamic creative vs Flexible format vs osobne reklamy**
+- Meta (A): dynamic creative nadal dostępny dla Leads; nie zastępuje split testów (wyniki zagregowane); "2 strong assets" > wiele słabych. Flexible format: do 10 mediów; w artykule wymienione cele traffic/engagement/sales/app — dostępność dla Leads/Instant Forms do sprawdzenia (agent 02).
+- Rozstrzygnięcie: do testu *konceptów* — osobne reklamy (czytelny raport); dynamic/flexible — do wzbogacania *jednego konceptu* o warianty wykonania (format/tekst), gdy nie potrzebujemy wiedzieć, który wariant wygrał.
+
+**S5. "Entity ID", "similarity score >60%", "reguła 70%" — fakt czy folklor?**
+- A: Meta mówi o "materially different" kreacji przy zmęczeniu i o "meaningful variety" przy Andromedzie; praktycy donoszą o metrykach "Creative Similarity"/"Creative Fatigue"/"Top Creative Themes" w Ads Manager (C, jesień 2025; nie potwierdziłem w Help Center — Help Center potwierdza tylko statusy "creative limited"/"creative fatigue").
+- D: nazwa "Entity ID" jako publiczny mechanizm, progi 60%/40%/70% — brak źródła Meta; krążą między blogami i podcastami (np. "we have that rule that Andromeda if it's less than 70% it will be cohorted as one").
+- Rozstrzygnięcie: używać jako *heurystyki QA* ("czy to wygląda i brzmi jak inna reklama?"), nie jako faktu technicznego w komunikacji z klientem.
+
+**S6. Ilość vs jakość**
+- "Ilość": Motion (B) — więcej kreacji ↔ więcej winnerów; Happy Mammoth ~500 reklam/tydz.; Reddit "testuj 30/tydz.".
+- "Jakość": Meta (A) — za dużo reklam szkodzi uczeniu; Heath — "four really good creatives as opposed to 20 mediocre ones"; Eric Philippou cytujący Rahula Issara — "100 pieces of crap is not better than 1 piece of crap"; Levinger — nie obiecuj wolumenu, którego zespół nie zrobi na odpowiednim poziomie; Will Sartorius — "Slop is slop, whether AI or human-made"; Viti — "Bad execution kills good ideas".
+- Rozstrzygnięcie: **wolumen *różnych, przyzwoitych* konceptów w czasie** — tak; masowe warianty/AI-slop — nie. System ma bramkę jakości przed bramką ilości.
+
+**S7. Lo-fi vs high production**
+- Dane: lo-fi 42% top-spenderów (Motion 2025, B-); text-only i UGC z wyższym hit rate niż high production (Motion 2026, B-). Praktycy: barbell — środek "umiera" (C); hi-fi → wyższe AOV/aspiracja (case Eric, C).
+- Mit: "brzydkie = dowolnie niedbałe". Barry Hott/Adcrate: ugly = zgodne z organicznym feedem, nadal z mocnym konceptem, hookiem, strukturą; "fake-ugly" jest wyczuwalne.
+- Rozstrzygnięcie: portfel z oboma biegunami; unikać "ładnej, generycznej grafiki marki".
+
+**S8. Zmęczenie kreacji — szybsze po Andromedzie?**
+- Faris (C): tak, "faster ad burnout in the Andromeda age ... a feature not a bug" (Meta szybciej znajduje odbiorców); reklamy "smash for like 3 days and then kind of go away".
+- Reddit (D): "2–3 tygodnie zamiast 4+/6+", "7–12 dni".
+- Jon Loomer (C, wg streszczenia): zmęczenie "rarely the true problem today unless you've restricted your audience or limited variations".
+- Meta (A): definicje statusów (koszt wyniku ≥2× historyczny = "creative fatigue"; liczy ekspozycje obrazu/wideo także z innych kampanii strony); rada: nowa kreacja "materially different", a starej nie wyłączać pochopnie.
+- Rozstrzygnięcie: nie przyjmować sztywnego "cyklu życia" kreacji; decyzje na podstawie statusu Meta + trendu kosztu (i jakości) leada. Mały rynek lokalny (mała populacja) → realnie szybsze nasycenie (Phil w podcaście Farisa: marka "had reached most of the population in the UK" — C).
+
+**S9. Dywersyfikować czy "podwajać" zwycięzcę?**
+- Dywersyfikacja: Meta/Loomer/Faris/P.D.A.
+- "Double down": Denney (C) — "Top brands aren't coming up with the most creative ideas. They're doubling & tripling down on what's working." (Seed: 1 na 7 reklam z tym samym kątem); Eric Philippou — w fazie "wszystko działa" nie tracić okna na nowe koncepty.
+- Rozstrzygnięcie (spójne z obiema stronami): **podwajać kąt, dywersyfikować wykonanie** (format, talent, setting, hook, dowód) — Ad Families (Beauvoir), 6 dźwigni (Videtta), 50/25/25 (Philippou). Proporcja eksploracji zależy od stanu konta (nic nie działa → prawie wszystko eksploracja; działa → głównie eksploatacja + 20–30% nowych konceptów).
+
+**S10. "Creative is the new targeting" — co to znaczy, a czego nie**
+- Znaczy (A/C): przy szerokim targetowaniu treść reklamy jest głównym sygnałem, do kogo trafia (Meta: "We will do the targeting for you at the level of creative" — cytat za Farisem; Loomer: dywersyfikacja "is the new targeting").
+- Nie znaczy: że targetowanie/wykluczenia/lokalizacja nie mają znaczenia (w usługach lokalnych geografia i kwalifikacja są krytyczne), ani że "wystarczy dużo reklam". Specyficzny przekaz (callout, setting, język klienta) *jest* narzędziem targetowania — i kwalifikacji leadów.
+
+**S11. "Hook to 80% gry" vs "nie zawsze masz problem z kreacją"**
+- Evan Lee: "The hook is the highest leverage creative variable"/"80% of the game" (C/D); ten sam Evan: "You don't always have a creative problem" — czasem oferta/strona; Eric: objaw "No Clear UVP". Rozstrzygnięcie: diagnoza lejka (F13) przed produkcją nowych hooków.
+
+**S12. Wydatek jako miara "zwycięzcy"**
+- Motion (winner = ≥10× mediany wydatku) i Faris ("spend is by far the leading indicator") — sensowne w e-commerce z wartością zakupu w sygnale. W lead-gen: Meta optymalizuje pod *zdarzenie lead*, więc reklama może dostawać dużo budżetu, generując tanie, ale słabe leady (skargi "never filled out the form" — 2.13). System musi łączyć wydatek/CPL z danymi jakości (CRM, CPQL) — agent 07/08.
+
 ## 6. Reguły do systemu
+
+| # | Reguła | Poziom | Podstawa |
+|---|---|---|---|
+| R1 | Każda nowa kreacja dostaje "paszport" z osiami F-SYNT (segment, moment, problem/pragnienie, obietnica, mechanizm, świadomość, dowód, kąt, format, biegun stylu, talent, setting, hook, oferta). | C/D | F-SYNT; P.D.A.; Faris; Levinger |
+| R2 | "Nowy koncept" = różnica w ≥2 osiach rdzeniowych (1–8) względem każdej aktywnej reklamy. "Wariant rodziny" = ten sam rdzeń + inny format i inny wizual. Zmiana tylko koloru/zdjęcia w tym samym układzie/nagłówka/CTA = mikro-wariant — nie liczy się do różnorodności. | A (kierunek: "materially different", "meaningful variety") + C (progi) | Meta 2.4/2.7; Loomer 2.6; F11; F15 |
+| R3 | Test "back-to-back": jeśli widz zestawiając dwie reklamy powie "to to samo" → to nie jest nowa kreacja. | C | parker-brain iterations.md |
+| R4 | Nie podawać klientowi "Entity ID", "progu 60/70%" ani "similarity score" jako faktów Meta. | A (brak w źródłach Meta) | 2.5; S5 |
+| R5 | Liczba jednocześnie aktywnych reklam w ad secie zależna od budżetu: ok. 1–3 przy ~10–20 USD/dzień (ok. 40–80 zł), do ~6 przy średnich budżetach, więcej tylko przy dużym wolumenie konwersji; nigdy >50 (limit). | A (kierunek + limit) / C (progi) | Meta 2.4/2.17; Heath 2.16 |
+| R6 | Różnorodność realizować też przez wiele assetów w jednej reklamie (do 10) i rotację konceptów w czasie, zamiast mnożenia reklam naraz. | A | Meta "managing ad volume" |
+| R7 | Rytm produkcji skalowany do budżetu: orientacyjnie 2–5 nowych kreacji/tydz. dla małych kont (Motion: średnio 2,8/tydz. <10k USD/mies.), więcej przy większych; liczyć *koncepty*, nie warianty. | B (opisowe) / C | Motion 2.1 |
+| R8 | Tryb konta wyznacza miks: "nic nie działa" → ≥90% nowe koncepty (duże, różne strzały); "działa" → ~70–80% rozwój zwycięskich kątów (nowe formaty/osoby/hooki) + 20–30% nowe koncepty. | C | Philippou (<10% iteracji gdy nic nie działa; 50/25/25); Wallace 70/30; Explore/Exploit |
+| R9 | Kąty najpierw testuj tanio (statyka text-forward / natywna statyka / VO+B-roll), zwycięskie kąty przenoś do droższych formatów. Wyjątek: kąty wymagające demonstracji/emocji — od razu krótkie wideo. | B- (hit rate text-only) + C | Motion 2.2; Videtta 2.11b; Faris 3x3x3 |
+| R10 | Iterować tylko zwycięzców i "obiecujących" (dobra jedna metryka); nie reanimować przegranych — przy przegranym kącie unikać podobnych strzałów. | C | parker-brain; Motion wk5 |
+| R11 | Co iterować wynika z diagnozy lejka: niski thumbstop → hook/pierwsza klatka; dobre zatrzymanie, słabe utrzymanie → body; dobre oglądanie, niski CTR → CTA/dopasowanie; dobry CTR, słaba konwersja/jakość → formularz/oferta/strona (nie kreacja). | C | Motion F13; parker-brain |
+| R12 | Każda kreacja wybiera biegun: (a) natywna/lo-fi wiarygodna w feedzie, albo (b) jawna reklama DR z mocnym nagłówkiem/ofertą. Unikać "środka" (ładna, generyczna grafika marki). | C (+B- opisowe) | Barbell 2.14; Alysha 2.11f; Motion 2.18 |
+| R13 | Natywność: bez dominującego logo/kolorów marki w pierwszej klatce/na pierwszy rzut oka; setting realny i dopasowany do segmentu; sprawdzić listę "fake-ugly". | C | Hott 2.8; Adcrate 2.14 |
+| R14 | Talent jest częścią dowodu: osoba na ekranie powinna mieć realny związek z problemem (klient, fachowiec, właściciel), nie przypadkowy aktor. | C | Flowell (Philippou); Matteo "micro-persona match" |
+| R15 | Hook musi (1) zatrzymać, (2) wywołać/zakwalifikować właściwą osobę, (3) łączyć się z historią sprzedażową — zakaz "hook slop". | C | Evan Lee "Hook's 3 Jobs" |
+| R16 | Źródła kątów: prawdziwy język klientów (opinie, rozmowy sprzedażowe, komentarze, grupy lokalne, Reddit/fora), mikro-momenty; AI tylko z "paragonami" (cytaty źródłowe). | C | Levinger; Rivera; Wallace "Trust the receipts" |
+| R17 | Zakaz fabrykowania: opinii, liczb, wzmianek prasowych, screenshotów wpisów realnych osób; placeholder `[STAT NEEDED]` zamiast zmyślonych danych; brak liczbowych prognoz efektu. | A (polityki Meta/prawo — agent 07) + C | parker-brain; zasady narzędzia |
+| R18 | Przy publikacji sprawdzić domyślne ulepszenia Advantage+ creative w "advanced preview"; wyłączyć te, które zmieniają sens/tekst/dodają muzykę lub tło, chyba że to świadomy test. | A | Meta 2.17 |
+| R19 | Do porównania konceptów używać osobnych reklam (czytelny raport) lub A/B testu Meta; nie traktować dynamic creative jako split testu; nie testować przez ręczne włączanie/wyłączanie. | A | Meta 2.17 |
+| R20 | Nie wyłączać pochopnie działającej starej reklamy przy dodawaniu nowej ("keeping your original ad active ... may maximize results"); nowa kreacja przy zmęczeniu = nowy obraz/wideo "materially different". | A | Meta creative fatigue |
+| R21 | W lead-gen "winner" ≠ największy wydatek ani najniższy CPL: ocena po koszcie kwalifikowanego leada (CRM), z minimalną próbą; wydatek przydzielony przez Meta to tylko wczesny sygnał. | C (+logika) | S12; Motion def.; Faris |
+| R22 | Portfel formatów: min. 2–3 różne kontenery w aktywnym zestawie (np. statyka text-forward, statyka natywna/social proof, krótkie wideo z człowiekiem). | A (kierunek: różne formaty) / C | Meta 2.7; Loomer; Faris "format diversity" |
+| R23 | Rozwijając zwycięzcę używać dźwigni: inny hook przy tym samym skrypcie; inny twórca; inny skrypt; ta sama struktura/inny tekst; inne B-roll; inny format — w partiach po 3–5. Na reklamach już skalowanych — tylko małe zmiany. | C | Videtta 2.11b |
+| R24 | Priorytetyzacja pomysłów wg pewności: sprawdzone kąty w nowym formacie > nowe hooki dla sprawdzonej persony > nowe persony z researchu > "działa u konkurencji" > "bo konkurencja tak robi". | C | Denney 2.11c |
+| R25 | Humor/"negative hooks"/kontrowersja — jako osie testu, z bramką zgodności z kategorią (usługi zaufania, zdrowie, finanse — ostrożnie). | B- (humor nadreprezentowany) / D | Motion 2.18; Janae 2.11b |
+| R26 | Brief kreacji zawiera: tytuł konceptu, kąt ("dlaczego działa"), guardraile, obsługę obiekcji, 3–5 startowych hooków, format, talent, setting, CTA/ofertę; pisany prostym językiem ("pokaż, jak łatwo…", nie "zademonstruj value prop"). | C | Caraway (Janae) 2.11b; Eric 8 klocków 2.11f |
+
 
 ## 7. Lista źródeł

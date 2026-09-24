@@ -124,6 +124,239 @@
 | Dane: Meta: "ad images created or materially edited with certain meta generative ai creative features ... may include ai info on the about this ad screen ... or have an ai info label next to the ad label". README narzędzi: art. 50(1) i 50(4) od 2.08.2026, art. 50(2) (oznaczanie maszynowe) od 2.12.2026 wg satwikbasu; Code of Practice z 10.06.2026 i Wytyczne KE z 20.07.2026 (wg seekdaseek: samo oznaczenie w metadanych uznane za niewystarczające); metadane IPTC giną przy rekompresji na platformie; kary do 15 mln EUR lub 3% obrotu. [WIEDZA] Deepfake w AI Act = obraz, dźwięk lub wideo AI, które przypomina istniejące osoby, przedmioty, miejsca, podmioty lub zdarzenia i mogłoby zostać niesłusznie uznane za prawdziwe.
 | Implikacja: (1) fotorealistyczne sceny "z życia" z wygenerowanymi ludźmi w reklamie komercyjnej to szara strefa. Jeśli obraz może być wzięty za prawdziwe zdjęcie prawdziwego klienta, realizacji lub miejsca, bezpieczniej go oznaczyć albo użyć prawdziwego zdjęcia. (2) Twarda zasada skilla: nigdy nie przedstawiać wygenerowanej osoby jako prawdziwego klienta, pacjenta, eksperta ani "przed/po". (3) Nie pokazywać wygenerowanej realizacji jako realizacji firmy. (4) Nie jest to porada prawna. Do weryfikacji z prawnikiem i z tekstem aktu (plik 07).
 
+## 3. SŁOWNIK ANTY-SLOP PL
+
+Legenda statusu: **Z** = zakazane w copy (usuń albo przepisz zawsze); **P** = podejrzane (dozwolone raz, gdy niesie informację; w nagromadzeniu usuń); **L** = limit liczbowy.
+Legenda źródła: M = miodkuj [PEŁNY]; SM = sztuczny-miodek [PEŁNY]; H = humanizer/Wikipedia [PEŁNY/WYSZUKIWARKA]; K = Kobak/Liang (słowa EN, polskie odpowiedniki to moja adaptacja) [PEŁNY/WYSZUKIWARKA]; G = plainlanguage.gov [PEŁNY]; W = Wolniewicz/DBest/Senuto [WYSZUKIWARKA]; C = CLDR [PEŁNY]; D = ocena własna (heurystyka).
+Zasada nadrzędna: pojedyncze trafienie P to słaby sygnał. Tekst reklamy (40–120 słów) ma mieć 0 trafień Z i najwyżej 1 trafienie P.
+
+### 3.1 Otwarcia, wypełniacze, resztki czatu
+
+| # | Zakazane / podejrzane | Status | Dlaczego | Czym zastąpić (przykład) | Źr. |
+|---|---|---|---|---|---|
+| 1 | "W dzisiejszych czasach…", "W dzisiejszym dynamicznym świecie…" | Z | Najbardziej rozpoznawalny polski GPT-izm; pusty wstęp | Zacznij od problemu klienta: "Rachunek za prąd przekracza 500 zł?" | M, SM, W |
+| 2 | "W dobie…", "W erze cyfrowej / AI…", "W obliczu…" | Z | Zakotwiczenie w czasie bez treści | Usuń. Jeśli czas ma znaczenie, podaj datę: "Od 1 stycznia rosną opłaty mocowe." | M, SM, W |
+| 3 | "W dynamicznie zmieniającym się…" | Z | Frazeologiczny autopilot | Usuń albo nazwij zmianę: "Ceny pomp spadły o 20% od marca" (jeśli prawda) | M, SM |
+| 4 | "Warto zauważyć / podkreślić / zaznaczyć, że…" | Z | Metakomentarz zamiast faktu | Samo zdanie: "Montaż trwa jeden dzień." | M, SM, W |
+| 5 | "Należy pamiętać / zauważyć, że…" | Z | Urzędowy ton + metakomentarz | Fakt albo polecenie: "Wniosek złóż do 30 czerwca." | M, SM |
+| 6 | "Nie sposób nie wspomnieć / przecenić…" | Z | Hiperboliczny wstęp | Podaj dowód znaczenia albo usuń | SM, W |
+| 7 | "Jak powszechnie wiadomo…" | Z | Pseudo-aksjomat | Usuń | SM |
+| 8 | "Co istotne / co ważne / co ciekawe," | Z | Ocena przed faktem | Sam fakt | SM |
+| 9 | "Zanurz się / zanurzmy się", "Przyjrzyjmy się bliżej" | Z | Kalka "dive into / let's take a closer look" | "Zobacz", "Sprawdź", albo od razu treść | SM, H |
+| 10 | "Odkryj…" (np. "Odkryj świat komfortu") | Z | Kalka "Discover/unveil", jeden z najczęstszych hooków AI | Konkretny czasownik: "Sprawdź, ile zapłacisz", "Zobacz realizacje" | K, D |
+| 11 | "Oto czego nikt ci nie mówi", "Większość ludzi nie wie…", "Sekret tkwi w…" | Z | Fałszywy wgląd, schlebianie | Podaj ten fakt wprost | M |
+| 12 | "Czy kiedykolwiek zastanawiałeś się…?" | Z | Szablonowe pytanie AI + forma rodzajowa | Pytanie o fakt w czasie teraźniejszym: "Ile płacisz za ogrzewanie?" | D, 2.10 |
+| 13 | "Brzmi znajomo?", "Znasz to uczucie?" | P | Wyświechtany hook po opisie problemu | Pomiń, przejdź do rozwiązania | D |
+| 14 | "Wyobraź sobie…" | P | Klasyczna technika, nadużywana przez AI | Konkretna scena bez zapowiedzi: "Wracasz z pracy, w domu jest 21°C." | D |
+| 15 | "Mam nadzieję, że…", "Oto poprawiona wersja", "Chętnie pomogę" | Z | Resztki czatu | Usuń | H, M, SM |
+| 16 | "Podsumowując / Reasumując / Konkludując" | Z | Sygnał zakończenia zamiast zakończenia | Zakończ wezwaniem do działania | M, SM |
+| 17 | "Czas pokaże", "Przyszłość należy do…", "To dopiero początek" | Z | Pseudogłęboka puenta | Zakończ CTA albo ostatnim faktem | M, SM |
+| 18 | "Zapraszamy do kontaktu", "Skontaktuj się z nami już dziś" | P | Formuła bez treści | Co się stanie po kontakcie: "Zostaw numer. Oddzwonimy dziś do 18:00." | D |
+
+### 3.2 Słowa napompowane i puste przymiotniki
+
+| # | Zakazane / podejrzane | Status | Dlaczego | Czym zastąpić (przykład) | Źr. |
+|---|---|---|---|---|---|
+| 19 | kluczowy, kluczowe znaczenie, odgrywa kluczową rolę | Z | Kalka key/crucial/pivotal; najczęstsze polskie słowo AI | Mechanizm albo liczba: "Od szczelności okien zależy 20–30% strat ciepła" (jeśli źródło) | M, SM, W, K |
+| 20 | kompleksowy, kompleksowe rozwiązania / usługi | Z | Kalka comprehensive; nic nie mówi | Wymień zakres: "Projekt, montaż i serwis przez 5 lat" | M, K |
+| 21 | innowacyjny, nowoczesny, najnowszej generacji | Z | Bez dowodu | Cecha: "Pompa grzeje do −25°C" | M, SM |
+| 22 | przełomowy, rewolucyjny, bezprecedensowy, niezrównany | Z | Hiperbola | Porównanie z liczbą | M, SM |
+| 23 | unikalny, wyjątkowy, jedyny taki | Z | Pusty superlatyw | Co jest inne: "Jedyna firma w powiecie z własną ekipą dekarzy" (jeśli prawda) | M |
+| 24 | holistyczny, wielowymiarowy, wszechstronny | Z | Abstrakcja | Wymień elementy | M, W |
+| 25 | profesjonalny, fachowy, doświadczony zespół ekspertów | P | Deklaracja bez dowodu | "Od 2011 r., 1400 montaży" (tylko dane klienta) | M, D |
+| 26 | najwyższa jakość, najwyższej jakości, premium | Z | Frazes | Materiał, norma, gwarancja: "Płytki Paradyż, gwarancja 3 lata" | D |
+| 27 | skuteczny, efektywny, wydajny (bez liczb) | P | Ocena bez miary | Wynik: "Średnio 30 zapytań miesięcznie" (jeśli prawda) | M |
+| 28 | szeroki wachlarz, bogata oferta, szeroka gama | Z | Wata | Liczba lub typy: "12 modeli okien, 3 systemy rolet" | D |
+| 29 | dopasowany, spersonalizowany, szyty na miarę | P | Obietnica bez treści | Co dopasowujecie: "Moc dobieramy po audycie domu" | D |
+| 30 | bezproblemowy, bezstresowy, płynny, bezproblemowo | Z | Kalka seamless/hassle-free | Czego klient nie musi robić: "Nie musisz brać wolnego. Montujemy w sobotę." | K, D |
+| 31 | idealny, perfekcyjny, doskonały | P | Pusty superlatyw | "Pasuje do domu 100–150 m²" | D |
+| 32 | niezwykle, niesamowicie, naprawdę, absolutnie, zdecydowanie | Z | Wzmacniacze bez treści | Usuń albo daj liczbę | SM, H |
+| 33 | ogromny potencjał, możliwości są nieograniczone | Z | Hiperbola | Zakres: "Do 6 kW z jednego dachu" | M, SM |
+| 34 | zmienia reguły gry, game changer | Z | Klisza marketingowa | Opisz zmianę | SM |
+| 35 | "przenieś / wznieś na wyższy poziom" | Z | Kalka "take it to the next level" | Wynik: "Więcej zapytań z tej samej strony" | W, D |
+| 36 | uwolnij potencjał, odblokuj, zyskaj przewagę | Z | Kalka unlock/empower | Konkretna korzyść | H, D |
+| 37 | "Twój partner w…", zaufany partner | Z | Frazes bez dowodu (miodkuj: "trusted partner language without proof") | Dowód: "Obsługujemy 40 firm z Trójmiasta" | M |
+| 38 | z pasją, pasjonaci, z miłości do… | P | Frazes | Fakt o ludziach: "Montuje Tomek, 12 lat w zawodzie" | D |
+| 39 | rozwiązania (ogólnie), rozwiązania dla domu | Z | Korporacyjny ogólnik | Rzecz: "pompy ciepła", "rolety zewnętrzne" | M |
+| 40 | wyzwania (zamiast problemów) | P | Eufemizm | Nazwij problem: "wilgoć w piwnicy" | M |
+| 41 | komfort, bezpieczeństwo i spokój (abstrakcje w trójce) | Z | Trójka abstrakcji | Skutek: "Dostaniesz SMS, gdy ktoś otworzy drzwi" | H, D |
+| 42 | stanowi fundament / filar / integralną część | Z | Unikanie "jest" | "jest", "ma" | M, SM, H |
+| 43 | świadomy wybór, świadomi klienci | P | Kalka conscious/aware, moralizuje | Usuń albo konkret | D |
+| 44 | "oferta dedykowana", dedykowany | Z | Kalka dedicated | "dla", "przeznaczony dla": "Oferta dla domów z lat 70." | SM, W |
+| 45 | adresować (problem, potrzebę) | Z | Kalka address | "rozwiązać", "zająć się" | SM |
+| 46 | wspierać (klienta, proces) nadużywane | P | Kalka support, rozmywa, co robicie | "Załatwimy za Ciebie wniosek o dotację" | D |
+| 47 | implementować, wdrażać rozwiązania | Z | Kalka / żargon | "montujemy", "uruchamiamy" | SM |
+| 48 | aplikuj, aplikacja (= zgłoszenie) | Z | Kalka apply | "Zgłoś się", "Wyślij formularz" | SM |
+| 49 | bazować na | Z | Kalka based on | "opierać się na" albo przebuduj zdanie | SM |
+| 50 | robić różnicę, na koniec dnia, mieć sens (makes sense) | Z | Kalki frazeologiczne | "zmienia wynik o…", "w praktyce", "opłaca się" | D |
+| 51 | transparentny, konsystentny, proaktywny, finalizować | Z | Kalki, fałszywi przyjaciele | przejrzysty/jawny, spójny, "działamy zanim…", kończyć | SM |
+
+### 3.3 Urzędowy język, nominalizacje, strona bierna
+
+| # | Zakazane / podejrzane | Status | Dlaczego | Czym zastąpić (przykład) | Źr. |
+|---|---|---|---|---|---|
+| 52 | dokonać zakupu / zgłoszenia / płatności / wyboru | Z | Ukryty czasownik (nominalizacja) | kupić / zgłosić / zapłacić / wybrać | M, G |
+| 53 | przeprowadzić analizę / audyt / pomiar | P | Nominalizacja | "sprawdzimy", "zmierzymy" | M, G |
+| 54 | realizacja, realizować (usługę, zamówienie) | Z | Urzędowe | "zrobimy", "zamontujemy", "termin: 14 dni" | M |
+| 55 | w celu / celem | Z | Urzędowe | żeby, aby | M |
+| 56 | w ramach, w zakresie | Z | Urzędowe | w, przy, dla, albo usuń | M |
+| 57 | w przypadku | P | Urzędowe | jeśli, gdy | M |
+| 58 | posiadać | Z | Urzędowe | mieć | M |
+| 59 | niniejszy | Z | Urzędowe | ten | M |
+| 60 | istnieje możliwość, zapewniamy możliwość | Z | Rozwlekłe | "możesz" | M |
+| 61 | skorzystaj z oferty / z możliwości | P | Formuła | Konkretny czasownik: "Odbierz wycenę", "Umów pomiar" | D |
+| 62 | ulec poprawie / pogorszeniu | Z | Urzędowe | poprawi się / pogorszy się | M |
+| 63 | z uwagi na, w związku z, na skutek | Z | Urzędowe | bo, dlatego, przez | M |
+| 64 | strona bierna: "wycena zostanie przygotowana", "montaż jest realizowany" | Z | Ukrywa, kto działa | "Przygotujemy wycenę", "Montujemy w 1 dzień" | M, G |
+| 65 | bezosobowe: "należy wypełnić", "można zauważyć", "dokonano" | Z | Dystans, brak adresata | "Wypełnij formularz" | M, G |
+| 66 | łańcuch dopełniaczy: "w celu uzyskania możliwości skorzystania z dofinansowania" | Z | Trudne do przetworzenia | "żeby dostać dotację" | M |
+| 67 | imiesłowy: "biorąc pod uwagę", "mając na uwadze", "umożliwiający" | P | Ciężka składnia | "bo", "skoro", "który pozwala" albo dwa zdania | M |
+| 68 | podwójne przeczenie: "nie ma możliwości, żeby nie…" | Z | Wymaga "przełączenia z nie na tak" | Zdanie pozytywne | G |
+
+### 3.4 Konstrukcje składniowe (struktury AI)
+
+| # | Zakazane / podejrzane | Status | Dlaczego | Czym zastąpić (przykład) | Źr. |
+|---|---|---|---|---|---|
+| 69 | "To nie X, to Y", "To nie jest X. To Y.", "To nie zwykła klimatyzacja. To spokój." | Z | Najsilniejszy wzorzec AI (antyteza redefinicyjna) | Powiedz Y wprost: "Klimatyzacja chłodzi sypialnię w 15 minut." | H, SM, M, W |
+| 70 | "Nie tylko X, ale także / również Y" | Z | Sztuczny paralelizm | "X i Y" albo dwa zdania | M, SM, W |
+| 71 | "X, a nie Y" / "Y, nie X" jako puenta | P, L: max 1 na tekst | Domknięcie przez kontrast | Zdanie twierdzące | SM |
+| 72 | "Nie X. Nie Y. Tylko Z." / "Bez X. Bez Y. Bez Z." | Z | Negatywna wyliczanka | "Z bez X i Y" albo zostaw jedno "bez" | M, W |
+| 73 | Trójka przymiotników lub korzyści: "szybko, tanio i bezpiecznie" | P, L: max 1 trójka na tekst i tylko z faktami | Domyślny rytm AI | 1–2 najmocniejsze + dowód ("Two items beat three") | H, SM |
+| 74 | "Z jednej strony… z drugiej strony…" | Z | Sztuczna dialektyka | Wybierz tezę | M, SM |
+| 75 | "Od X po Y" ("od małych mieszkań po wille") | P | Klisza zakresu | Konkretny zakres: "domy 80–250 m²" | M, SM |
+| 76 | "Zarówno X, jak i Y" (odruchowe) | P | Wydłuża | "X i Y" | M |
+| 77 | "Niezależnie od tego, czy jesteś X, czy Y…" | Z | Kalka "Whether you're a X or a Y" | Wybierz jednego odbiorcę na reklamę | H, D |
+| 78 | Odsłona z dwukropkiem: "Sekret? …", "Efekt:", "Najważniejsze:", "Odpowiedź jest prosta:" | Z | Sztuczne napięcie | Zwykłe zdanie. Dwukropek zostaje przy liście, danych, godzinach, telefonie | M |
+| 79 | Pytanie retoryczne + natychmiastowa odpowiedź ("Drogo? Nie z nami.") | P | Szablon hooka AI | Fakt: "Rata od 199 zł miesięcznie" | D |
+| 80 | Jednozdaniowa puenta: "I to jest właśnie różnica.", "Proste.", "Tak po prostu." | Z | Dramatyzacja bez treści | Usuń | H, M |
+| 81 | Łączniki na początku zdań w serii: "Ponadto / Co więcej / Dodatkowo / Jednocześnie" | Z (≥2) | Nawlekanie zdań | Usuń, krótkie zdania bez łączników | SM, W |
+| 82 | Asekuracje: "może potencjalnie", "wydaje się", "warto byłoby rozważyć" | Z | Strach przed twierdzeniem | Twierdzenie albo usuń. Uwaga: obietnic efektu nie wzmacniamy bez dowodu (plik 07) | SM |
+| 83 | Ta sama konstrukcja na początku 3 zdań ("Masz dość… Masz dość… Masz dość…") | P | Anafora z automatu | Zostaw jedną | H, SM |
+| 84 | Rotacja synonimów tej samej rzeczy (pompa / urządzenie / system / rozwiązanie) | Z | Udaje różne rzeczy | Jedna nazwa konsekwentnie | M |
+| 85 | Forma rodzajowa w 2. osobie: "zrobiłeś", "byłbyś", "jesteś gotowy", zapis "zrobiłeś/aś" | Z (chyba że grupa jednoznaczna) | Wyklucza połowę odbiorców | Tryb rozkazujący, czas teraźniejszy, "Masz…?" (sekcja 5) | D |
+
+### 3.5 Interpunkcja, typografia, format
+
+| # | Zakazane / podejrzane | Status | Dlaczego | Czym zastąpić (przykład) | Źr. |
+|---|---|---|---|---|---|
+| 86 | Pauza lub półpauza łącząca zdania: "Montaż w 1 dzień — bez bałaganu" | Z w Primary Text, nagłówku, opisie | Wzrost populacyjny po LLM, czytelnicy kojarzą z ChatGPT (2.4) | Kropka albo przecinek: "Montaż w 1 dzień. Bez bałaganu." | H, SM, M, 2.4 |
+| 87 | Półpauza w zakresie: "7–10 dni", "9:00–17:00" | Dozwolone | Poprawna typografia zakresu | Bez spacji wokół | D |
+| 88 | Wielkie Litery W Nagłówku ("Darmowa Wycena Twojego Dachu") | Z | Angielski "title case", w polszczyźnie błąd | "Darmowa wycena dachu" | H, M |
+| 89 | Cudzysłów "prosty" lub angielski "…", ''…'' | Z | Nie po polsku | „…”, zagnieżdżony «…» | C, SM |
+| 90 | Emoji w nagłówku i listy ✅✅✅, 🚀, 👉 w każdym wierszu | Z | Formatowanie AI | 0–1 emoji funkcjonalne (📍, 📞) albo zero | SM, H, M |
+| 91 | Wykrzykniki seriami, CAPS LOCK ("TYLKO DZIŚ!!!") | Z | Wyzwala wiedzę o perswazji, spada zaufanie (plik 04) | Najwyżej 1 wykrzyknik, zwykle 0 | plik 04 |
+| 92 | Pogrubienia Unicode (𝐏𝐫𝐨𝐦𝐨𝐜𝐣𝐚) i pogrubianie co drugiego słowa | Z | Czytniki ekranu, wygląd spamu/AI | Zwykły tekst | H, SM, D |
+| 93 | Hashtagi w reklamie (#promocja #okazja) | Z | Szum | Brak | D |
+| 94 | "zł" przed liczbą, "PLN 500", "500,- zł", "500 zł." w środku zdania | Z | Niezgodne z polskim zapisem | "500 zł" (spacja nierozdzielająca) | C |
+| 95 | "10.000 zł", "10,000 zł", "1 000 zł" | Z | Kropka/przecinek jako separator tysięcy to zapis obcy; 4 cyfry bez spacji | "10 000 zł", "1000 zł" | C |
+| 96 | "20 %" | P | CLDR: procent bez spacji | "20%" | C |
+
+## 4. Zasady prostego polskiego w reklamie (przed / po)
+
+Podstawa: plainlanguage.gov [PEŁNY, A], miodkuj plain-polish/registers [PEŁNY, C], ISO 24495-1 i Jasnopis [WIEDZA]. Liczby w przykładach "po" są przykładowe. W prawdziwym copy pochodzą tylko z briefu klienta.
+
+1. **Czasownik zamiast rzeczownika odczasownikowego.**
+   Przed: "Dokonaj zgłoszenia w celu przeprowadzenia bezpłatnego pomiaru."
+   Po: "Zgłoś się. Pomiar jest bezpłatny."
+2. **Strona czynna: my robimy, Ty dostajesz.**
+   Przed: "Wycena zostanie przygotowana w ciągu 24 godzin od momentu przesłania formularza."
+   Po: "Wycenę wyślemy w ciągu 24 godzin."
+3. **Jedna myśl w zdaniu. Krótkie zdania.** Cel dla reklamy: średnio 8–12 słów, najwyżej ok. 15 (heurystyka D; standard dla tekstów dla szerokiego odbiorcy to 15–20).
+   Przed: "Jeśli jesteś właścicielem domu jednorodzinnego i zastanawiasz się nad obniżeniem rachunków za ogrzewanie, które w ostatnich latach znacząco wzrosły, nasza firma przygotuje dla Ciebie ofertę."
+   Po: "Masz dom i wysokie rachunki za ogrzewanie? Policzymy, ile zaoszczędzisz z pompą ciepła."
+4. **Fakt zamiast przymiotnika.** Każde "kompleksowy", "profesjonalny", "najwyższa jakość" zamieniamy na liczbę, termin, gwarancję albo porównanie. Bez faktu zdanie wypada.
+   Przed: "Oferujemy kompleksowe usługi remontowe najwyższej jakości."
+   Po: "Remont łazienki w 10 dni roboczych. Gwarancja 3 lata."
+5. **Najważniejsze na początku.** Hook i oferta mieszczą się w pierwszych ok. 90–110 znakach (po polsku tekst jest o 15–25% dłuższy niż po angielsku, ustalenie 2.8).
+   Przed: "W dzisiejszych czasach coraz więcej osób decyduje się na fotowoltaikę. Nasza firma od lat pomaga klientom… Teraz dotacja do 28 tys. zł."
+   Po: "Dotacja do 28 tys. zł na panele z magazynem energii. Sprawdź, czy Ci przysługuje."
+6. **Słowa, których klient używa sam.** Termin fachowy tylko wtedy, gdy klient go zna. Inaczej objaśnienie.
+   Przed: "Instalacja PV on-grid z magazynem energii i systemem EMS."
+   Po: "Panele na dach z magazynem prądu. Zużywasz własny prąd także wieczorem."
+7. **Jedna nazwa na jedną rzecz.** Bez rotacji synonimów.
+   Przed: "Nasza pompa… To urządzenie… Ten system… Rozwiązanie…"
+   Po: "Pompa ciepła… pompa… pompa…"
+8. **Zdania twierdzące, bez podwójnych przeczeń.**
+   Przed: "Nie odmówimy montażu, jeśli nie zabraknie przyłącza."
+   Po: "Zamontujemy, jeśli masz przyłącze."
+9. **Liczba zamiast słowa ogólnego.**
+   Przed: "Szybko oddzwonimy."
+   Po: "Oddzwonimy w ciągu 2 godzin, od poniedziałku do piątku."
+10. **Bez wstępu i bez podsumowania.** Tekst kończy się tym, co klient ma zrobić.
+    Przed: "…Podsumowując, to najlepszy moment na decyzję. Zapraszamy do kontaktu!"
+    Po: "…Zostaw numer. Oddzwonimy dziś."
+11. **Bez łańcuchów dopełniaczy.**
+    Przed: "Warunkiem uzyskania możliwości skorzystania z rabatu jest wypełnienie formularza."
+    Po: "Wypełnij formularz, a dostaniesz rabat."
+12. **Pytanie w hooku: o fakt, w czasie teraźniejszym.**
+    Przed: "Czy kiedykolwiek zastanawiałeś się, ile tracisz przez nieszczelne okna?"
+    Po: "Ile płacisz za ogrzewanie zimą?"
+13. **Mniej przysłówków i wzmacniaczy.**
+    Przed: "Naprawdę niezwykle szybki i absolutnie bezproblemowy montaż."
+    Po: "Montaż w jeden dzień."
+14. **Test końcowy:** przeczytaj na głos. Czy handlowiec powiedziałby to klientowi przez telefon? Jeśli nie, przepisz.
+
+## 5. Zasady zapisu (liczby, kwoty, cudzysłowy, formy neutralne płciowo)
+
+### 5.1 Liczby, kwoty, procenty, daty (podstawa: Unicode CLDR pl [PEŁNY, A]; zasady RJP/PWN [WIEDZA])
+
+| Co | Dobrze | Źle | Uwagi |
+|---|---|---|---|
+| Kwota | 499 zł | zł 499, PLN 499, 499,- zł, 499zł | "zł" po liczbie, spacja nierozdzielająca (U+00A0), bez kropki po "zł" |
+| Kwota z groszami | 49,99 zł | 49.99 zł | przecinek dziesiętny |
+| Tysiące (4 cyfry) | 2500 zł | 2 500 zł, 2.500 zł | CLDR: minimumGroupingDigits = 2, więc 4 cyfry bez spacji |
+| Tysiące (5+ cyfr) | 12 500 zł, 140 000 zł | 12.500 zł, 12,500 zł | spacja nierozdzielająca co 3 cyfry |
+| Skróty | 28 tys. zł, 2 mln zł | 28k zł, 28 tyś. zł, 2mln | "tys." i "mln" z CLDR; "k" to zapis angielski |
+| Procent | 20% | 20 % | CLDR "#,##0%" |
+| Zakres | 7–10 dni, 9:00–17:00, 80–150 m² | 7 - 10 dni, 7 — 10 dni | półpauza bez spacji |
+| Data | 5 czerwca 2026, 5.06.2026 | 06/05/2026, 2026-06-05 w copy | w reklamie lepiej słownie z nazwą miesiąca |
+| Godzina | 18:00, do 18:00 | 6 PM, 18.00h | CLDR "HH:mm" |
+| Telefon | 695 947 017 | 695947017, +48695947017 w treści | grupy 3-3-3 [WIEDZA], w przycisku "Zadzwoń" numer i tak w polu |
+| Jednostki | 120 m², 6 kW, −25°C | 120m2, 6kw | spacja między liczbą a jednostką; stopnie: praktyka różna [WIEDZA] |
+| Rata | od 199 zł miesięcznie | od 199 zł/mc, 199 PLN/m-c | skrót "mies." dopuszczalny [WIEDZA] |
+
+Zasada techniczna dla skilla: między liczbą a "zł", "tys.", "mln", jednostką wstawiać U+00A0, żeby nie było złamania wiersza w środku kwoty.
+
+### 5.2 Cudzysłowy i wielkie litery
+
+- Cudzysłów: „tekst” (otwierający dolny „, zamykający górny ”). W cudzysłowie wewnętrznym: «tekst». [PEŁNY, CLDR]
+- Nagłówki i CTA: wielka litera tylko na początku i w nazwach własnych. "Darmowa wycena dachu", nie "Darmowa Wycena Dachu". [PEŁNY: humanizer §20, sztuczny-miodek; zasada polskiej ortografii: WIEDZA]
+- "Ty/Twój" wielką literą: forma grzecznościowa, nieobowiązkowa w reklamie [WIEDZA]. Jedna decyzja na markę, konsekwentnie w całej kampanii.
+
+### 5.3 Formy neutralne płciowo (C/D, [WIEDZA] + praktyka)
+
+Rodzaj ujawnia się w czasie przeszłym ("zrobiłeś/zrobiłaś"), w trybie przypuszczającym ("byłbyś/byłabyś") i w przymiotniku po "jesteś" ("jesteś zmęczony/zmęczona"). Neutralne są: tryb rozkazujący, czas teraźniejszy, czas przyszły prosty, bezokolicznik, konstrukcje bezosobowe i rzeczownikowe.
+
+| Rodzajowe (unikaj) | Neutralne (używaj) | Technika |
+|---|---|---|
+| Czy zastanawiałeś się, ile płacisz za prąd? | Ile płacisz za prąd? | pytanie w czasie teraźniejszym |
+| Byłbyś zainteresowany darmową wyceną? | Chcesz darmową wycenę? | czas teraźniejszy |
+| Jesteś zmęczony upałem? | Masz dość upału? | "mieć" zamiast przymiotnika |
+| Zapisałeś się już? | Zapisz się do piątku. | tryb rozkazujący |
+| Jeśli kupiłeś dom z lat 80.… | Masz dom z lat 80.? | "Masz…?" |
+| Będziesz zadowolony. | Efekt zobaczysz po pierwszym rachunku. | czas przyszły prosty |
+| Gotowy na zmianę? | Czas na zmianę? / Zacznij od pomiaru. | rzeczownik / rozkaźnik |
+| Zrobiłeś/aś, zrobił(a)ś | (zakaz) | nie zapisujemy wariantów z ukośnikiem |
+| Każdy klient otrzyma… | Dostaniesz… / Każda osoba, która… | 2. osoba albo "osoba, która" |
+| Byłeś u nas? | Już u nas byłeś? → Nasi klienci wracają, bo… | przebudowa na fakt |
+
+Wyjątek: kampania kierowana wyłącznie do jednej płci (np. usługa tylko dla kobiet) może używać form żeńskich. Wtedy konsekwentnie w całej reklamie.
+
+### 5.4 Ty / Państwo (D, [WIEDZA])
+
+- "Ty": domyślnie w reklamach w social media (usługi dla domu, lokalne firmy, edukacja, e-commerce).
+- "Państwo": usługi prawne, medyczne, finansowe premium, klienci 60+, B2B z formalnym tonem.
+- Nie mieszać w jednej reklamie ani w formularzu natywnym. Forma to pole w briefie klienta.
+- Ton "my" (firma) + "Ty" (klient) daje stronę czynną naturalnie: "Przyjedziemy, zmierzymy, wyślemy wycenę."
+
+### 5.5 Interpunkcja w copy (wynik weryfikacji hipotezy 2.4)
+
+- Pauza i półpauza nie łączą zdań w Primary Text, nagłówku ani opisie. Zamiast nich kropka lub przecinek.
+- Półpauza bez spacji w zakresach liczb i godzin jest poprawna i dozwolona.
+- Dwukropek: tak przy liście, godzinach, danych ("Godziny: 9:00–17:00"), nie jako "odsłona" ("Efekt: …", "Sekret? …").
+- Najwyżej jeden wykrzyknik na reklamę, zwykle zero.
+- Wielokropek tylko w cytacie urwanym, nie jako "napięcie" [D].
+
 ## Załącznik A. Notatki robocze (surowe, przed syntezą)
 
 ### Blok 1 — AI slop (EN): badania i katalogi
