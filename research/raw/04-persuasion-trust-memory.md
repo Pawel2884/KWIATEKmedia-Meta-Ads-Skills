@@ -1,11 +1,21 @@
 # 04 — Psychologia perswazji w reklamie: zaufanie, dowód, liczby, konkret, ciekawość, problem/korzyść/mechanizm, emocje, pamięć, poziomy świadomości
 
-> Plik roboczy agenta researchowego (obszar 04). Status: W TRAKCIE (zapis przyrostowy).
+> Plik roboczy agenta researchowego (obszar 04). Status: UKOŃCZONY (z zastrzeżeniem: część sekcji 2.5–2.8 oparta na [WIEDZA] — patrz sekcja 1).
 > Data: 2026-09-24. Projekt: KWIATEKmedia Meta Ads (plugin Claude).
 
 ## 1. Zakres i metoda
 
-(uzupełniane na końcu)
+**Zakres:** psychologia perswazji w zastosowaniu do reklam Meta nastawionych na leady jakościowe (osoby rozumiejące ofertę i mające szansę zostać klientami): zaufanie i wiarygodność, dowód (opinie, testimoniale, historie vs statystyki), liczby i konkret, ciekawość vs clickbait, problem/korzyść/mechanizm, strach, Zeigarnik, social proof, niedobór/pilność, wzajemność, autorytet, emocje i narracja, humor, pamięć reklamy i marka, powtórzenia, poziomy świadomości (Schwartz) i ELM.
+
+**Metoda:**
+- 44 zapytania WebSearch (precyzyjne: autor + rok + tytuł + „findings/meta-analysis/replication”), priorytet: meta-analizy, prerejestrowane replikacje, duże zbiory danych terenowych (np. Upworthy, Blendle), a dopiero potem klasyczne pojedyncze badania i źródła praktyków.
+- Celowe szukanie dowodów przeciwnych i replikacji dla każdego popularnego twierdzenia (loss aversion, gain/loss framing, Zeigarnik, identifiable victim, konkretność → prawda, „because”, clickbait, negatywność, ceny precyzyjne).
+- Próby pełnego odczytu (WebFetch) — zablokowane dla: frontiersin.org, nature.com, pure.uva.nl, home.uchicago.edu, arxiv.org, rofianto.wordpress.com, spiegel.medill.northwestern.edu, api.semanticscholar.org, api.openalex.org. Pełny odczyt udał się tylko dla gist.github.com (kompilacja praktyka, poziom C).
+- **Ograniczenie krytyczne:** po 44 zapytaniach wyczerpał się wspólny limit WebSearch sesji (200/200, dzielony z innymi agentami). Sekcje 2.1–2.4 opierają się na wynikach wyszukiwania [WYSZUKIWARKA]; sekcje 2.5–2.8 (normy społeczne, niedobór, Binet & Field, System1, transport narracyjny, humor, Ehrenberg-Bass, powtórzenia, Schwartz/TTM/ELM) w dużej mierze na **[WIEDZA]** — prace klasyczne, ale liczby wymagają weryfikacji przy syntezie.
+- Każde ustalenie: **Teza** | Poziom (A–D) | Źródła z trybem dostępu | Dane/cytat (cytaty w oryginale) | Implikacja dla Meta lead gen.
+- Hierarchia dowodów: A = źródło pierwotne; B = peer-review / meta-analizy / duże zbiory danych; C = obserwacje praktyków; D = hipoteza/wnioskowanie. Popularność ≠ dowód.
+
+**Najważniejsza obserwacja przekrojowa:** wiele „praw perswazji” popularnych w marketingu (loss aversion 2×, przewaga ramki straty, Zeigarnik, identifiable victim, konkretność = prawda, magiczne „bo”) w nowszych meta-analizach i prerejestrowanych replikacjach okazuje się **słabszych, warunkowych albo nieistniejących**. Najlepiej udokumentowane i najbardziej przydatne dla lead gen są: (1) wiarygodność źródła i dwustronność, (2) weryfikowalny dowód łączący historię z liczbą, (3) strach/problem tylko z efektywnym rozwiązaniem, (4) mechanizm wiedzy o perswazji — manipulacja rozpoznana = spadek zaufania do firmy, (5) krzywoliniowa zależność konkretności i ciekawości (konkret + mała luka).
 
 ## 2. Kluczowe ustalenia
 
@@ -33,7 +43,7 @@
 **T1.4. Rozpoznanie reklamy zwykle obniża ocenę treści — ale ukrywanie, że to reklama, jest nieetyczne i ryzykowne (regulacje, odwet zaufania po odkryciu).**
 | Poziom: B (eksperymenty; seria badań Wojdynskiego)
 | Źródła: [WYSZUKIWARKA] Wojdynski & Evans (2016) „Going Native: Effects of Disclosure Position and Language on the Recognition and Evaluation of Online Native Advertising”, *Journal of Advertising* 45(2), 157–168 — https://www.tandfonline.com/doi/full/10.1080/00913367.2015.1115380 ; [WYSZUKIWARKA] Amazeen & Wojdynski (2020) — https://journals.sagepub.com/doi/abs/10.1177/1464884918754829 ; [WYSZUKIWARKA] „Sponsorship Disclosure in Native Advertising: A Theoretical Framework” — https://arxiv.org/pdf/2311.01051
-| Dane: „middle or bottom positioning and wording using 'advertising' or 'sponsored' increased advertising recognition compared to other conditions, and ad recognition generally led to more negative evaluations.” W badaniu z 2016 r. większość uczestników w ogóle *nie rozpoznała* natywnej reklamy jako reklamy (liczba ok. 1 na 10 rozpoznających — [WIEDZA], niepotwierdzone w tej sesji).
+| Dane: „middle or bottom positioning and wording using 'advertising' or 'sponsored' increased advertising recognition compared to other conditions, and ad recognition generally led to more negative evaluations.” W badaniu z 2016 r. większość uczestników w ogóle *nie rozpoznała* natywnej reklamy jako reklamy — tylko ok. 9% w warunkach natywnych ([WYSZUKIWARKA], potwierdzone w T1.4a).
 | Implikacja: reklamy Meta mają obowiązkowe oznaczenie „Sponsorowane” — nie da się (i nie należy) ukrywać reklamy. Kreacje w stylu natywnym/UGC działają, bo *obniżają aktywację obrony* w pierwszej sekundzie (mniej „reklamowy” wygląd), ale treść nadal musi być prawdziwa. Zasada: „wygląda jak treść, jest uczciwą reklamą”. Nie podszywać się pod newsy, recenzje niezależne, posty znajomych.
 
 **T1.5. Przekaz dwustronny (przyznanie ograniczeń) podnosi wiarygodność — ale tylko przy umiarkowanej ilości negatywnych informacji (odwrócone U).**
