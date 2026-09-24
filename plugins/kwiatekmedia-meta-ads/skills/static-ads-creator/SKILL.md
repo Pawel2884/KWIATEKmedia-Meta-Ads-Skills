@@ -66,7 +66,7 @@ Jeśli masz narzędzie do generowania obrazów (np. Canva, Higgsfield, generator
 
 ## Format odpowiedzi
 
-Pisz zwykłym markdownem, bez bloków kodu, bez pauz, półpauz i dywizów ze spacjami (—, –, - ) między słowami (półpauza tylko w zakresach liczb, np. 5–100). Pierwsza linia odpowiedzi to pierwsza linia szablonu: bez zdania wstępu („Przygotowałem…”, „Przeczytałem…”, „Oto…”) i bez form rodzajowych o sobie („zrobiłem”, „założyłem”; pisz bezosobowo). Szablon poniżej pokazuje układ, nie jest blokiem do skopiowania.
+Pisz zwykłym markdownem, bez bloków kodu, bez pauz, półpauz i dywizów ze spacjami (—, –, - ) między słowami (półpauza tylko w zakresach liczb, np. 5–100). Pierwsza linia odpowiedzi to pierwsza linia szablonu: bez zdania wstępu („Przygotowałem…”, „Przeczytałem…”, „Oto…”) i bez form rodzajowych o sobie („zrobiłem”, „założyłem”; pisz bezosobowo). Szablon poniżej pokazuje układ, nie jest blokiem do skopiowania. Nie wypisuj Karty Oferty w odpowiedzi; to, co wywnioskowano, podaj na końcu w jednej linii `Założenia:`.
 
 STATYKA [nr]: [nazwa konceptu]
 Kąt: [K#] | Świadomość: [...] | Format: [S#] | Biegun: [natywny / oferta]
