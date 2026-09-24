@@ -69,7 +69,7 @@ Dobór formatu: z planu i z tego, co klient może nagrać lub dać (zdjęcia, tw
 ## Zasady całości
 
 - Spójność: ta sama oferta, ceny, warunki i obietnica w każdej reklamie i w formularzu.
-- Różnorodność: kierunki, nie kosmetyka. Różnić się ma cała reklama, nie tylko pierwsze zdanie: każdy Primary Text rozwija swój kąt (proces, dowód, cena, sytuacja). Wspólne fakty (oferta, kontakt, zasięg) najwyżej 1–2 zdania na końcu. Ten sam blok dowodu wklejony do każdej reklamy to jedna reklama w czterech wersjach.
+- Różnorodność: kierunki, nie kosmetyka. Różnić się ma cała część z kątem, nie tylko pierwsze zdanie: każdy Primary Text rozwija swój kąt (proces, dowód, cena, sytuacja) własnymi faktami. Blok oferty na końcu (cena, warunek, co dalej) może się powtarzać, bo odbiorca zwykle widzi jedną reklamę. Ten sam akapit dowodu i te same zdania środka w każdej reklamie to jedna reklama w kilku wersjach.
 - Karty reklam w pakiecie mają dokładnie format ze skilli (static-ads-creator, video-ad-script) z tymi samymi etykietami pól (`**Tekst na grafice:**`, `**Primary Text:**`, `**Nagłówek:**`, `**Opis:**`, `**CTA:**`, `**Prompt graficzny:**`). Nie przepisuj ich na własny układ i nie sklejaj Primary Text w jeden akapit (akapity 1–2 zdania).
 - Zero zmyśleń. Wszystkie braki w jednej liście na końcu, z tym, jak je zdobyć.
 - Zgodność: moduły branżowe z `zgodnosc.md`. ZDROWIE i PRAWO zawsze w stylu informacyjnym.

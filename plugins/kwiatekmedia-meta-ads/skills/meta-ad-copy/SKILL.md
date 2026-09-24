@@ -77,7 +77,7 @@ Na prośbę albo gdy piszesz komplet do kampanii leadowej, dodaj teksty formular
 - [ ] Moduł branżowy zastosowany (ZDROWIE i PRAWO w stylu informacyjnym, FINANSE-KREDYT, OZE-EKO, PROMOCJA-CENOWA).
 - [ ] Nagłówek ≤ 40 znaków, nie jest etykietą ani CTA. Opis ≤ 30 znaków (policz), bez warunków, które muszą być widoczne.
 - [ ] Akapity 1–2 zdania, pusty wiersz między nimi.
-- [ ] Przy kilku reklamach: każda rozwija swój kąt w całym tekście. Wspólne fakty (oferta, kontakt) najwyżej 1–2 zdania, nie ten sam blok dowodu w każdej reklamie.
+- [ ] Przy kilku reklamach: część z kątem i dowodem jest inna w każdej reklamie. Blok oferty na końcu (cena, warunek, co dalej) może się powtarzać, bo odbiorca zwykle widzi jedną reklamę. Warunek oferty podajesz tak jak klient („dla firm z co najmniej 5 autami”), bez dopisanych reguł („zgłoszeń nie przyjmujemy”).
 - [ ] Tekst pasuje do grafiki lub wideo i do formularza (ta sama obietnica).
 - [ ] Przeczytany na głos brzmi jak handlowiec przez telefon.
 - [ ] Test konkurenta: nagłówek i pierwsza linia nie pasują do dowolnej firmy z branży (jest fakt, miejsce, liczba albo mechanizm tej firmy).
