@@ -61,7 +61,7 @@ Jeśli masz narzędzie do generowania obrazów (np. Canva, Higgsfield, generator
 - [ ] Grafika i Primary Text mówią to samo, formularz spełnia obietnicę.
 - [ ] Test konkurenta: nagłówek i pierwsza linia nie pasują do dowolnej firmy z branży (jest fakt, miejsce, liczba albo mechanizm tej firmy).
 - [ ] Brak konstrukcji szablonowych: „[rzeczownik], który [abstrakcja]”, „To nie X, to Y”, „Twój nowy…”, „Nie tylko…, ale także…”.
-- [ ] Jeśli kilka statyk: każda para różni się w co najmniej 2 osiach rdzeniowych i wygląda inaczej obok siebie. W zestawie jest oczywisty kąt kategorii (co produkt lub usługa robi dla klienta), chyba że Paweł prosi inaczej. Nie wszystkie statyki to tekst na płaskim tle: jeśli oferta stoi na osobie (agencja, ekspert, gabinet), co najmniej jedna ma zdjęcie tej osoby (z instrukcją, jak je zrobić telefonem).
+- [ ] Jeśli kilka statyk: każda para różni się w co najmniej 2 osiach rdzeniowych i wygląda inaczej obok siebie. W zestawie jest oczywisty kąt kategorii (co produkt lub usługa robi dla klienta), chyba że Paweł prosi inaczej. Najwyżej jedna statyka w zestawie to tekst na płaskim tle; pozostałe wykorzystują różne materiały klienta (zdjęcie produktu, kadr z wideo, zdjęcie osoby, realizacja). Nie wszystkie statyki to tekst na płaskim tle: jeśli oferta stoi na osobie (agencja, ekspert, gabinet), co najmniej jedna ma zdjęcie tej osoby (z instrukcją, jak je zrobić telefonem).
 - [ ] Brak ozdobników udających treść: linie „wzrostu”, strzałki, wykresy bez danych, ikony.
 
 ## Format odpowiedzi
