@@ -1,0 +1,12 @@
+{
+  "meta-ads-master": ["zasady-kwiatekmedia.md", "format-wyjscia.md", "wejscie-i-pytania.md", "karta-oferty.md", "katy-i-roznorodnosc.md", "hooki.md", "formaty.md", "dowody-i-zaufanie.md", "lead-gen-jakosc.md", "jezyk-pl-anty-slop.md", "grafika-i-prompty.md", "specyfikacje-meta.md", "zgodnosc.md", "metryki-i-decyzje.md", "wiedza-meta.md"],
+  "meta-creative-strategist": ["zasady-kwiatekmedia.md", "format-wyjscia.md", "wejscie-i-pytania.md", "karta-oferty.md", "katy-i-roznorodnosc.md", "formaty.md", "dowody-i-zaufanie.md", "lead-gen-jakosc.md", "zgodnosc.md", "wiedza-meta.md"],
+  "static-ads-creator": ["zasady-kwiatekmedia.md", "format-wyjscia.md", "wejscie-i-pytania.md", "karta-oferty.md", "katy-i-roznorodnosc.md", "hooki.md", "formaty.md", "dowody-i-zaufanie.md", "jezyk-pl-anty-slop.md", "grafika-i-prompty.md", "specyfikacje-meta.md", "zgodnosc.md"],
+  "meta-ad-copy": ["zasady-kwiatekmedia.md", "format-wyjscia.md", "wejscie-i-pytania.md", "karta-oferty.md", "katy-i-roznorodnosc.md", "hooki.md", "dowody-i-zaufanie.md", "lead-gen-jakosc.md", "jezyk-pl-anty-slop.md", "specyfikacje-meta.md", "zgodnosc.md"],
+  "video-ad-script": ["zasady-kwiatekmedia.md", "format-wyjscia.md", "wejscie-i-pytania.md", "karta-oferty.md", "katy-i-roznorodnosc.md", "hooki.md", "formaty.md", "dowody-i-zaufanie.md", "jezyk-pl-anty-slop.md", "specyfikacje-meta.md", "zgodnosc.md"],
+  "hook-generator": ["zasady-kwiatekmedia.md", "format-wyjscia.md", "wejscie-i-pytania.md", "karta-oferty.md", "katy-i-roznorodnosc.md", "hooki.md", "dowody-i-zaufanie.md", "jezyk-pl-anty-slop.md", "zgodnosc.md"],
+  "creative-auditor": ["zasady-kwiatekmedia.md", "format-wyjscia.md", "karta-oferty.md", "katy-i-roznorodnosc.md", "hooki.md", "dowody-i-zaufanie.md", "jezyk-pl-anty-slop.md", "grafika-i-prompty.md", "specyfikacje-meta.md", "zgodnosc.md", "metryki-i-decyzje.md", "wiedza-meta.md"],
+  "creative-diversification": ["zasady-kwiatekmedia.md", "format-wyjscia.md", "wejscie-i-pytania.md", "karta-oferty.md", "katy-i-roznorodnosc.md", "hooki.md", "formaty.md", "zgodnosc.md", "wiedza-meta.md"],
+  "campaign-creative-planner": ["zasady-kwiatekmedia.md", "format-wyjscia.md", "wejscie-i-pytania.md", "karta-oferty.md", "katy-i-roznorodnosc.md", "formaty.md", "lead-gen-jakosc.md", "specyfikacje-meta.md", "metryki-i-decyzje.md", "wiedza-meta.md"],
+  "iteration-engine": ["zasady-kwiatekmedia.md", "format-wyjscia.md", "karta-oferty.md", "katy-i-roznorodnosc.md", "hooki.md", "formaty.md", "lead-gen-jakosc.md", "zgodnosc.md", "metryki-i-decyzje.md", "wiedza-meta.md"]
+}
