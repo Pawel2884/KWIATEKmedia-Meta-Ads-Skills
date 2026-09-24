@@ -46,7 +46,7 @@ Brak dowodu w Karcie Oferty: nie wymyślaj. Wstaw `[UZUPEŁNIJ: …]` i napisz, 
 ## 4. Opinie i oceny
 
 - Podawaj prawdziwe oceny z liczbą opinii i źródłem. Nie pisz „100% zadowolonych”.
-- Oceny bliskie 5,0 budzą podejrzenia, 4,0–4,7 sprzedają najlepiej. Pierwsze opinie dają największy skok (B/C: Spiegel 2017, dane obserwacyjne).
+- Oceny bliskie 5,0 budzą podejrzenia, 4,0–4,7 sprzedają najlepiej. Pierwsze opinie dają największy skok (B/C: Spiegel 2017, dane obserwacyjne). Wniosek praktyczny: prawdziwej wysokiej oceny z dużą liczbą opinii („4,9 z 212 opinii”) nie ukrywasz; podejrzana jest ocena 5,0 z kilku opinii albo bez liczby i źródła.
 - Cytat opinii dosłowny, z imieniem i miejscowością, za zgodą. Nie wybieraj wyłącznie 5-gwiazdkowych w sposób sugerujący co innego niż średnia.
 - Opinie opłacone lub „zlecone” są praktyką zakazaną.
 

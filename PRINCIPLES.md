@@ -52,14 +52,14 @@ Uzasadnienie: Meta: „native feel… perform better”, zdjęcia z telefonu lep
 
 ## C. Zaufanie i dowód
 
-**P11. Zero zmyśleń.** Liczby, opinie, imiona, certyfikaty, gwarancje, rabaty i terminy pochodzą tylko od klienta. Brak danych oznaczamy `[UZUPEŁNIJ: …]`.
+**P11. Zero zmyśleń.** Liczby, opinie, imiona, certyfikaty, gwarancje, rabaty i terminy pochodzą tylko od klienta. Brak danych oznaczamy `[UZUPEŁNIJ: …]`. Dowód przepisujemy wiernie: ta sama jednostka, okres i źródło, bez zaokrąglania w górę, bez dopisanych szczegółów historii klienta, bez uzasadnień „bo…” i porównań kosztów, których klient nie podał (dodane po testach R1, gdzie to był najczęstszy błąd).
 Uzasadnienie: fałszywe opinie i nieprawdziwe twierdzenia to praktyki zakazane (ustawa o przeciwdziałaniu nieuczciwym praktykom rynkowym, art. 5 i 7). Rozpoznana manipulacja obniża ocenę przekazu i firmy (Friestad i Wright 1994). Poziom: **A**.
 
 **P12. Konkret zamiast przymiotnika.** „Kompleksowy”, „profesjonalny”, „najwyższa jakość” zastępujemy liczbą, terminem, gwarancją, procesem albo porównaniem. Bez faktu zdanie wypada.
 Uzasadnienie: konkret poprawia zrozumienie i samokwalifikację. Uwaga: teza „konkret = bardziej prawdziwy” słabo się replikuje, więc konkret służy zrozumieniu, nie „trikowi prawdy”. Poziom: **B**.
 
 **P13. Hierarchia dowodu.** Najpierw weryfikowalne fakty (liczba realizacji, prawdziwa ocena z liczbą opinii i źródłem, zdjęcia realnych realizacji), potem opinia z imieniem i wynikiem, na końcu deklaracje (unikać). Dowód lokalny i podobny do odbiorcy działa lepiej niż „tysiące zadowolonych”. Historia plus liczba razem działają najlepiej.
-Uzasadnienie: statystyka mocniej zmienia przekonania, historia mocniej intencję (Zebregs 2015, Freling 2020). Oceny bliskie 5,0 budzą podejrzenia, 4,0–4,7 sprzedają najlepiej (Spiegel 2017). Poziom: **B**, **B/C** (oceny).
+Uzasadnienie: statystyka mocniej zmienia przekonania, historia mocniej intencję (Zebregs 2015, Freling 2020). Oceny bliskie 5,0 budzą podejrzenia, 4,0–4,7 sprzedają najlepiej (Spiegel 2017), ale to dane obserwacyjne: prawdziwej wysokiej oceny z dużą liczbą opinii nie ukrywamy, podejrzana jest ocena 5,0 z kilku opinii albo ocena bez liczby i źródła. Poziom: **B**, **B/C** (oceny).
 
 **P14. Uczciwe ograniczenie buduje zaufanie i filtruje.** Jedno „dla kogo to nie jest” albo ograniczenie na 3–4 twierdzenia.
 Uzasadnienie: przekazy dwustronne podnoszą wiarygodność, za dużo negatywów szkodzi (Eisend). Poziom: **B**.
