@@ -66,7 +66,7 @@ Przed użyciem wyłącz stare skille o podobnych wyzwalaczach (np. `kampania-lea
 - `RESEARCH.md`: wnioski z researchu z poziomami dowodu A (Meta, prawo, źródło pierwotne), B (badania, duże dane), C (praktycy), D (hipoteza). Co wiadomo o Andromedzie, a co jest mitem.
 - `PRINCIPLES.md`: 42 zasady systemu z uzasadnieniem.
 - `SOURCES.md`: 888 źródeł z trybem dostępu (pełny tekst, wyszukiwarka, cytat).
-- `TESTS.md`: jak system był testowany (4 rundy, 59 uruchomień na 6 różnych biznesach), co znalazł krytyk i co poprawiono.
+- `TESTS.md`: jak system był testowany (4 rundy, 49 udanych uruchomień na 6 różnych biznesach), co znalazł krytyk i co poprawiono.
 - `CHANGELOG.md`: historia wersji.
 
 Najważniejsze zasady w skrócie:
