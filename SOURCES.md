@@ -1,0 +1,996 @@
+# SOURCES: źródła wykorzystane w researchu
+
+Lista zawiera wyłącznie źródła, do których research faktycznie dotarł w tej pracy. Każde źródło ma oznaczony tryb dostępu. Wiedza modelu bez potwierdzenia w sesji ([WIEDZA]) nie jest tu wymieniana jako źródło.
+
+## Tryby dostępu
+
+- **[PEŁNY]**: przeczytany pełny tekst. Artykuły Meta Business Help Center pobrane narzędziem Meta Ads (`ads_get_help_article`), dokumentacja Claude, repozytoria i pliki GitHub, dokumentacja deweloperska.
+- **[WYSZUKIWARKA]**: znane z wyników wyszukiwarki (tytuł, streszczenie, fragmenty cytowane w wynikach). Pełnej strony nie dało się otworzyć, bo proxy sieciowe sesji blokowało pobieranie większości domen (EGRESS_BLOCKED). Wnioski oparte wyłącznie na tym trybie mają w RESEARCH.md niższą pewność albo są oznaczone jako wymagające potwierdzenia.
+- **[CYTOWANE]**: źródło znane z cytatu w innym przeczytanym materiale (np. badanie przywołane w artykule Meta albo w repozytorium). Nie przeczytane bezpośrednio.
+
+## Dane własne (nie są adresami URL)
+
+- **Biblioteka Reklam Meta, Polska**: 44 wywołania narzędzia `ads_library_search` (39 fraz branżowych i 5 zapytań po `page_ids`), ok. 1770 rekordów reklam, ok. 400 reklamodawców, ok. 500 unikalnych nagłówków, 5 grup biznesów (B2B, usługi lokalne, drogie usługi lead gen, e-commerce, oferty wymagające zaufania). Narzędzie zwraca nagłówek, daty i nazwę strony, bez treści głównej, obrazu i wyników. Pełna tabela zapytań i identyfikatory reklam: `research/raw/11-ad-library-pl-analysis.md`, sekcja 5.3. Każdą reklamę można sprawdzić pod adresem facebook.com/ads/library/?id=ID.
+- **Sesja weryfikacyjna**: 31 twierdzeń, które pierwotnie pochodziły z wiedzy modelu, zostało sprawdzonych w osobnej sesji z wyszukiwarką. Wyniki (POTWIERDZONE, CZĘŚCIOWO, NIEPOTWIERDZONE, OBALONE) w `research/raw/12-weryfikacja-uzupelnienia.md`. Twierdzenia obalone zostały usunięte albo poprawione w systemie.
+- **Obliczenia własne**: przedziały niepewności CPL, progi próby i tabele budżetu testów (`research/raw/08-*.md`, `shared/metryki-i-decyzje.md`) są policzone w sesji z rozkładu Poissona i gamma. Oznaczone jako [OBLICZENIE].
+
+## Jak czytać listę
+
+Format pozycji: tytuł lub opis (numery plików raportów w `research/raw/`, w których źródło zostało użyte): adres.
+Tytuły są wzięte z raportów. Gdy raport nie podał tytułu, pokazana jest domena i końcówka adresu.
+Listę można odtworzyć skryptami: `python3 scripts/extract_sources.py && python3 scripts/make_sources_md.py`.
+
+## Ograniczenia
+
+- Pobieranie stron (WebFetch) było zablokowane dla większości domen, w tym dla facebook.com/business/help. Dlatego artykuły pomocy Meta czytane były przez narzędzie Meta Ads, a badania naukowe, prawo i materiały praktyków głównie przez wyszukiwarkę.
+- Limit wyszukiwań sesji (200) został wykorzystany w całości przez agentów badawczych. Weryfikacja odbyła się w osobnej sesji z własnym limitem.
+- Reddit, X i YouTube: tylko streszczenia z wyszukiwarki. Transkrypcje filmów i pełne wątki nie były dostępne.
+- Część źródeł z kategorii „praktycy” to opinie (poziom C lub D). W systemie nie są przedstawiane jako fakty o działaniu Meta.
+
+## Lista źródeł
+
+Łącznie: 888 unikalnych adresów. Pełny tekst przeczytany: 398. Znane z wyników wyszukiwarki (streszczenia, fragmenty): 474. Znane z cytatu w przeczytanym materiale: 16.
+
+
+## Meta Business Help Center, Instagram Help, Meta for Developers (249)
+
+
+**Przeczytane w całości [PEŁNY]** (248)
+
+- API standard enhancements (01): https://developers.facebook.com/docs/marketing-api/advantage-catalog-ads/standard-enhancements
+- developers.facebook.com: conversions api crm for platforms (02,07,08): https://developers.facebook.com/docs/marketing-api/conversions-api/guides/conversions-api-crm-for-platforms
+- Advantage+ creative (Marketing API) (01): https://developers.facebook.com/docs/marketing-api/creative/advantage-creative
+- How to use the paid partnership label (Instagram) (06): https://help.instagram.com/1109894795810258
+- About link sticker on Instagram stories (14% / 20%) (06): https://help.instagram.com/192168966243613
+- About partnership ads (02,06): https://help.instagram.com/292748974937716
+- Measure partnership ad performance (02): https://help.instagram.com/441419756683855
+- IG Reels ads (02,03,06): https://help.instagram.com/546362593027755
+- How to add music to ads using Ads Manager (02,03): https://help.instagram.com/759279452000505
+- Ad performance (Advertiser Success Center) (01): https://www.facebook.com/550486893511830
+- About ad delivery (01,08): https://www.facebook.com/business/help/1000688343301256
+- Use a GIF in your video ad (02): https://www.facebook.com/business/help/1006874066021923
+- Request a review of an issue with advertiser or payer information (07): https://www.facebook.com/business/help/1024444835591336
+- do 10 mediów w reklamie (02,06,08): https://www.facebook.com/business/help/103816146375741
+- First time impression ratio (08): https://www.facebook.com/business/help/104316936854650
+- How do I verify my phone number as a new Meta advertiser? (07): https://www.facebook.com/business/help/1064155054687612
+- Turn off enhancements (01,02,05): https://www.facebook.com/business/help/1082295769403815
+- About engagement custom audiences (08): https://www.facebook.com/business/help/1090330204367211
+- Instagram image ads (02,03): https://www.facebook.com/business/help/109732209367483
+- Navigate to Meta ads reporting (08): https://www.facebook.com/business/help/110569454115567
+- Carousel specs (02): https://www.facebook.com/business/help/1114358518575630
+- About the learning phase (01,08): https://www.facebook.com/business/help/112167992830700
+- About flexible media (01,02,05): https://www.facebook.com/business/help/1126725172362626
+- typy/narzędzia (08): https://www.facebook.com/business/help/1159714227408868
+- Meta advertising standards (07): https://www.facebook.com/business/help/117271728356988
+- Advantage+ creative for ads from your Facebook page (01): https://www.facebook.com/business/help/1176714013185487
+- About ads for housing (02,07): https://www.facebook.com/business/help/1198401317374558
+- Show best-performing cards first (02): https://www.facebook.com/business/help/120435098301466
+- Create a flexible ad (02): https://www.facebook.com/business/help/1207773513713945
+- Troubleshoot a rejected ad (02): https://www.facebook.com/business/help/1210227555661027
+- Profanity (02): https://www.facebook.com/business/help/1246599319516044
+- Privacy policies (02): https://www.facebook.com/business/help/1247534515288168
+- 3-second video plays rate per impressions (BŁĘDNA definicja w HC) (06,08): https://www.facebook.com/business/help/1252260652457829
+- About ad formats in Meta Ads Manager (05): https://www.facebook.com/business/help/1263626780415224
+- About the Advantage+ campaign experience (01): https://www.facebook.com/business/help/1292656978738967
+- Creative tools for customizing placements (02): https://www.facebook.com/business/help/1295976920753603
+- View brand survey test results (08): https://www.facebook.com/business/help/1313814228748488
+- About creative fatigue recommendations (01,02,05,08): https://www.facebook.com/business/help/1346816142327858
+- Discriminatory practices policy (02): https://www.facebook.com/business/help/136164207100893
+- Poziom: A (01,08): https://www.facebook.com/business/help/1362234537597370
+- Understand fluctuations (01,08): https://www.facebook.com/business/help/1364841787225722
+- Results (01): https://www.facebook.com/business/help/1376548572415613
+- About video ads (03,06): https://www.facebook.com/business/help/1381779698788633
+- Optimization events (08): https://www.facebook.com/business/help/139628083350822
+- Design specifications for collection ads (02): https://www.facebook.com/business/help/1449762585066179
+- About lead ads (02,07,08): https://www.facebook.com/business/help/1481110642181372
+- About media created or edited with AI (02,06,07,09): https://www.facebook.com/business/help/1486382031937045
+- About destination links in your ad (02): https://www.facebook.com/business/help/152143699744690
+- About ads for employment (02,07): https://www.facebook.com/business/help/1537759006681893
+- Conditional answers (02,07): https://www.facebook.com/business/help/154286325106161
+- View metrics for lead ads with instant forms (08): https://www.facebook.com/business/help/1544628789462866
+- Frequency (08): https://www.facebook.com/business/help/1546570362238584
+- Enable the callback requests feature in call ads (07): https://www.facebook.com/business/help/1549971302464645
+- Custom disclaimer (02): https://www.facebook.com/business/help/1550411888622740
+- Selecting a variable (05,08): https://www.facebook.com/business/help/1597318281091985
+- przykłady pytań kwalifikujących (02,07,08): https://www.facebook.com/business/help/1607931762802448
+- Ad auction (01): https://www.facebook.com/business/help/163066663757985
+- Create Instagram Stories ads in Meta Ads Manager (02): https://www.facebook.com/business/help/1639197963055851
+- Understand the reach of your awareness campaign (08): https://www.facebook.com/business/help/1639908612985580
+- How winning campaigns are determined (08): https://www.facebook.com/business/help/166313650471318
+- Add an intro section (02,07): https://www.facebook.com/business/help/1664458123767694
+- Add captions to your video ad (02,03,06): https://www.facebook.com/business/help/1675722002698686
+- Image generation (01,02,06): https://www.facebook.com/business/help/1684513971952814
+- About dynamic creative (01,02,05,06,08): https://www.facebook.com/business/help/170372403538781
+- Cost per optimization event (02,08): https://www.facebook.com/business/help/1707952432550214
+- Tips and best practices for Facebook Reels (02,06): https://www.facebook.com/business/help/1708053352711643
+- About A/B testing (01,05,08): https://www.facebook.com/business/help/1738164643098669
+- About branding for your ads (02): https://www.facebook.com/business/help/1749703022274336
+- Add animation (01,02,06): https://www.facebook.com/business/help/1766652437485798
+- Best practices to improve ad quality (01,02): https://www.facebook.com/business/help/1767120243598011
+- About account insights in Meta Ads Reporting (01,08): https://www.facebook.com/business/help/1784925068944145
+- Create instant form in Business Suite (02,07,08): https://www.facebook.com/business/help/179258984144385
+- About video ad metrics (06): https://www.facebook.com/business/help/1792720544284355
+- cost per 15-s ThruPlay (08): https://www.facebook.com/business/help/1796060333844808
+- Navigate to breakdowns (08): https://www.facebook.com/business/help/1798966537090251
+- Text generation (01,02,09): https://www.facebook.com/business/help/180641596861873
+- How to add branding to your ads (02): https://www.facebook.com/business/help/1814872845933588
+- About ads that click to message (02): https://www.facebook.com/business/help/1816962591668838
+- About video ad metrics calculation (06,08): https://www.facebook.com/business/help/1868286323447328
+- Best practices for Instagram video ads (02,03,06,08,09): https://www.facebook.com/business/help/188534925073536
+- Create ads in stories on Facebook, Messenger and Instagram (02): https://www.facebook.com/business/help/190599608272281
+- About experiments (08): https://www.facebook.com/business/help/1915029282150425
+- About 2-second continuous video play (06): https://www.facebook.com/business/help/1925542547764376
+- Audience reached ratio (08): https://www.facebook.com/business/help/1932319983694913
+- Poziom: A (01): https://www.facebook.com/business/help/196554084569964
+- Best practices for cost-effective ad creative (02,03): https://www.facebook.com/business/help/1991663177718491
+- Video ad playing specifications by placement (02): https://www.facebook.com/business/help/2013114112289197
+- Auction competition change (08): https://www.facebook.com/business/help/2024547657774300
+- About ads in review (02): https://www.facebook.com/business/help/204798856225114
+- About ThruPlay (06,08): https://www.facebook.com/business/help/2051461368219124
+- About labels on paid partnership posts (06): https://www.facebook.com/business/help/213764212711862
+- Setup campaign experiments (01,08): https://www.facebook.com/business/help/2157673164314250
+- About image ads across Meta technologies (02,03): https://www.facebook.com/business/help/217010726413426
+- Questions prohibited on your instant form (02): https://www.facebook.com/business/help/219356599612120
+- Create a Facebook Page engagement custom audience (08): https://www.facebook.com/business/help/221146184973131
+- About audiences for HEC campaigns (02,07): https://www.facebook.com/business/help/2220749868045706
+- Design requirements for Instagram Stories ads (02): https://www.facebook.com/business/help/2222978001316177
+- Creative best practices for text in ads (02,03): https://www.facebook.com/business/help/223409425500940
+- Best practices to respond to leads from your lead ads with instant form (07): https://www.facebook.com/business/help/2246428158756947
+- Glossary of reservation terms (08): https://www.facebook.com/business/help/230299314945919
+- Engagement rate ranking (01,02,08): https://www.facebook.com/business/help/2351270371824148
+- Troubleshoot ad delivery (01,08): https://www.facebook.com/business/help/236201204528536
+- View metrics for call ads (07): https://www.facebook.com/business/help/237108475737601
+- About confidence in tests (08): https://www.facebook.com/business/help/239549606692303
+- Combine ad sets and campaigns (audience fragmentation) (01): https://www.facebook.com/business/help/2419480091640105
+- wdrażane stopniowo (01,02,05,08): https://www.facebook.com/business/help/243916866413404
+- Health and wellness policy (02,06,07): https://www.facebook.com/business/help/2489235377779939
+- About reservation (01): https://www.facebook.com/business/help/251123081984768
+- About instant form types (01,02,07,08): https://www.facebook.com/business/help/252352181957512
+- Privacy violations and personal attributes policy (02,06,07): https://www.facebook.com/business/help/2557868957763449
+- Best practices for dynamic creative (03,05): https://www.facebook.com/business/help/257326614846024
+- A+ campaign budget reporting (08): https://www.facebook.com/business/help/258714594633281
+- audience (01): https://www.facebook.com/business/help/25941857932125812
+- Engagement bait (02): https://www.facebook.com/business/help/259911614709806
+- About breakdowns, metrics and filtering in ads reporting (08): https://www.facebook.com/business/help/264160060861852
+- Adjust background colors for stories ads (02): https://www.facebook.com/business/help/266481863999300
+- About learning limited (01,02,08): https://www.facebook.com/business/help/269269737396981
+- managing ad volume (01,02,05,08): https://www.facebook.com/business/help/2720085414702598
+- About cost per result goal (08): https://www.facebook.com/business/help/272336376749096
+- auction overlap/konkurencja (08): https://www.facebook.com/business/help/2727273724224874
+- About Advantage+ audience (01): https://www.facebook.com/business/help/273363992030035
+- Available ad placements and ad formats by ad objectives (02): https://www.facebook.com/business/help/279271845888065
+- Set up your CRM for qualified leads (02,08): https://www.facebook.com/business/help/279369167153556
+- Troubleshoot: not receiving enough results (01,08): https://www.facebook.com/business/help/284656872650053
+- Best practices (01,08): https://www.facebook.com/business/help/290009911394576
+- Technical specifications for Facebook and Instagram stories (06): https://www.facebook.com/business/help/292794301336717
+- Cost per qualified lead (02): https://www.facebook.com/business/help/294374640173607
+- About Advantage+ creative (01,02,03): https://www.facebook.com/business/help/297506218282224
+- About budget optimization tests (01,08): https://www.facebook.com/business/help/299600627522144
+- integracje CRM (direct/3rd party/custom) (02,07,08): https://www.facebook.com/business/help/301355140655035
+- About quality ranking (01): https://www.facebook.com/business/help/303639570334185
+- Sensational content (02): https://www.facebook.com/business/help/304110064285796
+- Creative best practices for stories (02,03,06): https://www.facebook.com/business/help/304846896685564
+- About creative optimizations for Reels ads (06): https://www.facebook.com/business/help/308193048565708
+- About Advantage+ app campaigns (01): https://www.facebook.com/business/help/309994246788275
+- How SIEP ads are reviewed (02): https://www.facebook.com/business/help/313752069181919
+- Add a message for leads (02,07): https://www.facebook.com/business/help/314132612401196
+- Significant edits and learning phase (01,08): https://www.facebook.com/business/help/316478108955072
+- Use a partner to connect your CRM (02,07,08): https://www.facebook.com/business/help/317857030149451
+- Best practices to potentially reduce cost per result (01): https://www.facebook.com/business/help/321695409726523
+- Specifications for breakdowns in ads reporting (08): https://www.facebook.com/business/help/334565827335725
+- Use conditional logic to qualify your leads (02,07): https://www.facebook.com/business/help/3373123166040766
+- Terms of use and security FAQ for lead generation in Messenger (02): https://www.facebook.com/business/help/342457653322253
+- About partnership ads (06): https://www.facebook.com/business/help/342728904797642
+- Create an ad that uses dynamic creative (01,05,08): https://www.facebook.com/business/help/344106239654869
+- Qualified leads metric (02): https://www.facebook.com/business/help/344136647998618
+- Online gambling and games policy (02): https://www.facebook.com/business/help/345214789920228
+- About creative optimizations for Instagram stories ads (02): https://www.facebook.com/business/help/348328642954708
+- Create an A/B test in Experiments (08): https://www.facebook.com/business/help/3506622486044209
+- Create an A/B test in Ads Manager (08): https://www.facebook.com/business/help/355670925639619
+- About prohibited information (02): https://www.facebook.com/business/help/361948878201809
+- Best practices to make your ad more engaging (02,03): https://www.facebook.com/business/help/370852930116232
+- How to create a lead ad (02,07): https://www.facebook.com/business/help/375478503258484
+- About lead ads with calling (02): https://www.facebook.com/business/help/378168646496279
+- How we combine ad sets with automated rules (01): https://www.facebook.com/business/help/380468733452428
+- Drug and alcohol addiction treatment policy (02): https://www.facebook.com/business/help/383110896305204
+- About auto-generated captions on Facebook Reels (06): https://www.facebook.com/business/help/385195769594602
+- Best practices for image ads (02,03,09): https://www.facebook.com/business/help/388369961318508
+- Create a lead ad with instant form from your Facebook Page (07): https://www.facebook.com/business/help/397336587121938
+- Ads for housing, employment or financial products and services (02,07): https://www.facebook.com/business/help/399587795372584
+- About ad relevance diagnostics (01,02,08): https://www.facebook.com/business/help/403110480493160
+- About advertising settings and ad account settings (02): https://www.facebook.com/business/help/410559398627376
+- Supported objectives for call ads (02,07): https://www.facebook.com/business/help/4107704079279896
+- Advantage+ custom audience (01): https://www.facebook.com/business/help/414975413946182
+- Troubleshoot ad rendering (01,02): https://www.facebook.com/business/help/418015731022150
+- About ad quality (01): https://www.facebook.com/business/help/423781975167984
+- Opt out of automatic Instagram feed ads creative optimizations (02): https://www.facebook.com/business/help/429723408538832
+- About ad auctions (01): https://www.facebook.com/business/help/430291176997542
+- Design requirements for Instagram feed ads (02,03): https://www.facebook.com/business/help/430958953753149
+- Drugs and pharmaceuticals policy (02): https://www.facebook.com/business/help/432240224665596
+- Policy sidenav (lista polityk) (02): https://www.facebook.com/business/help/434838534925385
+- Best practices to create lead ads (02,08): https://www.facebook.com/business/help/435270316658768
+- How to use… (01,02,03,08): https://www.facebook.com/business/help/436113280262012
+- About ads on reels (02,03): https://www.facebook.com/business/help/437348354643456
+- prefill (02,07,08): https://www.facebook.com/business/help/438193446367413
+- Create ads that click to WhatsApp (02): https://www.facebook.com/business/help/447934475640650
+- Stories templates (02): https://www.facebook.com/business/help/449517262468597
+- Leads from messaging conversations (07): https://www.facebook.com/business/help/452433734305335
+- Testing more than one variable (05): https://www.facebook.com/business/help/455527338244675
+- Estimated cost per result without edit (08): https://www.facebook.com/business/help/463778672975386
+- Recommended minimum image pixel requirements (02): https://www.facebook.com/business/help/469767027114079
+- About Meta advertising standards (02,06): https://www.facebook.com/business/help/488043719226449
+- Optimized CPM (08): https://www.facebook.com/business/help/494633817315490
+- Create an ad with text generation (01,02): https://www.facebook.com/business/help/497610041230617
+- Clickbait (02): https://www.facebook.com/business/help/503640323442584
+- Facebook Reels playback speed metrics (06): https://www.facebook.com/business/help/508504200874317
+- Data sharing restrictions based on data source categories (02): https://www.facebook.com/business/help/511197658391698
+- Best practices for dating ads (przykłady atrybutów) (06): https://www.facebook.com/business/help/528007798183873
+- Understand auction overlap (01,08): https://www.facebook.com/business/help/537699989762051
+- Create an A/B test by duplicating an ad set or ad (08): https://www.facebook.com/business/help/560857351380163
+- How to create a lead ad for Instagram (02,07): https://www.facebook.com/business/help/563690893827148
+- Creative best practices for conversion testing (06,08): https://www.facebook.com/business/help/565573477186194
+- Financial products and services (02,07): https://www.facebook.com/business/help/567423788405762
+- Requirements to use maximize value of conversions (02): https://www.facebook.com/business/help/571188993373447
+- Messaging features unavailable in Europe and Japan (02): https://www.facebook.com/business/help/574941489951914
+- About maximizing number of leads using ads that click to message (02): https://www.facebook.com/business/help/575610661605746
+- Supported features of lead ads across platforms (02,07,08): https://www.facebook.com/business/help/588763988207510
+- Auto-generated subtitles on Facebook reels (02): https://www.facebook.com/business/help/593107135335436
+- Advertiser and payer requirements for ads targeting the EU (DSA) (07): https://www.facebook.com/business/help/605021638170961
+- Conversion rate ranking (01): https://www.facebook.com/business/help/617529305373441
+- Text improvements (02,03): https://www.facebook.com/business/help/620917123959992
+- What are the advertising levels in Ads Manager (08): https://www.facebook.com/business/help/621956575422138
+- Lead generation in Messenger with third-party apps (02,07): https://www.facebook.com/business/help/641772747298691
+- 50 reklam na zestaw (01,05): https://www.facebook.com/business/help/652738434773716
+- alternatywa: zdarzenie wyżej w lejku (08): https://www.facebook.com/business/help/666335734044063
+- Opt out of automatic Instagram stories ads creative optimizations (02): https://www.facebook.com/business/help/679041123045316
+- About Leads Center in Meta Business Suite (07): https://www.facebook.com/business/help/681540569280613
+- Aspect ratios supported by placements (02): https://www.facebook.com/business/help/682655495435254
+- Auction overlap rate (08): https://www.facebook.com/business/help/714172578779451
+- do 50 obrazów/wideo (08): https://www.facebook.com/business/help/716015512512235
+- About highest volume (08): https://www.facebook.com/business/help/721453268045071
+- Lead ads sidenav (08): https://www.facebook.com/business/help/735435806665862
+- bez powtórek (06,08): https://www.facebook.com/business/help/743427195703387
+- Advertising policy basics checklist (02): https://www.facebook.com/business/help/757209948405699
+- About lead ads with instant form (02,07): https://www.facebook.com/business/help/761812391313386
+- Cost per result (08): https://www.facebook.com/business/help/762109693832964
+- Ad limits per page (01,02,05,08): https://www.facebook.com/business/help/766697140509126
+- About the breakdown effect (01,08): https://www.facebook.com/business/help/770303663944673
+- Add custom questions (02,07,08): https://www.facebook.com/business/help/774623835981457
+- Performance goals (01,02,07): https://www.facebook.com/business/help/782657799338685
+- Create a lead ad with instant form (01,08): https://www.facebook.com/business/help/791294492679966
+- Create a campaign using Advantage+ audience (01): https://www.facebook.com/business/help/793748385630490
+- Cost per 3-second video play (08): https://www.facebook.com/business/help/800265723338375
+- Recommended and maximum delay times (08): https://www.facebook.com/business/help/801591810609156
+- About opportunity score (01,08): https://www.facebook.com/business/help/804913634782260
+- Video length specifications (02,06): https://www.facebook.com/business/help/817989058548892
+- About lead ads terms and security (współadministrowanie RODO) (07): https://www.facebook.com/business/help/829597887147190
+- Poziom: A (01,02,05,06): https://www.facebook.com/business/help/835561738423867
+- Zapier CAPI for CRM (02,07,08): https://www.facebook.com/business/help/848158520256071
+- Cost per result exceeding bid cap / goal (01): https://www.facebook.com/business/help/867416745088574
+- About ad formats available on Instagram (01): https://www.facebook.com/business/help/877053729032543
+- CTR (link) (08): https://www.facebook.com/business/help/877711998984611
+- Use sound collection for reels on Facebook (02): https://www.facebook.com/business/help/880459498798521
+- Enable the SMS verification feature (02,07): https://www.facebook.com/business/help/898260175547909
+- Create a lead form engagement custom audience (08): https://www.facebook.com/business/help/900802126698360
+- About Facebook in-stream ads for Reels (06): https://www.facebook.com/business/help/902459833240201
+- What turns Advantage+ on/off (01): https://www.facebook.com/business/help/906206294602874
+- Design specifications for lead ads (02,06): https://www.facebook.com/business/help/908491205873167
+- Add text overlays to your video ad (06): https://www.facebook.com/business/help/922396998136442
+- CTR (all) (08): https://www.facebook.com/business/help/928745330472862
+- Manage and download your leads in Leads Center (07): https://www.facebook.com/business/help/929596264178167
+- Last significant edit (08): https://www.facebook.com/business/help/942374239243867
+- Best practices for Meta ads delivery (01): https://www.facebook.com/business/help/950694752295474
+- Campaign auction overlap (01,08): https://www.facebook.com/business/help/957407462768373
+- About text overlays and the safe zone (02,03,06,09): https://www.facebook.com/business/help/980593475366490
+- Create a lead ad with website form (02,07): https://www.facebook.com/business/help/983639606486840
+- About Advantage+ leads campaigns (01,02,08): https://www.facebook.com/business/help/992035952809423
+- Cost per lead (08): https://www.facebook.com/business/help/999694013547805
+
+**Znane ze streszczeń i fragmentów wyszukiwarki [WYSZUKIWARKA]** (1)
+
+- treść niepobrana) (08): https://www.facebook.com/business/help/1423851372208214
+
+## Meta: inne źródła pierwotne (blogi inżynierskie, newsroom, Blueprint, IR) (20)
+
+
+**Znane ze streszczeń i fragmentów wyszukiwarki [WYSZUKIWARKA]** (20)
+
+- New AI advancements drive Meta's ads system performance and efficiency (01): https://ai.meta.com/blog/ai-ads-performance-efficiency-meta-lattice/
+- Facebook IQ — Stand out in feed: Optimising video creative on mobile (02): https://en-gb.facebook.com/business/news/insights/stand-out-in-feed-optimizing-video-creative-on-mobile
+- URL źródła pierwotnego (01,12): https://engineering.fb.com/2024/12/02/production-engineering/meta-andromeda-advantage-automation-next-gen-personalized-ads-retrieval-engine/
+- Meta's Generative Ads Model (GEM)… (01): https://engineering.fb.com/2025/11/10/ml-applications/metas-generative-ads-model-gem-the-central-brain-accelerating-ads-recommendation-ai-innovation/
+- GEM Training (2026-08-03) (01): https://engineering.fb.com/2026/08/03/ml-applications/training-gem-at-llm-scale-meta-ads-recommendation-foundation-model/
+- s21.q4cdn.com: META Q4 2024 Earnings Call Transcript.pdf (01): https://s21.q4cdn.com/399680738/files/doc_financials/2024/q4/META-Q4-2024-Earnings-Call-Transcript.pdf
+- Earnings Q1 2025 (01): https://s21.q4cdn.com/399680738/files/doc_financials/2025/q1/Transcripts/META-Q1-2025-Earnings-Call-Transcript-1.pdf
+- s21.q4cdn.com: META Q2 2025 Earnings Call Transcript.pdf (01): https://s21.q4cdn.com/399680738/files/doc_financials/2025/q2/META-Q2-2025-Earnings-Call-Transcript.pdf
+- s21.q4cdn.com: META Q4 2025 Prepared Remarks.pdf (01): https://s21.q4cdn.com/399680738/files/doc_financials/2025/q4/META-Q4-2025-Prepared-Remarks.pdf
+- Earnings Q2 2026 (01): https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/META-Q2-2026-Earnings-Call-Transcript.pdf
+- Meta Reels ads (34,5%) (03): https://www.facebook.com/business/ads/facebook-instagram-reels-ads
+- AI Innovation in Meta's Ads Ranking Driving Advertiser Performance (Meta for Business) (01): https://www.facebook.com/business/news/ai-innovation-in-metas-ads-ranking-driving-advertiser-performance
+- URL źródła pierwotnego (01,12): https://www.facebook.com/business/news/demystifying-creative-diversification
+- Facebook IQ — Capturing Attention in Feed: The Science Behind Effective Video Creative (02): https://www.facebook.com/business/news/insights/capturing-attention-feed-video-creative
+- Facebook IQ — TV and Mobile: A Facebook IQ Study (02): https://www.facebook.com/business/news/insights/mobile-and-tv-between-the-screens
+- The Creative Advantage: Unlocking the Power of Diversification with Meta Andromeda (05): https://www.facebook.com/business/news/the-creative-advantage-unlocking-the-power-of-diversification-with-meta-andromeda
+- Instagram for Business, 80% Reels sound on (03): https://www.facebook.com/instagramforbusiness/posts/80-of-people-view-reels-with-sound-on-try-one-of-these-5-great-songs-on-metas-fr/758319112755506/
+- Facebook IQ (2016), Capturing Attention in Feed (03): https://www.facebook.com/iq/articles/capturing-attention-feed-video-creative
+- Performance 5 (Blueprint) (01): https://www.facebookblueprint.com/student/path/253157-performance-5
+- Engineering at Meta na X (GEM) (01): https://x.com/Meta_Engineers/status/1987929289401176230
+
+## Badania naukowe i duże zbiory danych (161)
+
+
+**Znane ze streszczeń i fragmentów wyszukiwarki [WYSZUKIWARKA]** (159)
+
+- academic.oup.com: article abstract (12): https://academic.oup.com/jcr/article-abstract/10/2/135/1801204
+- Friestad, M., & Wright, P. (1994). The Persuasion Knowledge Model. JCR, 21(1), 1–31 (04): https://academic.oup.com/jcr/article-abstract/21/1/1/1853712
+- academic.oup.com: article abstract (12): https://academic.oup.com/jcr/article-abstract/28/4/618/1785512
+- academic.oup.com: article abstract (12): https://academic.oup.com/jcr/article-abstract/39/3/445/1822596
+- academic.oup.com: article abstract (12): https://academic.oup.com/jcr/article-abstract/40/5/797/2907487
+- academic.oup.com: jcr (12): https://academic.oup.com/jcr/article/35/3/472/1856257
+- O'Keefe, D. J., & Jensen, J. D. (2009). Gain vs loss framing — disease detection. Journal of Communication, 59(2) (04): https://academic.oup.com/joc/article/59/2/296/4098529
+- TikTok Creative Center (03,06): https://ads.tiktok.com/business/creativecenter/quicktok/online/Power_Creative_Elements/pc/en
+- Creative Guidance | Creative Strategies (06): https://ads.tiktok.com/business/creativecenter/quicktok/online/tiktok_creative_accelerator/pc/en
+- 9 creative tips to drive auction ad performance (06): https://ads.tiktok.com/business/en-US/blog/9-creative-tips-to-drive-auction-ad-performance
+- Creative Best Practices for TikTok Ads (06): https://ads.tiktok.com/business/en-US/blog/creative-best-practices-top-performing-ads
+- Triple-digit conversion lift: Simple creative tips to make your ads work harder (2023) (06): https://ads.tiktok.com/business/en-US/blog/creative-that-drives-conversions
+- TikTok for Business, 9 Creative Tips (03,06): https://ads.tiktok.com/business/library/Auction_Ads_Creative_Tips.pdf
+- Liang i in. 2024 (09): https://arxiv.org/abs/2404.01268
+- arXiv (09): https://arxiv.org/abs/2406.07016
+- Meta Lattice (arXiv 2512.09200) (01): https://arxiv.org/html/2512.09200
+- Sponsorship Disclosure in Native Advertising: A Theoretical Framework (arXiv) (04): https://arxiv.org/pdf/2311.01051
+- Negative news posts are less prevalent and generate lower user engagement… (arXiv 2507.19300) (04,06): https://arxiv.org/pdf/2507.19300
+- arxiv.org: 2510.15061 (09): https://arxiv.org/pdf/2510.15061
+- "Em-ergence of the em-dash" (medRxiv) (09): https://arxiv.org/pdf/2606.29540
+- "The em-dash em-beds in Congress" (09): https://arxiv.org/pdf/2608.05889
+- Google/Kantar ABCD (03,06): https://business.google.com/en-all/think/future-of-marketing/youtube-video-ad-creative/
+- A Guide To Creating Effective Video Ads (06): https://business.google.com/us/resources/articles/abcds-of-effective-video-ads/
+- deepblue.lib.umich.edu: download (12): https://deepblue.lib.umich.edu/bitstreams/fdd84be4-e688-4648-96fa-c4d470bdc8e7/download
+- dl.acm.org: 2556288.2557403 (12): https://dl.acm.org/doi/10.1145/2556288.2557403
+- Does Clickbait Actually Attract More Clicks? Three Clickbait Studies You Must Read. CHI 2021 (04): https://dl.acm.org/doi/10.1145/3411764.3445753
+- dornsife.usc.edu: 12 jcr weaver et al presenter s paradox.pdf (12): https://dornsife.usc.edu/norbert-schwarz/wp-content/uploads/sites/231/2023/11/12_jcr_weaver_et_al_presenter_s_paradox.pdf
+- economic-policy.pl: view (12): https://economic-policy.pl/index.php/eq/article/view/4038
+- HBR, "The Short Life of Online Sales Leads" (marzec 2011) (07): https://hbr.org/2011/03/the-short-life-of-online-sales-leads
+- ideas.repec.org: v29y2010i5p783 804.html (03): https://ideas.repec.org/a/inm/ormksc/v29y2010i5p783-804.html
+- ideas.repec.org: v10y1983i2p135 46.html (12): https://ideas.repec.org/a/oup/jconrs/v10y1983i2p135-46.html
+- img.ly: text reliability (12): https://img.ly/ai-benchmarks/findings/text-reliability/
+- Click me…! The influence of clickbait on user engagement in social media and the role of digital nudging. PLOS ONE (2022) (04): https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0266743
+- Janiszewski & Uy (2008) „Precision of the Anchor Influences the Amount of Adjustment”, Psychological Science 19(2), 121–127 (04): https://journals.sagepub.com/doi/10.1111/j.1467-9280.2008.02057.x
+- Hansen, J., & Wänke, M. (2010). Truth From Language and Truth From Fit. PSPB (04): https://journals.sagepub.com/doi/10.1177/0146167210386238
+- Witte, K., & Allen, M. (2000). A Meta-Analysis of Fear Appeals. Health Education & Behavior, 27(5) (04): https://journals.sagepub.com/doi/10.1177/109019810002700506
+- Pieters & Wedel (2004), Attention Capture and Transfer in Advertising, J. of Marketing 68(2) (03): https://journals.sagepub.com/doi/10.1509/jmkg.68.2.36.27794
+- Teixeira, Wedel, Pieters (2012), Emotion-Induced Engagement in Internet Video Advertisements, JMR 49(2) (03,06): https://journals.sagepub.com/doi/10.1509/jmr.10.0207
+- Elsen, Pieters & Wedel (2016), Thin Slice Impressions, J. of Marketing Research (03): https://journals.sagepub.com/doi/10.1509/jmr.13.0398
+- Boerman, S. C., Willemsen, L. M., & Van der Aa, E. P. (2017). "This Post Is Sponsored". J. Interactive Marketing, 38, 82–92 (04): https://journals.sagepub.com/doi/abs/10.1016/j.intmar.2016.12.002
+- Loschelder, Friese, Schaerer & Galinsky (2016) „The Too-Much-Precision Effect”, Psychological Science (04): https://journals.sagepub.com/doi/abs/10.1177/0956797616666074
+- Scacco, J. M., & Muddiman, A. (2020). The curiosity effect. New Media & Society (04): https://journals.sagepub.com/doi/abs/10.1177/1461444819863408
+- Amazeen & Wojdynski (2020) (04): https://journals.sagepub.com/doi/abs/10.1177/1464884918754829
+- Pieters, Wedel & Batra (2010), The Stopping Power of Advertising, J. of Marketing 74(5) (03): https://journals.sagepub.com/doi/abs/10.1509/jmkg.74.5.048
+- link.springer.com: s11747 008 0096 y (12): https://link.springer.com/article/10.1007/s11747-008-0096-y
+- Did clickbait crack the code on virality? JAMS (2021) (04): https://link.springer.com/article/10.1007/s11747-021-00830-x
+- Nelson-Field (2020), The Attention Economy and How Media Works (03): https://link.springer.com/book/10.1007/978-981-15-1540-8
+- blog Lumen (03): https://lumen-research.com/blog/attention-technology-ads/
+- Lumen Research, Eyes on the feed (03): https://lumen-research.com/white-papers/facebook-attention-leaderboard/
+- MarTech (03,06): https://martech.org/even-brief-video-views-drive-brand-lift-facebook-nielsen-study-finds/
+- myscp.onlinelibrary.wiley.com: jcpy.1054 (04): https://myscp.onlinelibrary.wiley.com/doi/10.1002/jcpy.1054
+- Mrkva, K., Johnson, E. J., Gächter, S., & Herrmann, A. (2020). Moderating Loss Aversion. JCP, 30(3), 407–428 (04): https://myscp.onlinelibrary.wiley.com/doi/10.1002/jcpy.1156
+- Shavitt (2018) wprowadzenie do dialogu (04): https://myscp.onlinelibrary.wiley.com/doi/abs/10.1002/jcpy.1046
+- Gal, D., & Rucker, D. D. (2018). The Loss of Loss Aversion. JCP, 28, 497–516 (04): https://myscp.onlinelibrary.wiley.com/doi/abs/10.1002/jcpy.1047
+- Pena-Marin, J., & Bhargave, R. (2016). Lasting performance: Round numbers… JCP (04): https://myscp.onlinelibrary.wiley.com/doi/abs/10.1016/j.jcps.2015.11.004
+- news.gatech.edu: face it instagram pictures faces are more popular (12): https://news.gatech.edu/news/2014/03/20/face-it-instagram-pictures-faces-are-more-popular
+- nielseniq.com: niq research uncovers hidden consumer attitudes toward ai generated ad (12): https://nielseniq.com/global/en/news-center/2024/niq-research-uncovers-hidden-consumer-attitudes-toward-ai-generated-ads/
+- fect of Concrete Wording on Truth Judgements: A Preregistered Replication and Extension of Hansen & Wänke (2010)”, Collabra: Psychology 5(1) (04): https://online.ucpress.edu/collabra/article/5/1/19/112979/The-Effect-of-Concrete-Wording-on-Truth-Judgements
+- Maier, M. i in. (2023). Revisiting and Rethinking the Identifiable Victim Effect. Collabra: Psychology, 9(1) (04): https://online.ucpress.edu/collabra/article/9/1/90203/199223
+- Eisend, M. (2013). The Moderating Influence of Involvement on Two-Sided Advertising Effects. Psychology & Marketing (04): https://onlinelibrary.wiley.com/doi/10.1002/mar.20628
+- Eisend, M. (2007). Understanding two-sided persuasion. Psychology & Marketing (04): https://onlinelibrary.wiley.com/doi/abs/10.1002/mar.20176
+- Eisend (2010) Psychology & Marketing (04): https://onlinelibrary.wiley.com/doi/abs/10.1002/mar.20372
+- 4) „The Persuasiveness of Source Credibility: A Critical Review of Five Decades' Evidence”, Journal of Applied Social Psychology 34, 243–281 (04): https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1559-1816.2004.tb02547.x
+- openaccess.city.ac.uk: SSRN id2033192.pdf (12): https://openaccess.city.ac.uk/id/eprint/6755/1/SSRN-id2033192.pdf
+- pages.stern.nyu.edu: dilution.pdf (12): https://pages.stern.nyu.edu/~tmeyvis/dilution.pdf
+- papers.ssrn.com: papers.cfm (12): https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2033192
+- papers.ssrn.com: papers.cfm (12): https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2545071
+- Aubin Le Quéré & Matias, When curiosity gaps backfire, Scientific Reports (04,06): https://pmc.ncbi.nlm.nih.gov/articles/PMC11704130/
+- pmc.ncbi.nlm.nih.gov: PMC12219543 (09): https://pmc.ncbi.nlm.nih.gov/articles/PMC12219543/
+- Concrete language enhances sharing of social media posts on Twitter, Reddit, and experimentally (04): https://pmc.ncbi.nlm.nih.gov/articles/PMC13062457/
+- O'Keefe & Nan (2012) szczepienia (04): https://pubmed.ncbi.nlm.nih.gov/22292904/
+- pubmed.ncbi.nlm.nih.gov (03): https://pubmed.ncbi.nlm.nih.gov/24624104/
+- Zebregs i in. (2015) (04,06): https://pubmed.ncbi.nlm.nih.gov/24836931/
+- Tannenbaum i in. (2015) (04,06): https://pubmed.ncbi.nlm.nih.gov/26501228/
+- PubMed (06): https://pubmed.ncbi.nlm.nih.gov/36928780/
+- Teixeira, Wedel & Pieters (2010), Moment-to-Moment Optimal Branding in TV Commercials, Marketing Science 29(5) (03,06): https://pubsonline.informs.org/doi/10.1287/mksc.1100.0567
+- pubsonline.informs.org: mksc.2021.0018 (04,06,12): https://pubsonline.informs.org/doi/10.1287/mksc.2021.0018
+- Pieters & Wedel (2012), Ad Gist: Ad Communication in a Single Eye Fixation, Marketing Science 31(1) (03): https://pubsonline.informs.org/doi/abs/10.1287/mksc.1110.0673?journalCode=mksc
+- Wedel & Pieters (2015), The Buffer Effect, Marketing Science 34(1) (03): https://pubsonline.informs.org/doi/abs/10.1287/mksc.2014.0882
+- research.tilburguniversity.edu: the stopping power of advertising measures and effects of visual  (03): https://research.tilburguniversity.edu/en/publications/the-stopping-power-of-advertising-measures-and-effects-of-visual-/
+- Exploring wearin and wearout in web advertising (2010) (08): https://researchrepository.wvu.edu/context/faculty_publications/article/2174/viewcontent/2010_Exploring_wearin_and_wearout_in_web_advertising_3_1_2010.pdf
+- scholars.lmu.edu: advertising repetition a critical review of wearin and wearout (08): https://scholars.lmu.edu/en/publications/advertising-repetition-a-critical-review-of-wearin-and-wearout/
+- BYU ScholarsArchive (07): https://scholarsarchive.byu.edu/facpub/9711/
+- (2020) „Aggregation, Clickbait and Their Effect on Perceptions of Journalistic Credibility and Quality”, Journalism Practice 14(4), 429–446 (04): https://scholarshare.temple.edu/handle/20.500.12613/393
+- g, Saini, Itani & Abualsamh (2020) „When poignant stories outweigh cold hard facts: A meta-analysis of the anecdotal bias”, OBHDP 160, 51–67 (04): https://scholarworks.utrgv.edu/marketing_fac/97/
+- spiegel.medill.northwestern.edu: how online reviews influence sales (04,12): https://spiegel.medill.northwestern.edu/how-online-reviews-influence-sales/
+- spiegel.medill.northwestern.edu: Spiegel Online Review eBook Jun2017 FINAL.pdf (12): https://spiegel.medill.northwestern.edu/wp-content/uploads/sites/2/2021/04/Spiegel_Online-Review_eBook_Jun2017_FINAL.pdf
+- system1group.com: the long short of it (12): https://system1group.com/blog/the-long-short-of-it
+- krytyka Tenscores (06): https://tenscores.com/daily/facebook-ads/facebook-publishes-nielsen-study-results-questionable-best-201503240700/
+- aktualizacja 2024 (06): https://upworthy.natematias.com/2024-06-upworthy-archive-update.html
+- Eisend, M. (2009). A meta-analysis of humor in advertising. JAMS, 37 (04): https://www.academia.edu/9191826/A_meta_analysis_of_humor_in_advertising
+- amplified.co: vccp research amplified distinctive assets (03): https://www.amplified.co/insight/vccp-research-amplified-distinctive-assets
+- ana.net: er 2025 02 ai feb25 nielseniq (12): https://www.ana.net/miccontent/show/id/er-2025-02-ai-feb25-nielseniq
+- apa.org: bul a0039729.pdf (04): https://www.apa.org/pubs/journals/releases/bul-a0039729.pdf
+- replikacja Kogut & Ritov (2005), JDM (04): https://www.cambridge.org/core/journals/judgment-and-decision-making/article/revisiting-the-impact-of-singularity-on-the-identified-victim-effect-replication-and-extension-of-kogut-and-ritov-2005a-study-2/3DA967642DBCD4E6117CCA104F3D6854
+- Loewenstein, G. (1994). The Psychology of Curiosity. Psychological Bulletin, 116(1) (04): https://www.cmu.edu/dietrich/sds/docs/loewenstein/PsychofCuriosity.pdf
+- Small, D. A., Loewenstein, G., & Slovic, P. (2007). Sympathy and callousness. OBHDP, 102(2), 143–153 (04): https://www.cmu.edu/dietrich/sds/docs/loewenstein/SympathyCallous.pdf
+- edelman.com: special report brands (12): https://www.edelman.com/trust/2025/trust-barometer/special-report-brands
+- emarketer.com: shoppers aren t impressed by ai generated marketing (12): https://www.emarketer.com/content/shoppers-aren-t-impressed-by-ai-generated-marketing
+- emerald.com: JRIM 02 2025 0066 (12): https://www.emerald.com/jrim/article/doi/10.1108/JRIM-02-2025-0066/1296958/
+- Sajjacholapunt & Ball (2014), human faces with averted gaze..., Frontiers in Psychology 5:166 (03): https://www.frontiersin.org/articles/10.3389/fpsyg.2014.00166/text
+- t Seems Factual, But Is It? Effects of Using Sharp Versus Round Numbers in Advertising Claims”, Advances in Consumer Research 33 (wzmianka w (04): https://www.frontiersin.org/journals/behavioral-economics/articles/10.3389/frbhe.2026.1828446/full
+- hbs.edu: item.aspx (06): https://www.hbs.edu/faculty/Pages/item.aspx?num=37527
+- HBS Faculty page (07): https://www.hbs.edu/faculty/Pages/item.aspx?num=39955
+- hbs.edu: item.aspx (03): https://www.hbs.edu/faculty/Pages/item.aspx?num=40850
+- INFORMS press (03): https://www.informs.org/News-Room/INFORMS-Releases/News-Releases/Ads-Communicate-Their-Message-in-as-Little-as-a-Tenth-of-a-Second-Helped-by-Color
+- jstor.org: 10.1086 (12): https://www.jstor.org/stable/10.1086/586910
+- jstor.org: 10.1086 (12): https://www.jstor.org/stable/10.1086/664497
+- Kantar — Validating Google's ABCD framework with the power of artificial intelligence (06): https://www.kantar.com/industries/technology-and-telecoms/validating-googles-abcd-framework-with-the-power-of-artificial-intelligence
+- kantar.com: us media reactions 2025 (12): https://www.kantar.com/north-america/company-news/us-media-reactions-2025
+- Kantar, "Validating Google's ABCD framework..." (03): https://www.kantar.com/north-america/industries/technology-and-telecoms/validating-googles-abcd-framework-with-the-power-of-artificial-intelligence
+- mdpi.com (12): https://www.mdpi.com/2076-3417/15/5/2274
+- mi-3.com.au: machine made ads for trigger big trust penalties (12): https://www.mi-3.com.au/03-02-2026/machine-made-ads-for-trigger-big-trust-penalties
+- Mi3 (2020), Is 1.7 seconds enough (03): https://www.mi-3.com.au/13-08-2020/fools-errand-and-billion-dollar-question-17-seconds-enough-exposure-ads-work-no-its
+- mi-3.com.au: ai generated ads raise trust concerns among australians yougov study r (12): https://www.mi-3.com.au/20-05-2026/ai-generated-ads-raise-trust-concerns-among-australians-yougov-study-reveals
+- Robertson i in. (2023), Negativity drives online news consumption, Nature Human Behaviour (04,06,12): https://www.nature.com/articles/s41562-023-01538-4
+- Matias i in. (2021), The Upworthy Research Archive, Scientific Data (06,12): https://www.nature.com/articles/s41597-021-00934-7
+- Ghibellini & Meier (2025) (04,06): https://www.nature.com/articles/s41599-025-05000-w
+- Author Correction (06): https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11239857/
+- Palcu i in. (2017), Judgments at Gaze Value (03): https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5454066/
+- NN/g, Banner Blindness Revisited (2018) (03): https://www.nngroup.com/articles/banner-blindness-old-and-new-findings/
+- "Banner Blindness: The Original Eyetracking Research" (03): https://www.nngroup.com/articles/banner-blindness-original-eyetracking/
+- NN/g, F-Shaped Pattern... Still Relevant (Even on Mobile) (03): https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/
+- NN/g, How Little Do Users Read? (03): https://www.nngroup.com/articles/how-little-do-users-read/
+- test Cloze, badanie Singh i in., Univ. of Alberta) (03): https://www.nngroup.com/articles/mobile-content-is-twice-as-difficult-2011/
+- NN/g, Reading Content on Mobile Devices (2016) (03): https://www.nngroup.com/articles/mobile-content/
+- "Text Scanning Patterns: Eyetracking Evidence" (03): https://www.nngroup.com/articles/text-scanning-patterns-eyetracking/
+- ResearchGate (ta sama praca) (06): https://www.researchgate.net/publication/220659091_Moment-to-Moment_Optimal_Branding_in_TV_Commercials_Preventing_Avoidance_by_Pulsing
+- researchgate.net: 225530784 A meta analysis of humor in advertising (12): https://www.researchgate.net/publication/225530784_A_meta-analysis_of_humor_in_advertising
+- researchgate.net: 228599518 Attention Capture and Transfer in Advertising Brand Pictoria (03): https://www.researchgate.net/publication/228599518_Attention_Capture_and_Transfer_in_Advertising_Brand_Pictorial_and_Text-Size_Effects
+- Allen i in. — łączenie dowodów narracyjnych i statystycznych (04): https://www.researchgate.net/publication/232941049_Testing_the_persuasiveness_of_evidence_Combining_narrative_and_statistical_forms
+- researchgate.net: 23547467 A Room With a Viewpoint Using Social Norms to Motivate Enviro (12): https://www.researchgate.net/publication/23547467_A_Room_With_a_Viewpoint_Using_Social_Norms_to_Motivate_Environmental_Conservation_in_Hotels
+- researchgate.net: 254781121 Ad Gist Ad Communication in a Single Eye Fixation (03): https://www.researchgate.net/publication/254781121_Ad_Gist_Ad_Communication_in_a_Single_Eye_Fixation
+- researchgate.net: 255699116 The Extended Transportation Imagery Model A Meta Analysis of (12): https://www.researchgate.net/publication/255699116_The_Extended_Transportation-Imagery_Model_A_Meta-Analysis_of_the_Antecedents_and_Consequences_of_Consumers
+- researchgate.net: 258847350 Advertising Repetition A Critical Review of Wearin and Wearo (08): https://www.researchgate.net/publication/258847350_Advertising_Repetition_A_Critical_Review_of_Wearin_and_Wearout
+- researchgate.net: 266655817 Faces engage us photos with faces attract more likes and com (12): https://www.researchgate.net/publication/266655817_Faces_engage_us_photos_with_faces_attract_more_likes_and_comments_on_Instagram
+- researchgate.net: 275042456 Advertising Repetition A Meta Analysis on Effective Frequenc (12): https://www.researchgate.net/publication/275042456_Advertising_Repetition_A_Meta-Analysis_on_Effective_Frequency_in_Advertising
+- Wojdynski & Evans 2016 (9% rozpoznań natywnej reklamy) (04): https://www.researchgate.net/publication/287109935_Going_Native_Effects_of_Disclosure_Position_and_Language_on_the_Recognition_and_Evaluation_of_Online_Native_Advertising
+- ResearchGate PDF (07): https://www.researchgate.net/publication/298137032_The_short_life_of_online_sales_leads
+- Kobak i in. 2025, Science Advances (09): https://www.science.org/doi/10.1126/sciadv.adt3813
+- Eisend, M. (2006). Two-sided advertising: A meta-analysis. IJRM, 23(2), 187–198 (04): https://www.sciencedirect.com/science/article/abs/pii/S0167811606000267
+- sciencedirect.com: S0167811615000075 (12): https://www.sciencedirect.com/science/article/abs/pii/S0167811615000075
+- A meta-analysis of loss aversion in risky contexts. J. Economic Psychology (2024) (04): https://www.sciencedirect.com/science/article/pii/S0167487024000485
+- sciencedirect.com: S0747563226001445 (12): https://www.sciencedirect.com/science/article/pii/S0747563226001445
+- Kidd, C., & Hayden, B. Y. (2015). The Psychology and Neuroscience of Curiosity. Neuron (04): https://www.sciencedirect.com/science/article/pii/S0896627315007679
+- storyboard18.com: ai powered ads drive higher returns confirms nielsen study 60254.htm (12): https://www.storyboard18.com/how-it-works/ai-powered-ads-drive-higher-returns-confirms-nielsen-study-60254.htm
+- Xie, G.-X., & Kronrod, A. (2012). Is the Devil in the Details? Journal of Advertising, 41(4), 103–117 (04): https://www.tandfonline.com/doi/abs/10.1080/00913367.2012.10672460
+- tandfonline.com: 00913367.2015.1018460 (12): https://www.tandfonline.com/doi/abs/10.1080/00913367.2015.1018460
+- Pechmann & Stewart (1988) (08): https://www.tandfonline.com/doi/abs/10.1080/01633392.1988.10504936
+- O'Keefe, D. J., & Jensen, J. D. (2007). Gain vs loss framing — disease prevention. J. Health Communication, 12(7) (04): https://www.tandfonline.com/doi/abs/10.1080/10810730701615198
+- Wojdynski, B. W., & Evans, N. J. (2016). Going Native. Journal of Advertising, 45(2), 157–168 (04): https://www.tandfonline.com/doi/full/10.1080/00913367.2015.1115380
+- Eisend, van Reijmersdal, Boerman & Tarrahi (2020) „A Meta-Analysis of the Effects of Disclosing Sponsored Content”, Journal of Advertising (04): https://www.tandfonline.com/doi/full/10.1080/00913367.2020.1765909
+- tandfonline.com: 15252019.2025.2554149 (12): https://www.tandfonline.com/doi/full/10.1080/15252019.2025.2554149
+- Lee, S., & Feeley, T. H. (2016). The identifiable victim effect: a meta-analytic review. Social Influence (04): https://www.tandfonline.com/doi/full/10.1080/15534510.2016.1216891
+- Kuiken, Schuth, Spitters & Marx (2017) „Effective Headlines of Newspaper Articles in a Digital Environment”, Digital Journalism (04): https://www.tandfonline.com/doi/full/10.1080/21670811.2017.1279978
+- playbook PDF (03): https://www.thinkwithgoogle.com/_qs/documents/8472/ABCD_Complete_V7b_HR_1.pdf
+- upworthy.com: upworthy negative headlines study (12): https://www.upworthy.com/upworthy-negative-headlines-study/
+- warc.com: en GB (03): https://www.warc.com/content/feed/distinctive-assets-supercharge-low-attention-media-knf--vccp-media-report-finds/en-GB/10604
+- yougov.com: 54818 45 of australians say ai generated ads would make them trust a b (12): https://yougov.com/articles/54818-45-of-australians-say-ai-generated-ads-would-make-them-trust-a-brand-less
+
+**Znane z cytatu w przeczytanym materiale [CYTOWANE]** (2)
+
+- Antislop (arXiv 2510.15061) (09): https://arxiv.org/abs/2510.15061v1
+- "Why Does ChatGPT Delve So Much?" (09): https://arxiv.org/html/2412.11385
+
+## Prawo i regulatorzy (Polska, UE, USA jako wzorzec) (47)
+
+
+**Przeczytane w całości [PEŁNY]** (18)
+
+- teksty aktów pobrano z publicznego repozytorium GitHub legalize-dev/legalize-pl (kopie Dziennika Ustaw generowane z API Sejmu, pole source (07): https://api.sejm.gov.pl/eli/
+- źródło (07): https://api.sejm.gov.pl/eli/acts/DU/2023/845
+- źródło (07): https://api.sejm.gov.pl/eli/acts/DU/2024/1497
+- EUR-Lex, Rozporządzenie (UE) 2024/1689 (09): https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng
+- 16 CFR § 255.2 (FTC Endorsement Guides) (06): https://github.com/AlextheYounga/ecfr/blob/master/ecfr/title-16-Commercial-Practices/chapter-I-Federal-Trade-Commission/subchapter-B-Guides-Trade-Practice-Rules/part-255-Guides-Use-Endorsements-Testimonials-Advertising/section-255.2.md
+- 16 CFR § 465.2 (FTC Rule on Consumer Reviews and Testimonials) (06): https://github.com/AlextheYounga/ecfr/blob/master/ecfr/title-16-Commercial-Practices/chapter-I-Federal-Trade-Commission/subchapter-D-Trade-Regulation-Rules/part-465-Rule-Use-Consumer-Reviews-Testimonials/section-465.2.md
+- UZNK t.j. Dz.U. 2022 poz. 1233 (07): https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2022-1233.md
+- nowelizacja (implementacja dyrektywy Omnibus) Dz.U. 2022 poz. 2581 (07): https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2022-2581.md
+- Ustawa o wyrobach medycznych (07): https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2022-974.md
+- Ustawa o informowaniu o cenach towarów i usług, t.j. Dz.U. 2023 poz. 168 (07): https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2023-168.md
+- Rozporządzenie MZ w sprawie reklamy wyrobów medycznych (07): https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2023-817.md
+- t.j. Dz.U. 2023 poz. 845) (06,07): https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2023-845.md
+- Prawo komunikacji elektronicznej, Dz.U. 2024 poz. 1221 (art. 398) (07): https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2024-1221.md
+- przepisy wprowadzające, Dz.U. 2024 poz. 1222 (art. 100) (07): https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2024-1222.md
+- Ustawa o kredycie konsumenckim, t.j. Dz.U. 2024 poz. 1497 (07): https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2024-1497.md
+- Prawo farmaceutyczne, t.j. Dz.U. 2024 poz. 686 (07): https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2024-686.md
+- Ustawa o działalności leczniczej, t.j. Dz.U. 2024 poz. 799 (07): https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2024-799.md
+- gov.pl, Prosty język (09,12): https://www.gov.pl/web/sluzbacywilna/prosty-jezyk
+
+**Znane ze streszczeń i fragmentów wyszukiwarki [WYSZUKIWARKA]** (28)
+
+- archiwum.uokik.gov.pl: aktualnosci.php (12): https://archiwum.uokik.gov.pl/aktualnosci.php?news_id=18898
+- arslege.pl: a21320 (12): https://arslege.pl/zakaz-korzystania-z-reklamy/k82/a21320/
+- eur-lex.europa.eu: TXT (12): https://eur-lex.europa.eu/legal-content/pl/TXT/?uri=CELEX:32023L2225
+- focusonbusiness.eu: wdrozenie dyrektywy ccd2 w polsce przebieg prac nad ustawa o kredycie  (12): https://focusonbusiness.eu/pl/wiadomosci/wdrozenie-dyrektywy-ccd2-w-polsce-przebieg-prac-nad-ustawa-o-kredycie-konsumenckim-i-aktualny-status-projektu/38168
+- Dawne brzmienie: ustawa o zakładach opieki zdrowotnej art. 18b, ustawa o ZOZ/praktykach lekarskich art. 56 ("nie mogą mieć cech reklamy") (07): https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2007-89.md
+- github.com: DU 2008 857.md (07): https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2008-857.md
+- glosfizjoterapeuty.pl: najlepszy fizjoterapeuta w miescie czyli o reklamie w fizjoterapii (12): https://glosfizjoterapeuty.pl/2024/12/najlepszy-fizjoterapeuta-w-miescie-czyli-o-reklamie-w-fizjoterapii/
+- igifoodlaw.com: projekt ustawy wdrazajacej dyrektywe greenwashing directive istotne zm (12): https://igifoodlaw.com/projekt-ustawy-wdrazajacej-dyrektywe-greenwashing-directive-istotne-zmiany-dla-firm-i-komunikacji-srodowiskowej/
+- kif.info.pl: zasady etyki 06.22.pdf (12): https://kif.info.pl/wp-content/uploads/2022/06/zasady_etyki_06.22.pdf
+- kif.info.pl: zasady etyki zawodowej (12): https://kif.info.pl/zasady-etyki-zawodowej/
+- kirp.pl: kodeks etyki radcy prawnego i regulamin wykonywania zawodu.pdf (12): https://kirp.pl/wp-content/uploads/2023/02/kodeks-etyki-radcy-prawnego-i-regulamin-wykonywania-zawodu.pdf
+- lexlege.pl: art 31 (12): https://lexlege.pl/etyka-radc-prawn/art-31/
+- mikroporady.pl: rekomendacje prezesa uokik dotyczace oznaczania tresci reklamowych prz (12): https://mikroporady.pl/porady/rekomendacje-prezesa-uokik-dotyczace-oznaczania-tresci-reklamowych-przez-influencerow
+- nil.org.pl: 8721 nowy kel od 1 stycznia 2025 sms od nil do lekarzy i lek dentystow (12): https://nil.org.pl/aktualnosci/8721-nowy-kel-od-1-stycznia-2025-sms-od-nil-do-lekarzy-i-lek-dentystow
+- nil.org.pl: 4240 informowanie o dzialalnosci leczniczej a jej reklama (12): https://nil.org.pl/dla-lekarzy/praktyka-lekarska/4240-informowanie-o-dzialalnosci-leczniczej-a-jej-reklama
+- nil.org.pl: doc 1716532187 kel 2024.pdf (12): https://nil.org.pl/uploaded_files/documents/doc_1716532187_kel-2024.pdf
+- plgbc.org.pl: status dyrektywy greenwashingowej (12): https://plgbc.org.pl/wirtualna-biblioteka/status-dyrektywy-greenwashingowej
+- swps.pl: 32266 jasnopis aplikacja ktora ocenia zrozumialosc tekstow urzedniczyc (12): https://swps.pl/nauka-i-badania/nasze-dzialania/badania-i-wdrozenia/32266-jasnopis-aplikacja-ktora-ocenia-zrozumialosc-tekstow-urzedniczych
+- tzlaw.pl: reklama a informowanie wazne rozroznienie dla lekarzy dentystow fizjot (12): https://tzlaw.pl/reklama-a-informowanie-wazne-rozroznienie-dla-lekarzy-dentystow-fizjoterapeutow-i-nie-tylko/
+- gov.pl: projekt ustawy o kredycie konsumenckim oraz o zmianie ustawy o prawach (12): https://www.gov.pl/web/premier/projekt-ustawy-o-kredycie-konsumenckim-oraz-o-zmianie-ustawy-o-prawach-konsumenta
+- iab.org.pl: 6 megatrendow zmieniajacych rynek reklamy (12): https://www.iab.org.pl/aktualnosci/6-megatrendow-zmieniajacych-rynek-reklamy/
+- iab.org.pl: adex benchmark 2025 europejski rynek reklamy digital rosnie co to ozna (12): https://www.iab.org.pl/aktualnosci/adex-benchmark-2025-europejski-rynek-reklamy-digital-rosnie-co-to-oznacza-dla-rodzimego-biznesu/
+- iab.org.pl: Rekomendacje Prezesa UOKiK.pdf (12): https://www.iab.org.pl/wp-content/uploads/2022/09/Rekomendacje_Prezesa_UOKiK.pdf
+- ora-warszawa.com.pl: Kodeks Etyki Adwokackiej.pdf (12): https://www.ora-warszawa.com.pl/wp-content/uploads/2023/02/Kodeks-Etyki-Adwokackiej.pdf
+- prawo.pl: reklama a informacja handlowa uwagi do kodeksu etyki adwokackiej (12): https://www.prawo.pl/prawnicy-sady/reklama-a-informacja-handlowa-uwagi-do-kodeksu-etyki-adwokackiej
+- prawo.pl: zakaz reklamy lekarzy kodeks etyki lekarskiej zmiany (12): https://www.prawo.pl/zdrowie/zakaz-reklamy-lekarzy-kodeks-etyki-lekarskiej-zmiany
+- pwc.pl: implementacja dyrektywy ws greenwashingu.html (12): https://www.pwc.pl/pl/artykuly/implementacja-dyrektywy-ws-greenwashingu.html
+- pwc.pl: projekt ustawy o kredycie konsumenckim implementujacej dyrektywe 2023  (12): https://www.pwc.pl/pl/artykuly/projekt-ustawy-o-kredycie-konsumenckim-implementujacej-dyrektywe-2023-2225-ccd-ii.html
+
+**Znane z cytatu w przeczytanym materiale [CYTOWANE]** (1)
+
+- gov.pl: prosty jezyk (09): https://www.gov.pl/web/cyfryzacja/prosty-jezyk
+
+## Dokumentacja Claude, specyfikacje i repozytoria GitHub (126)
+
+
+**Przeczytane w całości [PEŁNY]** (116)
+
+- tylko odsyłacz: „The spec is now located at (10): https://agentskills.io/specification”
+- claude.com: plugins (10): https://claude.com/docs/cowork/guide/plugins
+- claude.com: overview (10): https://claude.com/docs/cowork/overview
+- claude.com: plugins and connectors (10): https://claude.com/docs/government/config/plugins-and-connectors
+- claude.com: plugins (10): https://claude.com/docs/government/desktop/plugins
+- claude.com: skills (10): https://claude.com/docs/government/desktop/skills
+- claude.com: llms.txt (10): https://claude.com/docs/llms.txt
+- claude.com: overview (10): https://claude.com/docs/plugins/overview
+- claude.com: submit (10): https://claude.com/docs/plugins/submit
+- claude.com: how to (10): https://claude.com/docs/skills/how-to
+- claude.com: overview (10): https://claude.com/docs/skills/overview
+- claude.com: extensions (10): https://claude.com/docs/third-party/claude-desktop/extensions
+- code.claude.com: desktop (10): https://code.claude.com/docs/en/desktop
+- code.claude.com: discover plugins (10): https://code.claude.com/docs/en/discover-plugins
+- code.claude.com: env vars (10): https://code.claude.com/docs/en/env-vars
+- code.claude.com: plugin evals (10): https://code.claude.com/docs/en/plugin-evals
+- code.claude.com: plugin marketplaces (10): https://code.claude.com/docs/en/plugin-marketplaces
+- code.claude.com: plugins (10): https://code.claude.com/docs/en/plugins
+- code.claude.com: plugins reference (10): https://code.claude.com/docs/en/plugins-reference
+- code.claude.com: skills (10): https://code.claude.com/docs/en/skills
+- code.claude.com: sub agents (10): https://code.claude.com/docs/en/sub-agents
+- code.claude.com: tools reference (10): https://code.claude.com/docs/en/tools-reference
+- code.claude.com: llms.txt (10): https://code.claude.com/docs/llms.txt
+- zestawienie badań nad nagłówkami (gist, C) (04,06): https://gist.github.com/NHagar/77c3f2e9df9c211d2abce7982f794135
+- Bartosh16/claude-skills — hooki-wideo.md (PL, bez źródeł) (05): https://github.com/Bartosh16/claude-skills/blob/main/hooki/references/hooki-wideo.md
+- EdgeF-4/ai-act-kit README (09): https://github.com/EdgeF-4/ai-act-kit
+- po/pl.po z (09): https://github.com/GNOME/gnome-shell
+- nes, repozytorium zarchiwizowane 29.12.2025): avoid-hidden-verbs.md, write-short-sentences.md, use-active-voice.md, use-positive-language.md (09): https://github.com/GSA/plainlanguage.gov
+- TLDR Marketing 2025-02-17 (05): https://github.com/GaloisField2718/tldr_news/blob/main/generated/issues/tldr-marketing/2025/2025-02-17.json
+- GoogleCloudPlatform/generative-ai, gemini/nano-banana/nanobananarecipes.ipynb (09): https://github.com/GoogleCloudPlatform/generative-ai/tree/main/gemini/nano-banana
+- Hainrixz/claude-ads — Paid Advertising Research (06): https://github.com/Hainrixz/claude-ads/blob/main/research/Paid%20Advertising%20Research%20for%20Claude-Ads.md
+- dżet WebSearch sesji wyczerpany. Poniższe cytaty pochodzą z otwartego repozytorium badawczego zbierającego posty z r/FacebookAds, r/PPC itd (05): https://github.com/HulkInTherapy/meta-ads-research
+- wypalenie ludzi: "I slept only 5-6 hours a day, spending almost all my time editing creatives" (jw.). Źródło (05): https://github.com/HulkInTherapy/meta-ads-research/blob/main/pain-points/04-creative-fatigue-production.md
+- HulkInTherapy/meta-ads-research (agregat Reddit/X/blogów, maj 2026) (05): https://github.com/HulkInTherapy/meta-ads-research/blob/main/pain-points/11-testing-methodology.md
+- github.com: 23 emerging pain 2025 2026.md (05): https://github.com/HulkInTherapy/meta-ads-research/blob/main/pain-points/23-emerging-pain-2025-2026.md
+- > Źródło: nieoficjalna, społecznościowa ekstrakcja transkrypcji bootcampu Motion 2026 (~75 tys. zapisanych) do markdown na GitHub (05): https://github.com/Motion-Creative/bootcamp
+- Motion 2026 Creative Strategy Bootcamp (nieoficjalna ekstrakcja) — indeks (05): https://github.com/Motion-Creative/bootcamp/blob/main/references/
+- Motion Bootcamp index (05,08): https://github.com/Motion-Creative/bootcamp/blob/main/references/index.md
+- github.com: tuesday evan what is creative strategy.md (05): https://github.com/Motion-Creative/bootcamp/blob/main/references/week-01/tuesday-evan-what-is-creative-strategy.md
+- github.com: thursday coaching research.md (05): https://github.com/Motion-Creative/bootcamp/blob/main/references/week-02/thursday-coaching-research.md
+- github.com: tuesday sarah levinger research.md (05): https://github.com/Motion-Creative/bootcamp/blob/main/references/week-02/tuesday-sarah-levinger-research.md
+- Week 3 (creative retro) (05,08): https://github.com/Motion-Creative/bootcamp/blob/main/references/week-03/thursday-coaching-creative-retro.md
+- github.com: tuesday dara denney prioritize.md (05): https://github.com/Motion-Creative/bootcamp/blob/main/references/week-03/tuesday-dara-denney-prioritize.md
+- github.com: thursday coaching scripts storyboards.md (05): https://github.com/Motion-Creative/bootcamp/blob/main/references/week-04/thursday-coaching-scripts-storyboards.md
+- Week 5 (05,08): https://github.com/Motion-Creative/bootcamp/blob/main/references/week-05/tuesday-evan-analyze.md
+- Week 6 (05,08): https://github.com/Motion-Creative/bootcamp/blob/main/references/week-06/tuesday-jade-daniel-winning-stories.md
+- Motion Week 7 (05,08): https://github.com/Motion-Creative/bootcamp/blob/main/references/week-07/tuesday-sprint-2-adapt.md
+- "owner": { "name": "Paweł Kwiatek", "url": " (10): https://github.com/Pawel2884
+- "repository": " (10): https://github.com/Pawel2884/KWIATEKmedia-Meta-Ads-Skills
+- Claude Code | /plugin marketplace add (10): https://github.com/Pawel2884/KWIATEKmedia-Meta-Ads-Skills.git
+- Dyrektywa (UE) 2023/2225, kopia tekstu OJ (07): https://github.com/SFHAJJI/lex-articles/blob/main/eu-eurlex/works/32023l2225/versions/2023-10-18--bba20d1aa53ce7a2ed31547dfd4d49ec66aebdc82159f5d1a912974b53886d60/en.md
+- skonsolidowana UCPD (wersja od 2026-09-27), kopia EUR-Lex (07): https://github.com/SFHAJJI/lex-corpus-eu-eurlex/blob/main/works/32005l0029/versions/2026-09-27--eeed30807d8b388191e57b4962ab62a6747a191c3d4ddc6cad27892d7ed9393a/en.html
+- github.com: knowledge work plugins (10): https://github.com/anthropics/knowledge-work-plugins
+- "author": { "name": "Author Name", "email": "author@example.com", "url": " (10): https://github.com/author
+- "repository": " (10): https://github.com/author/plugin
+- bartekpucek/miodkuj (MIT, v1.x) (09): https://github.com/bartekpucek/miodkuj
+- berenslab/llm-excess-vocab, plik results/excesswords.csv (09): https://github.com/berenslab/llm-excess-vocab
+- black-forest-labs/flux2 README i docs/flux2withpromptupsampling.md (09): https://github.com/black-forest-labs/flux2
+- blader/humanizer (09): https://github.com/blader/humanizer
+- Ben Heath — transkrypcje (05): https://github.com/blicktz/knowledge_base_repo/blob/main/content_repo/Ben_Heath_facebook_ads/the_best_facebook_ads_campaign_structure_for_2025.txt
+- > Źródło: transkrypcje filmów YouTube Bena Heatha w publicznym repo (05): https://github.com/blicktz/knowledge_base_repo/tree/main/content_repo/Ben_Heath_facebook_ads
+- cammycurry/ai-creator-app — realinfluencer-master-research.md (odrzucone jako źródło: m.in. błędnie podaje kary AI Act dla art. 50) (06): https://github.com/cammycurry/ai-creator-app/blob/main/docs/research/realinfluencer-master-research.md
+- facebookresearch/generative-recommenders (01): https://github.com/facebookresearch/generative-recommenders
+- gmmh1/claude-paid-media-skills — meta-ads-creative-analytics (06): https://github.com/gmmh1/claude-paid-media-skills/blob/main/skills/meta-ads-creative-analytics/SKILL.md
+- brak progów minimalnej próby (08): https://github.com/gomarble-ai/ai-ads-agent/blob/main/skills/meta-creative-analysis/SKILL.md
+- Google Gemini Cookbook, GetStartedNanoBanana.ipynb (09): https://github.com/google-gemini/cookbook/tree/main/quickstarts
+- google-marketing-solutions/abcds-detector (README) (06): https://github.com/google-marketing-solutions/abcds-detector
+- hardikpandya/stop-slop (09): https://github.com/hardikpandya/stop-slop
+- jalaalrd/anti-ai-slop-writing, banned-words.md (09): https://github.com/jalaalrd/anti-ai-slop-writing
+- kopia artykułu HBS Working Knowledge (07): https://github.com/kevalmaru-gpu/document-classification/blob/main/ws_data/Finance/264.txt
+- tekst art. 50 (kopia OJ w repo) (07): https://github.com/lawve-ai/awesome-legal-skills/blob/main/skills/eu-ai-act-knowledge-base-oliver-schmidt-prietz/references/core/regulation-title-IV-transparency.md
+- marcusquinn/aidevops — meta-ads-optimization-metrics.md (06): https://github.com/marcusquinn/aidevops/blob/main/.agents/marketing-sales/meta-ads-optimization-metrics.md
+- OpenAI Cookbook: image-gen-models-prompting-guide.ipynb, image-gen-1.5-promptingguide.ipynb (09): https://github.com/openai/openai-cookbook/tree/main/examples/multimodal
+- > „On the Plugins page, select Add marketplace and enter the repository's URL. Cowork accepts the standard (10): https://github.com/owner/repo
+- Andrew Faris Podcast — korpus transkrypcji (05): https://github.com/poseljacob/ask-andrew
+- Szybsze wypalanie reklam (05): https://github.com/poseljacob/ask-andrew/blob/main/corpus/transcripts/4tjo_sLRBaU.md
+- 16), 4tjosLRBaU, rSJIgMd8z1M, rqyZrkspdgE, JtvIZ37EFnA, O0sPn3wGoDY, h6sKmrpBpE0, MUCLeRHO2Ss, WvMZmY-0fU4, pODL0kozzgM, aCVhMts9cR8 (pliki (05): https://github.com/poseljacob/ask-andrew/blob/main/corpus/transcripts/<ID
+- Przeciw osobnym kampaniom testowym (np (05): https://github.com/poseljacob/ask-andrew/blob/main/corpus/transcripts/JtvIZ37EFnA.md
+- Folklor "70%" (odc. "How To Actually Build Your Meta Ads Creative Supply Chain", 2026-01-16, (05): https://github.com/poseljacob/ask-andrew/blob/main/corpus/transcripts/WS2mbxyzwEU.md
+- tku. Argument statystyczny: kilka zakupów na reklamę to szum — "there is simply no way you have reached large enough samples". Niuans z 2025 (05): https://github.com/poseljacob/ask-andrew/blob/main/corpus/transcripts/WvMZmY-0fU4.md
+- 3x3x3 (odc. "The Creative Process I Use To Scale Past $10,000,000 With Meta Ads", 2024-12-31, (05): https://github.com/poseljacob/ask-andrew/blob/main/corpus/transcripts/Z9BEjQtjebw.md
+- transkrypcja (05): https://github.com/poseljacob/ask-andrew/blob/main/corpus/transcripts/eqa-vtU1tH8.md
+- Specyficzność komunikatu (05): https://github.com/poseljacob/ask-andrew/blob/main/corpus/transcripts/rSJIgMd8z1M.md
+- raydenai/viral-video-creation — research-viral-ads-2026.md (06): https://github.com/raydenai/viral-video-creation/blob/main/notes/research-viral-ads-2026.md
+- github.com: README.md (05): https://github.com/real-simple-labs/parker-brain/blob/main/creative-strategy-context/ad-formats/README.md
+- github.com: INDEX.md (05): https://github.com/real-simple-labs/parker-brain/blob/main/creative-strategy-context/expert-insights/INDEX.md
+- github.com: iterations.md (05): https://github.com/real-simple-labs/parker-brain/blob/main/creative-strategy-context/iterations.md
+- Adcrate/Alex Cooper — parker-brain (05): https://github.com/real-simple-labs/parker-brain/blob/main/creative-strategy-context/killer-performance-ads.md
+- sztuczny-miodek (SKILL.md, manieryzm-ai.md) (09): https://github.com/researchanddeploy/sztuczny-miodek
+- art. 50 (kopia) (07): https://github.com/s4nkar/KlarKI-EU-AI-Act-compliance-auditor/blob/master/data/regulatory/eu_ai_act/article_50.txt
+- sam-paech/antislop-sampler README (09): https://github.com/sam-paech/antislop-sampler
+- satwikbasu/article50 README (09): https://github.com/satwikbasu/article50
+- seekdaseek/eu-ai-act-article-50 README (09): https://github.com/seekdaseek/eu-ai-act-article-50
+- analiza z odwołaniem do Rozporządzenia (UE) 2026/1744 ("Digital Omnibus on AI", 8.07.2026) (07): https://github.com/simonoppowa/OpenNutriTracker/blob/main/docs/ai-legal-constraints.md
+- thisisbremlo/ai-act-transparency-check README (09): https://github.com/thisisbremlo/ai-act-transparency-check
+- Unicode CLDR, common/main/pl.xml, root.xml (09): https://github.com/unicode-org/cldr
+- W3C WCAG, Understanding SC 1.4.3 Contrast (Minimum) (GitHub w3c/wcag) (03): https://github.com/w3c/wcag/blob/main/understanding/20/contrast-minimum.html
+- yvfl/faceads-mcp — ANDROMEDA.md (przykład obiegu liczb P.D.A. "8–50 kreacji/ad set") (05): https://github.com/yvfl/faceads-mcp/blob/main/ANDROMEDA.md
+- platform.claude.com: best practices (10): https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices
+- platform.claude.com: overview (10): https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview
+- platform.claude.com: skills guide (10): https://platform.claude.com/docs/en/build-with-claude/skills-guide
+- raw.githubusercontent.com: specification.mdx (10): https://raw.githubusercontent.com/agentskills/agentskills/main/docs/specification.mdx
+- raw.githubusercontent.com: README.md (10): https://raw.githubusercontent.com/agentskills/agentskills/main/skills-ref/README.md
+- raw.githubusercontent.com: marketplace.json (10): https://raw.githubusercontent.com/anthropics/skills/main/.claude-plugin/marketplace.json
+- raw.githubusercontent.com: SKILL.md (10): https://raw.githubusercontent.com/anthropics/skills/main/skills/skill-creator/SKILL.md
+- raw.githubusercontent.com: package skill.py (10): https://raw.githubusercontent.com/anthropics/skills/main/skills/skill-creator/scripts/package_skill.py
+- raw.githubusercontent.com: quick validate.py (10): https://raw.githubusercontent.com/anthropics/skills/main/skills/skill-creator/scripts/quick_validate.py
+- raw.githubusercontent.com: agent skills spec.md (10): https://raw.githubusercontent.com/anthropics/skills/main/spec/agent-skills-spec.md
+- pliki (06): https://raw.githubusercontent.com/google-marketing-solutions/abcds-detector/main/features_repository/long_form_abcd_features.py
+- shortsfeatures.py (06): https://raw.githubusercontent.com/google-marketing-solutions/abcds-detector/main/features_repository/shorts_features.py
+- EU AI Act (Rozp. 2024/1689): art. 50 (06): https://raw.githubusercontent.com/mcekikj/eu-ai-act-knowledge-graph/main/EU-AI-Act-Vault/01%20Articles/Article%2050.md
+- raw.githubusercontent.com: pl.xml (09): https://raw.githubusercontent.com/unicode-org/cldr/main/common/main/pl.xml
+- support.claude.com: 12512180 using skills in claude (10): https://support.claude.com/en/articles/12512180-using-skills-in-claude
+- support.claude.com: 12512198 how to create custom skills (10): https://support.claude.com/en/articles/12512198-how-to-create-custom-skills
+- support.claude.com: 13837433 manage plugins for your organization (10): https://support.claude.com/en/articles/13837433-manage-plugins-for-your-organization
+- support.claude.com: 13837440 use plugins in claude (10): https://support.claude.com/en/articles/13837440-use-plugins-in-claude
+
+**Znane ze streszczeń i fragmentów wyszukiwarki [WYSZUKIWARKA]** (10)
+
+- github.com: SpeedToLeadGuide.tsx (07): https://github.com/Boltcall/Boltcall/blob/main/src/pages/SpeedToLeadGuide.tsx
+- art. 113 "It shall apply from 2 August 2026" (07): https://github.com/CommonAccord/Cmacc-Org/blob/master/Doc/G/EU/Artificial_Intelligence_Act/Sec/Article.md
+- notatki z datami transpozycji/stosowania (07): https://github.com/Hostilian/VenturaAtlas/blob/main/research/green-claims-cross-border-succession-ruleouts.md
+- streszczenie (07): https://github.com/SeqTechLLC/seqtekdotcom/blob/main/docs/BRAND_STRATEGY_RESEARCH.md
+- github.com: eu.mjs (07): https://github.com/TVALOUR/website-builder/blob/main/profiles/eu.mjs
+- streszczenie reguły 95-5 (07): https://github.com/cgallic/kai-cmo-harness/blob/main/knowledge/frameworks/marketing-science/brand-growth-laws.md
+- krytyka (07): https://github.com/donpino/donpino.github.io/blob/main/public/articles/reviews-and-choice/index.html
+- github.com: gdpr abridged.md (07): https://github.com/enterpriseready/enterpriseready/blob/master/content/gdpr/gdpr-abridged.md
+- karta z DOI 10.1287/mksc.2019.1200 (07): https://github.com/fsbtactic-code/marketing-brain-skill/blob/main/skills/marketing-brain/assets/wiki/cards/card_cost_transparency_context.md
+- slajdy bez nazw platform (07): https://github.com/pugging/vpn-test/blob/main/marketing/baza_wiedzy.txt
+
+## Dokumentacja generatorów obrazów (8)
+
+
+**Znane ze streszczeń i fragmentów wyszukiwarki [WYSZUKIWARKA]** (8)
+
+- ai.google.dev: image generation (12): https://ai.google.dev/gemini-api/docs/image-generation
+- blog.google: prompting tips nano banana pro (12): https://blog.google/products-and-platforms/products/gemini/prompting-tips-nano-banana-pro/
+- cloud.google.com: ultimate prompting guide for nano banana (12): https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana
+- deepmind.google: prompt guide (12): https://deepmind.google/models/gemini-image/prompt-guide/
+- developers.openai.com: image gen 1.5 prompting guide (12): https://developers.openai.com/cookbook/examples/multimodal/image-gen-1.5-prompting_guide
+- developers.openai.com: image gen models prompting guide (12): https://developers.openai.com/cookbook/examples/multimodal/image-gen-models-prompting-guide
+- docs.midjourney.com: 32023408776205 Prompt Basics (12): https://docs.midjourney.com/hc/en-us/articles/32023408776205-Prompt-Basics
+- docs.midjourney.com: 32173351982093 No (12): https://docs.midjourney.com/hc/en-us/articles/32173351982093-No
+
+## Polskie źródła praktyków, rynek i język (47)
+
+
+**Przeczytane w całości [PEŁNY]** (1)
+
+- Podręcznik Jasnopisu (09): https://jasnopis.pl/manual/
+
+**Znane ze streszczeń i fragmentów wyszukiwarki [WYSZUKIWARKA]** (45)
+
+- adspectra.pl: jak wykryc tekst napisany przez ai (12): https://adspectra.pl/jak-wykryc-tekst-napisany-przez-ai/
+- aiport.pl: bledy przy generowaniu obrazow ai dlaczego grafiki wychodza zle i jak  (12): https://aiport.pl/poradniki-ai/bledy-przy-generowaniu-obrazow-ai-dlaczego-grafiki-wychodza-zle-i-jak-to-naprawic/
+- ctt.uwr.edu.pl: ppp oferta (12): https://ctt.uwr.edu.pl/ppp-oferta/
+- datareportal.com: digital in poland (12): https://datareportal.com/digital-in-poland
+- datareportal.com: digital 2025 poland (12): https://datareportal.com/reports/digital-2025-poland
+- datareportal.com: digital 2026 poland (12): https://datareportal.com/reports/digital-2026-poland
+- ,520259.html, (12): https://dentonet.pl/nowy-kodeks-etyki-lekarskiej-od-1-stycznia-2025-r/
+- Devesol (07): https://devesol.pl/czas-odpowiedzi-na-zapytanie-ofertowe-a-wygrane-kontrakty/
+- feb.net.pl: branza deweloperska (12): https://feb.net.pl/case-study/branza-deweloperska
+- Firmao (07): https://firmao.pl/blog/jak-skrocic-czas-odpowiedzi-na-zapytanie-ofertowe/
+- intense.com.pl: meta ads cennik (12): https://intense.com.pl/meta-ads-cennik/
+- J. Wolniewicz, skaner 120 fraz (09,12): https://jacekwolniewicz.pl/skaner-po-polsku-ktory-lapie-120-fraz-naduzywanych-przez-ai/
+- jezykowaoaza.pl (09): https://jezykowaoaza.pl/myslnik-pauza-roznica-zasady/
+- jows.pl: tempo czytania rodzimych i nierodzimych uzytkownikow polszczyzny (12): https://jows.pl/artykuly/tempo-czytania-rodzimych-i-nierodzimych-uzytkownikow-polszczyzny
+- katsin.pl (09,12): https://katsin.pl/jak-rozpoznac-tekst-z-chatagpt/
+- kcmobile.pl: benchmarki facebook ads srednie wyniki branze (12): https://kcmobile.pl/baza-wiedzy/facebook-ads/benchmarki-facebook-ads-srednie-wyniki-branze/
+- kcmobile.pl: ile kosztuje lead koszt pozyskania klienta (12): https://kcmobile.pl/baza-wiedzy/marketing/ile-kosztuje-lead-koszt-pozyskania-klienta/
+- 1 | Lumo (blog agencji) (12): https://lumo.pl/blog/algorytm-andromeda-meta-ads-jak-dziala-i-co-zmienic/
+- 6 | Marketing na Luzie (blog) (12): https://marketingnaluzie.pl/meta-andromeda-jak-reklamowac-sie-na-facebooku-w-2026-roku/
+- media-panel.pl: raport social media 2025 juz dostepny (12): https://media-panel.pl/pl/aktualnosci/raport-social-media-2025-juz-dostepny/
+- netgonet.pl: jak rozpoznac tekst pisany przez ai (12): https://netgonet.pl/jak-rozpoznac-tekst-pisany-przez-ai
+- nowymarketing.pl: gemius social media 2025 raport (12): https://nowymarketing.pl/gemius-social-media-2025-raport/
+- nowymarketing.pl: gemius social media 2026 facebook i youtube liderami wsrod polskich in (12): https://nowymarketing.pl/gemius-social-media-2026-facebook-i-youtube-liderami-wsrod-polskich-internautow-raport/
+- pbi.org.pl: raport social media 2025 juz dostepny (12): https://pbi.org.pl/informacje-prasowe/raport-social-media-2025-juz-dostepny/
+- 2 | Ppcefekt (blog PPC) (12): https://ppcefekt.pl/blog/andromeda-w-swiecie-meta-ads/
+- Fundacja Orange (09): https://pracownieorange.pl/inspiration/jak-rozpoznac-tekst-napisany-przez-ai-praktyczny-przewodnik/
+- promptowy.com — poradnik promptowania, lista słów do unikania (12): https://promptowy.com/chatgpt-po-polsku/
+- promptowy.com: nano banana 2 vs nano banana pro vs gpt 5 4 image 2 test (12): https://promptowy.com/nano-banana-2-vs-nano-banana-pro-vs-gpt-5-4-image-2-test/
+- promptowy.com: polskie napisy grafiki ai test prompty (12): https://promptowy.com/polskie-napisy-grafiki-ai-test-prompty/
+- promptowy.com: polskie znaki na grafice ai (12): https://promptowy.com/polskie-znaki-na-grafice-ai/
+- promptowy.com: qwen image 2 1 polski (12): https://promptowy.com/qwen-image-2-1-polski/
+- prostapolszczyzna.uwr.edu.pl (12): https://prostapolszczyzna.uwr.edu.pl/
+- stats.napoleoncat.com: facebook users in poland (12): https://stats.napoleoncat.com/facebook-users-in-poland/2025/01/
+- stats.napoleoncat.com: instagram users in poland (12): https://stats.napoleoncat.com/instagram-users-in-poland/2025/12/
+- stats.napoleoncat.com: social media users in poland (12): https://stats.napoleoncat.com/social-media-users-in-poland/2025/
+- 5 | Szymon Głogowski (blog praktyka) (12): https://szymonglogowski.pl/kreacje-reklamowe-meta-ads-andromeda-ile-jakie/
+- Top Online (09): https://toponline.pl/blog/jak-rozpoznac-tekst-napisany-przez-ai
+- usz.edu.pl: standardy.pdf (12): https://usz.edu.pl/wp-content/uploads/standardy.pdf
+- 7 | White Anchor (agencja) (12): https://whiteanchor.pl/aktualizacja-algorytmu-meta-ads-andromeda-co-naprawde-zmienia-i-jak-powinni-reagowac-reklamodawcy/
+- wskaznikibranzowe.pl: cpa i cpl jak obliczyc koszt dzialania oraz koszt leada (12): https://wskaznikibranzowe.pl/cpa-i-cpl-jak-obliczyc-koszt-dzialania-oraz-koszt-leada/
+- efektywna-nauka.pl: rekordy szybkiego czytania w polsce i na swiecie (12): https://www.efektywna-nauka.pl/rekordy-szybkiego-czytania-w-polsce-i-na-swiecie/
+- jasnopis.pl (12): https://www.jasnopis.pl/
+- 8 | Marketing Online (blog) (12): https://www.marketingonline.pl/blog-meta-andromeda-co-to-jest-i-jak-wspiera-kampanie/
+- 3 | Way Better (agencja) (12): https://www.waybetter.pl/knowledge-content/nowy-algorytm-meta-ads---o-co-chodzi-z-andromeda-update-i-co-zmienia-sie-w-performance-marketingu
+- Zwierciadło (09): https://zwierciadlo.pl/lifestyle/550236
+
+**Znane z cytatu w przeczytanym materiale [CYTOWANE]** (1)
+
+- scienceinpoland.pl: news%2C108666%2Cai chatbots develop distinctive writing styles humans  (09): https://scienceinpoland.pl/en/news/news%2C108666%2Cai-chatbots-develop-distinctive-writing-styles-humans-polish-research-finds.html
+
+## Praktycy, agencje, media branżowe (świat) (230)
+
+
+**Przeczytane w całości [PEŁNY]** (15)
+
+- FAQ KE (09): https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act
+- Code of Practice (09): https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content
+- Wytyczne (09): https://digital-strategy.ec.europa.eu/en/policies/guidelines-transparency-ai-generated-content
+- nag Tights — "If you see an ad from us that looks 'off' or has that strange AI sheen, please know: It isn't us." (Marketing Brew, 2026-04-21 (05): https://www.marketingbrew.com/stories/2026/04/21/meta-ai-creative-tools-marketer-response
+- …/18-local-business-specific.md — cytowane w nich wątki (05): https://www.reddit.com/r/FacebookAds/comments/1ng8ves/
+- "Before the Andromeda update in 2025, I had been running Facebook ads using a single creative for almost two years" (05): https://www.reddit.com/r/FacebookAds/comments/1qxpb9q/
+- reddit.com: 1skxpqe (05): https://www.reddit.com/r/FacebookAds/comments/1skxpqe/
+- małe budżety: mediana kwoty w postach-skargach na r/FacebookAds = 100 USD (analiza 81 154 postów (05): https://www.reddit.com/r/FacebookAds/comments/1tb24rk/i_classified_81154_posts_from_this_sub_you_people/
+- "Start with around 40-50 different creatives in a single ad set." (r/PPC (05): https://www.reddit.com/r/PPC/comments/1m3tuvx/
+- Szybsze zmęczenie: "fatigue now hits in 2-3 weeks in 2026 versus 4+ weeks in 2024" (05): https://www.reddit.com/r/PPC/comments/1sc1mg7/
+- wideo (05): https://www.youtube.com/watch?v=<ID
+- youtu.be: GdYGUirdZYQ (05): https://youtu.be/GdYGUirdZYQ
+- …/ad-formats/both/index.md (źródłowe wideo (05): https://youtu.be/OzkRU3Wx_1w
+- youtu.be: Ugd7a2sPgZk (05): https://youtu.be/Ugd7a2sPgZk
+- youtu.be: mpj0A4Prxu4 (05): https://youtu.be/mpj0A4Prxu4
+
+**Znane ze streszczeń i fragmentów wyszukiwarki [WYSZUKIWARKA]** (203)
+
+- eegilbert.org: chi14.faces.bakhshi.pdf (12): http://eegilbert.org/papers/chi14.faces.bakhshi.pdf
+- MIT/InsideSales "Lead Response Management Study" (07): https://25649.fs1.hubspotusercontent-na2.net/hub/25649/file-13535879-pdf/docs/mit_study.pdf
+- Lumen/PwC review (2023) (03): https://2871934.fs1.hubspotusercontent-na1.net/hubfs/2871934/Lumen%20_%20PwC%20Attention%20Methodology%20&%20Case%20Study%20Review%202023.pdf
+- admanage (05): https://admanage.ai/blog/facebook-ad-creative-testing-framework
+- 7 dni min., 10–14 dla konwersji (08): https://admanage.ai/blog/facebook-ads-ab-testing
+- AdsUploader — Meta Ads Safe Zones: The Complete Guide (02): https://adsuploader.com/blog/meta-ads-safe-zones
+- adsuploader — Entity IDs vs Creative Volume (01,05): https://adsuploader.com/blog/meta-andromeda
+- adsuploader.com: meta earnings for advertisers (01): https://adsuploader.com/blog/meta-earnings-for-advertisers
+- advertisingweek.com: the art of in feed optimisation as part of the attention revolution (03): https://advertisingweek.com/the-art-of-in-feed-optimisation-as-part-of-the-attention-revolution/
+- adzooma.com: facebook advertising removes 20 text rule on images (12): https://adzooma.com/blog/facebook-advertising-removes-20-text-rule-on-images/
+- AInora, przegląd badań (07): https://ainora.lt/blog/lead-response-time-statistics-every-study-2026
+- Alvaro Berrios (08): https://alvaroberrios.com/blog/metas-new-creative-testing-feature/
+- ASN, "Why your Meta leads don't answer…" (07): https://americanservicenetwork.com/blog/meta-instant-form-unresponsive-leads
+- artursmolicki.com: ile kosztuje lead w praktyce (12): https://artursmolicki.com/blog/ile-kosztuje-lead-w-praktyce/
+- Atticus Li — Loss Aversion: What Survives… (04): https://atticusli.com/replication-crisis/loss-aversion/
+- krytyczne omówienie (04): https://atticusli.com/replication-crisis/power-of-because-langer-1978/
+- behaviour.digital — Meta Reels Safe Zone 14% Top 35% Bottom 6% Sides: The 2026 Official Guide (02): https://behaviour.digital/post/meta-reels-safe-zone-14-top-35-bottom-6-sides-the-2026-official-guide
+- Billo — Meta Ads Safe Zones: A Guide to the 2026 Unified Creative Updates (02): https://billo.app/blog/meta-ads-safe-zones/
+- bir.ch — Meta Creative Testing Framework 2026 (08): https://bir.ch/blog/meta-ad-creative-testing-framework
+- AdNabu — Meta Safe Zones for Ads: The Complete 2026 Guide (02): https://blog.adnabu.com/meta-ads/meta-safe-zones/
+- streszczenie praktyka (03): https://blog.mswresearch.com/tag/stopping-power/
+- notatki (04): https://chenxing.space/consumer-behavior/notes-on-friestad-wright-1994-persuasion-knowledge-model/
+- colourtext.com: unraveling the clash between the ehrenberg bass institute and binet an (12): https://colourtext.com/opinion/unraveling-the-clash-between-the-ehrenberg-bass-institute-and-binet-and-fields-popular-60-40-rule/
+- Confect (01,05): https://confect.io/tactics/meta-andromeda-2026
+- 4 | Cyrek Digital (blog agencji) (12): https://cyrekdigital.com/pl/blog/meta-wlasnie-zabrala-ci-kontrole-nad-reklamami-a-to-dopiero-poczatek/
+- DBest Content, GPT-izmy (09,12): https://dbest-content.com/jak-rozpoznac-tekst-z-ai-kompletny-przewodnik-po-gpt-izmach/
+- developertoolkit.ai, "Skille anty-slop: unslop, miodkuj…" (09): https://developertoolkit.ai/pl/shared-workflows/skills-ecosystem/unslop/
+- Digiday (2016), 85% without sound (03): https://digiday.com/media/silent-world-facebook-video/
+- Loss aversion (simply) does not materialize for smaller losses. JDM (2022) (04): https://dlab.sauder.ubc.ca/sjdm/journal/22/220414/jdm220414.html
+- easyinsights (08): https://easyinsights.ai/blog/metas-update-a-new-way-to-test-creatives-from-a-b-to-ai-led-optimization/
+- Loschelder i in. (2019) prerejestrowany eksperyment terenowy (400 agentów nieruchomości) (04): https://econtent.hogrefe.com/doi/10.1027/1618-3169/a000441
+- EmailAnalytics (07): https://emailanalytics.com/lead-response-time/
+- Wikipedia:Signs of AI writing (09): https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing
+- Envisionit (05): https://envisionitagency.com/blog/why-metas-andromeda-update-has-us-completely-rethinking-creative-testing/
+- equibles.com: 2025 q1 (01): https://equibles.com/stocks/meta/calls/2025-q1
+- Earnings Q2 2025 (01): https://equibles.com/stocks/meta/calls/2025-q2
+- len & Preiss (1997) „Comparing the persuasiveness of narrative and statistical evidence using meta-analysis”, Communication Research Reports (04): https://eric.ed.gov/?id=EJ564993
+- finance.yahoo.com: META Q2 2026 earnings call 657318.html (01): https://finance.yahoo.com/quote/META/earnings/META-Q2-2026-earnings_call-657318.html
+- generativeai.pub, em dash w abstraktach (09): https://generativeai.pub/the-em-dash-doubled-in-research-abstracts-since-2021-and-it-still-cant-tell-you-who-wrote-them-a09860041da5?gi=0dd4718d128e
+- getcrux — Creative Strategy (05): https://getcrux.ai/discover/creative-strategy
+- greghal.no — How Meta's Ads Algorithm Works in 2026 (01): https://greghal.no/en/blog/meta-ads-algorithm-2026-complete-guide/
+- gwern.net: 2019 brysbaert.pdf (12): https://gwern.net/doc/psychology/linguistics/2019-brysbaert.pdf
+- Langer, E., Blank, A., & Chanowitz, B. (1978). The Mindlessness of Ostensibly Thoughtful Action. JPSP, 36(6), 635–642 (04): https://jamesclear.com/wp-content/uploads/2015/03/copy-machine-study-ellen-langer.pdf
+- Jetfuel — Meta Algorithm Changes 2026 (01): https://jetfuel.agency/metas-2026-algorithm-update-what-andromeda-changed-and-how-to-adapt-your-ads/
+- jonahberger.com: fuzzy math what makes something seem like a good deal (04,12): https://jonahberger.com/fuzzy-math-what-makes-something-seem-like-a-good-deal/
+- powiązane (04): https://kmunger.github.io/pdfs/pc_clickbait.pdf
+- LocaliQ (08): https://localiq.com/blog/facebook-advertising-benchmarks/
+- marketingscience.info: prof byron sharp skewers binet tells marketers to sack agencies preach (12): https://marketingscience.info/prof-byron-sharp-skewers-binet-tells-marketers-to-sack-agencies-preaching-share-of-voice/
+- Mediakix — Facebook Video Statistics (02): https://mediakix.com/blog/facebook-video-statistics-everyone-needs-know/
+- Medium (Ewan Mak) — Meta Ads Strategy 2026 (01): https://medium.com/@tentenco/meta-ads-strategy-2026-why-andromeda-gem-and-ios-26-broke-the-old-playbook-78cba1ad4820
+- Medium (Y. Varghese) (05): https://medium.com/@yeldhov1993/how-to-plan-creative-angles-that-win-after-metas-andromeda-update-9a43746fa43b
+- Motion — 2025 Ad Creative & Creative Strategy Trends (05): https://motionapp.com/creative-trends
+- Motion Library (05): https://motionapp.com/library/expert/barry-hott/
+- Motion Library — Dara Denney (05): https://motionapp.com/library/expert/dara-denney/
+- Motion — Visual Ad Formats library (05): https://motionapp.com/library/formats/
+- Motion — Creative Benchmarks 2026 (05): https://motionapp.com/library/research/creative-benchmarks-2026/
+- Motion — Methodology and definitions (05): https://motionapp.com/library/research/creative-benchmarks-2026/methodology
+- Motion — Testing volume by vertical (05): https://motionapp.com/library/research/creative-benchmarks-2026/testing-by-vertical
+- Motion — Top asset types (05): https://motionapp.com/library/research/creative-benchmarks-2026/top-asset-types
+- Motion — Top visual formats (05): https://motionapp.com/library/research/creative-benchmarks-2026/top-visual-formats
+- Motion — Visual formats by vertical (05): https://motionapp.com/library/research/creative-benchmarks-2026/visual-formats-by-vertical
+- plik 05: Barry Hott, AI native ads (05,09): https://motionapp.com/library/talk/how-to-make-ai-native-ads-look-human-barry-hott-method/
+- Motion — Meta Ads in 2026: How Many Creatives Do You Actually Need to Launch? (05): https://motionapp.com/library/talk/meta-ads-in-2026-how-many-creatives-do-you-actually-need-to-launch/
+- Motion — Key Benchmarks & Insights (05): https://motionapp.com/thumbstop-pulse/cb2026-key-benchmarks-and-insights
+- motionapp.com: cb2026 methodology and definitions (05): https://motionapp.com/thumbstop-pulse/cb2026-methodology-and-definitions
+- nextbigideaclub.com: jonah berger figure discount actually good deal (12): https://nextbigideaclub.com/magazine/jonah-berger-figure-discount-actually-good-deal/6572/
+- nikhil.pro — Why Meta Only Spends on a Few of Your Ads (01): https://nikhil.pro/meta-ads-creative-similarity-explained/
+- LinkedIn (Piotr Sowa) (12): https://pl.linkedin.com/pulse/jak-rozpozna%C4%87-tekst-napisany-przez-chatgpt-i-dlaczego-piotr-sowa-uvjhf
+- plainnumbers.org.uk: find it understand it use it the iso standard redefines plain language (12): https://plainnumbers.org.uk/news-insights/find-it-understand-it-use-it-the-iso-standard-redefines-plain-language-as-a-user-outcome/
+- Andrew Faris Podcast — Ugly Ads Work. Trust Barry Hott (And Me) (05): https://podcasts.apple.com/ca/podcast/ugly-ads-work-trust-barry-hott-and-me/id1646694096?i=1000648058000
+- PPC Land (08): https://ppc.land/facebook-ad-costs-jump-21-as-lead-campaigns-struggle-while-traffic-ads-thrive/
+- ppc.land (03): https://ppc.land/mastering-youtube-advertising-with-the-abcd-framework/
+- ppc.land: meta q1 2026 56 3b revenue as ai tools double advertiser adoption (01): https://ppc.land/meta-q1-2026-56-3b-revenue-as-ai-tools-double-advertiser-adoption/
+- PPC Blog Pro — Creative Similarity Penalties (01): https://ppcblogpro.com/how-andromeda-detects-and-punishes-ad-duplication/
+- Pubcast (05): https://pubcast.jonloomer.com/creative-diversification-is-the-new-targeting/
+- Rep.ai (07): https://rep.ai/blog/lead-response
+- research.cbs.dk: the vampire effect when do celebrity endorsers harm brand recall (12): https://research.cbs.dk/en/publications/the-vampire-effect-when-do-celebrity-endorsers-harm-brand-recall/
+- research.manchester.ac.uk: transparent technology evaluating the impact of ai generated ad d (12): https://research.manchester.ac.uk/en/publications/transparent-technology-evaluating-the-impact-of-ai-generated-ad-d/
+- MNTN Research — Ad Length Impact on Attention is Minimal… (06): https://research.mountain.com/creative-analysis/ad-length-impact-on-attention-is-minimal-but-content-tips-the-scales/
+- Boerman, van Reijmersdal & Neijens (2012). Sponsorship Disclosure: Effects of Duration… Journal of Communication (04): https://research.wur.nl/en/publications/sponsorship-disclosure-effects-of-duration-on-persuasion-knowledg/
+- InsideSales 2014 Lead Response Report (07): https://resources.insidesales.com/wp-content/uploads/2019/11/2014-Lead-Response-Report.pdf
+- Schmidt & Eisend (2015) „Advertising Repetition: A Meta-Analysis on Effective Frequency in Advertising”, Journal of Advertising 44(4) (04): https://rofianto.wordpress.com/wp-content/uploads/2016/07/06_schmidt-eisend-2015.pdf
+- Sarah Levinger (05): https://sarahlevinger.co/articles/the-creative-strategy-role-a-definitive-guide-to-all-levels-of-the-game
+- Search Engine Land (08): https://searchengineland.com/facebook-ad-costs-jump-beat-google-461690
+- Segwise (05): https://segwise.ai/blog/meta-andromeda-update-creative-strategy-2026
+- Sepia — Motion's Creative Benchmarks 2026: Ad Volume by Spend Tier (05): https://sepia-lab.com/en/blog/ad-creative-volume-benchmarks
+- sergeycyw.substack.com: meta q2 2025 earnings analysis (01): https://sergeycyw.substack.com/p/meta-q2-2025-earnings-analysis
+- Core ABCDs summary (PDF) (06): https://services.google.com/fh/files/misc/en_us_youtube_core_abcds_summary.pdf
+- ABCD reference guide (PDF) (06): https://services.google.com/fh/files/misc/youtube_google_abcd_reference_guide_en.pdf
+- SMK — Meta Reveals New "Performance Five" (01): https://smk.co/meta-reveals-new-performance-five-optimisation-best-practices/
+- krytyka (03): https://st4.ca/blog/85-really-facebook-without-sound
+- Google Ads Help — About the ABCDs of effective video ads (06): https://support.google.com/google-ads/answer/14783551?hl=en
+- TechCrunch — Facebook Lures Video Creators With Minutes Watched And 10-Second View Metrics (2016) (02): https://techcrunch.com/2016/02/18/facebook-video-metrics
+- thefsforum.co.uk: linkedin row breaks out over binet and fields 6040 rule (12): https://thefsforum.co.uk/knowledge-hub/tactic/linkedin-row-breaks-out-over-binet-and-fields-6040-rule/
+- MTM Agency (05): https://themtmagency.com/blog/meta-andromeda-october-2025-update-why-creative-diversity-now-defines-ad-performance
+- TheOptimizer — How to Test Ad Creatives After Andromeda (01): https://theoptimizer.io/blog/how-to-test-ad-creatives-on-meta-after-the-andromeda-update-2026-playbook
+- Tiger Pistol — Meta's Performance 5 Framework (01): https://tigerpistol.com/metas-performance-5-framework-the-impact-of-simplifying-your-account-structure/
+- Wilow — Why More Ads Keep Failing: Meta Entity ID Problem (01): https://trywilow.com/blog/creative-entity-ids-meta-andromeda
+- ucrisportal.univie.ac.at: advertising repetition a meta analysis on effective frequency in  (12): https://ucrisportal.univie.ac.at/en/publications/advertising-repetition-a-meta-analysis-on-effective-frequency-in-/
+- Velocify 391% (07): https://velocify.com/blog/press-release/infographic-sales-processes-boost-lead-conversion-by-391-percent/
+- Klaster blogów SEO (widoczni.com, netgonet.pl, adspectra.pl) — zbieżna lista fraz (12): https://widoczni.com/blog/czy-mozna-rozpoznac-tekst-pisany-przez-ai/
+- 1ClickReport — Meta Ads Safe Zones 2026: Pixel Specs + Free Template (02): https://www.1clickreport.com/blog/meta-ads-creative-safe-zones-2026-guide
+- 303 London — Complete Guide to Creative Diversity (01): https://www.303.london/blog/complete-guide-to-creative-diversity-for-meta-andromeda
+- 3Play Media (03): https://www.3playmedia.com/blog/captions-increase-viewership-for-facebook-video-ads/
+- 3playmedia.com: verizon media and publicis media find viewers want captions (03): https://www.3playmedia.com/blog/verizon-media-and-publicis-media-find-viewers-want-captions/
+- Admetrics — Meta Andromeda: What It Is (01): https://www.admetrics.io/en/post/meta-andromeda-ads-retrieval-explained
+- admetrics (01,05): https://www.admetrics.io/en/post/meta-creative-fatigue-and-similarity-score-complete-guide
+- Admove — How Meta Andromeda Works (01): https://www.admove.ai/blog/meta-andromeda-guide
+- AdNews / Advertising Week (attention vs viewability 6×) (03): https://www.adnews.com.au/news/why-s-this-new-metric-getting-so-much-attention
+- Adweek (02): https://www.adweek.com/brand-marketing/how-brands-can-still-win-over-customers-as-attention-spans-decrease-on-social/
+- Brown, Imai, Vieider & Camerer (2024) „Meta-analysis of Empirical Estimates of Loss Aversion”, Journal of Economic Literature 62(2), 485–516 (04): https://www.aeaweb.org/articles?id=10.1257%2Fjel.20221698
+- alexmurrell.co.uk: les binet and peter field the long and the short of it (12): https://www.alexmurrell.co.uk/summaries/les-binet-and-peter-field-the-long-and-the-short-of-it
+- Artifex Digital — Understanding Meta's Entity ID (01): https://www.artifexdigital.co/blog/understanding-metas-entity-id-why-your-28-ads-might-actually-be-3
+- Aspire — partnership ads (06): https://www.aspire.io/blog/how-to-launch-partnership-ads-that-outperform-brand-ads
+- Chatterbuzz (05): https://www.chatterbuzzmedia.com/blog/meta-andromeda-creative-targeting/
+- DataAlly — Meta's Creative Entity ID (01): https://www.dataally.ai/blog/metas-creative-entity-id-why-creative-diversification-is-essential
+- DataAlly — Meta's New Metrics and Why the Creative Similarity Score Matters (01): https://www.dataally.ai/blog/metas-new-metrics-and-why-the-creative-similarity-score-matters
+- Dataslayer — Meta Ads Updates Nov 2025: GEM (01): https://www.dataslayer.ai/blog/meta-ads-updates-november-2025-gem-ai-model-boosts-conversions-5
+- ecomengine.com: 4 2 4 5 star rating sweet spot (12): https://www.ecomengine.com/blog/4-2-4-5-star-rating-sweet-spot
+- Excite Media — What does Meta mean by creative diversification? (01): https://www.excitemedia.com.au/blog/meta-creative-diversification/
+- Expertise AI, "Speed-to-Lead Statistics — Verified, With Folklore Debunked" (07): https://www.expertise.ai/stats/speed-to-lead-statistics
+- First Pier — Instagram Ad Safe Zones (2026) (02): https://www.firstpier.com/resources/instagram-ad-safe-zones
+- Earnings Q4 2024 (01): https://www.fool.com/earnings/call-transcripts/2025/01/29/meta-platforms-meta-q4-2024-earnings-call-transcri/
+- Earnings Q3 2025 (01): https://www.fool.com/earnings/call-transcripts/2025/10/29/meta-platforms-meta-q3-2025-earnings-call-transcript/
+- Earnings Q4 2025 (01): https://www.fool.com/earnings/call-transcripts/2026/01/28/meta-meta-q4-2025-earnings-call-transcript/
+- Earnings Q1 2026 (01): https://www.fool.com/earnings/call-transcripts/2026/04/29/meta-meta-q1-2026-earnings-call-transcript/
+- Forbes (2026) — Meta Partnership Ads Hit $10 Billion (06): https://www.forbes.com/sites/jamiegutfreund/2026/08/12/meta-partnership-ads-hit-10-billion-as-creators-outperform-brand-messages/
+- Forbes (2019) (03): https://www.forbes.com/sites/tjmccue/2019/07/31/verizon-media-says-69-percent-of-consumers-watching-video-with-sound-off/
+- Nick Shackelford (05): https://www.foreplay.co/experts/nick-shackelford
+- Foreplay — guide to creative briefs (05): https://www.foreplay.co/post/guide-to-creating-an-effective-creative-brief
+- Foxwell Digital — Motion Creative Benchmarks 2026: 8 Key Takeaways (05): https://www.foxwelldigital.com/blog/motion-creative-benchmarks-2026-8-key-takeaways
+- growthsuite.net: rule of 100 discount psychology (12): https://www.growthsuite.net/resources/shopify-discount/percentage-vs-fixed-discount-comparison/rule-of-100-discount-psychology
+- Barry Hott — Ugly ads don't mean bad ads (05): https://www.hottgrowth.com/post/ugly-ads-dont-mean-bad-ads-try-these-expert-tips-for-high-intent-ads
+- InfoQ (01): https://www.infoq.com/news/2025/12/meta-gem-ads-model/
+- iplfederation.org: iso standard (12): https://www.iplfederation.org/iso-standard/
+- iso.org: 78907.html (12): https://www.iso.org/standard/78907.html
+- Jon Loomer — 2. What Andromeda Isn't (01): https://www.jonloomer.com/andromeda-2/
+- What is Creative Diversification? (01,05): https://www.jonloomer.com/andromeda-3/
+- Creative Fatigue (05,08): https://www.jonloomer.com/creative-fatigue-meta-ads/
+- jonloomer.com: facebook text in ad image rule (12): https://www.jonloomer.com/facebook-text-in-ad-image-rule/
+- 83 Changes to Meta Advertising in 2025 (05): https://www.jonloomer.com/meta-advertising-changes-2025/
+- The Truth About Meta Andromeda and Ad Retrieval (01,05): https://www.jonloomer.com/meta-andromeda-ad-retrieval/
+- 7 Examples (01,05): https://www.jonloomer.com/meta-andromeda-creative-diversification/
+- cytowane u Jona Loomera (01): https://www.jonloomer.com/meta-andromeda/
+- Jon Loomer — Meta's Creative Testing Tool (08): https://www.jonloomer.com/meta-creative-testing/
+- Jon Loomer — When One Ad Gets All the Budget: Your Options (08): https://www.jonloomer.com/one-ad-gets-all-the-budget/
+- Jon Loomer — What Creative Diversification Actually Means (05): https://www.jonloomer.com/qvt/creative-diversification/
+- Creative Testing Feature (08): https://www.jonloomer.com/qvt/creative-testing-feature/
+- Avoid Meta Andromeda Misinformation (01,05): https://www.jonloomer.com/qvt/meta-andromeda-misinformation/
+- Is Meta Expanding Creative Testing to 10 Ads? (08): https://www.jonloomer.com/qvt/meta-expanding-creative-testing-10-ads/
+- Journal of Robustness Reports — Does Negativity Drive Online News Consumption? (04,06): https://www.journalofrobustnessreports.org/does-negativity-drive-online-news-consumption/
+- Charley Tichenor — LinkedIn (05): https://www.linkedin.com/in/charleytichenoriv/
+- LinkedIn — Meta Ads Creative Hack: Make Ugly Ads With Barry Hott (05): https://www.linkedin.com/posts/daradenney_meta-ads-creative-hack-make-ugly-ads-with-activity-7142923930847100928-Nrbc
+- LinkedIn — The 10 Best Iterations to Scale Meta Ads Creative (05): https://www.linkedin.com/posts/daradenney_the-10-best-iterations-to-scale-meta-ads-activity-7265401447251337216-nZPY
+- LinkedIn Erin Corn — Meta Creative Similarity / Fatigue / Top Creative Themes (05): https://www.linkedin.com/posts/erin-corn_meta-is-rolling-out-3-new-metrics-and-we-activity-7389014944371019777-Gzz9
+- LinkedIn "How to Structure Your Ad Account for Success in 2025/2026" (05): https://www.linkedin.com/posts/nickshackelford_scale-and-spend-activity-7388605488625737728-yqEv
+- LinkedIn wersja (05): https://www.linkedin.com/pulse/motion-creative-benchmarks-2026-8-key-takeaways-andrew-foxwell-zs9ec
+- Logical Position (05): https://www.logicalposition.com/blog/the-2026-paid-social-playbook
+- Marketing Dive (03,06): https://www.marketingdive.com/news/brand-lift-happens-in-less-than-1-second-of-video-study-finds/377333/
+- Marketing Dive (03): https://www.marketingdive.com/news/facebook-why-mobile-video-ads-must-work-fast/446217/
+- marketingprofs.com: the measurable impact that reviews and ratings have on sales (12): https://www.marketingprofs.com/charts/2017/32629/the-measurable-impact-that-reviews-and-ratings-have-on-sales
+- omówienie (04): https://www.marketingsherpa.com/article/chart/university-study-online-reviews-affect-sales
+- mortech.com: mit study.pdf (07): https://www.mortech.com/hs-fs/hub/25649/file-13535879-pdf/docs/mit_study.pdf
+- Net Influencer — Agentio report ($130M) (06): https://www.netinfluencer.com/meta-partnership-ads-outperform-licensed-ugc-across-130m-usd-in-ad-spend-report-finds/
+- Neuromarketing (J. Breeze, baby gaze) (03): https://www.neurosciencemarketing.com/blog/articles/baby-heat-maps.htm
+- Nieman Lab (03): https://www.niemanlab.org/reading/publishers-say-85-percent-of-facebook-video-is-watched-without-sound/
+- PCWorld (09): https://www.pcworld.com/article/2977726/openai-has-fixed-chatgpts-infamous-em-dash-obsession.html
+- 3-3-3 Approach (05): https://www.pilothouse.co/post/meta-creative-testing-framework-the-3-3-3-approach-to-finding-winners
+- Pilothouse — P.D.A. Framework Deep Dive (05): https://www.pilothouse.co/post/the-p-d-a-framework-deep-dive-how-to-generate-conceptual-diversity-that-andromeda-actually-rewards
+- Practical Ecommerce (05): https://www.practicalecommerce.com/ugly-ads-perform-best-marketer-says
+- PR Newswire (Velocify, pora dnia ma minimalny wpływ) (07): https://www.prnewswire.com/news-releases/velocify-research-shows-time-of-day-has-minimal-impact-on-sales-effectiveness-consider-quick-and-strategic-follow-up-instead-300275320.html
+- Readers First (omówienie) (03): https://www.readersfirst.org/news/2016/12/13/another-study-reading-comprehension-on-the-small-screen
+- Recharm (01,05): https://www.recharm.com/blog/what-is-andromeda-and-creative-similarity
+- sciencedaily.com: 080822160338.htm (12): https://www.sciencedaily.com/releases/2008/08/080822160338.htm
+- sciencedaily.com: 141210131344.htm (03): https://www.sciencedaily.com/releases/2014/12/141210131344.htm
+- ScienceDaily (03): https://www.sciencedaily.com/releases/2016/03/160314101710.htm
+- searchenginejournal.com: facebook removes the 20 text limit on ad images (12): https://www.searchenginejournal.com/facebook-removes-the-20-text-limit-on-ad-images/381844/
+- searchenginejournal.com: trust in ai search could drop with ads survey shows (12): https://www.searchenginejournal.com/trust-in-ai-search-could-drop-with-ads-survey-shows/571240/
+- searchinfluence.com: what happened to facebooks 20 text grid tool (12): https://www.searchinfluence.com/blog/what-happened-to-facebooks-20-text-grid-tool/
+- semanticscholar.org: 42c07f9f81c0e83cbff91afa697d94cf430ae508 (12): https://www.semanticscholar.org/paper/A-meta-analysis-of-humor-in-advertising-Eisend/42c07f9f81c0e83cbff91afa697d94cf430ae508
+- semanticscholar.org: d6405f1c491fef723719367446ad031e6ca76ea7 (12): https://www.semanticscholar.org/paper/Central-and-Peripheral-Routes-to-Advertising-The-of-Petty-Cacioppo/d6405f1c491fef723719367446ad031e6ca76ea7
+- semanticscholar.org: 35bf5854514ee63095a6a3dc4a7bdaa2eb18929f (12): https://www.semanticscholar.org/paper/How-many-words-do-we-read-per-minute-A-review-and-Brysbaert/35bf5854514ee63095a6a3dc4a7bdaa2eb18929f
+- Folkes, V. S. (1985). Mindlessness or mindfulness: A partial replication and extension of Langer, Blank, and Chanowitz (04): https://www.semanticscholar.org/paper/Mindlessness-or-mindfulness:-A-partial-replication-Folkes/97c8d3d4bd9f9ffe154f9599381d128893b11f3d
+- semanticscholar.org: 8f1780564f2489e5b4a1f3734a4455ea28988c3b (12): https://www.semanticscholar.org/paper/The-dilution-effect:-Nondiagnostic-information-the-Nisbett-Zukier/8f1780564f2489e5b4a1f3734a4455ea28988c3b
+- Senuto (09): https://www.senuto.com/pl/blog/jak-sprawdzic-czy-tekst-zostal-napisany-przez-ai/
+- shortform.com: rule of 100 (04): https://www.shortform.com/blog/rule-of-100/
+- Social Champ — 80+ Facebook Stats 2026 (02): https://www.socialchamp.com/blog/facebook-stats/
+- socialmediatoday.com: facebooks removing its restrictions on text content in facebook ad ima (12): https://www.socialmediatoday.com/news/facebooks-removing-its-restrictions-on-text-content-in-facebook-ad-images/585705/
+- Social Media Today (03): https://www.socialmediatoday.com/social-business/facebook-adds-automated-captions-video-ads-offers-tips-improve-video-performance
+- Social Media Today — Facebook Releases New Report on Maximizing the Potential of Your Video Assets (02): https://www.socialmediatoday.com/social-business/facebook-releases-new-report-maximizing-potential-your-video-assets
+- TechCrunch 14.11.2025 (09): https://www.techcrunch.com/2025/11/14/openai-says-its-fixed-chatgpts-em-dash-problem/
+- The Digital Exchange "Meta Ads Instant Forms: How to Get Higher-Quality Leads" (07): https://www.thedigitalexchange.co/blog/meta-ads-instant-forms
+- TikTok (01,05): https://www.tiktok.com/@jonloomer/video/7545893351409683742
+- Tobii — Facebook advertising research with eye tracking (02): https://www.tobii.com/resource-center/customer-stories/tv-advertising-research-for-facebook
+- Atria (05): https://www.tryatria.com/blog/andromeda-meta-ads
+- Atria — Meta Andromeda Update (01): https://www.tryatria.com/blog/meta-andromeda-update
+- VCCP Media × Amplified (2025), Hacking the Attention Economy (03): https://www.vccp.com/uk/news/2025/may/hacking-the-attention-economy-vccp-media-and-dr-karen-nelson-field-reveal-1-5-second-formula-for-effective-digital-advertising
+- Vendasta (07): https://www.vendasta.com/blog/lead-response-time/
+- Webtopia — Entity IDs, Andromeda… (01,05): https://www.webtopia.co/blog/entity-ids-andromeda-and-the-new-era-of-creative-led-targeting-on-meta
+- Yans Media — 33 Facebook Video Statistics (02): https://www.yansmedia.com/blog/facebook-video-statistics
+- 9 | YouTube Shorts (autor niezidentyfikowany) (12): https://www.youtube.com/shorts/GwDXxwuZrU8
+- 10 | YouTube (kanał niezidentyfikowany) (12): https://www.youtube.com/watch?v=0AMGFFZtqAo
+- x.com: status (05): https://x.com/DenneyDara/status/1905619697699037269
+
+**Znane z cytatu w przeczytanym materiale [CYTOWANE]** (12)
+
+- aclanthology.org: 2025.poleval main.3.pdf (09): https://aclanthology.org/2025.poleval-main.3.pdf
+- Polska stylometria (09): https://blog.humanistyka.dev/2026/02/rozpoznawanie-tekstow-ai-piec-grup-cech-zamiast-jednego-wskaznika
+- "homepage": " (10): https://docs.example.com/plugin
+- WikiProject AI Cleanup (09): https://en.wikipedia.org/wiki/Wikipedia:WikiProject_AI_Cleanup
+- hAI Magazine (09): https://haimagazine.com/pl/ai_news/chatgpt-nie-bedzie-uzywac-pauzy/
+- Indiana Capital Chronicle, "Too many em dashes?" (09): https://indianacapitalchronicle.com/2025/08/05/too-many-em-dashes-spotting-text-written-by-chatgpt-is-still-more-art-than-science/
+- $schema | string | np. " (10): https://json.schemastore.org/claude-code-plugin-manifest.json
+- phys.org (09): https://phys.org/news/2025-07-massive-ai-fingerprints-millions-scientific.html
+- omówienia (09): https://www.forbes.com/sites/jodiecook/2025/09/08/the-10-giveaway-signs-of-ai-writing-wikipedia-reveals/
+- makeuseof.com: wikipedia best ai writing detection guide (09): https://www.makeuseof.com/wikipedia-best-ai-writing-detection-guide/
+- 3-Part Creative Diversity Framework (odc. "The 3-Part Creative Diversity Framework I Use To Scale Past $10M On Meta Ads", 2026-05-01, (05): https://www.youtube.com/watch?v=eqa-vtU1tH8
+- [ ] Windows + Claude Code: marketplace add przez (10): https://…git
