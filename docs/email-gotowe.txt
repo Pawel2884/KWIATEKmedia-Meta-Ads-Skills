@@ -1,0 +1,45 @@
+Do: pawel.kwiatek1177@gmail.com
+Temat: KWIATEKmedia Meta Ads Skills — gotowe
+
+Cześć Paweł,
+
+system KWIATEKmedia Meta Ads jest gotowy (wersja 1.0.0).
+
+Repozytorium: https://github.com/Pawel2884/KWIATEKmedia-Meta-Ads-Skills
+Gałąź: claude/lucid-rubin-v6slqv (domyślna w repozytorium)
+Paczka pluginu: dist/kwiatekmedia-meta-ads.zip
+Pojedyncze skille: dist/skills/<nazwa>.zip
+
+INSTALACJA (5 minut)
+1. Claude: Customize > Plugins > Add marketplace > wpisz Pawel2884/KWIATEKmedia-Meta-Ads-Skills > zainstaluj kwiatekmedia-meta-ads. Działa w Cowork, w czacie i w Claude Code na tym samym koncie.
+2. Bez GitHuba: pobierz dist/kwiatekmedia-meta-ads.zip i wgraj przez Customize > Plugins > Upload plugin.
+3. Wyłącz stare skille o podobnych wyzwalaczach (kampania-lead-meta-pl, meta-ads-optymalizacja), żeby Claude nie wybierał starych.
+
+JAK UŻYWAĆ
+Napisz kilka zdań o ofercie, np. "Zrób całą kampanię dla gabinetu fizjoterapii w Rzeszowie, wizyta 180 zł, budżet 1500 zł". Claude sam wybierze skill. Skille pytają tylko o to, co zmienia wynik, a brakujące dowody oznaczają [UZUPEŁNIJ] zamiast je wymyślać.
+
+10 SKILLI
+1. meta-ads-master: cały pakiet kampanii od A do Z
+2. meta-creative-strategist: strategia, kąty, koncepty
+3. campaign-creative-planner: ile reklam przy danym budżecie, plan testów
+4. creative-diversification: naprawdę różne kierunki
+5. static-ads-creator: statyki z pełną specyfikacją i promptem graficznym
+6. meta-ad-copy: Primary Text, nagłówki, opis, CTA, teksty formularza
+7. video-ad-script: scenariusze sekunda po sekundzie, hooki, napisy, lista ujęć
+8. hook-generator: hooki różnych typów, nie parafrazy
+9. creative-auditor: werdykt WDRAŻAJ / POPRAW / NIE WDRAŻAJ, bez punktowej oceny
+10. iteration-engine: decyzje na wynikach, bez reakcji na małą próbę
+
+RESEARCH
+11 obszarów: system dostarczania i Andromeda (co wiadomo, a co jest mitem), kreacje i placementy Meta, lead ads, uwaga i czytelność na telefonie, psychologia zaufania i perswazji, praktycy, wideo i hooki, lead gen i polskie prawo, testy i zmęczenie kreacji, polski język bez AI slop, prompty graficzne, analiza ok. 1770 polskich reklam z Biblioteki Reklam Meta. 31 twierdzeń z wiedzy modelu sprawdzonych osobno. Każdy wniosek ma poziom dowodu A/B/C/D. 888 źródeł w SOURCES.md.
+
+TESTY
+4 rundy, 49 udanych uruchomień na 6 różnych biznesach (B2B, usługa lokalna, droga usługa lead gen, e-commerce, oferta wymagająca zaufania, sama agencja), plus 3 audyty i 3 zestawy wyników. Po każdej rundzie krytyka jak u wymagającego Creative Directora i poprawki reguł. Najważniejsze naprawione problemy: przeinaczanie dowodów, hook z nazwą firmy, cechy osobiste w hookach, zakazane pytania w formularzach, ozdobniki i ekrany w kadrze, kalibracja audytora. Szczegóły w TESTS.md.
+
+PLIKI W REPO
+README.md, RESEARCH.md, PRINCIPLES.md (42 zasady), SOURCES.md, TESTS.md, CHANGELOG.md, plugin, paczki w dist/, evale do szybkich testów regresji.
+
+OGRANICZENIA
+Dostęp do stron w sesji był zablokowany, więc część źródeł znam z wyników wyszukiwarki (oznaczone). Prawo w trakcie zmian (CCD2, dyrektywa 2024/825) skille oznaczają "do sprawdzenia". Skille nie zastępują prawnika klienta w branżach regulowanych.
+
+Paweł
