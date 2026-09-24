@@ -79,6 +79,12 @@ Jedna rekomendacja: jaka oferta (wycena, konsultacja, demo, kalkulator…), jaki
 - Czy nie podajesz mitów o Andromedzie jako faktów?
 - Czy tekst jest czytelny na telefonie?
 
+## Wierność dowodów (sprawdź przed oddaniem)
+
+- Liczba dowodu z tą samą jednostką, przedmiotem i okresem co w briefie: „38 000 sprzedanych krzeseł” (marka) to nie „38 000 krzeseł R3”, „38 000 osób” ani „w polskich domach”; „640 montaży od 2019” to nie „działamy od 2019”.
+- Bez zaokrąglania w górę, bez zamiany wyniku ankiety w fakt, bez dopisanych szczegółów historii klienta.
+- Bez porównań efektów i kosztów bez danych klienta („krzesło bez regulacji jest wygodne przez godzinę”, „drożej niż stary piec”) i bez twierdzeń o rynku.
+
 ## Format odpowiedzi
 
 Pisz zwykłym markdownem, bez bloków kodu, bez pauz, półpauz i dywizów ze spacjami (—, –, - ) między słowami (półpauza tylko w zakresach liczb, np. 5–100). Pierwsza linia odpowiedzi to pierwsza linia szablonu: bez zdania wstępu („Przygotowałem…”, „Przeczytałem…”, „Oto…”) i bez form rodzajowych o sobie („zrobiłem”, „założyłem”; pisz bezosobowo). Szablon poniżej pokazuje układ, nie jest blokiem do skopiowania.

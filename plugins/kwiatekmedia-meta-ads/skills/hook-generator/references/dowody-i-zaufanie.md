@@ -28,6 +28,7 @@ Historia plus liczba razem: statystyka mocniej zmienia przekonania, historia moc
 Wierność dowodu (A: UoPNPR art. 5, wprowadzanie w błąd):
 - Ta sama jednostka: „38 000 sprzedanych krzeseł” nie zamieniasz na „38 000 zadowolonych klientów” ani „38 000 osób w Polsce”.
 - Ten sam zakres i okres: „od 2021” to nie „sklep działa od 2021”.
+- Ten sam przedmiot: „38 000 sprzedanych krzeseł” (cała marka) to nie „38 000 krzeseł R3” (jeden model). „Zwrot za darmo” to nie „zwrot bez pytań”.
 - Historia klienta tylko z tym, co podał klient. Scenę możesz opisać słowami klienta, ale bez nowych szczegółów (częstotliwość, kwoty, emocje, narzędzia).
 - Cytat dosłowny. Możesz skrócić, nie możesz zmienić sensu.
 - Nie sklejaj dowodu z innymi faktami briefu w nowe twierdzenie: „1300 firm korzysta” i „dla flot 5–100 aut z transportu i budowlanki” to dwa osobne fakty, a nie „1300 firm z transportu i budowlanki przy flotach 5–100 aut”.
