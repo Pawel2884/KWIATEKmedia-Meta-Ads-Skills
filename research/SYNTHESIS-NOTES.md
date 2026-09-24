@@ -86,3 +86,15 @@
 - Evale: plugins/kwiatekmedia-meta-ads/evals/<case>/prompt.md + graders/*.md (regex, tool_used, tool_order, llm). Wyniki evals/results/ w .gitignore. Izolacja: brak MCP użytkownika.
 - Instalacja: Cowork/claude.ai: Customize → Plugins → + → Add marketplace → Pawel2884/KWIATEKmedia-Meta-Ads-Skills; lub upload ZIP. Claude Code: /plugin marketplace add https://github.com/Pawel2884/KWIATEKmedia-Meta-Ads-Skills.git → /plugin install kwiatekmedia-meta-ads@kwiatekmedia.
 - Ostrzeżenie: stare skille Pawła mają podobne wyzwalacze — wyłączyć przed użyciem (Paweł i tak chce je usunąć).
+
+## Z 06 (wideo/hooki) — kluczowe (pełne szablony: plik 06 sekcje 3–4, reguły RV01–RV40 sekcja 6)
+- Hook = 3 zgodne kanały: wizual 0–1 s + tekst 3–7 słów + pierwsze zdanie audio ≤1 s. Brak powitań na starcie.
+- 16 typów hooków H1–H16 (upfront, call-out po roli/miejscu, pytanie tematyczne, liczba/wynik, problem, kontrariańska teza, "nie rób X", demo, przed/po, dowód na start, historia/pętla, porównanie, pattern interrupt, oferta na start, talking head, ASMR-słabe). Dowody: upfront B; reszta C/D; kierunek efektu cech nagłówka niestabilny (Banerjee & Urminsky) → 3–5 hooków RÓŻNYCH TYPÓW na jedno ciało.
+- Google ABCD Detector (A): zmiana ujęcia <3 s, twarz do kamery 0–2 s, mowa 0–3 s, napisy zsynchronizowane, obiekt ≥60% kadru, marka w 5 s "see and say".
+- Szablony: S15 (domyślny lead ads), S30 PAS+D, TST testimonial, EXP talking head "3 błędy/powody/pytania", DEMO, BAB, FND founder, UGC, MICRO 5–10 s animowana statyka (Meta: 1–2 elementy w ruchu w 3 s; tani test kątów), LONG 60–180 s (B2B/wysoki koszt/retargeting), BUMPER 6 s.
+- Tempo mowy PL ≈2–2,5 słowa/s → 15 s ≤35 słów, 30 s ≤70, 60 s ≤140 (D).
+- Dwie kolumny scenariusza: TEKST NA EKRANIE (sam niesie logikę) + AUDIO. Napisy PL wypalone lub SRT.
+- Marka zintegrowana i pulsująca (nie plansza z logo na starcie).
+- Prawo: fałszywe opinie zakazane (UPNPR art. 7 pkt 25–26); aktor jako klient → oznaczenie (FTC jako wzorzec); współpraca z twórcą oznaczona "Reklama"/"Współpraca reklamowa"; zakaz awatarów AI udających klientów/ekspertów (AI Act art. 50 od 2.08.2026).
+- Metryki: hook rate = 3-s plays/impressions; hold = ThruPlay/3-s plays; progi branżowe C/D; decyzje po CPL/CPQL. Drzewko: niski hook rate → nowe 0–3 s; dobry hook, słaby hold → środek; dobry hold, niski CTR → oferta/CTA; wysoki CTR, słaba jakość → hook przyciąga niewłaściwych.
+- TikTok (A, korelacja): 21–34 s +280% konwersji; tekstowy CTA +152%; VO > ASMR.

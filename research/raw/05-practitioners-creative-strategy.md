@@ -264,6 +264,71 @@ Reguła QA "nowej kreacji" (łącząca F11, F15 i A: "materially different"): no
 
 ## 4. Taksonomia formatów
 
+> Źródła taksonomii: (a) Adcrate/parker-brain — trójpodział static / video / both, 14 + 27 + 22 formatów, z zasadą, że format to *kontener*, a nie kąt/hook/persona ("the container, not the ad's angle") — [PEŁNY] https://github.com/real-simple-labs/parker-brain/blob/main/creative-strategy-context/ad-formats/README.md , …/static/index.md , …/video/index.md , …/both/index.md (C); (b) ranking hit rate Motion 2026 (B-, e-commerce-heavy) — 2.3; (c) wertykale "credibility-forward" (finanse/usługi profesjonalne) Motion (B-); (d) Ben Heath o formatach dla usług (C); (e) lista z briefu Pawła. Uwagi "dla lead-gen" to **moja synteza (D)**, chyba że oznaczono źródło.
+> Legenda: ★ = szczególnie pasuje do lead-gen/usług lokalnych (uzasadnienie w nawiasie); ⚠ = ryzyko w lead-gen.
+
+### 4.1 Statyki (single image)
+| Format | Definicja (źródło) | Uwagi lead-gen/usługi |
+|---|---|---|
+| Headline only / Offer-first banner | jeden dominujący nagłówek (parker-brain); "Offer-First Banner" #1 hit rate Motion 2026 | ★ najtańszy test kąta/obietnicy; text-only ma najwyższy hit rate (11,6%, Motion). ⚠ oferta cenowa przyciąga "łowców okazji" — kwalifikuj w copy/formularzu. |
+| Headline + Benefits / Feature callouts | nagłówek + 3–5 korzyści w punktach (parker-brain; "Feature Benefit Point" Motion) | ★ usługi o wielu korzyściach (np. PV: oszczędność, dotacja, gwarancja). |
+| Question-based headline | pytanie wywołujące rozpoznanie siebie (parker-brain) | ★ kwalifikuje ("Masz dom 120–200 m² i rachunki >400 zł?"). |
+| Us vs Them / porównanie | marka vs konkurent/alternatywa/stary sposób (parker-brain; top-10 Motion) | ★ usługa vs "zrób sam"/"tania ekipa"/"stara metoda"; ⚠ nie dyskredytować nazwanych konkurentów (prawo PL — agent 07). |
+| Before & After | kontrast stanów (both; top-10 Motion) | ★ remonty, ogrody, klimatyzacja, stomatologia, sprzątanie; ⚠ zdrowie/uroda — polityki Meta i ograniczenia prawne. |
+| Testimonial / Review / recenzja | słowa klienta, cytat, gwiazdki (both; "Testimonial" #3 Motion) | ★ zaufanie w usługach; screenshot opinii Google (prawdziwej, za zgodą). |
+| Statystyka / liczba | "Statistic" (Motion) | ★ "312 montaży w woj. pomorskim"; tylko prawdziwe liczby. |
+| Case study | "Case study" top spend-use w wertykalach credibility-forward (Motion) | ★ usługi B2B/drogie: problem → rozwiązanie → wynik liczbowy. |
+| Letter / Handwritten / Post-it | list/odręczna notatka (Motion "Letter" top w credibility-forward; parker-brain) | ★ list od właściciela firmy lokalnej — wysoka natywność i osobisty ton. |
+| Notes app | interfejs Apple Notes (parker-brain) | lista "5 rzeczy, które sprawdzić przed wyborem ekipy"; natywne; ⚠ nadużywany → szybko opatrzony (D). |
+| Social interface / screenshot posta/tweeta/komentarza | UI platformy (both; "Social post mockup" #1 spend-use w credibility-forward, Motion) | ★ screenshot pytania z lokalnej grupy FB ("kto poleci firmę od…?") → odpowiedź; ⚠ nie fabrykować prawdziwych osób/wpisów (polityka + etyka — reguła systemu). |
+| Text message | czat iMessage/SMS (parker-brain) | rozmowa klient–firma o wycenie; ⚠ tylko inscenizacja jawna/zanonimizowana. |
+| Press / media | wygląd artykułu/wzmianki medialnej (parker-brain; "Press/media") | ★ jeśli realnie była wzmianka w lokalnych mediach; ⚠ nie podszywać się pod redakcję. |
+| Meme | szablon memu (parker-brain) | lekkie usługi B2C; ⚠ ryzyko wizerunkowe w usługach zaufania. |
+| Native (zdjęcie "z rolki aparatu") | wygląda jak nieedytowane zdjęcie (parker-brain) | ★ zdjęcie z realizacji telefonem (setting = sygnał trafności). |
+| Atypical text | tekst na nietypowej powierzchni (lustro, piasek) (parker-brain) | przyciąga uwagę; dopasuj do branży (np. napis na zaparowanej szybie — okna/wentylacja). |
+| Billboard | reklama w "fizycznym" otoczeniu (parker-brain; Motion credibility-forward) | lokalność ("billboard" w realnym mieście klienta). |
+| Listicle | ponumerowane powody (both; top-10 Motion) | ★ "3 błędy przy wyborze pompy ciepła". |
+| Callout | bezpośrednie wywołanie grupy (both) | ★ kwalifikacja: miejscowość/typ domu/branża. |
+| Carousel | karty do przesuwania (parker-brain; Heath) | ★ wiele usług/etapów procesu/realizacji. |
+| Offer based | promocja jako główny koncept (both) | ⚠ może obniżać jakość leadów; testuj z kwalifikacją. |
+| UGC-still / zdjęcie klienta | (brief Pawła) | ★ wiarygodność; wymaga zgody. |
+| Founder / Employee | właściciel/pracownik (both) | ★ firmy lokalne — twarz właściciela buduje zaufanie ("Founder" wysoko w credibility-forward, Motion). |
+| Authority figure / Expert explained | ekspert z kompetencjami (both; Motion) | ★ usługi medyczne/prawne/finansowe/techniczne (np. instalator z uprawnieniami). |
+
+### 4.2 Wideo
+| Format | Definicja (źródło) | Uwagi lead-gen/usługi |
+|---|---|---|
+| UGC single / Testimonial wideo | twórca/klient mówi o doświadczeniu (parker-brain; Motion #3 "Testimonial") | ★ nagranie prawdziwego klienta u niego w domu (setting!). |
+| Yapper / talking head | ktoś bierze telefon i mówi bez cięć (parker-brain) | ★ właściciel/ekspert "na szybko" — tanie, natywne. Faris: klient, u którego najlepsza wersja to "a person talking to the camera" bez montażu (anegdota). |
+| Founder story | founder prowadzi narrację (both) | ★ lokalne firmy rodzinne. |
+| Expert explained / Educational / How-to | ekspert uczy (both; Motion) | ★ usługi wymagające wyjaśnienia (dotacje, procedury). |
+| Demo / Screen recording | pokaz działania (Motion #2 "Demo") | ★ proces usługi (jak wygląda montaż, pomiar, wizyta). |
+| VO + B-roll (explainer) | lektor + ujęcia (parker-brain; Faris "VO-only explainer") | ★ tanie, skalowalne; Faris: 15–45 s, hook → edukacja → walidacja/gwarancja → CTA. |
+| Podcast clip | rozmowa w studiu (parker-brain) | ★ ekspert + prowadzący; "AI-replication moat" (Adcrate). |
+| Street interview | wywiad na ulicy (parker-brain) | lokalne pytania ("Ile płacisz za prąd?"); ⚠ zgody na wizerunek. |
+| Skit | jeden twórca gra kilka postaci (parker-brain) | humor (Motion: humor nadreprezentowany wśród top-spenderów). |
+| Green screen | twórca na tle innej treści (parker-brain) | reakcja na artykuł/rachunek/przepis prawa. |
+| Stitch / Comment response / Reaction | odpowiedź na treść/komentarz (parker-brain; Motion "Stitch", "Reaction" top w credibility-forward) | ★ odpowiedź na realne obiekcje z komentarzy ("to za drogie?"). |
+| Sceptic test | sceptyk testuje i zmienia zdanie (parker-brain) | usługi z nieufnością kategorii. |
+| Problem–solution / Problem agitation | (Motion "Problem Agitation") | ★ klasyka lead-gen usług. |
+| "3 reasons" / Listicle wideo | (both) | ★ prosty skrypt. |
+| Before & After / Transformation / Time-based | (both/video; Motion "Transformation" w credibility-forward) | ★ realizacje (timelapse budowy, "dzień 1 → dzień 14"). |
+| Behind the scenes / Warehouse / EGC | kulisy, pracownicy (both; Motion "Behind the scene" w credibility-forward) | ★ wiarygodność firmy lokalnej. |
+| Unboxing | (video; Motion top-10) | głównie produkty; w usługach — "co dostajesz w pakiecie". |
+| Slideshow / Motion video / Static-to-video | animowana statyka (parker-brain; Heath: slideshow jako tani ruch) | ★ tani most między statyką a wideo. |
+| Infomercial / VSL | skryptowana prezentacja DR (parker-brain) | drogie usługi/wysoka świadomość; dłuższe. |
+| High production | (video) | ⚠ "środek" barbell; przydatne dla aspiracyjnych usług premium (Alysha: hi-fi → wyższe AOV). |
+| AI animation / Graphic video | (video) | ⚠ ryzyko "AI sheen"; wymóg oznaczania syntetycznych ludzi (NY S.8420-A wg parker-brain; w UE — AI Act/agent 07). |
+| POV / Trends / ASMR / Challenge / Gifting / Mashup / Wall of text / Faceless | (video/both) | wg kategorii; "Wall of text" i "Faceless" — tanie i natywne dla usług. |
+
+### 4.3 Co wiadomo o formatach w lead-gen/usługach (dowody)
+- Motion 2026, wertykale credibility-forward (finanse, usługi profesjonalne): top hit rate — Stitch, Reaction, Unboxing, Celebrity, Founder, Letter, Stop motion, Influencer endorsement, POV, Transformation; top "spend use ratio" — Social post mockup, Letter, Celebrity, Case study, Offer-first banner, Behind the scene, UGC overlay, Founder, Transformation, Billboard (B-, [WYSZUKIWARKA]).
+- Motion 2026 ogółem: text-only 11,6% hit rate > product image + text 8,75% > lifestyle 7,59% ≈ UGC 7,56% > high production (B-).
+- Heath (C): obraz przy decyzjach szybkich/niskiego ryzyka (darmowa wycena/konsultacja/lead magnet), wideo przy drogich usługach (>100 USD, szczególnie >1000 USD).
+- Motion bootcamp — Flowell (C, pojedynczy case): ta sama treść, inna osoba (pielęgniarka z autentycznym doświadczeniem vs aktorka) → 9 s → 25+ s oglądania; wniosek: **talent = część dowodu** (dopasowanie osoby do problemu), nie kosmetyka.
+- Brak w zebranych źródłach twardych danych porównujących formaty *wyłącznie* dla Instant Forms/usług lokalnych → system powinien traktować formaty jako osie testu, nie jako pewniki.
+
+
 ## 5. Spory i mity
 
 ## 6. Reguły do systemu

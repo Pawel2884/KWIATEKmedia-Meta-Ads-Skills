@@ -387,3 +387,47 @@
 - [ ] Chatbot w Messengerze/WhatsApp: informacja, że rozmowa jest z automatem/AI (AI Act art. 50 ust. 1 — obowiązek dostawcy; dobra praktyka dla wdrażającego).
 - [ ] Wizualizacje (np. dom z panelami, efekt remontu) oznaczone jako "wizualizacja".
 
+## 5. Sporne / niewiadome
+
+1. **Cena w reklamie → jakość leadów.** Brak zebranych w sesji kontrolowanych testów dla lead gen usługowego (WebSearch wyczerpany). Mocne przesłanki pośrednie (Q2 — B; mechanizmy Meta — A), ale wielkość efektu i ryzyko odstraszenia dobrych klientów nieznane → test A/B "cena od / widełki / brak ceny" z metryką CPQL.
+2. **Dyskwalifikacja w copy** ("nie dla…") — brak danych; może obniżać CTR i zasięg (algorytm może też "uczyć się" od mniejszej liczby zdarzeń). Testować.
+3. **Zakres art. 58 ust. 1 pkt 1 ustawy o wyrobach medycznych** — czy każda reklama zabiegu wykonywanego urządzeniem/preparatem (laser, HIFU, kwas hialuronowy, implant) to "reklama wyrobu" z obowiązkiem ostrzeżenia i zakazem wizerunku personelu medycznego. Przepis mówi "w zakresie, w jakim dotyczy ona usług świadczonych przy użyciu danego wyrobu" — interpretacja zależy od eksponowania wyrobu. Wymaga opinii prawnika / praktyki URPL i GIS.
+4. **Granica "informacja vs reklama" dla lekarzy i podmiotów leczniczych** (art. 14 ustawy o działalności leczniczej) — brak ustawowej definicji "cech reklamy"; praktyka samorządów lekarskich i orzecznictwo zmienne. Styl informacyjny minimalizuje ryzyko, nie eliminuje go. "Przed/po" w medycynie estetycznej — Meta dopuszcza (18+), polskie zasady zawodowe mogą je traktować jako reklamę.
+5. **Status polskich ustaw wdrażających:** CCD2 (stosowanie od 20.11.2026), dyrektywa 2024/825 "green transition" (stosowanie od 27.09.2026) — w sesji nie potwierdzono, czy PL uchwaliła i jak brzmią polskie przepisy (np. dokładna treść ostrzeżenia kredytowego). Repozytorium `legalize-pl` nie zawierało tych zmian (pokrycie repo prawdopodobnie do ~2024).
+6. **Nowsze teksty jednolite** — UZNK, ustawa o działalności leczniczej, Prawo farmaceutyczne, ustawa o kredycie konsumenckim: w repozytorium oznaczone jako "expired" (istnieje nowszy t.j.). Cytowane przepisy są stabilne od lat, ale numery Dz.U. do aktualizacji.
+7. **Zasady etyki zawodowej** (Kodeks Etyki Lekarskiej — możliwa nowa wersja; KERP; ZZEAiGZ) — nie zweryfikowano w sesji (nil.org.pl zablokowane).
+8. **Kontakt telefoniczny w odpowiedzi na formularz a PKE art. 398** — czy oddzwonienie w sprawie wyceny, o którą prosi użytkownik, wymaga osobnej zgody na "marketing bezpośredni". Praktyka: jasny opis celu kontaktu + osobna zgoda marketingowa na dalsze komunikaty. Do potwierdzenia przez prawnika.
+9. **Dane Meta o Conversion leads (−21%, −9,5%)** — dane samej platformy, globalne, krótkie okna (2–3 tygodnie), definicja "quality lead" ustalana przez reklamodawcę; brak niezależnej replikacji.
+10. **Speed-to-lead mnożniki** (7×, 21×, 100×, 391%) — kierunek spójny, ale dane z USA, sprzed lat, część od dostawców oprogramowania; "78% kupuje od pierwszego" — bez źródła (nie używać).
+11. **Polskie dane rynkowe** (użytkownicy FB/IG 2025/2026, CPL/CTR, zaufanie do reklam/opinii) — luka; wymaga osobnego pozyskania (Gemius/Mediapanel, NapoleonCat, DataReportal, IAB Polska, UOKiK).
+12. **UOKiK — rekomendacje dot. oznaczania treści influencerów (2022) i działania ws. fałszywych opinii** — treść nie zweryfikowana w sesji (uokik.gov.pl zablokowane). [WIEDZA] rekomendowane oznaczenia po polsku, na początku treści (np. "#reklama", "#materiałreklamowy", "#współpracareklamowa"; przy własnych produktach "#autopromocja"), niewystarczające same "#ad", "#collab", "#sp" — do potwierdzenia. Dotyczy reklam typu partnership ads/UGC z twórcami.
+
+## 6. Konkretne reguły do systemu (z poziomem dowodu)
+
+| # | Reguła | Poziom | Oparcie |
+|---|---|---|---|
+| R1 | Domyślny formularz dla usług z kontaktem sprzedażowym: **Higher Intent** (lub Rich Creative, gdy oferta wymaga kontekstu); "More volume" tylko dla list/e-booków. Uwzględnić, że Higher Intent = tylko feed mobilny FB/IG. | A | F1 |
+| R2 | Każdy formularz: 2–5 pytań kwalifikujących (potrzeba, termin, skala/budżet w przedziałach, warunek konieczny); przy warunku koniecznym — logika warunkowa z "close form" i pomocną stroną końcową dla odrzuconych. | A (mechanizm) / C (liczba pytań) | F2, F3 |
+| R3 | Dla ofert z telefonem: włączyć **weryfikację OTP**; dla B2B: **walidację e-maila firmowego**. Akceptować wyższy CPL. | A | F12 |
+| R4 | Metryka nadrzędna: **koszt leada kwalifikowanego / spotkania / sprzedaży**, nie CPL. Brief musi zawierać definicję "leada kwalifikowanego" klienta. | A/C | F4, S5 |
+| R5 | Jeśli klient ma CRM/arkusz ze statusami → rekomendować **Conversions API for CRM** (np. Zapier/Make) i cel "Maximize number of qualified leads"; bez CRM → **Leads Center + data sharing**. Od 04.2026 cel jakościowy bez CAPI niedostępny dla nowych kampanii. Czas dojścia do pełnej optymalizacji ~1–2 mies. | A | F4, F5, F14 |
+| R6 | Brief pyta o **SLA kontaktu** i godziny obsługi; obietnica czasu kontaktu w reklamie tylko przy dotrzymywanym SLA i z zakresem godzin; przy ograniczonej obsłudze — harmonogram emisji. | B (efekt) / A (Meta) | S1–S4, F13, Q6 |
+| R7 | Kreacja zawiera min. 2 z 4 filtrów: DLA KOGO (rola/sytuacja), GDZIE, ILE (cena od/widełki), CO DALEJ. | C (+B dla ceny) | Q1, Q2 |
+| R8 | **Linter "personal attributes"**: blokuj call-outy sugerujące cechy osoby (zdrowie, wiek, finanse, niepełnosprawność, rasa, religia, orientacja, imię), w tym pytania "Masz…?", "Cierpisz…?", "Jesteś zadłużony?". Przeformułuj na sytuację/rolę/usługę. | A | F8 |
+| R9 | **Linter UoPNPR**: flaguj "gratis/bezpłatny/za darmo", liczniki/ograniczoność, "nr 1/najlepszy/najtańszy", "gwarancja", "certyfikowany/autoryzowany", opinie/oceny, "leczy/usuwa chorobę", ustawowe prawa jako USP (zwrot 14 dni) → wymagaj potwierdzenia prawdziwości/uprawnienia. | A | L1, L2 |
+| R10 | **Promocja cenowa** → wymagaj pola "najniższa cena z 30 dni" (towary i usługi, także w reklamie). | A | L3 |
+| R11 | **Flaga "finansowanie/raty/kredyt"** → RRSO zawsze; przy podaniu kosztu — pełny reprezentatywny przykład; dane pośrednika; od 20.11.2026 ostrzeżenie CCD2 (po weryfikacji polskiego brzmienia); Meta SAC. Bez tych danych — nie wspominać rat. | A | L4, L10, F7 |
+| R12 | **Flaga "nieruchomości/rekrutacja/kredyt"** → Special Ad Category; selekcja przez kreację i formularz. | A | F7 |
+| R13 | **Flaga "medycyna/estetyka/stomatologia"** → styl informacyjny; brak superlatyw i obietnic efektu; 18+; bez personelu medycznego prezentującego wyroby; bez nazw wyrobów/urządzeń albo z ostrzeżeniem w formacie z rozporządzenia; brak pytań o dane zdrowotne w formularzu; eskalacja do prawnika klienta. | A (przepisy) / D (granice interpretacji) | L5, L6, F9, sekcja 5 |
+| R14 | **Flaga "apteka/lek"** → odmowa kreacji reklamowej (poza informacją o lokalizacji i godzinach apteki). | A | L9 |
+| R15 | **Flaga "OZE/eko"** → zakaz ogólników środowiskowych; wymagaj konkretnych, weryfikowalnych parametrów; brak sugerowania powiązań z programami publicznymi/instytucjami. | A (dyrektywa) / D (status PL) | L11, L1 |
+| R16 | **Opinie i dowody**: tylko prawdziwe, z możliwością wskazania źródła; brak aktorów/twórców udających klientów; brak AI-"klientów"; realistyczne treści AI oznaczać. | A | L1, L8 |
+| R17 | **Zawody prawnicze** → tylko informacja o zakresie usług, bez obietnic wyniku i porównań. | C ([WIEDZA] etyka) | 4.3 |
+| R18 | Formularz: link do polityki prywatności + opis celu kontaktu + osobne, nieobowiązkowe zgody marketingowe. | A | F11, L7, L12 |
+| R19 | Wybór kanału: formularz (skala) / landing (edukacja, drogie, zaufanie) / wiadomości (dialog + szybka odpowiedź) / połączenia (pilne, lokalne). | A (możliwości) / C (dopasowanie) | F6, F15 |
+| R20 | Oferta: preferuj wysokiej intencji (wycena, wizja, konsultacja z wynikiem, kalkulator) nad niskiej (e-book, konkurs, rabat bez kontekstu); jeśli lead magnet — z pytaniami kwalifikującymi i kolejnym krokiem na ekranie końcowym. | C | 2.6, F16 |
+| R21 | B2B: oczekuj małego odsetka "w rynku" (~5%/kwartał) → kreacje edukacyjne + retargeting + oferta dla gotowych; nie oceniaj po CPL. | B | B1 |
+| R22 | Nie cytuj klientom statystyki "78% kupuje od pierwszego"; cytuj HBR 2011 (7× w ciągu godziny) i MIT/InsideSales (5 vs 30 min) jako kierunek. | B/D | S2, S3 |
+| R23 | Nie używaj zaszytych benchmarków CPL/CTR dla Polski; porównuj z danymi konta i narzędziem benchmarkowym Meta (MCP `ads_insights_industry_benchmark`). | D (brak danych) | M1, M2 |
+| R24 | Ustaw reklamodawcę i płatnika (DSA) dla kont klientów. | A | F17 |
+
