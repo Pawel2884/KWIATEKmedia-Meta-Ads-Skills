@@ -186,14 +186,19 @@ def lint(text, brief=None):
         allowed = numbers_in(brief)
         for k, v in fields:
             v = re.sub(r"\d+(?:[.,]\d+)?\s?[–-]\s?\d+(?:[.,]\d+)?\s?s\b|\d+(?:[.,]\d+)?\s?(?:s|sek\.?|px|zn\.?)\b|#[0-9A-Fa-f]{6}|\b[HKSVI]\d{1,2}\b|^\s*\[?\d\]?[.)]?\s", "", v, flags=re.M)
-        for n in numbers_in(v):
+            for n in numbers_in(v):
                 if n not in allowed and not re.fullmatch(r"[0-9]", n):
                     issues.append(("liczba", f"[{k}] liczba '{n}' nie występuje w briefie — sprawdź, czy nie jest zmyślona"))
 
     # cała odpowiedź: wstęp i formy męskie w 1. osobie (np. „zrobiłem”), jeśli nie pochodzą z briefu
     first_line = next((l for l in text.splitlines() if l.strip()), "")
-    if re.match(r"^\W*(Zrobiłem|Zrobiłam|Przygotowałem|Przygotowałam|Napisałem|Napisałam|Poniżej|Oto |Świetnie|Jasne)", first_line):
+    if re.match(r"^\W*(Zrobił|Przygotował|Napisał|Przeczytał|Sprawdził|Przeanalizował|Poniżej|Oto |Świetnie|Jasne|Dobrze)", first_line):
         issues.append(("wstep", f"odpowiedź zaczyna się od wstępu: {first_line[:80]}"))
+    dashes = len(re.findall(r"[–—]", re.sub(r"\d\s?[–—]\s?\d", "", text)))
+    if dashes:
+        issues.append(("pauza_w_odpowiedzi", f"{dashes} pauz/półpauz poza zakresami liczb w całej odpowiedzi"))
+    if "```" in text:
+        issues.append(("blok_kodu", "odpowiedź zawiera blok kodu"))
     brief_l = (brief or "").lower()
     for m in set(re.findall(r"\b[a-ząćęłńóśźż]{2,}[aeiouy](?:łem|łam)\b", text.lower())):
         if m not in brief_l:
