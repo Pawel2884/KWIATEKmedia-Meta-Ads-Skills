@@ -1,14 +1,16 @@
 # 05 — Praktycy: strategia kreacji, dywersyfikacja po Andromedzie, taksonomia formatów, testowanie (research surowy)
 
-> Agent researchowy: obszar 05. Data: 2026-09-24. Status: W TOKU (zapis przyrostowy).
+> Agent researchowy: obszar 05. Data: 2026-09-24. Status: UKOŃCZONY (2026-09-24).
 > Legenda trybu dostępu: [PEŁNY] = pełna treść przeczytana w sesji; [WYSZUKIWARKA] = tylko streszczenie/fragment z WebSearch; [WIEDZA] = wiedza modelu niepotwierdzona w sesji.
 > Poziomy dowodu: A = źródło pierwotne (Meta); B = badania / duże zbiory danych z jawną metodą; C = mocna obserwacja praktyków z przykładami; D = hipoteza/opinia.
 
 ## 1. Zakres i metoda
-(uzupełniane na końcu)
+- **Zakres:** frameworki dywersyfikacji kreacji po Andromedzie (2024–2026), rozróżnienie koncept/iteracja/wariant, taksonomia formatów statycznych i wideo (z uwagami dla lead-gen/usług), hooki i natywność (skrótowo — szczegóły u agenta 06), spory (liczba reklam, kampanie testowe, Advantage+ creative, dynamic/flexible, "Entity ID", ilość vs jakość, zmęczenie), głosy z Reddit/X/forów.
+- **Metoda i kanały:** (1) WebSearch — ~37 zapytań (streszczenia stron → [WYSZUKIWARKA]); potem wspólny budżet sesji (200 zapytań na wszystkich agentów) się wyczerpał. (2) WebFetch — zablokowany dla pilothouse.co, jonloomer.com, foxwelldigital.com, adsuploader.com, web.archive.org, old.reddit.com (po jednej próbie); działał dla github.com. (3) GitHub (WebFetch + wyszukiwarka kodu) — znalezione i przeczytane korpusy transkrypcji: bootcamp Motion 2026 (nieoficjalna ekstrakcja), podcast Andrew Farisa, filmy Bena Heatha, "mózg" strategii Adcrate/Alexa Coopera, repo agregujące wątki Reddit → [PEŁNY] (przeczytany ekstrakt/transkrypcja; możliwe błędy transkrypcji). (4) Meta Business Help Center przez Meta Ads MCP (`ads_get_help_article`) — pełne teksty → [PEŁNY], poziom A. Łącznie ~75 wywołań badawczych.
+- **Ograniczenia:** (a) brak dostępu do polskich źródeł (2.19) — luka do uzupełnienia; (b) Reddit tylko z drugiej ręki; (c) dane Motion ze streszczeń wyszukiwarki (metodyka znana, pełne tabele nie); (d) większość materiałów praktyków = DTC/e-commerce; przeniesienie na lead-gen usług oznaczone jako synteza; (e) nie przeczytano w całości artykułów Jona Loomera, Pilothouse, Motion (tylko streszczenia).
+- **Oznaczenia:** tryb dostępu przy każdym źródle; poziom dowodu A/B/C/D przy każdej tezie; "B-" = duży zbiór, ale dane opisowe/korelacyjne lub metoda tylko częściowo jawna.
 
 ## 2. Kluczowe ustalenia
-(uzupełniane przyrostowo)
 
 ### 2.1 Wolumen kreacji a liczba "winnerów" — Motion Creative Benchmarks 2026
 **Teza:** Konta, które wypuszczają więcej kreacji, znajdują więcej reklam, na które Meta alokuje budżet ("winnerów"), przy podobnym budżecie; tylko ~4–9% kreacji staje się winnerami.
@@ -421,4 +423,59 @@ Reguła QA "nowej kreacji" (łącząca F11, F15 i A: "materially different"): no
 | R26 | Brief kreacji zawiera: tytuł konceptu, kąt ("dlaczego działa"), guardraile, obsługę obiekcji, 3–5 startowych hooków, format, talent, setting, CTA/ofertę; pisany prostym językiem ("pokaż, jak łatwo…", nie "zademonstruj value prop"). | C | Caraway (Janae) 2.11b; Eric 8 klocków 2.11f |
 
 
-## 7. Lista źródeł
+## 7. Lista źródeł (z trybem dostępu i poziomem)
+
+### A — Meta (pełne teksty przez Meta Ads MCP)
+- [PEŁNY] About managing ad volume — https://www.facebook.com/business/help/2720085414702598
+- [PEŁNY] About creative fatigue recommendations in Meta Ads Manager — https://www.facebook.com/business/help/1346816142327858
+- [PEŁNY] About the flexible ad format — https://www.facebook.com/business/help/835561738423867
+- [PEŁNY] About flexible media — https://www.facebook.com/business/help/1126725172362626
+- [PEŁNY] About ad formats in Meta Ads Manager — https://www.facebook.com/business/help/1263626780415224
+- [PEŁNY] Campaign, ad set and ad limits per ad account — https://www.facebook.com/business/help/652738434773716
+- [PEŁNY] Ad limits per page — https://www.facebook.com/business/help/766697140509126
+- [PEŁNY] About A/B testing — https://www.facebook.com/business/help/1738164643098669 ; Selecting a variable — https://www.facebook.com/business/help/1597318281091985 ; Testing more than one variable — https://www.facebook.com/business/help/455527338244675
+- [PEŁNY] Create an ad that uses dynamic creative — https://www.facebook.com/business/help/344106239654869 ; Best practices for dynamic creative — https://www.facebook.com/business/help/257326614846024 ; About dynamic creative — https://www.facebook.com/business/help/170372403538781
+- [PEŁNY] Turn off Advantage+ creative enhancements — https://www.facebook.com/business/help/1082295769403815
+- [PEŁNY] Understand creative-level performance in Meta ads reporting — https://www.facebook.com/business/help/243916866413404
+- [WYSZUKIWARKA] The Creative Advantage: Unlocking the Power of Diversification with Meta Andromeda — https://www.facebook.com/business/news/the-creative-advantage-unlocking-the-power-of-diversification-with-meta-andromeda
+
+### B / B- — duże zbiory danych
+- [WYSZUKIWARKA] Motion — Creative Benchmarks 2026 — https://motionapp.com/library/research/creative-benchmarks-2026/
+- [WYSZUKIWARKA] Motion — Methodology and definitions — https://motionapp.com/library/research/creative-benchmarks-2026/methodology ; alt.: https://motionapp.com/thumbstop-pulse/cb2026-methodology-and-definitions
+- [WYSZUKIWARKA] Motion — Key Benchmarks & Insights — https://motionapp.com/thumbstop-pulse/cb2026-key-benchmarks-and-insights
+- [WYSZUKIWARKA] Motion — Top asset types — https://motionapp.com/library/research/creative-benchmarks-2026/top-asset-types
+- [WYSZUKIWARKA] Motion — Top visual formats — https://motionapp.com/library/research/creative-benchmarks-2026/top-visual-formats
+- [WYSZUKIWARKA] Motion — Visual formats by vertical — https://motionapp.com/library/research/creative-benchmarks-2026/visual-formats-by-vertical
+- [WYSZUKIWARKA] Motion — Testing volume by vertical — https://motionapp.com/library/research/creative-benchmarks-2026/testing-by-vertical
+- [WYSZUKIWARKA] Motion — Meta Ads in 2026: How Many Creatives Do You Actually Need to Launch? — https://motionapp.com/library/talk/meta-ads-in-2026-how-many-creatives-do-you-actually-need-to-launch/
+- [WYSZUKIWARKA] Motion — Visual Ad Formats library — https://motionapp.com/library/formats/
+- [WYSZUKIWARKA] Motion — 2025 Ad Creative & Creative Strategy Trends — https://motionapp.com/creative-trends ; [PEŁNY, wtórne] TLDR Marketing 2025-02-17 — https://github.com/GaloisField2718/tldr_news/blob/main/generated/issues/tldr-marketing/2025/2025-02-17.json
+- [WYSZUKIWARKA] Foxwell Digital — Motion Creative Benchmarks 2026: 8 Key Takeaways — https://www.foxwelldigital.com/blog/motion-creative-benchmarks-2026-8-key-takeaways ; LinkedIn wersja — https://www.linkedin.com/pulse/motion-creative-benchmarks-2026-8-key-takeaways-andrew-foxwell-zs9ec
+- [WYSZUKIWARKA] Sepia — Motion's Creative Benchmarks 2026: Ad Volume by Spend Tier — https://sepia-lab.com/en/blog/ad-creative-volume-benchmarks
+
+### C — praktycy (transkrypcje i materiały pierwotne praktyków)
+- [PEŁNY] Motion 2026 Creative Strategy Bootcamp (nieoficjalna ekstrakcja) — indeks: https://github.com/Motion-Creative/bootcamp/blob/main/references/index.md ; lekcje: …/week-01/tuesday-evan-what-is-creative-strategy.md ; …/week-02/tuesday-sarah-levinger-research.md ; …/week-02/thursday-coaching-research.md ; …/week-03/tuesday-dara-denney-prioritize.md ; …/week-03/thursday-coaching-creative-retro.md ; …/week-04/thursday-coaching-scripts-storyboards.md ; …/week-05/tuesday-evan-analyze.md ; …/week-06/tuesday-jade-daniel-winning-stories.md ; …/week-07/tuesday-sprint-2-adapt.md (prefiks: https://github.com/Motion-Creative/bootcamp/blob/main/references/)
+- [PEŁNY] Andrew Faris Podcast — korpus transkrypcji: https://github.com/poseljacob/ask-andrew ; odcinki: eqa-vtU1tH8 (3-Part Creative Diversity Framework, 2026-05-01), Z9BEjQtjebw (3x3x3, 2024-12-31), WS2mbxyzwEU (Creative Supply Chain, 2026-01-16), 4tjo_sLRBaU, rSJIgMd8z1M, rqyZrkspdgE, JtvIZ37EFnA, O0sPn3wGoDY, h6sKmrpBpE0, MUCLeRHO2Ss, WvMZmY-0fU4, pODL0kozzgM, aCVhMts9cR8 (pliki: https://github.com/poseljacob/ask-andrew/blob/main/corpus/transcripts/<ID>.md ; wideo: https://www.youtube.com/watch?v=<ID>)
+- [PEŁNY] Ben Heath — transkrypcje: https://github.com/blicktz/knowledge_base_repo/blob/main/content_repo/Ben_Heath_facebook_ads/the_best_facebook_ads_campaign_structure_for_2025.txt ; …/the_easy_way_to_test_facebook_ads_in_2025.txt ; …/4_facebook_ad_formats_you_have_to_try.txt ; …/generate_higher_quality_leads_from_facebook_ads_with_this_strategy.txt
+- [PEŁNY] Adcrate/Alex Cooper — parker-brain: https://github.com/real-simple-labs/parker-brain/blob/main/creative-strategy-context/killer-performance-ads.md ; …/iterations.md ; …/hooks.md ; …/expert-insights/INDEX.md ; …/ad-formats/README.md ; …/ad-formats/static/index.md ; …/ad-formats/video/index.md ; …/ad-formats/both/index.md (źródłowe wideo: https://youtu.be/OzkRU3Wx_1w ; https://youtu.be/mpj0A4Prxu4 ; https://youtu.be/Ugd7a2sPgZk ; https://youtu.be/GdYGUirdZYQ)
+- [WYSZUKIWARKA] Jon Loomer — What Creative Diversification Actually Means — https://www.jonloomer.com/qvt/creative-diversification/ ; 7 Examples — https://www.jonloomer.com/meta-andromeda-creative-diversification/ ; The Truth About Meta Andromeda and Ad Retrieval — https://www.jonloomer.com/meta-andromeda-ad-retrieval/ ; Avoid Meta Andromeda Misinformation — https://www.jonloomer.com/qvt/meta-andromeda-misinformation/ ; 3. What is Creative Diversification? — https://www.jonloomer.com/andromeda-3/ ; Creative Fatigue — https://www.jonloomer.com/creative-fatigue-meta-ads/ ; 83 Changes to Meta Advertising in 2025 — https://www.jonloomer.com/meta-advertising-changes-2025/ ; Pubcast — https://pubcast.jonloomer.com/creative-diversification-is-the-new-targeting/ ; TikTok — https://www.tiktok.com/@jonloomer/video/7545893351409683742
+- [WYSZUKIWARKA] Barry Hott — Ugly ads don't mean bad ads — https://www.hottgrowth.com/post/ugly-ads-dont-mean-bad-ads-try-these-expert-tips-for-high-intent-ads ; Motion Library — https://motionapp.com/library/expert/barry-hott/ ; https://motionapp.com/library/talk/how-to-make-ai-native-ads-look-human-barry-hott-method/ ; Andrew Faris Podcast "Ugly Ads Work" — https://podcasts.apple.com/ca/podcast/ugly-ads-work-trust-barry-hott-and-me/id1646694096?i=1000648058000 ; Practical Ecommerce — https://www.practicalecommerce.com/ugly-ads-perform-best-marketer-says
+- [WYSZUKIWARKA] Dara Denney — Motion Library — https://motionapp.com/library/expert/dara-denney/ ; LinkedIn "The 10 Best Iterations to Scale Meta Ads Creative" — https://www.linkedin.com/posts/daradenney_the-10-best-iterations-to-scale-meta-ads-activity-7265401447251337216-nZPY ; X — https://x.com/DenneyDara/status/1905619697699037269
+- [WYSZUKIWARKA] Pilothouse — P.D.A. Framework Deep Dive — https://www.pilothouse.co/post/the-p-d-a-framework-deep-dive-how-to-generate-conceptual-diversity-that-andromeda-actually-rewards ; 3-3-3 Approach — https://www.pilothouse.co/post/meta-creative-testing-framework-the-3-3-3-approach-to-finding-winners
+- [WYSZUKIWARKA] Nick Shackelford — https://www.foreplay.co/experts/nick-shackelford ; LinkedIn "How to Structure Your Ad Account for Success in 2025/2026" — https://www.linkedin.com/posts/nickshackelford_scale-and-spend-activity-7388605488625737728-yqEv (tylko ogólniki — nie użyte w tezach)
+- [WYSZUKIWARKA] Charley Tichenor — LinkedIn — https://www.linkedin.com/in/charleytichenoriv/ (tylko ogólniki; nie użyte w tezach)
+- [WYSZUKIWARKA] Foreplay — guide to creative briefs — https://www.foreplay.co/post/guide-to-creating-an-effective-creative-brief ; getcrux — Creative Strategy — https://getcrux.ai/discover/creative-strategy
+- [WYSZUKIWARKA] Sarah Levinger — https://sarahlevinger.co/articles/the-creative-strategy-role-a-definitive-guide-to-all-levels-of-the-game
+- [WYSZUKIWARKA] LinkedIn Erin Corn — Meta Creative Similarity / Fatigue / Top Creative Themes — https://www.linkedin.com/posts/erin-corn_meta-is-rolling-out-3-new-metrics-and-we-activity-7389014944371019777-Gzz9
+
+### D — blogi/SEO/agregatory (hipotezy, liczby bez metody)
+- [WYSZUKIWARKA] adsuploader — Entity IDs vs Creative Volume — https://adsuploader.com/blog/meta-andromeda
+- [WYSZUKIWARKA] Webtopia — Entity IDs, Andromeda… — https://www.webtopia.co/blog/entity-ids-andromeda-and-the-new-era-of-creative-led-targeting-on-meta
+- [WYSZUKIWARKA] Atria — https://www.tryatria.com/blog/andromeda-meta-ads ; Recharm — https://www.recharm.com/blog/what-is-andromeda-and-creative-similarity ; Segwise — https://segwise.ai/blog/meta-andromeda-update-creative-strategy-2026 ; admetrics — https://www.admetrics.io/en/post/meta-creative-fatigue-and-similarity-score-complete-guide ; Confect — https://confect.io/tactics/meta-andromeda-2026 ; MTM Agency — https://themtmagency.com/blog/meta-andromeda-october-2025-update-why-creative-diversity-now-defines-ad-performance ; Envisionit — https://envisionitagency.com/blog/why-metas-andromeda-update-has-us-completely-rethinking-creative-testing/ ; Medium (Y. Varghese) — https://medium.com/@yeldhov1993/how-to-plan-creative-angles-that-win-after-metas-andromeda-update-9a43746fa43b ; admanage — https://admanage.ai/blog/facebook-ad-creative-testing-framework ; Chatterbuzz — https://www.chatterbuzzmedia.com/blog/meta-andromeda-creative-targeting/ ; Logical Position — https://www.logicalposition.com/blog/the-2026-paid-social-playbook
+- [PEŁNY, wtórne] HulkInTherapy/meta-ads-research (agregat Reddit/X/blogów, maj 2026) — https://github.com/HulkInTherapy/meta-ads-research/blob/main/pain-points/11-testing-methodology.md ; …/04-creative-fatigue-production.md ; …/23-emerging-pain-2025-2026.md ; …/18-local-business-specific.md — cytowane w nich wątki: https://www.reddit.com/r/FacebookAds/comments/1ng8ves/ ; https://www.reddit.com/r/PPC/comments/1m3tuvx/ ; https://www.reddit.com/r/PPC/comments/1sc1mg7/ ; https://www.reddit.com/r/FacebookAds/comments/1qxpb9q/ ; https://www.reddit.com/r/FacebookAds/comments/1skxpqe/ ; https://www.reddit.com/r/FacebookAds/comments/1tb24rk/i_classified_81154_posts_from_this_sub_you_people/ ; https://www.marketingbrew.com/stories/2026/04/21/meta-ai-creative-tools-marketer-response (niezweryfikowane bezpośrednio)
+- [PEŁNY] yvfl/faceads-mcp — ANDROMEDA.md (przykład obiegu liczb P.D.A. "8–50 kreacji/ad set") — https://github.com/yvfl/faceads-mcp/blob/main/ANDROMEDA.md
+- [PEŁNY] Bartosh16/claude-skills — hooki-wideo.md (PL, bez źródeł) — https://github.com/Bartosh16/claude-skills/blob/main/hooki/references/hooki-wideo.md
+
+### Nieosiągnięte (do uzupełnienia)
+- Polskie agencje/blogi/YouTube (dywersyfikacja kreacji, Andromeda) — brak dostępu w tej sesji (2.19).
+- Pełne teksty: Jon Loomer, Pilothouse P.D.A., Motion Benchmarks (tabele), Savannah Sanchez, Sarah Levinger (poza bootcampem), CTC/Taylor Holiday, Hunch, Pencil, Brandon Doyle, Andrew Foxwell (poza streszczeniem Motion).

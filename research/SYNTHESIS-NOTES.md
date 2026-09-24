@@ -107,3 +107,15 @@
 - Agencje lead gen PL: "klienci/umowy, nie leady" + wyłączność regionalna = standard → KWIATEKmedia potrzebuje innego wyróżnika (konkretny case + przejrzysty proces).
 - Najlepsi (MSEnergy, Mediator CRN, Modern Wages, aboutmedica) testują różne kąty; słabsi kopiują ten sam nagłówek 5–20×.
 - Reguły R1–R20 w pliku 11 sekcja 4 (nagłówek nigdy pusty; 5 typów nagłówka; lokalność; zakaz liczników; Omnibus; 1 problem = 1 reklama; emoji ≤1 funkcyjne; tryb informacyjny w medycynie; moduł analizy konkurencji).
+
+## Z 08 (testy/zmęczenie/iteracje) — kluczowe (tabele prób: plik 08 sekcja 3; drzewo: sekcja 4; planowanie: sekcja 5; reguły R1–R26: sekcja 7)
+- A: budżet dzienny ≥10× CPA, by mieć szansę wyjść z learning; poniżej: 1 kampania, 1 zestaw, learning limited zaakceptowany.
+- A: reklama z małym wydatkiem = NIEPRZETESTOWANA, nie przegrana. Meta A/B uznaje zwycięzcę od 65% (słaby sygnał). Creative testing tool: do 5 reklam, ~20% budżetu, 7 dni.
+- A: statusy creative limited/fatigue działają tylko w zestawach z 1 kreacją (wg artykułu). Rozróżnianie: first time impression ratio ↓ + audience reached ratio ↑ = nasycenie grupy; auction competition change >20% = zmiana aukcji.
+- B (obliczenia): CPL przy 10 leadach: prawdziwy 0,54–2,09× obserwowanego; 20 leadów 0,65–1,64; 50 leadów 0,76–1,35. Potwierdzenie różnicy CPL 20–30%: ~150–350 leadów/wariant. 5 identycznych reklam po 10 leadów → 80% szans na pozornego zwycięzcę ≥23% tańszego (klątwa zwycięzcy).
+- Progi: P7 werdykt CPL reklamy ≥10 leadów (poniżej ZA MAŁO DANYCH); P9 wyłączenie z 0 leadów po ≥3× target CPL (ryzyko ~5%), ≥2× przy słabym CTR/hook (ryzyko ~14%); hook rate ≥1,5–2,5 tys. wyśw.; CTR ≥8 tys. wyśw.; relevance ≥500 wyśw.; okna tygodniowe.
+- Drabina iteracji: I1 hook → I2 wykonanie → I3 format → I4 persona → I5 kąt/koncept → I6 oferta/formularz.
+- Planowanie wg budżetu (CPL 40 zł): 1500 zł → 1 zestaw, 2–3 reklamy, 2–4 nowe/mies., partia co 3–4 tyg.; 3000 → 3–4 reklamy, 3–5 nowe, co 2–3 tyg.; 5000 → 3–5, 4–6, co 2 tyg.; 10000 → 4–6, 6–10, co 1–2 tyg., okazjonalne creative testing; 20000 → 5–8, 10–20, co tydzień; 50000 → 2–5 zestawów, 6–10, 20–40/mies. Przy małych budżetach testować tylko duże różnice (koncepty).
+- Po zwycięzcy: ~50–70% iteracji, ~20–30% nowe persony/formaty, ~10–25% nowe koncepty (C, Motion).
+- Metryka docelowa CPQL / koszt spotkania; formularz często lepszą dźwignią niż kreacja.
+- Detektor zmęczenia R11 (D osadzone w A): ≥14 dni, ≥20 leadów bazowo, ≥10 bieżąco, frequency rośnie, CTR ≤75% bazowego lub CPL ≥1,5× bazowego, wykluczone nasycenie/aukcja/formularz.
