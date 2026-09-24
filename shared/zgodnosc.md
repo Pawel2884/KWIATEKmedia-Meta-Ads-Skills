@@ -59,7 +59,9 @@ Uwaga: długo działające polskie reklamy z pytaniami o długi lub zdrowie nie 
 
 **ZDROWIE (gabinety, fizjoterapia, stomatologia, estetyka, dietetyka, psychoterapia)**
 - Meta: bez negatywnej autopercepcji i zawstydzania wyglądem, bez zbliżeń „problemowych” partii ciała, bez obietnic konkretnego efektu w określonym czasie bez zastrzeżeń, bez obietnic wyleczenia chorób nieuleczalnych. Zabiegi estetyczne, odchudzanie, przed i po: targetowanie 18+.
-- Prawo: podmiot leczniczy informuje o świadczeniach, ale informacja nie może mieć cech reklamy (ustawa o działalności leczniczej art. 14). Styl informacyjny: zakres, przebieg, cena, miejsce, jak się umówić. Bez superlatyw, obietnic efektu, presji, promocji handlowych. Zasady etyki zawodów medycznych mogą być surowsze (do weryfikacji).
+- Prawo: podmiot leczniczy informuje o świadczeniach, ale treść i forma informacji nie mogą mieć cech reklamy (ustawa o działalności leczniczej art. 14). Od 31.10.2019 ten sam zakaz obejmuje wprost fizjoterapeutów (gabinety i praktyki indywidualne); Kodeks Etyki Zawodowej Fizjoterapeuty (2022) dopuszcza tylko informowanie.
+- Styl informacyjny (ZDROWIE zawsze w tym trybie): zakres usługi, dla kogo, przebieg wizyty, czas, cena, miejsce, termin, jak się umówić, kwalifikacje. Bez superlatyw („najlepszy”), obietnic efektu, zachęt i nakłaniania („nie czekaj”, „zadbaj o siebie już dziś”), presji czasu, promocji handlowych, porównań. Opinie pacjentów w reklamie: ostrożnie, najlepiej wcale (mogą być uznane za zachętę).
+- Kodeks Etyki Lekarskiej: od 1.01.2025 obowiązuje nowa wersja, która dopuszcza informowanie o usługach zgodnie z zasadami etyki (stary art. 63 z ogólnym zakazem reklamy nie obowiązuje). Art. 14 ustawy o działalności leczniczej nadal wymaga, by informacja nie miała cech reklamy.
 - Formularz: bez pytań o diagnozy i stan zdrowia.
 - Twarz specjalisty: może informować o usłudze; nie może „polecać” wyrobu medycznego.
 
@@ -69,11 +71,13 @@ Uwaga: długo działające polskie reklamy z pytaniami o długi lub zdrowie nie 
 
 **FINANSE-KREDYT (kredyt, raty, leasing konsumencki, finansowanie zakupu)**
 - Meta: Special Ad Category „kredyt” (Polska na liście). Brak targetowania po wieku, płci, kodach, lookalike. Kreacja i formularz muszą kwalifikować.
-- Prawo: w każdej reklamie kredytu konsumenckiego RRSO. Jeśli pojawia się jakikolwiek koszt (rata, oprocentowanie, „0%”), pełny reprezentatywny przykład. Pośrednik podaje zakres umocowania. Od 20.11.2026 dyrektywa CCD2 wymaga ostrzeżenia, że pożyczanie pieniędzy kosztuje (polskie brzmienie do weryfikacji).
+- Prawo: w każdej reklamie kredytu konsumenckiego RRSO. Jeśli pojawia się jakikolwiek koszt (rata, oprocentowanie, „0%”), pełny reprezentatywny przykład. Pośrednik podaje zakres umocowania. Dyrektywa CCD2 (stosowanie od 20.11.2026) wymaga ostrzeżenia, że pożyczanie kosztuje, ale na wrzesień 2026 Polska nie ma ustawy wdrażającej (projekt wycofany 22.05.2026). Nie podawaj żadnego brzmienia ostrzeżenia jako obowiązującego. Oznacz: `ZGODNOŚĆ: sprawdzić aktualny stan CCD2 u prawnika klienta`.
 - Bez danych do RRSO: nie wspominaj o ratach.
 
 **PRAWO (kancelarie, radcy, adwokaci)**
-- Samorządy zawodowe dopuszczają informowanie o wykonywaniu zawodu: zakres, specjalizacja, doświadczenie, kontakt, sposób pracy, koszty. Bez obietnic wyniku sprawy, bez porównań z innymi prawnikami, bez ujawniania klientów bez zgody, bez form natarczywych (Kodeks Etyki Radcy Prawnego, Zbiór Zasad Etyki Adwokackiej; do weryfikacji aktualnego brzmienia).
+- Radca prawny: Kodeks Etyki Radcy Prawnego art. 31 daje prawo do „informowania o wykonywaniu zawodu” (każda komunikacja promująca radcę lub kancelarię). Informowanie musi być zgodne z zasadami etyki: rzetelne, bez wprowadzania w błąd, bez obietnic wyniku, bez porównań z innymi prawnikami, bez ujawniania klientów bez zgody, bez form natarczywych.
+- Adwokat: Zbiór Zasad Etyki Adwokackiej § 23 zakazuje reklamy; dopuszcza „informację handlową”, która nie może być porównawcza, nierzetelna, nachalna, wywoływać nieuzasadnionych oczekiwań co do wyniku sprawy, odwoływać się do emocji ani wykorzystywać naiwności lub trudnego położenia odbiorcy.
+- W praktyce dla obu: styl informacyjny (zakres spraw, przebieg współpracy, koszty, doświadczenie liczbowe, sposób kontaktu, poufność), spokojny ton, bez presji, bez straszenia, bez „wygraj”, „odzyskaj”, „pozbądź się długów” jako obietnicy wyniku.
 - Firmy doradcze, które nie są kancelarią radcy lub adwokata, nie podlegają kodeksom zawodowym, ale obowiązuje je UoPNPR.
 - Tematy finansowe (długi, upadłość) łączą się z zakazem cech osobistych Meta.
 
@@ -81,7 +85,7 @@ Uwaga: długo działające polskie reklamy z pytaniami o długi lub zdrowie nie 
 - Meta: Special Ad Category (Polska na liście). Kreacja przejmuje targetowanie, bez dyskryminujących sformułowań (wiek, płeć, rodzina, pochodzenie).
 
 **OZE-EKO**
-- Od 27.09.2026 (dyrektywa 2024/825, status wdrożenia w PL do weryfikacji): bez ogólnych twierdzeń środowiskowych („eko”, „zielony”, „przyjazny środowisku”, „neutralny klimatycznie”) bez wykazanej, uznanej doskonałej efektywności. Konkretne parametry zamiast etykiet.
+- Dyrektywa 2024/825 stosowana od 27.09.2026 (w Polsce projekt ustawy UC111 w toku na wrzesień 2026): bez ogólnych twierdzeń środowiskowych („eko”, „zielony”, „przyjazny środowisku”, „neutralny klimatycznie”) bez wykazanej, uznanej doskonałej efektywności. Konkretne parametry zamiast etykiet. Stosuj już teraz, niezależnie od stanu wdrożenia.
 - Obietnice oszczędności („rachunek 0 zł”) tylko z warunkami i założeniami.
 
 **DOTACJE**
@@ -108,7 +112,8 @@ Uwaga: długo działające polskie reklamy z pytaniami o długi lub zdrowie nie 
 - Nigdy nie przedstawiaj wygenerowanych osób jako prawdziwych klientów, pacjentów, ekspertów ani wygenerowanych „realizacji” jako rzeczywistych.
 - Awatar AI lub klon głosu nie udaje klienta ani pracownika. Klon właściciela tylko za pisemną zgodą i z oznaczeniem.
 - Wizualizacje oznaczaj jako „wizualizacja”.
-- Współpraca z twórcą: oznaczenie po polsku na początku („Reklama”, „Współpraca reklamowa z…”) i etykieta Meta „Paid partnership”.
+- Współpraca z twórcą: oznaczenie dwupoziomowe wg rekomendacji Prezesa UOKiK (2022): funkcja platformy („Płatne partnerstwo”) i ręcznie na początku opisu, grafiki lub nagrania, po polsku („materiał reklamowy”, „reklama”, „współpraca reklamowa z [marka]”).
+- Ujawnienie, że reklama lub obraz powstały z AI, obniża zaufanie i zamiar zakupu (B/C: badania 2025–2026, silniej w wideo i przy drogich decyzjach). Wniosek: prawdziwe zdjęcia i nagrania klienta mają przewagę; AI do tła, wizualizacji i konceptów.
 
 ## 6. Jak przepisywać ryzykowne zdania
 

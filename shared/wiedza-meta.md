@@ -42,13 +42,13 @@ Używaj tego pliku, gdy tłumaczysz decyzje o kreacjach, strukturze, testach alb
 - Zalecenie Meta: nowa reklama z nowym obrazem lub wideo „materially different”; oryginał zostaw, jeśli nadal dowozi.
 - Account Insights pokazują „creative similarity”: obrazy lub wideo „too visually identical” mogą prowadzić do zmęczenia i wyższego kosztu. Wskaźnik dotyczy reklam statycznych z ostatnich 28 dni. Meta nie publikuje progu ani metody.
 - Meta zaleca mniej reklam w zestawie, ale różnorodne zasoby. Za dużo reklam pogarsza wyniki.
-- Meta: „focus has shifted from niche targeting to creative diversification as the best lever to find the most relevant audiences” (artykuł o dywersyfikacji; znany ze streszczeń). Wymiary: koncepty i kąty (problem–rozwiązanie, ból, opinie, demo) oraz formaty.
+- Meta (artykuł „Demystifying Creative Diversification”, znany ze streszczeń i cytatów, B): „focus has shifted from niche targeting to creative diversification as the best lever to find the most relevant audiences”. Dywersyfikacja to unikalne zestawy kreacji dla różnych person lub zastosowań, nie drobne poprawki tego samego pomysłu. Wymiary: koncepty i kąty (problem–rozwiązanie, ból, opinie, demo) oraz formaty. Artykuł nie podaje jednej liczby wariantów.
 
 ## 5. Andromeda, GEM, Lattice
 
 - Andromeda (Meta, grudzień 2024) to silnik wyboru kandydatów (retrieval): z dziesiątek milionów reklam wybiera kilka tysięcy, które przechodzą do rankingu. Nie jest to cały „algorytm” ani aukcja.
 - Meta raportowała +6% trafności wyboru i +8% jakości reklam w testowanych segmentach. To wewnętrzne metryki systemu, nie CPL reklamodawcy.
-- Meta uzasadniała budowę Andromedy rosnącą liczbą kreacji w systemie (automatyzacja, generatywne AI).
+- Meta uzasadniała budowę Andromedy rosnącą liczbą kreacji w systemie: Advantage+ i generatywne AI „pushed the number of active ad variations into the billions”.
 - O tym, która reklama wygra u danej osoby, decyduje ranking (GEM, ogłoszony w 2025) i aukcja. Lattice łączy mniejsze modele w większe, uczące się między celami i powierzchniami.
 - W Meta Business Help Center nie ma artykułu o Andromedzie. „Zasady Andromedy” w branży to interpretacje praktyków.
 

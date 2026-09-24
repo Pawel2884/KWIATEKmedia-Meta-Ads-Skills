@@ -108,9 +108,9 @@ Uczciwość i prawo:
 
 ## 8. Tekst w modelu czy w edytorze
 
-Domyślnie: grafika z generatora bez tekstu, a tekst nakładasz w Canvie lub Figmie. Powody: 33% polskich słów ma znak diakrytyczny i nie ma publicznego testu, jak modele je renderują; w edytorze kontrolujesz krój, rozmiar i kontrast; na jednym obrazie sprawdzisz 3–5 nagłówków bez zmiany sceny (czysty test). Poziom: D oparty na A i B.
+Domyślnie: grafika z generatora bez tekstu, a tekst nakładasz w Canvie lub Figmie. Powody: w edytorze kontrolujesz krój, rozmiar, kontrast i strefy bezpieczne; na jednym obrazie sprawdzisz 3–5 nagłówków bez zmiany sceny (czysty test); poprawka tekstu nie zmienia obrazu. Polskie znaki (ą, ę, ł, ś, ż, ź, ć, ń, ó) były słabym punktem generatorów; w testach topowych modeli z 2026 r. (Nano Banana 2 i Pro, GPT Image 2) krótkie polskie napisy wychodziły bezbłędnie (C: polskie testy blogowe), ale ryzyko rośnie z długością napisu. Poziom rekomendacji: D oparty na A i C.
 
-Wyjątki (tekst w modelu): szybkie koncepty do akceptacji, napis będący częścią sceny, koncept typograficzny. Wtedy: GPT Image 2 (quality high) albo Nano Banana Pro, tekst w cudzysłowie, przeliterowany, „render exactly once”, kontrola każdej litery w powiększeniu.
+Wyjątki (tekst w modelu): szybkie koncepty do akceptacji, napis będący częścią sceny, koncept typograficzny, brak dostępu do edytora. Wtedy: GPT Image 2 (quality high) albo Nano Banana Pro, tekst dosłownie w cudzysłowie, krótki (do ok. 6 słów w linii), opisany opisowo (krój, kolor, miejsce), „render exactly once”, kontrola każdej litery w powiększeniu.
 
 ## 9. Parametry modeli
 
