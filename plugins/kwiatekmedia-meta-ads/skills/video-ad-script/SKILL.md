@@ -58,7 +58,7 @@ Oferta lub koncept i informacja, co da się nagrać: kto może wystąpić (wła�
 - [ ] Tekst na ekranie sam niesie logikę (test bez dźwięku).
 - [ ] Zmiana obrazu co ok. 1,5–3 s, bez chaosu w talking head (cięcia, zbliżenia, przebitki).
 - [ ] Jedno CTA, mówione i napisane, plansza końcowa.
-- [ ] Hooki to różne typy, nie parafrazy; żaden nie pyta o cechę widza.
+- [ ] Hooki to różne typy, nie parafrazy; żaden nie pyta o cechę widza. Teza wbrew intuicji bez konstrukcji „X to nie Y, to Z” (powiedz Z wprost: „Wygodne krzesło ustawiasz pod siebie”).
 - [ ] Brak zmyśleń i dopowiedzeń: dowód wiernie (jednostka, okres, bez zaokrąglania w górę), bez twierdzeń o rynku („większość krzeseł…”, „zwykłe krzesło tego nie wytrzyma”), bez porównań kosztów bez danych klienta. Zgodność z modułami branżowymi.
 - [ ] Hook nie jest nazwą firmy. W ZDROWIU i PRAWIE hook informacyjny, ale konkretny (sytuacja opisana bezosobowo, przebieg wizyty, termin, demonstracja).
 - [ ] W ujęciach brak czytelnych kartek, ekranów, kalendarzy i ikon.
