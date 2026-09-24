@@ -34,3 +34,19 @@
 - B(WIEDZA): presenter's paradox, 3 claims optimum (Shu & Carlson 2014), dilution effect → max 3 wsparcia w primary, 1 na grafice.
 - ELM: minimalizm dotyczy grafiki; argumenty do primary text i formularza przy drogich ofertach.
 - Reguły R1–R32 w pliku 03 sekcja 4 (MUSI/POWINNO/TEST). Graphic: nagłówek 3–7 słów, ≤12 słów łącznie (flaga >15).
+
+## Z 04 (perswazja/zaufanie/pamięć) — kluczowe
+- B: wiarygodność = ekspertyza + trustworthiness; najmocniej u zimnych/sceptycznych (Pornpitakpan 2004).
+- B/C: oceny 4,0–4,7 optymalne, ~5,0 podejrzane; pierwsze opinie największy skok (Spiegel 2017, obserwacyjne).
+- B: przekaz dwustronny (1 ograniczenie na 3–4 twierdzenia) ↑ wiarygodność, za dużo negatywów szkodzi (Eisend); + filtruje leady.
+- A/B: PKM (Friestad & Wright 1994): rozpoznany trik → dyskontowanie przekazu i gorsza ocena firmy; oznaczenie sponsorowane ↓ wiarygodność (Eisend 2020).
+- B: historia + liczba najlepsze (Zebregs 2015, Freling 2020): statystyka→przekonania, narracja→intencja.
+- B: ciekawość krzywoliniowa wobec konkretności (8 977 testów nagłówków, Aubin Le Quéré & Matias); nagłówki streszczające często wygrywają (Scacco & Muddiman 2020); clickbait ↓ wiarygodność (Molyneux & Coddington). → "konkret + mała luka", nigdy pusta luka; luka o problemie, który rozwiązuje oferta.
+- B: loss vs gain framing ~0 różnicy (O'Keefe & Jensen); loss aversion λ≈1,96 średnio, kontekstowa → nie dogmat "strata lepsza".
+- B: fear appeals d=0,29, tylko z efficacy (rozwiązanie + łatwy krok) (Tannenbaum 2015; Witte & Allen 2000).
+- A: Langer 1978 "bo" pusty działa tylko przy małej prośbie → lead to duża prośba → prawdziwy powód.
+- Obalone/słabe: Zeigarnik (Ghibellini & Meier 2025, ratio ≈0,99; Owsiankina — wznawianie — tak); identifiable victim (replikacja ηp²=.000); concreteness=truth (dz≈0,1); precyzyjne ceny brak wpływu na intencję (Escher 2026).
+- C: Schwartz — heurystyka, brak testów; odpowiedniki CLT/ELM. Stosować jako narzędzie doboru otwarcia.
+- Prawo: fałszywa pilność zakazana (UCPD zał. I pkt 7; upnpr art. 7 pkt 7 — do potwierdzenia w 07).
+- Checklista zaufania 10 pytań (sekcja 4.9 pliku 04) → do CREATIVE AUDITOR.
+- Reguły R1–R35 w pliku 04 sekcja 4.
