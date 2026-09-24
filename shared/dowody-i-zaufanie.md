@@ -29,6 +29,8 @@ Wierność dowodu (A: UoPNPR art. 5, wprowadzanie w błąd):
 - Ten sam zakres i okres: „od 2021” to nie „sklep działa od 2021”.
 - Historia klienta tylko z tym, co podał klient. Scenę możesz opisać słowami klienta, ale bez nowych szczegółów (częstotliwość, kwoty, emocje, narzędzia).
 - Cytat dosłowny. Możesz skrócić, nie możesz zmienić sensu.
+- Nie sklejaj dowodu z innymi faktami briefu w nowe twierdzenie: „1300 firm korzysta” i „dla flot 5–100 aut z transportu i budowlanki” to dwa osobne fakty, a nie „1300 firm z transportu i budowlanki przy flotach 5–100 aut”.
+- Warunek oferty podawaj jako warunek („TrasaPro jest dla firm z co najmniej 5 autami”), nie jako wymyślone uzasadnienie („przy jednym aucie się nie opłaca”).
 - Bez zaokrąglania w górę: „1870 opinii” to nie „prawie 2 tysiące opinii”. Wynik z ankiety zostaje wynikiem z ankiety („klienci zgłaszają średnio 12% mniej”), nie staje się faktem („płacisz 12% mniej”).
 
 Brak dowodu w Karcie Oferty: nie wymyślaj. Wstaw `[UZUPEŁNIJ: …]` i napisz, jak go zdobyć (np. „poproś 3 ostatnich klientów o opinię w Google”, „policz realizacje z faktur”).
