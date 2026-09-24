@@ -92,6 +92,34 @@ Zakres: 10 uruchomień skilli, których R1 nie sprawdziła (planer, silnik itera
 
 Na 15 wyników: wstęp 2 (w R1: 3 na 20), formy męskie 3 (w R1: 9), opis ponad 30 znaków 0 (w R1: 8), akapit ponad 3 zdania 4 (wszystkie w pakiecie mastera), pauzy 3, słownik AI slop 0.
 
-## Runda R3
+## Runda R3 (9 uruchomień, wszystkie udane)
+
+Zakres: przypadki z największą liczbą błędów w R1 (e-commerce: statyki, wideo, dywersyfikacja; pompy ciepła: copy; agencja: hooki; B2B: strategia; audyt przeładowanej reklamy), powtórka planera po dodaniu zgodności i master na nowym biznesie (fizjoterapia).
+
+### Co potwierdzono
+- Zero wstępów w 9 wynikach (w R1: 3 na 20, w R2: 2 na 15).
+- E-commerce: oczywisty kąt kategorii na pierwszym miejscu („Podparcie lędźwi pod Twój wzrost”, „Osiem godzin przy biurku”); zniknęły „zwykłe krzesło tego nie wytrzyma”, animowane gwiazdki, „lędźwia”, zaokrąglanie opinii.
+- Pompy ciepła: bez zmyślonych twierdzeń technicznych, przycisk „Zarezerwuj”, trzy różne kąty (cena, proces i dowód, kwalifikacja).
+- Agencja: każdy hook wideo zaczyna się od prawdziwej sceny (Paweł mówi do kamery), pojawiła się korzyść (koszt zapytania), tezy z praktyki oznaczone jako poziom C.
+- Planer fizjoterapii: bez kąta „rezultat”, bez opinii pacjentów, formularz bez pytań o dolegliwość.
+- Master fizjoterapii: karty w formacie skilli, akapity po 1–2 zdania, formularz z pytaniem o dojazd i zamknięciem, czas oddzwonienia jako `[UZUPEŁNIJ]`.
+
+### Co zostało i jak poprawiono
+
+| Problem | Przykład | Poprawka |
+|---|---|---|
+| Wierność dowodu w nowej postaci | „38 000 krzeseł R3 w polskich domach” (brief: 38 000 krzeseł marki); „640 montaży od 2019” → „działamy od 2019”; „zwrot bez pytań” | przykłady „ten sam przedmiot” i „od roku” w zasadach; blok „Wierność dowodów” wpisany wprost do SKILL.md dywersyfikacji, mastera i stratega |
+| Poprawiona wersja audytora nie usuwa własnego blokera | wskazał brak najniższej ceny z 30 dni, a poprawka jej nie zawiera; „Kup teraz” na grafice i w opisie | audytor sprawdza poprawioną wersję listą własnych blokerów przed oddaniem |
+| Dwie statyki w tym samym układzie | tekst na płaskim tle + małe zdjęcie produktu w statyce 2 i 3 | najwyżej jedna statyka typograficzna w zestawie, pozostałe z różnych materiałów klienta |
+| Dywiz ze spacjami jako myślnik | „ - ” w planie | reguła formatu i lint obejmują też dywiz ze spacjami |
+| Czas oddzwonienia wymyślony z terminu wizyty | „oddzwaniamy w ciągu 3 dni roboczych” | planer: bez danych od klienta `[UZUPEŁNIJ: kiedy oddzwaniacie]` |
+| Konstrukcja „to nie X, to Y” w hooku wideo | „Wygodne krzesło to nie miękkie krzesło” | wprost w checkliście wideo |
+| Wspólny tekst reklam mastera | trzy reklamy fizjoterapii dzielą 3 z 4 akapitów | przy małej liczbie faktów (zawód medyczny, tylko informacja) akceptowalne; różnią się sytuacja, grafika i nagłówek |
+
+### Lint R3
+
+9 wyników: wstęp 0, formy męskie 0, opis ponad 30 znaków 0, AI slop 1 (hook „to nie X, to Y”), nagłówek o 1–2 znaki ponad 40: 2, pauzy poza zakresami 4 (listy braków).
+
+## Runda R4
 
 (uzupełniane po zakończeniu rundy)

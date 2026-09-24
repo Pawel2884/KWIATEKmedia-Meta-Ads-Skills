@@ -26,4 +26,11 @@ Pierwsza pełna wersja systemu.
   - limity: opis do 30 znaków, akapity 1–2 zdania;
   - audytor: 🔴 gdy poprawka to w praktyce nowa reklama, szara strefa prawa jako ISTOTNE z dopiskiem, bez przykładowych liczb w poprawkach, bez pochwał na siłę;
   - przycisk „Zarezerwuj” przy umawianiu rozmowy, demo i audytu.
-- Runda R2 na 15 przypadkach (w tym skille nieprzetestowane w R1 z powodu limitu sesji).
+- Runda R2 (15 uruchomień, w tym skille nieprzetestowane w R1: planer, silnik iteracji na 3 zestawach danych, master). Poprawki po R2:
+  - reguła formatu (bez wstępu, bez pauz i półpauz) wpisana do każdego SKILL.md, bo reguła w plikach wiedzy nie wystarczała;
+  - wspólna mapa przycisków CTA; planer z modułem zgodności; formularz w zdrowiu bez pytań o dolegliwość; produkty niemedyczne bez obietnic zdrowotnych;
+  - silnik iteracji: zgodność w decyzjach niezależnie od wyników, werdykt o kącie dopiero po 2 wykonaniach;
+  - audytor: poprawiona wersja tylko z faktami klienta; master: karty w formacie skilli, różny tekst w reklamach.
+- Runda R3 (9 uruchomień): zero wstępów i form męskich, poprawki wierności (przedmiot dowodu, „od roku”), audytor sprawdza poprawioną wersję listą własnych blokerów, najwyżej jedna statyka typograficzna w zestawie.
+- Runda R4 (5 uruchomień) na uporczywych punktach.
+- Evale `claude plugin eval` (5 przypadków) do testów regresji po przyszłych zmianach.
