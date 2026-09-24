@@ -31,7 +31,7 @@
 | Primary Text | ok. 125 znaków widocznych (1–3 linie) przed „…więcej” | Pierwsze ok. 90–110 znaków po polsku niesie hook, ofertę i „dla kogo”. Dalej wolno pisać dłużej, jeśli każde zdanie coś wnosi. IG Stories: poniżej 100 znaków. |
 | Nagłówek | 40 znaków | do 40 znaków, jedna myśl, sensowny sam w sobie |
 | Opis | 25 znaków (w specyfikacji lead ads 30) | najwyżej 30 znaków, lepiej ok. 25; tylko treść nieistotna, bo może się nie wyświetlić. Nigdy cena, warunek ani disclaimer. |
-| Przycisk CTA | lista Meta | dopasuj do tego, co się stanie (Zarejestruj się, Uzyskaj wycenę, Zarezerwuj, Wyślij wiadomość, Zadzwoń, Kup teraz, Dowiedz się więcej) |
+| Przycisk CTA | lista Meta | dopasuj do tego, co się stanie: umówienie rozmowy, demo, audytu, wizyty → Zarezerwuj (albo Wyślij zgłoszenie); wycena → Uzyskaj wycenę; wiadomość → Wyślij wiadomość; telefon → Zadzwoń; zakup → Kup teraz; zapis na wydarzenie lub listę → Zarejestruj się; treść → Dowiedz się więcej |
 
 Nazwy przycisków w polskim interfejsie mogą się różnić. Podawaj intencję przycisku i najbliższy odpowiednik.
 

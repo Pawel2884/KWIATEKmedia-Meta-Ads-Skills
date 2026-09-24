@@ -17,7 +17,7 @@
 
 - Jeden punkt skupienia: jeden dominujący obiekt lub scena, ciasny kadr wokół tego, co ważne (A: Meta).
 - Przy celu „leady” i „sprzedaż” na pierwszym planie oferta, efekt lub produkt. Człowiek jako kontekst, podobny do odbiorcy, w realnym otoczeniu (A: Meta).
-- Zero ozdobników: bez naklejek, ramek, ikon, faktur, gradientów dla ozdoby, kolaży z więcej niż 2 zdjęć, dekoracyjnych linii i strzałek „wzrostu”, wykresów bez danych, konfetti. Najwyżej 2–3 kolory i 1 akcent (B: szum wizualny szkodzi uwadze na markę).
+- Zero ozdobników: bez naklejek, ramek, ikon, faktur, gradientów dla ozdoby, kolaży z więcej niż 2 zdjęć, dekoracyjnych linii i strzałek „wzrostu”, wykresów bez danych, konfetti, narysowanych przycisków („Umów termin”, „Kup teraz”) i innych fałszywych elementów interfejsu. Przycisk jest pod reklamą. Najwyżej 2–3 kolory i 1 akcent (B: szum wizualny szkodzi uwadze na markę).
 - Ciekawa kompozycja jest dozwolona: nietypowy kadr, kontrast skali, jeden zaskakujący element (B: złożoność projektu pomaga).
 - Typowa, rozpoznawalna scena kategorii wygrywa w krótkiej ekspozycji (B). Kształt głównego obiektu czytelny nawet na rozmytej miniaturze.
 - Natywnie: zdjęcie z telefonu, naturalne światło, bez przesadnego retuszu (A: „avoid overly photoshopped images”).

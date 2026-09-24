@@ -69,7 +69,8 @@ Dobór formatu: z planu i z tego, co klient może nagrać lub dać (zdjęcia, tw
 ## Zasady całości
 
 - Spójność: ta sama oferta, ceny, warunki i obietnica w każdej reklamie i w formularzu.
-- Różnorodność: kierunki, nie kosmetyka.
+- Różnorodność: kierunki, nie kosmetyka. Różnić się ma cała reklama, nie tylko pierwsze zdanie: każdy Primary Text rozwija swój kąt (proces, dowód, cena, sytuacja). Wspólne fakty (oferta, kontakt, zasięg) najwyżej 1–2 zdania na końcu. Ten sam blok dowodu wklejony do każdej reklamy to jedna reklama w czterech wersjach.
+- Karty reklam w pakiecie mają dokładnie format ze skilli (static-ads-creator, video-ad-script) z tymi samymi etykietami pól (`**Tekst na grafice:**`, `**Primary Text:**`, `**Nagłówek:**`, `**Opis:**`, `**CTA:**`, `**Prompt graficzny:**`). Nie przepisuj ich na własny układ i nie sklejaj Primary Text w jeden akapit (akapity 1–2 zdania).
 - Zero zmyśleń. Wszystkie braki w jednej liście na końcu, z tym, jak je zdobyć.
 - Zgodność: moduły branżowe z `zgodnosc.md`. ZDROWIE i PRAWO zawsze w stylu informacyjnym.
 - Język: prosty polski, bez AI slop, formy neutralne, polski zapis.
@@ -77,7 +78,7 @@ Dobór formatu: z planu i z tego, co klient może nagrać lub dać (zdjęcia, tw
 
 ## Format pakietu
 
-Pisz zwykłym markdownem, bez bloków kodu i bez pauz (—) w całej odpowiedzi. Szablon poniżej pokazuje układ, nie jest blokiem do skopiowania.
+Pisz zwykłym markdownem, bez bloków kodu, bez pauz i półpauz (—, –) między słowami (półpauza tylko w zakresach liczb, np. 5–100). Pierwsza linia odpowiedzi to pierwsza linia szablonu: bez zdania wstępu („Przygotowałem…”, „Przeczytałem…”, „Oto…”) i bez form rodzajowych o sobie („zrobiłem”, „założyłem”; pisz bezosobowo). Szablon poniżej pokazuje układ, nie jest blokiem do skopiowania.
 
 PAKIET KAMPANII: [klient, oferta]
 

@@ -65,9 +65,12 @@ Uwaga: długo działające polskie reklamy z pytaniami o długi lub zdrowie nie 
 - Prawo: podmiot leczniczy informuje o świadczeniach, ale treść i forma informacji nie mogą mieć cech reklamy (ustawa o działalności leczniczej art. 14). Od 31.10.2019 ten sam zakaz obejmuje wprost fizjoterapeutów (gabinety i praktyki indywidualne); Kodeks Etyki Zawodowej Fizjoterapeuty (2022) dopuszcza tylko informowanie.
 - Styl informacyjny (ZDROWIE zawsze w tym trybie): zakres usługi, dla kogo, przebieg wizyty, czas, cena, miejsce, termin, jak się umówić, kwalifikacje. Bez superlatyw („najlepszy”), obietnic efektu, zachęt i nakłaniania („nie czekaj”, „zadbaj o siebie już dziś”), presji czasu, promocji handlowych, porównań. Opinie pacjentów w reklamie: ostrożnie, najlepiej wcale (mogą być uznane za zachętę).
 - Kodeks Etyki Lekarskiej: od 1.01.2025 obowiązuje nowa wersja, która dopuszcza informowanie o usługach zgodnie z zasadami etyki (stary art. 63 z ogólnym zakazem reklamy nie obowiązuje). Art. 14 ustawy o działalności leczniczej nadal wymaga, by informacja nie miała cech reklamy.
-- Formularz: bez pytań o diagnozy i stan zdrowia. Pytaj o usługę („czego dotyczy wizyta: kręgosłup, uraz sportowy, rehabilitacja po zabiegu”), preferowany termin i porę kontaktu.
+- Formularz: bez pytań o diagnozy, dolegliwości, części ciała, zabiegi i stan zdrowia (Meta zakazuje pytań o informacje zdrowotne; wybór „rehabilitacja po zabiegu” też je ujawnia). Pytaj o: pierwsza wizyta czy kontynuacja, preferowany termin (w tym tygodniu, w ciągu 2 tygodni, później), porę kontaktu, preferowaną formę kontaktu.
 - Nazwy usług prostym językiem pacjenta („ból dolnej części pleców”, „ból karku”), nie terminologią („odcinek lędźwiowy i szyjny”).
 - Twarz specjalisty: może informować o usłudze; nie może „polecać” wyrobu medycznego.
+
+**Produkty niemedyczne z korzyścią dla ciała (krzesła, materace, obuwie, suplementy)**
+- Bez obietnic efektu zdrowotnego („bez bólu pleców”, „leczy”, „koniec z bólem kręgosłupa”): to twierdzenie zdrowotne bez dowodu (UoPNPR) i ryzyko polityki Meta. Mów o funkcji i sytuacji: „podparcie lędźwi regulowane pod wzrost”, „na 8 godzin przy biurku”.
 
 **WYROB-MEDYCZNY**
 - Bez wizerunku osób wykonujących zawody medyczne (ani udających je) prezentujących wyrób.

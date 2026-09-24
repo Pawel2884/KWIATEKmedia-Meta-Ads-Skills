@@ -77,6 +77,7 @@ Na prośbę albo gdy piszesz komplet do kampanii leadowej, dodaj teksty formular
 - [ ] Moduł branżowy zastosowany (ZDROWIE i PRAWO w stylu informacyjnym, FINANSE-KREDYT, OZE-EKO, PROMOCJA-CENOWA).
 - [ ] Nagłówek ≤ 40 znaków, nie jest etykietą ani CTA. Opis ≤ 30 znaków (policz), bez warunków, które muszą być widoczne.
 - [ ] Akapity 1–2 zdania, pusty wiersz między nimi.
+- [ ] Przy kilku reklamach: każda rozwija swój kąt w całym tekście. Wspólne fakty (oferta, kontakt) najwyżej 1–2 zdania, nie ten sam blok dowodu w każdej reklamie.
 - [ ] Tekst pasuje do grafiki lub wideo i do formularza (ta sama obietnica).
 - [ ] Przeczytany na głos brzmi jak handlowiec przez telefon.
 - [ ] Test konkurenta: nagłówek i pierwsza linia nie pasują do dowolnej firmy z branży (jest fakt, miejsce, liczba albo mechanizm tej firmy).
@@ -84,7 +85,7 @@ Na prośbę albo gdy piszesz komplet do kampanii leadowej, dodaj teksty formular
 
 ## Format odpowiedzi
 
-Pisz zwykłym markdownem, bez bloków kodu i bez pauz (—) w całej odpowiedzi. Szablon poniżej pokazuje układ, nie jest blokiem do skopiowania.
+Pisz zwykłym markdownem, bez bloków kodu, bez pauz i półpauz (—, –) między słowami (półpauza tylko w zakresach liczb, np. 5–100). Pierwsza linia odpowiedzi to pierwsza linia szablonu: bez zdania wstępu („Przygotowałem…”, „Przeczytałem…”, „Oto…”) i bez form rodzajowych o sobie („zrobiłem”, „założyłem”; pisz bezosobowo). Szablon poniżej pokazuje układ, nie jest blokiem do skopiowania.
 
 Tekst do skopiowania bez formatowania markdown w środku. Stałe etykiety pól.
 

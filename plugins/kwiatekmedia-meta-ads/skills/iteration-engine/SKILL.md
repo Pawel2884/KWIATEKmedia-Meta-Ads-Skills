@@ -46,12 +46,15 @@ Potrzebne minimum: wydatek, wyświetlenia, kliknięcia w link, leady (albo zakup
 - Nie ogłaszaj zwycięzcy poniżej ok. 10 leadów na reklamę. Przy 5+ reklamach pamiętaj o klątwie zwycięzcy.
 - Reklama z małym wydatkiem jest nieprzetestowana, nie przegrana.
 - Działającej reklamy nie edytujesz. Nowa wersja to nowa reklama w partii.
+- Z jednej reklamy wnioskujesz o tej reklamie (wykonaniu), nie o całym kącie. Werdykt o kącie („ten kąt nie działa w tej kategorii”) dopiero po co najmniej 2 różnych wykonaniach. Słaba pierwsza wersja kąta to kandydat do I1–I3, nie dowód, że kąt jest zły.
 - Zmęczony zwycięzca zostaje aktywny, dopóki nowe reklamy nie przejmą wydatku.
 - Nie tłumacz spadków „algorytmem” ani „Andromedą” bez danych.
+- Sprawdź zgodność każdej reklamy z danych (np. opinie pacjentów w reklamie gabinetu, pytanie o cechę odbiorcy, cena przekreślona bez 30 dni). Naruszenie zgłaszasz w DECYZJACH niezależnie od wyników: to ryzyko konta, nie kwestia CPL.
+- Zapis: „3×”, nie „3x”.
 - Jeśli budżet nie pozwala rozstrzygnąć pytania, powiedz to i zaproponuj, jak je rozstrzygnąć (dłuższe okno, większa różnica między wariantami, A/B test).
 
 ## Format odpowiedzi
 
-Pisz zwykłym markdownem, bez bloków kodu i bez pauz (—) w całej odpowiedzi. Szablon poniżej pokazuje układ, nie jest blokiem do skopiowania.
+Pisz zwykłym markdownem, bez bloków kodu, bez pauz i półpauz (—, –) między słowami (półpauza tylko w zakresach liczb, np. 5–100). Pierwsza linia odpowiedzi to pierwsza linia szablonu: bez zdania wstępu („Przygotowałem…”, „Przeczytałem…”, „Oto…”) i bez form rodzajowych o sobie („zrobiłem”, „założyłem”; pisz bezosobowo). Szablon poniżej pokazuje układ, nie jest blokiem do skopiowania.
 
 Szablon w `references/raport-iteracji.md`. Najpierw decyzje, potem uzasadnienie. Tabela najwyżej 3 kolumny albo lista.

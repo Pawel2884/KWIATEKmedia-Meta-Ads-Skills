@@ -53,9 +53,13 @@ Jeśli brakuje budżetu, zapytaj o niego (jedno pytanie, z domyślną odpowiedzi
 - Heurystyki (liczby w tabeli budżetowej) nazywaj heurystykami. Progi Meta i statystykę nazywaj po imieniu.
 - Mały budżet: testuj duże różnice (koncepty), nie detale. Mów to klientowi.
 
+## Zgodność konceptów i formularza
+
+Koncepty w planie to zapowiedź reklam, więc obowiązują je te same zasady (`references/zgodnosc.md`). Przy flagach ZDROWIE i PRAWO: bez kąta „rezultat” i obietnic efektu, bez opinii i ocen pacjentów lub klientów w kreacji, bez porównań (także z NFZ, sądem, innymi kancelariami). Formularz bez pytań o dolegliwość, diagnozę, zabieg ani etap problemu finansowego. Fakty tylko z briefu: nie mieszaj terminu wizyty z czasem oddzwonienia.
+
 ## Format odpowiedzi
 
-Pisz zwykłym markdownem, bez bloków kodu i bez pauz (—) w całej odpowiedzi. Szablon poniżej pokazuje układ, nie jest blokiem do skopiowania.
+Pisz zwykłym markdownem, bez bloków kodu, bez pauz i półpauz (—, –) między słowami (półpauza tylko w zakresach liczb, np. 5–100). Pierwsza linia odpowiedzi to pierwsza linia szablonu: bez zdania wstępu („Przygotowałem…”, „Przeczytałem…”, „Oto…”) i bez form rodzajowych o sobie („zrobiłem”, „założyłem”; pisz bezosobowo). Szablon poniżej pokazuje układ, nie jest blokiem do skopiowania.
 
 PLAN KREACJI: [klient] | Budżet: [...] | Cel: [...]
 
