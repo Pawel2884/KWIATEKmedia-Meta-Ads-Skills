@@ -1,0 +1,13 @@
+{
+  "name": "kwiatekmedia-meta-ads",
+  "displayName": "KWIATEKmedia Meta Ads",
+  "version": "0.1.0",
+  "description": "System skilli do tworzenia reklam Meta Ads po polsku: strategia kreacji, reklamy statyczne, copy, scenariusze wideo, hooki, audyt, dywersyfikacja, plan kreacji kampanii i iteracje na podstawie wyników. Nastawiony na leady, które rozumieją ofertę i mają szansę kupić.",
+  "author": {
+    "name": "Paweł Kwiatek",
+    "url": "https://github.com/Pawel2884"
+  },
+  "repository": "https://github.com/Pawel2884/KWIATEKmedia-Meta-Ads-Skills",
+  "license": "UNLICENSED",
+  "keywords": ["meta-ads", "facebook-ads", "instagram-ads", "kreacje", "copywriting", "lead-generation", "pl"]
+}

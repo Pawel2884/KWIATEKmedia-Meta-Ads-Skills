@@ -1,14 +1,18 @@
 # 06 — Reklamy wideo i hooki: co mówią dane i badania (research surowy)
 
-> Agent researchowy: obszar 06. Data: 2026-09-24. Status: W TOKU (zapis przyrostowy).
-> Legenda trybu dostępu: [PEŁNY] = pełna treść przeczytana w sesji; [WYSZUKIWARKA] = tylko streszczenie/fragment z WebSearch; [WIEDZA] = wiedza modelu niepotwierdzona w sesji.
+> Agent researchowy: obszar 06. Data: 2026-09-24. Status: UKOŃCZONY (saturacja w granicach dostępnych narzędzi).
+> Legenda trybu dostępu: [PEŁNY] = pełna treść przeczytana w sesji (Meta Help Center przez MCP); [PEŁNY*] = pełny plik z GitHub pobrany przez WebFetch (ekstrakcja przez model pomocniczy); [WYSZUKIWARKA] = tylko streszczenie/fragment z WebSearch; [WYSZUKIWARKA — za raportem 0X] = pozyskane przez innego agenta projektu; [WIEDZA] = wiedza modelu niepotwierdzona w sesji.
 > Poziomy dowodu: A = źródło pierwotne (Meta/TikTok/Google jako właściciele platform); B = peer-review / duże zbiory danych z jawną metodą; C = praktycy z przykładami/danymi; D = opinia/hipoteza.
 
 ## 1. Zakres i metoda
-(uzupełniane na końcu)
+- **Zakres:** (1) pierwsze 1–3 s wideo (Meta, TikTok, Google ABCD, badania nad brandingiem i porzucaniem); (2) taksonomia hooków i status dowodowy (w tym badania nagłówków); (3) struktury scenariuszy, sound-off/on, napisy, tempo, długość, format 9:16, strefy bezpieczne; (4) talking head/UGC/twórcy, fałszywe opinie (FTC; UPNPR = ustawa o przeciwdziałaniu nieuczciwym praktykom rynkowym; UOKiK), AI avatary (AI Act art. 50, Meta); (5) metryki wideo (hook rate, hold rate); (6) wideo w lead gen i usługach.
+- **Metoda i narzędzia:** Meta Ads MCP `ads_get_help_article` — 26 zapytań, pełne teksty Meta Business Help Center ([PEŁNY]); WebSearch — 17 zapytań, po czym **sesyjny limit wyszukiwań (200, wspólny dla wszystkich agentów) został wyczerpany** — dalsze wątki (pytania w nagłówkach, BuzzSumo/Outbrain, UOKiK, AI avatary, długie VSL) oznaczono [WIEDZA] lub pozyskano inną drogą; WebFetch — ok. 28 prób: działał dla github.com / raw.githubusercontent.com / gist.github.com, zablokowany dla ads.tiktok.com, services.google.com, nature.com, arxiv.org, ftc.gov, upworthy.natematias.com, economicsofattention.com; GitHub MCP — 10 wywołań (kopie aktów prawnych eCFR, Dz.U., AI Act; kod Google ABCD Detector; repozytoria praktyków). Łącznie ~80 operacji badawczych.
+- **Hierarchia dowodów:** A (Meta/TikTok/Google, akty prawne) > B (peer-review, duże zbiory z jawną metodą) > C (praktycy z danymi) > D (opinia/wyprowadzenie). Dane platform (A) często bez ujawnionej metodologii i korelacyjne — zaznaczono przy każdej tezie.
+- **Czego brakuje:** niezależnych danych porównawczych dla lead gen usług w PL (długość, typ hooka, twarz); rzetelnych danych o skuteczności AI avatarów; pełnych tekstów TikTok/Google (tylko streszczenia); pełnego tekstu rekomendacji UOKiK dla influencerów.
+- **Nakładanie się z innymi raportami:** podstawy uwagi i dźwięku — raport 03; perswazja, ciekawość, clickbait — raport 04; formaty Motion — raport 05. Ten raport odsyła do nich zamiast powtarzać.
 
 ## 2. Kluczowe ustalenia
-(uzupełniane przyrostowo)
+Format: **Teza** | Poziom | Źródła: [tryb] tytuł — URL | Dane/cytat | Implikacja.
 
 ### 2.A Oficjalne zalecenia Meta (Help Center, pełne teksty przez Meta Ads MCP)
 
@@ -69,7 +73,7 @@
 
 **D2. Twórcy/partnership ads vs reklamy marki — dane Meta i dużej próby praktyków.** | Poziom: A (Meta 2022, metoda niejawna) + B/C (Agentio: 130 mln USD wydatków, raport komercyjny) | Źródła: [WYSZUKIWARKA] Aspire — "How to Launch Partnership Ads That Beat Brand Ads" — https://www.aspire.io/blog/how-to-launch-partnership-ads-that-outperform-brand-ads ; [WYSZUKIWARKA] Net Influencer — "Meta Partnership Ads Outperform Licensed UGC Across $130M In Ad Spend, Report Finds" — https://www.netinfluencer.com/meta-partnership-ads-outperform-licensed-ugc-across-130m-usd-in-ad-spend-report-finds/ ; [WYSZUKIWARKA] Forbes — "Meta Partnership Ads Hit $10 Billion As Creators Outperform Brand Messages" (12.08.2026) — https://www.forbes.com/sites/jamiegutfreund/2026/08/12/meta-partnership-ads-hit-10-billion-as-creators-outperform-brand-messages/ ; [PEŁNY] Meta — "About partnership ads" — https://www.facebook.com/business/help/342728904797642 | Dane: Meta (2022): partnership ads "53% higher click-through rates and a 19% drop in cost per acquisition compared to business-as-usual brand ads" (w innych streszczeniach też "71% higher brand lift"); Agentio (137 marek, 65 000 reklam, 130 mln USD): partnership ads vs licencjonowane UGC z konta marki: "19% higher click-through rate, a 10% higher conversion rate, and a 5% lower cost per acquisition"; najszersza różnica w Search. Run rate partnership ads ~10 mld USD rocznie (Forbes 2026). | Zastrzeżenia: e-commerce-centryczne; selekcja (kto wybiera partnership ads); Agentio to firma sprzedająca usługi creatorów. | Implikacja: dla lokalnych usług — gdy jest dostęp do prawdziwego klienta/lokalnego twórcy — testować partnership ad (profil osoby w nagłówku) vs to samo wideo z konta marki. Różnica między "UGC z konta marki" a "partnership" (~5% CPA) jest dużo mniejsza niż między "twórca" a "reklama marki" (~19%) — główna wartość leży w FORMACIE twórcy, nie w samym nagłówku.
 
-**D3. Fałszywe opinie i "aktorzy jako klienci" — ramy prawne (USA jako punkt odniesienia; PL/UE wiążące).** | Poziom: A (akty prawne) | Źródła: [PEŁNY — kopia eCFR na GitHub] 16 CFR § 465.2 (FTC Rule on the Use of Consumer Reviews and Testimonials, 2024) — https://github.com/AlextheYounga/ecfr/blob/master/ecfr/title-16-Commercial-Practices/chapter-I-Federal-Trade-Commission/subchapter-D-Trade-Regulation-Rules/part-465-Rule-Use-Consumer-Reviews-Testimonials/section-465.2.md ; [PEŁNY — kopia eCFR na GitHub] 16 CFR § 255.2 (FTC Endorsement Guides) — https://github.com/AlextheYounga/ecfr/blob/master/ecfr/title-16-Commercial-Practices/chapter-I-Federal-Trade-Commission/subchapter-B-Guides-Trade-Practice-Rules/part-255-Guides-Use-Endorsements-Testimonials-Advertising/section-255.2.md ; [PEŁNY — kopia Dz.U. na GitHub] Ustawa o przeciwdziałaniu nieuczciwym praktykom rynkowym (t.j. Dz.U. 2023 poz. 845) — https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2023-845.md | Cytaty: FTC 465.2(a): zakaz recenzji/testimoniali, które fałszywie przedstawiają "(1) That the reviewer or testimonialist exists; (2) That the reviewer or testimonialist used or otherwise had experience with the product, service, or business" lub "(3) The reviewer's or testimonialist's experience". FTC 255.2(c): "Advertisements presenting endorsements by what are represented, expressly or by implication, to be 'actual consumers' should utilize actual consumers in both the audio and video, or clearly and conspicuously disclose that the persons in such advertisements are not actual consumers of the advertised product." FTC 255.2(b): testimonial o kluczowej cesze "will likely be interpreted as representing that the endorser's experience is representative"; bez dowodu typowości trzeba "clearly and conspicuously disclose the generally expected performance" (samo "Results not typical" zwykle nie wystarcza). PL — art. 7 (praktyki zawsze wprowadzające w błąd) pkt 11: "kryptoreklama, która polega na wykorzystywaniu treści publicystycznych w środkach masowego przekazu w celu promocji produktu w sytuacji gdy przedsiębiorca zapłacił za tę promocję"; pkt 25: "twierdzenie przez przedsiębiorcę, który umożliwia dostęp do opinii konsumentów o produktach, że te opinie zostały zamieszczone przez konsumentów, którzy używali danego produktu lub go nabyli" [bez rozsądnych działań weryfikacyjnych — WIEDZA o pełnym brzmieniu]; pkt 26: "zamieszczanie lub zlecanie zamieszczania innej osobie nieprawdziwych opinii lub rekomendacji konsumentów albo zniekształcanie opinii lub rekomendacji konsumentów w celu promowania produktów". | [WIEDZA — niezweryfikowane w sesji] UOKiK: "Rekomendacje Prezesa UOKiK dotyczące oznaczania treści reklamowych przez influencerów w mediach społecznościowych" (2022) — oznaczenia typu "reklama", "materiał reklamowy", "współpraca reklamowa z [marka]" na początku treści, w języku polskim, widoczne bez rozwijania; niewystarczające: same hashtagi po angielsku (#ad, #sponsored), ukryte w gąszczu hashtagów. UOKiK prowadził postępowania i nakładał kary na influencerów/marki (2023–2025). | Implikacja (twarde reguły): (1) scenariusz typu "testimonial"/"recenzja klienta" wolno pisać tylko na bazie PRAWDZIWEJ wypowiedzi prawdziwego klienta (system prosi o źródło: nagranie, opinia Google, zgoda); (2) aktor/twórca grający klienta → musi mówić jako on sam ("Sprawdziłem ofertę…") albo wyraźne oznaczenie "odgrywane przez aktora"; nigdy fikcyjne imię + "moja historia"; (3) wynik z testimonialu ("zaoszczędziłem 40%") wymaga informacji o typowym wyniku; (4) twórca z płatną współpracą → oznaczenie "reklama"/"współpraca reklamowa" po polsku + etykieta "Paid partnership" Meta.
+**D3. Fałszywe opinie i "aktorzy jako klienci" — ramy prawne (USA jako punkt odniesienia; PL/UE wiążące).** | Poziom: A (akty prawne) | Źródła: [PEŁNY — kopia eCFR na GitHub] 16 CFR § 465.2 (FTC Rule on the Use of Consumer Reviews and Testimonials, 2024) — https://github.com/AlextheYounga/ecfr/blob/master/ecfr/title-16-Commercial-Practices/chapter-I-Federal-Trade-Commission/subchapter-D-Trade-Regulation-Rules/part-465-Rule-Use-Consumer-Reviews-Testimonials/section-465.2.md ; [PEŁNY — kopia eCFR na GitHub] 16 CFR § 255.2 (FTC Endorsement Guides) — https://github.com/AlextheYounga/ecfr/blob/master/ecfr/title-16-Commercial-Practices/chapter-I-Federal-Trade-Commission/subchapter-B-Guides-Trade-Practice-Rules/part-255-Guides-Use-Endorsements-Testimonials-Advertising/section-255.2.md ; [PEŁNY — kopia Dz.U. na GitHub] Ustawa o przeciwdziałaniu nieuczciwym praktykom rynkowym (dalej UPNPR; t.j. Dz.U. 2023 poz. 845) — https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2023-845.md | Cytaty: FTC 465.2(a): zakaz recenzji/testimoniali, które fałszywie przedstawiają "(1) That the reviewer or testimonialist exists; (2) That the reviewer or testimonialist used or otherwise had experience with the product, service, or business" lub "(3) The reviewer's or testimonialist's experience". FTC 255.2(c): "Advertisements presenting endorsements by what are represented, expressly or by implication, to be 'actual consumers' should utilize actual consumers in both the audio and video, or clearly and conspicuously disclose that the persons in such advertisements are not actual consumers of the advertised product." FTC 255.2(b): testimonial o kluczowej cesze "will likely be interpreted as representing that the endorser's experience is representative"; bez dowodu typowości trzeba "clearly and conspicuously disclose the generally expected performance" (samo "Results not typical" zwykle nie wystarcza). PL — art. 7 (praktyki zawsze wprowadzające w błąd) pkt 11: "kryptoreklama, która polega na wykorzystywaniu treści publicystycznych w środkach masowego przekazu w celu promocji produktu w sytuacji gdy przedsiębiorca zapłacił za tę promocję"; pkt 25: "twierdzenie przez przedsiębiorcę, który umożliwia dostęp do opinii konsumentów o produktach, że te opinie zostały zamieszczone przez konsumentów, którzy używali danego produktu lub go nabyli" [bez rozsądnych działań weryfikacyjnych — WIEDZA o pełnym brzmieniu]; pkt 26: "zamieszczanie lub zlecanie zamieszczania innej osobie nieprawdziwych opinii lub rekomendacji konsumentów albo zniekształcanie opinii lub rekomendacji konsumentów w celu promowania produktów". | [WIEDZA — niezweryfikowane w sesji] UOKiK: "Rekomendacje Prezesa UOKiK dotyczące oznaczania treści reklamowych przez influencerów w mediach społecznościowych" (2022) — oznaczenia typu "reklama", "materiał reklamowy", "współpraca reklamowa z [marka]" na początku treści, w języku polskim, widoczne bez rozwijania; niewystarczające: same hashtagi po angielsku (#ad, #sponsored), ukryte w gąszczu hashtagów. UOKiK prowadził postępowania i nakładał kary na influencerów/marki (2023–2025). | Implikacja (twarde reguły): (1) scenariusz typu "testimonial"/"recenzja klienta" wolno pisać tylko na bazie PRAWDZIWEJ wypowiedzi prawdziwego klienta (system prosi o źródło: nagranie, opinia Google, zgoda); (2) aktor/twórca grający klienta → musi mówić jako on sam ("Sprawdziłem ofertę…") albo wyraźne oznaczenie "odgrywane przez aktora"; nigdy fikcyjne imię + "moja historia"; (3) wynik z testimonialu ("zaoszczędziłem 40%") wymaga informacji o typowym wyniku; (4) twórca z płatną współpracą → oznaczenie "reklama"/"współpraca reklamowa" po polsku + etykieta "Paid partnership" Meta.
 
 **D4. AI avatary / AI UGC — prawo UE (AI Act art. 50) i Meta; skuteczność niepotwierdzona.** | Poziom: A (akt prawny) dla obowiązków; D dla skuteczności | Źródła: [PEŁNY — kopia na GitHub] EU AI Act, art. 50, art. 3 pkt 60, art. 99, art. 113 — https://raw.githubusercontent.com/mcekikj/eu-ai-act-knowledge-graph/main/EU-AI-Act-Vault/01%20Articles/Article%2050.md (analogicznie Article 3, 99, 113) ; [PEŁNY] Meta — "About media created or edited with AI" — https://www.facebook.com/business/help/1486382031937045 ; [PEŁNY] Meta — "Generate image variations in Meta Ads Manager" — https://www.facebook.com/business/help/1684513971952814 | Cytaty: AI Act art. 3(60) "'deep fake' means AI-generated or manipulated image, audio or video content that resembles existing persons, objects, places, entities or events and would falsely appear to a person to be authentic or truthful"; art. 50(4) "Deployers of an AI system that generates or manipulates image, audio or video content constituting a deep fake, shall disclose that the content has been artificially generated or manipulated."; art. 50(5) "in a clear and distinguishable manner at the latest at the time of the first interaction or exposure"; art. 113: stosowanie od "2 August 2026"; art. 99(4): kary do "EUR 15 000 000 or ... up to 3 % of its total worldwide annual turnover" (NIE 35 mln/7% — to dotyczy praktyk zakazanych z art. 5; repozytoria praktyków często to mylą). Meta: obowiązek samodzielnego ujawnienia AI dotyczy reklam politycznych/społecznych; dla zwykłych reklam Meta może sama dodać "AI info" przy użyciu jej narzędzi GenAI. [WIEDZA — niezweryfikowane] Pakiet "Digital Omnibus" (KE, XI 2025) proponował przesunięcia terminów części obowiązków AI Act — status legislacyjny do sprawdzenia. [WIEDZA — niezweryfikowane] Badanie neuro NielsenIQ (2024): reklamy generowane AI częściej odbierane jako "annoying, boring, confusing" i słabiej aktywujące pamięć, gdy widz rozpozna AI. Brak w sesji rzetelnych, niezależnych danych porównawczych CPL/CPA "AI avatar vs człowiek" — repozytoria praktyków same przyznają: "Anecdotal: Arcads top, but no head-to-head benchmarks public yet" (https://github.com/raydenai/viral-video-creation/blob/main/notes/research-viral-ads-2026.md). | Implikacja: (1) fotorealistyczny awatar AI udający "klienta"/"eksperta" = de facto deep fake + fałszywy testimonial (art. 7 pkt 26 UPNPR / FTC 465.2) → ZAKAZ w systemie; (2) awatar AI jako jawny "narrator" (z oznaczeniem "wygenerowane przez AI" od pierwszej ekspozycji) → dopuszczalny tylko jako test, oznaczony poziomem D; (3) klonowanie głosu/wizerunku właściciela firmy — tylko za jego pisemną zgodą i z oznaczeniem.
 
@@ -233,6 +237,158 @@ Struktura: 0–5 hook + obietnica konkretnej wiedzy · 5–30 problem i jego kos
 - N5: wpływ jawnego oznaczenia AI (jeśli kiedykolwiek użyty narrator AI) na CTR i jakość leadów.
 - N6: realne tempo mowy PL w reklamach (słowa/s) i jego związek z hold rate.
 
-## 6. Konkretne reguły do systemu
+## 6. Konkretne reguły do systemu (z poziomem dowodu)
 
-## 7. Lista źródeł
+Konwencja: **MUSI** = reguła twarda (walidator blokuje), **POWINNO** = domyślne zachowanie (odstępstwo wymaga uzasadnienia), **MOŻE** = opcja do testu. Poziom w nawiasie = siła dowodu.
+
+### 6.1 Hook i pierwsze 3 sekundy
+- **RV01 MUSI** — w 0–3 s pada kluczowy komunikat (co + dla kogo / korzyść) w tekście na ekranie i w mowie. (A: Meta 3 s; A: TikTok 63%; B: upfront)
+- **RV02 MUSI** — pierwsza klatka zawiera ruch, twarz w zbliżeniu lub efekt usługi; żadnej statycznej planszy z logo ani czarnego ekranu na starcie. (A: Meta "motion or a compelling visual in the first frame"; A: Google Dynamic Start; B: Teixeira 2010)
+- **RV03 MUSI** — hook ma 3 zgodne warstwy: wizual 0–1 s, tekst 3–7 słów, pierwsze zdanie audio zaczynające się ≤1 s. Walidator sprawdza, czy tekst i mowa mówią to samo. (A: Google "Supers with Audio", "Audio Early"; A: Meta sound-off)
+- **RV04 MUSI** — brak stwierdzeń i pytań o atrybuty osobiste widza (wiek, zdrowie fizyczne/psychiczne, status finansowy, status rodzinny, rasa, religia, orientacja, niepełnosprawność, karalność, imię); brak negatywnej oceny wyglądu; brak obietnic zdrowotnych "w X dni" bez zastrzeżeń. (A: polityki Meta)
+- **RV05 MUSI** — obietnica z hooka jest spełniona w ciele reklamy przed 50% długości i nie jest sprzeczna z formularzem/landingiem. (B: clickbait obniża wiarygodność; B: "false front")
+- **RV06 POWINNO** — do każdego ciała reklamy generuj 3–5 hooków różnych TYPÓW (z tabeli 3.2), nie 5 wariantów tego samego typu. (B: kierunek efektów cech nieprzewidywalny; A: Meta — do 10 kreacji w zestawie)
+- **RV07 POWINNO** — pierwsze zdanie mówione to teza, nie powitanie ani przedstawienie się ("Cześć, jestem…" przesunąć za hook). (A: Google/TikTok — mowa i zwrot do kamery od 0–3 s; C)
+- **RV08 POWINNO** — preferuj "konkret + mała luka" (temat jasny, jak/ile/dlaczego do obejrzenia) zamiast zagadki. (B: Aubin Le Quéré & Matias; B: thin slices)
+- **RV09 POWINNO** — pytania: tylko tematyczne, raczej słowo pytające w zdaniu oznajmującym niż pytanie zamknięte. (C; A-polityka)
+- **RV10 POWINNO** — hook problemowy zawsze w parze z konkretnym rozwiązaniem i łatwym pierwszym krokiem w tej samej reklamie. (B: apele strachu + efficacy)
+- **RV11 MOŻE** — pattern interrupt, jeśli łączy się z komunikatem w ≤2 s. (A: Google Dynamic Start; B-teoria; ryzyko false front)
+- **RV12 MUSI** — liczby, wyniki, opinie, oceny i certyfikaty w hooku pochodzą z danych klienta (źródło zapisane w briefie); system nie wymyśla liczb. (A: UPNPR art. 7 pkt 25–26; FTC 465.2 jako wzorzec)
+
+### 6.2 Struktura, długość, tempo
+- **RV13 POWINNO** — domyślny portfel długości na koncept: 15 s (S15, 4:5 i 9:16) + 25–35 s (PAS+D/testimonial/demo); 45–90 s tylko dla wysokiego kosztu decyzji/B2B/retargetingu; 5–10 s mikro-wideo do tanich testów kątów. (A: Meta długości, lead ads ≤15 s, 5–10 s; A: TikTok 21–34 s; C/D: długie formy)
+- **RV14 MUSI** — każda wersja (także 60 s+) spełnia RV01–RV03 samodzielnie. (A/B: większość obejrzeń kończy się w pierwszych sekundach — B1)
+- **RV15 POWINNO** — zmiana wizualna co ~1,5–3 s (cięcie, punch-in, b-roll, zmiana planu); w talking head preferuj jump-cuty i punch-in nad montażem wielu scen. (A: Google pacing, Meta Stories; B-teoria przeładowania)
+- **RV16 MUSI** — limit słów VO wg długości: ≈2–2,5 słowa/s (15 s ≤35 słów; 30 s ≤70; 60 s ≤140). (D — wyprowadzenie; weryfikować na nagraniu)
+- **RV17 MUSI** — jedna główna korzyść i jedno CTA; CTA mówione i napisane; plansza końcowa z marką i CTA. (A: Meta, Google; A: TikTok tekstowy CTA)
+- **RV18 POWINNO** — marka zintegrowana w scenie i powiedziana w 0–5 s, potem krótkie "pulsy"; nie długa centralna plansza. (A: Meta/Google; B: Teixeira 2010)
+- **RV19 POWINNO** — w usługach pokaż usługę w działaniu (proces, ekipa, sprzęt, efekt) — nie tylko ludzi i nie stock. (A: Meta Stories "focus on products" dla celu leads; A: Google product visuals; C)
+- **RV20 POWINNO** — dowód = historia konkretnego klienta + twarda liczba (z informacją o typowości). (B: raport 04 T1.6; A: FTC 255.2(b) jako wzorzec)
+
+### 6.3 Dźwięk, napisy, format
+- **RV21 MUSI** — scenariusz ma dwie kolumny: TEKST NA EKRANIE (samowystarczalny sound-off) i AUDIO (sound-on). Walidator: z samego tekstu da się odtworzyć hook, problem, rozwiązanie, dowód, CTA. (A: Meta "design for sound-off")
+- **RV22 MUSI** — pełne napisy PL do całej mowy, przygotowane do wypalenia (lub SRT `nazwa.pl_PL.srt`); nie polegać na auto-napisach Meta (tylko EN). Stories — wyłącznie wypalone. (A)
+- **RV23 MUSI** — tekst i twarz w środkowym obszarze kadru 9:16; krawędzie wolne; przy disclaimerze w Reels dolne 40% wolne; w Stories ok. 14% góry i 20% dołu wolne. (A)
+- **RV24 POWINNO** — warstwa audio zawsze (mowa/lektor + ewentualnie cicha muzyka z Sound Collection); bez licencjonowanej muzyki w Reels; unikać "samego ASMR". (A: Meta Reels; A: TikTok VO > ASMR)
+- **RV25 POWINNO** — master 9:16 1080×1920 + wariant 4:5 (feed, lead ads); styl natywny/lo-fi, nagranie telefonem jako domyślne dla celu leads. (A: Meta aspect ratios, lead ads spec, Stories telefon > studio dla intencji)
+- **RV26 POWINNO** — kadr twarzy ciasny (twarz/obiekt dominuje kadr w hooku), spojrzenie w obiektyw przy talking head; przy grafice z tekstem/produktem spojrzenie osoby na tekst/produkt. (A: Google tight framing, direct to camera; B: raport 03 U20)
+
+### 6.4 Talking head, UGC, twórcy, AI — reguły uczciwości
+- **RV27 MUSI** — testimonial/"recenzja" tylko od realnej osoby z realnym doświadczeniem; wypowiedź nieprzeinaczona; zgoda na wizerunek w briefie. (A: UPNPR art. 7 pkt 26; FTC 465.2)
+- **RV28 MUSI** — aktor/twórca bez doświadczenia z usługą nie mówi w 1. osobie jako klient; jeśli scena odgrywana — oznaczenie ("scena odgrywana"/"aktor"). (A: FTC 255.2(c) jako wzorzec; UPNPR — wprowadzanie w błąd)
+- **RV29 MUSI** — płatna współpraca z twórcą: oznaczenie po polsku na początku ("Reklama" / "Współpraca reklamowa z [marka]") + etykieta Paid partnership / partnership ad. (A: Meta branded content; [WIEDZA] rekomendacje UOKiK 2022)
+- **RV30 MUSI** — zakaz fotorealistycznych awatarów AI / klonów głosu udających klientów, ekspertów lub pracowników. Narrator AI dopuszczalny tylko jawnie oznaczony od pierwszej ekspozycji ("Wideo wygenerowane z użyciem AI") i tylko jako test (D). Klon wizerunku/głosu właściciela — wyłącznie za pisemną zgodą i z oznaczeniem. (A: AI Act art. 50(4)–(5), art. 3(60), stosowanie od 2.08.2026; A: UPNPR)
+- **RV31 POWINNO** — preferencja twarzy: (1) właściciel/ekspert firmy (stała twarz marki), (2) prawdziwy klient, (3) twórca lokalny jako partnership ad; aktor — ostatnia opcja. (A: Google "Everyday Person"; A/B: partnership ads; B: wyraziste zasoby — raport 03/04)
+- **RV32 POWINNO** — przy wynikach klienta dodaj informację o typowym wyniku lub warunkach ("średnio u klientów…", "dla domu 140 m²"). (A: FTC 255.2(b) jako wzorzec; ostrożność UOKiK)
+
+### 6.5 Metryki i diagnostyka
+- **RV33 MUSI** — liczyć: hook rate = 3-s video plays / impressions; hold rate = ThruPlays / 3-s video plays; retencja = plays at 25/50/75/95% / video plays; średni czas = video average play time. Porównywać tylko w obrębie placementu i podobnej długości. (A: definicje Meta; C: nazewnictwo)
+- **RV34 MUSI** — benchmarki zewnętrzne (np. hook ≥25–30%) oznaczać jako C/D i używać tylko orientacyjnie; decyzje o wyłączeniu/skalowaniu po CPL i CPQL, nie po hook rate. (C/D)
+- **RV35 POWINNO** — drzewko diagnostyczne: niski hook rate → nowe 0–3 s (inny typ hooka, inna 1. klatka); dobry hook + niski hold → środek (tempo, konkret, spełnienie obietnicy); dobry hold + niski CTR → oferta/CTA; wysoki CTR + niska jakość leadów → hook przyciąga niewłaściwych odbiorców (za szeroki/clickbaitowy) — zawęź call-out lub dodaj kwalifikację w wideo. (C — logika praktyków, spójna z B: clickbait)
+- **RV36 POWINNO** — dla wideo <15 s pamiętać, że ThruPlay = obejrzenie ≥97% (hold rate nieporównywalny z dłuższymi); nie używać strony Meta "3-second video plays rate per impressions" (błędna definicja). (A)
+
+### 6.6 Proces generowania
+- **RV37 POWINNO** — każdy scenariusz zawiera metadane: typ hooka (H1–H16), szablon (S15/S30/TST/…), długość, placement docelowy, poziom dowodu kluczowych elementów, źródła liczb/opinii, flagi prawne (testimonial/twórca/AI). (D — projekt systemu)
+- **RV38 POWINNO** — system proponuje najpierw tani test kątów (mikro-wideo 5–10 s lub statyka text-forward), potem nagranie pełnego wideo dla zwycięskiego kąta. (A: Meta conversion testing; B: Motion text-forward — raport 05)
+- **RV39 MOŻE** — dla ofert o wysokim koszcie decyzji: wersja LONG (60–180 s) do retargetingu osób, które obejrzały ≥50% krótkiej wersji lub otworzyły formularz. (C/D; B: Owsiankina — powrót do przerwanych zadań, raport 04 T4.6)
+- **RV40 MUSI** — język hooków i napisów: polski naturalny, bez kalki z angielskiego ("Hej, ty!" / "Stop scrollowania!") — [D]; szczegóły stylu w raporcie 09.
+
+## 7. Lista źródeł (z trybem dostępu)
+
+Legenda: [PEŁNY] = pełny tekst odczytany w sesji (Meta Help Center przez Meta Ads MCP); [PEŁNY*] = pełny plik pobrany z GitHub przez WebFetch, ekstrakcja przez model pomocniczy (cytaty wiarygodne, ale nie czytane "surowo"); [WYSZUKIWARKA] = tylko streszczenie/fragment z WebSearch; [WYSZUKIWARKA — tylko tytuł]; [WYSZUKIWARKA — za raportem 04/03/05] = URL i streszczenie pozyskane przez innego agenta tego projektu; [WIEDZA] = wiedza modelu, niezweryfikowana w sesji.
+
+### 7.1 Meta (poziom A) — [PEŁNY]
+1. Best practices for Instagram video ads — https://www.facebook.com/business/help/188534925073536
+2. Add captions to your video ad — https://www.facebook.com/business/help/1675722002698686
+3. Best practices for aspect ratios — https://www.facebook.com/business/help/103816146375741
+4. Creative best practices for conversion testing — https://www.facebook.com/business/help/565573477186194
+5. About text overlays and the safe zone for ads on Facebook and Instagram — https://www.facebook.com/business/help/980593475366490
+6. Creative best practices for stories — https://www.facebook.com/business/help/304846896685564
+7. Technical specifications for Facebook and Instagram stories — https://www.facebook.com/business/help/292794301336717
+8. About link sticker on Instagram stories (14% / 20%) — https://help.instagram.com/192168966243613
+9. Create Instagram Reels ads in Meta Ads Manager — https://help.instagram.com/546362593027755
+10. About video ad metrics — https://www.facebook.com/business/help/1792720544284355
+11. About video ad metrics calculation — https://www.facebook.com/business/help/1868286323447328
+12. 3-second video plays — https://www.facebook.com/business/help/743427195703387
+13. 3-second video plays rate per impressions (błędna definicja w HC) — https://www.facebook.com/business/help/1252260652457829
+14. About ThruPlay — https://www.facebook.com/business/help/2051461368219124
+15. About 2-second continuous video play — https://www.facebook.com/business/help/1925542547764376
+16. Facebook Reels playback speed metrics — https://www.facebook.com/business/help/508504200874317
+17. Video length specifications across placements — https://www.facebook.com/business/help/817989058548892
+18. About video ads — https://www.facebook.com/business/help/1381779698788633
+19. Design specifications for lead ads with instant form — https://www.facebook.com/business/help/908491205873167
+20. About partnership ads — https://www.facebook.com/business/help/342728904797642 ; https://help.instagram.com/292748974937716
+21. About labels on paid partnership posts — https://www.facebook.com/business/help/213764212711862
+22. How to use the paid partnership label (Instagram) — https://help.instagram.com/1109894795810258
+23. About media created or edited with AI — https://www.facebook.com/business/help/1486382031937045
+24. Add animation to an image (GenAI, AI info) — https://www.facebook.com/business/help/1766652437485798
+25. Generate image variations (AI transparency) — https://www.facebook.com/business/help/1684513971952814
+26. About Meta's privacy violations and personal attributes advertising policy — https://www.facebook.com/business/help/2557868957763449
+27. About Meta's health and wellness advertising policy — https://www.facebook.com/business/help/2489235377779939
+28. About Meta advertising standards — https://www.facebook.com/business/help/488043719226449
+29. Best practices for dating ads (przykłady atrybutów) — https://www.facebook.com/business/help/528007798183873
+30. About auto-generated captions on Facebook Reels — https://www.facebook.com/business/help/385195769594602
+31. Add text overlays to your video ad — https://www.facebook.com/business/help/922396998136442
+32. About creative optimizations for Reels ads — https://www.facebook.com/business/help/308193048565708
+33. Tips and best practices for Facebook Reels — https://www.facebook.com/business/help/1708053352711643
+34. About Facebook in-stream ads for Reels — https://www.facebook.com/business/help/902459833240201
+35. About dynamic creative — https://www.facebook.com/business/help/170372403538781
+36. About the flexible ad format — https://www.facebook.com/business/help/835561738423867
+
+### 7.2 Google / YouTube (poziom A)
+37. [PEŁNY*] google-marketing-solutions/abcds-detector (README) — https://github.com/google-marketing-solutions/abcds-detector
+38. [PEŁNY*] long_form_abcd_features.py — https://raw.githubusercontent.com/google-marketing-solutions/abcds-detector/main/features_repository/long_form_abcd_features.py
+39. [PEŁNY*] shorts_features.py — https://raw.githubusercontent.com/google-marketing-solutions/abcds-detector/main/features_repository/shorts_features.py
+40. [WYSZUKIWARKA] Google Ads Help — About the ABCDs of effective video ads — https://support.google.com/google-ads/answer/14783551?hl=en
+41. [WYSZUKIWARKA] A Guide To Creating Effective Video Ads — https://business.google.com/us/resources/articles/abcds-of-effective-video-ads/
+42. [WYSZUKIWARKA] YouTube ABCDs: Video ad best practices — https://business.google.com/en-all/think/future-of-marketing/youtube-video-ad-creative/
+43. [WYSZUKIWARKA] Core ABCDs summary (PDF) — https://services.google.com/fh/files/misc/en_us_youtube_core_abcds_summary.pdf (WebFetch zablokowany)
+44. [WYSZUKIWARKA] ABCD reference guide (PDF) — https://services.google.com/fh/files/misc/youtube_google_abcd_reference_guide_en.pdf (WebFetch zablokowany)
+45. [WYSZUKIWARKA] Kantar — Validating Google's ABCD framework with the power of artificial intelligence — https://www.kantar.com/industries/technology-and-telecoms/validating-googles-abcd-framework-with-the-power-of-artificial-intelligence
+
+### 7.3 TikTok (poziom A, tylko streszczenia — ads.tiktok.com zablokowany dla WebFetch)
+46. [WYSZUKIWARKA] Creative Guidance | Creative Strategies — https://ads.tiktok.com/business/creativecenter/quicktok/online/tiktok_creative_accelerator/pc/en
+47. [WYSZUKIWARKA] The Power of Creative Elements in TikTok ads — https://ads.tiktok.com/business/creativecenter/quicktok/online/Power_Creative_Elements/pc/en
+48. [WYSZUKIWARKA] 9 creative tips to drive auction ad performance — https://ads.tiktok.com/business/en-US/blog/9-creative-tips-to-drive-auction-ad-performance ; PDF: https://ads.tiktok.com/business/library/Auction_Ads_Creative_Tips.pdf
+49. [WYSZUKIWARKA] Triple-digit conversion lift: Simple creative tips to make your ads work harder (2023) — https://ads.tiktok.com/business/en-US/blog/creative-that-drives-conversions
+50. [WYSZUKIWARKA] Creative Best Practices for TikTok Ads — https://ads.tiktok.com/business/en-US/blog/creative-best-practices-top-performing-ads
+
+### 7.4 Badania (poziom B)
+51. [WYSZUKIWARKA] Facebook × Nielsen 2015 — Marketing Dive — https://www.marketingdive.com/news/brand-lift-happens-in-less-than-1-second-of-video-study-finds/377333/ ; MarTech — https://martech.org/even-brief-video-views-drive-brand-lift-facebook-nielsen-study-finds/ ; krytyka Tenscores — https://tenscores.com/daily/facebook-ads/facebook-publishes-nielsen-study-results-questionable-best-201503240700/
+52. [WYSZUKIWARKA] Teixeira, Wedel, Pieters (2010), Moment-to-Moment Optimal Branding in TV Commercials: Preventing Avoidance by Pulsing, Marketing Science 29(5) — https://pubsonline.informs.org/doi/10.1287/mksc.1100.0567 ; https://www.hbs.edu/faculty/Pages/item.aspx?num=37527 ; https://www.researchgate.net/publication/220659091_Moment-to-Moment_Optimal_Branding_in_TV_Commercials_Preventing_Avoidance_by_Pulsing (PDF economicsofattention.com — WebFetch zablokowany)
+53. [WYSZUKIWARKA] Teixeira, Wedel, Pieters (2012), Emotion-Induced Engagement in Internet Video Advertisements, JMR 49(2) — https://journals.sagepub.com/doi/10.1509/jmr.10.0207 (szczegóły w raporcie 03 U6)
+54. [WYSZUKIWARKA] Robertson i in. (2023), Negativity drives online news consumption, Nature Human Behaviour — https://www.nature.com/articles/s41562-023-01538-4 ; https://pubmed.ncbi.nlm.nih.gov/36928780/ (WebFetch nature.com zablokowany)
+55. [WYSZUKIWARKA] Journal of Robustness Reports — Does Negativity Drive Online News Consumption? — https://www.journalofrobustnessreports.org/does-negativity-drive-online-news-consumption/
+56. [WYSZUKIWARKA] Matias i in. (2021), The Upworthy Research Archive, Scientific Data — https://www.nature.com/articles/s41597-021-00934-7 ; aktualizacja 2024 — https://upworthy.natematias.com/2024-06-upworthy-archive-update.html (WebFetch zablokowany) ; Author Correction — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11239857/
+57. [WYSZUKIWARKA — tylko tytuł] Negative news posts are less prevalent and generate lower user engagement… (arXiv 2507.19300) — https://arxiv.org/pdf/2507.19300
+58. [WYSZUKIWARKA — za raportem 04] Banerjee & Urminsky (2024), Marketing Science — https://pubsonline.informs.org/doi/10.1287/mksc.2021.0018
+59. [WYSZUKIWARKA — za raportem 04] Aubin Le Quéré & Matias, When curiosity gaps backfire, Scientific Reports — https://pmc.ncbi.nlm.nih.gov/articles/PMC11704130/
+60. [WYSZUKIWARKA — za raportem 04] Zebregs i in. (2015) — https://pubmed.ncbi.nlm.nih.gov/24836931/ ; Tannenbaum i in. (2015) — https://pubmed.ncbi.nlm.nih.gov/26501228/ ; Ghibellini & Meier (2025) — https://www.nature.com/articles/s41599-025-05000-w
+61. [WIEDZA] Lai & Farbrot (2014), What makes you click? The effect of question headlines on readership in computer-mediated communication, Social Influence.
+62. [WIEDZA] Lang (2000), The limited capacity model of mediated message processing, Journal of Communication; Lang, Bolls, Potter, Kawahara (1999), J. Broadcasting & Electronic Media.
+63. [WIEDZA] NielsenIQ (2024), badanie neuro reakcji na reklamy generowane przez AI.
+
+### 7.5 Prawo (poziom A)
+64. [PEŁNY* — kopia eCFR] 16 CFR § 465.2 (FTC Rule on Consumer Reviews and Testimonials) — https://github.com/AlextheYounga/ecfr/blob/master/ecfr/title-16-Commercial-Practices/chapter-I-Federal-Trade-Commission/subchapter-D-Trade-Regulation-Rules/part-465-Rule-Use-Consumer-Reviews-Testimonials/section-465.2.md (ftc.gov — WebFetch zablokowany)
+65. [PEŁNY* — kopia eCFR] 16 CFR § 255.2 (FTC Endorsement Guides) — https://github.com/AlextheYounga/ecfr/blob/master/ecfr/title-16-Commercial-Practices/chapter-I-Federal-Trade-Commission/subchapter-B-Guides-Trade-Practice-Rules/part-255-Guides-Use-Endorsements-Testimonials-Advertising/section-255.2.md
+66. [PEŁNY* — kopia Dz.U.] Ustawa o przeciwdziałaniu nieuczciwym praktykom rynkowym, t.j. Dz.U. 2023 poz. 845 (art. 7 pkt 11, 25, 26) — https://github.com/legalize-dev/legalize-pl/blob/main/pl/DU-2023-845.md
+67. [PEŁNY* — kopia] EU AI Act (Rozp. 2024/1689): art. 50 — https://raw.githubusercontent.com/mcekikj/eu-ai-act-knowledge-graph/main/EU-AI-Act-Vault/01%20Articles/Article%2050.md ; art. 3 — .../Article%203.md ; art. 99 — .../Article%2099.md ; art. 113 — .../Article%20113.md
+68. [WIEDZA] Rekomendacje Prezesa UOKiK dotyczące oznaczania treści reklamowych przez influencerów w mediach społecznościowych (2022); art. 16 ust. 3 ustawy o zwalczaniu nieuczciwej konkurencji (reklama porównawcza); pakiet "Digital Omnibus" KE (2025) — status do weryfikacji.
+
+### 7.6 Praktycy / rynek (poziom C/D)
+69. [WYSZUKIWARKA] Aspire — partnership ads — https://www.aspire.io/blog/how-to-launch-partnership-ads-that-outperform-brand-ads
+70. [WYSZUKIWARKA] Net Influencer — Agentio report ($130M) — https://www.netinfluencer.com/meta-partnership-ads-outperform-licensed-ugc-across-130m-usd-in-ad-spend-report-finds/
+71. [WYSZUKIWARKA] Forbes (2026) — Meta Partnership Ads Hit $10 Billion — https://www.forbes.com/sites/jamiegutfreund/2026/08/12/meta-partnership-ads-hit-10-billion-as-creators-outperform-brand-messages/
+72. [PEŁNY*] marcusquinn/aidevops — meta-ads-optimization-metrics.md (benchmarki bez źródeł) — https://github.com/marcusquinn/aidevops/blob/main/.agents/marketing-sales/meta-ads-optimization-metrics.md
+73. [PEŁNY*] gmmh1/claude-paid-media-skills — meta-ads-creative-analytics — https://github.com/gmmh1/claude-paid-media-skills/blob/main/skills/meta-ads-creative-analytics/SKILL.md
+74. [PEŁNY*] raydenai/viral-video-creation — research-viral-ads-2026.md — https://github.com/raydenai/viral-video-creation/blob/main/notes/research-viral-ads-2026.md
+75. [PEŁNY*] Hainrixz/claude-ads — Paid Advertising Research — https://github.com/Hainrixz/claude-ads/blob/main/research/Paid%20Advertising%20Research%20for%20Claude-Ads.md
+76. [PEŁNY*] N. Hagar — kompilacja badań nad nagłówkami (gist) — https://gist.github.com/NHagar/77c3f2e9df9c211d2abce7982f794135
+77. [WYSZUKIWARKA — tylko tytuł] MNTN Research — Ad Length Impact on Attention is Minimal… — https://research.mountain.com/creative-analysis/ad-length-impact-on-attention-is-minimal-but-content-tips-the-scales/
+78. [PEŁNY*] cammycurry/ai-creator-app — realinfluencer-master-research.md (odrzucone jako źródło: m.in. błędnie podaje kary AI Act dla art. 50) — https://github.com/cammycurry/ai-creator-app/blob/main/docs/research/realinfluencer-master-research.md
+
+### 7.7 Odsyłacze do raportów równoległych (ten projekt)
+- `research/raw/03-attention-mobile-visual.md` — U5 (thin slices), U6/U7 (Teixeira), U8–U10 (sekundy uwagi, Nelson-Field), U20–U22 (twarze/spojrzenie), U29–U31 (dźwięk, napisy, 80% Reels z dźwiękiem, −34,5% kosztu Reels 9:16 z audio).
+- `research/raw/04-persuasion-trust-memory.md` — T1.5, T1.6 (dowody), T2.1 (liczby), T3.1–T3.4 (ciekawość, clickbait, negatywność), T4.3 (strach + efficacy), T4.6 (Zeigarnik), T5.2 (bumerang norm), T6.3 (narracja), T8.2 (ELM).
+- `research/raw/05-practitioners-creative-strategy.md` — Motion Creative Benchmarks 2026 (formaty wizualne, hit rate, UGC vs high production).
+- `research/raw/07-leadgen-quality-pl-law.md` — jakość leadów, prawo PL.

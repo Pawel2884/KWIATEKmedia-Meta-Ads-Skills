@@ -186,3 +186,204 @@
 | Dane/cytat: Załącznik I pkt "2a. Displaying a sustainability label that is not based on a certification scheme or not established by public authorities." "4a. Making a generic environmental claim for which the trader is not able to demonstrate recognised excellent environmental performance relevant to the claim." "4b. Making an environmental claim about the entire product or the trader's entire business when it concerns only a certain aspect…" "4c. Claiming, based on the offsetting of greenhouse gas emissions, that a product has a neutral, reduced or positive impact on the environment…" Definicja "generic environmental claim": twierdzenie nie na etykiecie, gdy "the specification of the claim is not provided in clear and prominent terms on the same medium". Art. 6 ust. 2 lit. d: twierdzenia o przyszłej efektywności środowiskowej bez weryfikowalnego planu.
 | Implikacja (kluczowe dla OZE/budownictwa): unikać "eko", "ekologiczny", "zielony", "przyjazny środowisku", "zero emisji", "neutralny klimatycznie" jako ogólników; zamiast tego KONKRETY na tym samym nośniku ("pompa ciepła powietrze-woda, SCOP 4,5 wg karty produktu", "instalacja 6 kWp — szacowana produkcja ~6 000 kWh/rok w warunkach X"). To jednocześnie zwiększa zrozumienie oferty (cel systemu).
 
+### 2.5 Kreacja i copy jako filtr jakości (dźwignie kwalifikacji)
+
+> Uwaga metodologiczna: budżet WebSearch sesji wyczerpał się po 6 zapytaniach (limit 200 zapytań współdzielony przez równoległych agentów). Nie udało się zebrać case studies praktyków dot. "cena w reklamie → jakość leadów". Poniższe tezy łączą: (a) źródła pierwotne Meta (mechanizmy), (b) badania akademickie znane z literatury (oznaczone [WIEDZA] lub zweryfikowane fragmentami na GitHub), (c) konsensus praktyków [WIEDZA] = poziom C/D. Każdą regułę C/D system powinien traktować jako hipotezę do testu A/B.
+
+**Q1. Jakość rośnie, gdy reklama pozwala odbiorcy SAMEMU się zakwalifikować lub odrzucić (self-selection): kto/gdzie/za ile/kiedy. Platforma sama przyznaje, że filtry jakości podnoszą CPL, a obniżają koszt leada jakościowego.**
+| Poziom: A (mechanizm po stronie formularza i optymalizacji) / C (przeniesienie na copy) | Źródła: [PEŁNY] Meta — Higher intent (F1), conditional logic (F2), OTP (F12), Conversion leads −21% kosztu leada jakościowego (F4); [WIEDZA] konsensus praktyków lead gen (mniejsza liczba, lepsze leady przy precyzyjnym komunikacie)
+| Implikacja: każda kreacja leadowa ma zawierać min. 2 z 4 "filtrów": (1) DLA KOGO (rola/sytuacja, nie cecha osobista — F8), (2) GDZIE (obszar obsługi), (3) ILE (cena "od", widełki lub orientacyjny budżet), (4) CO DALEJ (co się stanie po wysłaniu: telefon, wizja lokalna, wycena w 48 h). KPI = koszt leada kwalifikowanego / spotkania, nie CPL.
+
+**Q2. Przejrzystość ceny/kosztów zwiększa zaufanie i skłonność do zakupu (badanie Mohan, Buell & John, "Lifting the Veil: The Benefits of Cost Transparency", Marketing Science 2020): w naturalnym eksperymencie terenowym infografika z kosztami produkcji zwiększyła dzienną sprzedaż jednostkową o 44% na kolor.**
+| Poziom: B (peer-review; e-commerce odzieżowy, nie lead gen — transfer do usług = hipoteza) | Źródła: [WYSZUKIWARKA-GitHub] karta z DOI 10.1287/mksc.2019.1200 — https://github.com/fsbtactic-code/marketing-brain-skill/blob/main/skills/marketing-brain/assets/wiki/cards/card_cost_transparency_context.md ; [PEŁNY] kopia artykułu HBS Working Knowledge w zbiorze danych na GitHub — https://github.com/kevalmaru-gpu/document-classification/blob/main/ws_data/Finance/264.txt
+| Dane/cytat: "the introduction of the cost transparency infographic increased daily unit sales on a per-color basis by 44 percent." "When firms communicate the effort that went into making a good, consumers tend to value the product more." Zastrzeżenia autorów: przewaga największa, gdy ujawnianie jest nowością; nie dla firm, gdzie struktura kosztów jest przewagą.
+| Implikacja: w usługach drogich (OZE, budowlanka, estetyka) pokazanie "z czego składa się cena" (materiał, robocizna, gwarancja, serwis) lub widełek "od–do" to jednocześnie filtr (odpadają osoby z nierealnym budżetem) i budulec zaufania. Przepis UoPNPR art. 6 ust. 4 pkt 3 i tak traktuje cenę jako istotną informację w "propozycji nabycia" (L1). Ryzyko: podanie ceny bez kontekstu (wartości) może odstraszyć także dobrych klientów → cena + co obejmuje + dla jakiego przypadku.
+
+**Q3. Jawna dyskwalifikacja w copy ("To nie dla Ciebie, jeśli…", "Realizujemy tylko domy od 120 m²", "Minimalne zlecenie 15 000 zł") — logika zgodna z mechanizmem Meta (close form = non-lead), brak twardych danych porównawczych w zebranych źródłach.**
+| Poziom: C/D | Źródła: [PEŁNY] Meta conditional logic (F2) — mechanizm; [WIEDZA] praktyka agencji lead gen
+| Implikacja: stosować jako test (wariant A: bez dyskwalifikacji, wariant B: z 1 kryterium wykluczającym). Formułować sytuacyjnie i uprzejmie (nie "biedni nie dzwonić"), bez odniesień do cech osobistych/finansowej wrażliwości (F8: "vulnerable financial status").
+
+**Q4. Tarcie jako filtr: więcej kroków/wysiłku = mniej, ale bardziej zdecydowanych zgłoszeń. Meta dostarcza gotowe "dozowniki tarcia": ekran przeglądu (Higher Intent), pytania otwarte z minimalną długością, logikę warunkową, OTP, walidację e-maila firmowego.**
+| Poziom: A (istnienie i kierunek efektu wg Meta) / C (optymalny poziom tarcia — zależy od oferty) | Źródła: [PEŁNY] F1, F2, F3, F12
+| Dane/cytat: Meta: Higher intent "prevent receiving submissions from those people who are only marginally interested"; conditional logic "may increase your cost per lead"; OTP "may affect the number of generated leads and the cost per lead".
+| Implikacja: poziom tarcia dobierać do wartości klienta i zdolności obsługi: tania usługa lokalna → 2–3 pytania; droga usługa/B2B → 4–6 pytań + OTP/e-mail firmowy; jeśli obsługa leadów jest wąskim gardłem → więcej tarcia.
+
+**Q5. Pytania kwalifikujące powinny mierzyć: potrzebę, termin, skalę/budżet, warunek konieczny (lokalizacja, własność, typ obiektu). Odpowiedzi w przedziałach (rekomendacja Meta). Unikać pytań o dane wrażliwe i cechy chronione.**
+| Poziom: A | Źródła: [PEŁNY] F3; [PEŁNY] "About lead ads" (dla SAC housing/credit w USA/Kanadzie zakaz zbierania m.in. wieku, płci, adresu, kodu) — https://www.facebook.com/business/help/1481110642181372 ; RODO — minimalizacja danych art. 5 ust. 1 lit. c [WIEDZA]
+| Implikacja: szablon pytań per branża w systemie (np. OZE: typ budynku / własność / roczny rachunek w przedziałach / termin; estetyka: obszar zabiegu (bez danych medycznych!) / termin / czy była konsultacja; B2B: wielkość firmy / rola / termin decyzji / największy problem). W zdrowiu nie pytać o diagnozy w formularzu reklamowym (dane szczególnej kategorii, art. 9 RODO) [WIEDZA].
+
+**Q6. Obietnica szybkiego kontaktu w reklamie ("Oddzwonimy w 15 min w godz. pracy") to uczciwa przewaga (rynek odpowiada wolno — S1–S4) i sygnał dla odbiorcy, co się stanie po wysłaniu formularza; ale niedotrzymana = ryzyko wprowadzenia w błąd.**
+| Poziom: B (efekt czasu reakcji) / A (UoPNPR art. 5 — obowiązki przedsiębiorcy związane z produktem, usługi serwisowe) / D (efekt samej obietnicy w reklamie — brak danych) | Źródła: S1–S4, F13, L1
+| Implikacja: w briefie pole "SLA kontaktu"; obietnica tylko, gdy SLA ≥90% dotrzymywane; zawsze z zakresem godzin.
+
+**Q7. Opinie/dowody społeczne: badania (Spiegel Research Center/PowerReviews 2017) — 5 opinii vs 0 → ~270% wyższe prawdopodobieństwo zakupu; efekt silniejszy dla droższych produktów (~380%); optymalna średnia ocen 4,0–4,7 (nie 5,0). Zastrzeżenie: raport współtworzony z dostawcą systemu opinii.**
+| Poziom: B/C | Źródła: [WYSZUKIWARKA-GitHub] streszczenia z linkami do raportu Spiegel — https://github.com/SeqTechLLC/seqtekdotcom/blob/main/docs/BRAND_STRATEGY_RESEARCH.md ; krytyka metodologii — https://github.com/donpino/donpino.github.io/blob/main/public/articles/reviews-and-choice/index.html ; BrightLocal Local Consumer Review Survey 2024 (cyt. za tym samym streszczeniem: "98% of consumers at least occasionally read online reviews") [WYSZUKIWARKA-GitHub]
+| Implikacja: w usługach lokalnych/drogich — prawdziwe opinie (Google/Facebook) z liczbą i średnią, cytat z imieniem i miejscowością (za zgodą), zdjęcia realnych realizacji. Prawo: UoPNPR art. 7 pkt 25–26 (L1) — tylko prawdziwe, niezniekształcone; nie wybierać wyłącznie "5★", jeśli średnia jest niższa, w sposób sugerujący co innego.
+
+**Q8. "Freebie seekers": oferty "za darmo" o niskim progu (e-book, konkurs, rabat bez kontekstu) przyciągają więcej kontaktów o niższej intencji; oferty o wysokiej intencji (wycena, wizja lokalna, konsultacja z konkretnym wynikiem) — mniej, ale bliżej zakupu.**
+| Poziom: C (konsensus praktyków) / A (dla konkursów i "gratis" — ograniczenia prawne L1 pkt 19–20) | Źródła: [WIEDZA] praktyka lead gen; [PEŁNY] Meta: "More volume… for content downloads and newsletters" (F1) oraz tabela celów (e-book w B2B z pytaniami kwalifikującymi — F3)
+| Implikacja: patrz 2.6 — matryca ofert.
+
+### 2.6 Typy ofert / lead magnetów — matryca intencji (synteza; poziom C, o ile nie wskazano inaczej)
+
+| Oferta | Intencja / jakość | Kiedy stosować | Jak zabezpieczyć jakość | Ryzyka prawne/etyczne |
+|---|---|---|---|---|
+| Bezpłatna wycena / wizja lokalna | Wysoka (osoba ma realny projekt) | OZE, budowlanka, remonty, instalacje, usługi lokalne | Widełki cen w reklamie, pytania: typ obiektu, termin, własność; OTP | "Bezpłatna" tylko gdy 0 zł (dojazd też) — L1 pkt 20 |
+| Konsultacja (15–30 min) | Średnia–wysoka | Estetyka, prawo, finanse, B2B | Konkretny wynik konsultacji ("plan leczenia", "analiza umowy"), pytanie o termin decyzji | Zawody regulowane: forma informacyjna (L6, sekcja 4) |
+| Audyt / analiza | Wysoka w B2B, średnia w B2C | B2B, marketing, energetyka, finanse firmowe | Kryteria wejścia (wielkość firmy, budżet), e-mail firmowy | Nie obiecywać wyników |
+| Kalkulator (oszczędności, raty, dopłaty) | Średnia–wysoka (angażuje, filtruje przez dane) | OZE, kredyty, leasing, fotowoltaika | Wynik "od–do" + kontakt po wyniku; dane wejściowe = kwalifikacja | Kredyt → RRSO (L4); ostrożnie z obietnicą oszczędności (UoPNPR art. 5 ust. 3 pkt 2 — "spodziewane wyniki") |
+| Quiz / dobór ("sprawdź, który…") | Średnia; dobra segmentacja | Estetyka (dobór zabiegu), szkolenia, e-commerce | Pytania = kwalifikacja; wynik zależny od odpowiedzi (conditional logic) | Zdrowie: nie diagnozować (Prawo farm. art. 55 ust. 2 pkt 3 analogicznie; dane art. 9 RODO) |
+| Webinar / warsztat online | Średnia (edukacja długiego cyklu) | Szkolenia, B2B, drogie usługi | Rejestracja + przypomnienia; oferta po webinarze | — |
+| E-book / poradnik / checklista | Niska–średnia (lista do nurturingu) | Długi cykl, gdy jest nurturing (e-mail/SMS) | Pytania kwalifikujące w formularzu; kolejny krok (konsultacja) na ekranie końcowym | Zgody marketingowe (L7) |
+| Próbka / demo | Średnia–wysoka dla produktów | E-commerce, B2B SaaS | Adres + kryteria | "Gratis" tylko gdy bez kosztów (L1 pkt 20) |
+| Cennik (PDF / "wyślij cennik") | Wysoka dla świadomych, niska jako "ciekawostka" | Usługi z porównywalną ceną | Gated content w formularzu (F12) + pytanie o termin | Ceny brutto dla konsumentów; promocje → najniższa cena z 30 dni (L3) |
+| Rabat / promocja czasowa | Zmienna (ryzyko "łowców okazji") | E-commerce, sezonowe | Warunki w reklamie | L1 pkt 7 (fałszywa ograniczoność), L3 (30 dni) |
+| Konkurs / "wygraj" | Niska dla sprzedaży | Budowa listy, rzadko w lead gen usługowym | — | L1 pkt 19; regulamin; hazard — nie |
+
+### 2.7 Specyfika branż (synteza; poziomy przy tezach)
+
+**B1. B2B na Meta działa jako kanał zasięgowy do decydentów "poza rynkiem" i do wychwytywania ~5% "w rynku": wg Dawesa (Ehrenberg-Bass dla LinkedIn B2B Institute) firmy kupują wiele usług B2B co ~5 lat, więc w danym kwartale ~5% jest "w rynku".**
+| Poziom: B (model/obserwacja marketing science) / A (narzędzia Meta B2B) | Źródła: [WYSZUKIWARKA-GitHub] streszczenie reguły 95-5 — https://github.com/cgallic/kai-cmo-harness/blob/main/knowledge/frameworks/marketing-science/brand-growth-laws.md ; [PEŁNY] Meta: pytania B2B (liczba pracowników, termin ewaluacji, wyzwanie), prefill "job title, work email, company name", "work email validation" — F3, F12
+| Dane/cytat: "~20% are in-market in a year and only ~5% in any given quarter… treat 95-5 as an anchor, not a constant."
+| Implikacja: B2B na Meta: (1) kreacje specjalistyczne, językiem branży, z call-outem roli ("Dla kierowników utrzymania ruchu w zakładach produkcyjnych"), (2) oferta o wysokiej wartości informacyjnej (audyt, kalkulator ROI, case study z liczbami), (3) walidacja e-maila firmowego + pytania o wielkość firmy i termin, (4) oczekiwać wyższego CPL i mniejszego wolumenu; (5) retargeting/wideo edukacyjne dla 95%. Targetowanie szczegółowe po stanowiskach na Meta jest słabe → kreacja musi selekcjonować [WIEDZA/C].
+
+**B2. Usługi lokalne: sygnały lokalności i realności wykonawcy (nazwa miejscowości/powiatu w nagłówku, zdjęcia własnych realizacji z regionu, twarz właściciela/ekipy, liczba i średnia opinii Google, adres/obszar działania, numer telefonu) — poprawiają dopasowanie i zaufanie.**
+| Poziom: C (praktyka) / B (opinie — Q7) / A (narzędzia: pytanie "store locator", promień, call ads, callback) | Źródła: [PEŁNY] F3/F15; Q7
+| Implikacja: kreacja "tu i teraz": "Pompy ciepła — montaż w pow. wadowickim i krakowskim", zdjęcie realnego domu klienta (za zgodą), ekipa w firmowych strojach. Kanał: formularz Higher Intent + OTP albo call ads dla usług pilnych. Uwaga: w housing SAC promień rozszerzany automatycznie (F7).
+
+**B3. High-ticket (OZE, budowa domu, nieruchomości, estetyka, szkolenia premium): długi proces decyzyjny, wielu decydentów (małżonkowie), obawa przed błędem → edukacja (wideo "jak wygląda proces", koszty, harmonogram), dowody (realizacje, liczby), odwrócenie ryzyka (gwarancje — tylko prawdziwe i z warunkami), optymalizacja na leady jakościowe (CAPI for CRM — F4/F5).**
+| Poziom: A (narzędzia i dane Meta) / B (transparentność — Q2; opinie — Q7) / C (struktura edukacyjna) | Źródła: F4, F5, F6 (przykład Meta: pośrednik nieruchomości z długim cyklem → lead gen w Messengerze), Q2, Q7
+| Implikacja: 2-poziomowy lejek: (1) zimny ruch — kreacja edukacyjna z ceną "od" i pytaniem kwalifikującym; (2) remarketing oglądających wideo — oferta konsultacji/wizji. Formularz Higher Intent/Rich Creative lub landing page z kalkulatorem.
+
+**B4. Oferty wymagające zaufania (finanse, prawo, zdrowie): największe ograniczenia regulacyjne → przewagę daje rzetelna informacja, ekspertyza pokazana procesem (nie obietnicą wyniku), transparentne koszty, jasne "co dalej", oraz zgodność formalna. Meta dodatkowo blokuje sugerowanie cech osobistych (zdrowie, finanse — F8) i wymaga SAC dla kredytu/nieruchomości/pracy (F7).**
+| Poziom: A (prawo i polityki) / C (strategia komunikacji) | Źródła: L1–L10, F7–F9
+| Implikacja: finanse — RRSO/reprezentatywny przykład, od 20.11.2026 ostrzeżenie CCD2; prawo — informacja o zakresie usług, bez obietnic wygranej/porównań (etyka zawodowa [WIEDZA]); zdrowie — styl informacyjny, bez lekarzy "twarzą" wyrobów, bez przed/po jako obietnicy, 18+ dla estetyki (F9).
+
+**B5. E-commerce (poza lead gen, ale w portfelu agencji): oferta + cena + demonstracja produktu + dowód; promocje wyłącznie z informacją o najniższej cenie z 30 dni (L3); "darmowa dostawa" tylko gdy faktycznie bez opłat (L1 pkt 20); opinie tylko zweryfikowane (L1 pkt 25) i informacja, czy/jak są weryfikowane (UoPNPR art. 6 ust. 4 pkt 7).**
+| Poziom: A (prawo) / C (kreacja) | Źródła: L1, L3
+
+### 2.8 Polski rynek — dane (LUKA DOWODOWA)
+
+**M1. Liczba i demografia użytkowników Facebook/Instagram w Polsce 2025/2026 — NIE ZWERYFIKOWANO w tej sesji (datareportal.com, napoleoncat.com zablokowane; WebSearch wyczerpany).**
+| Poziom: D | Źródła: [WIEDZA] rzędy wielkości znane z raportów Mediapanel (Gemius/PBI), NapoleonCat i DataReportal: Facebook w Polsce — kilkanaście do ok. 20+ mln użytkowników/zasięgu reklamowego (zależnie od metodologii: konta vs realni użytkownicy vs zasięg reklam), przewaga kobiet (~52%), najliczniejsze grupy 25–44; Instagram — ok. 10–12 mln kont, młodszy profil. NIE CYTOWAĆ tych liczb klientom bez weryfikacji.
+| Dodatkowo: [WYSZUKIWARKA-GitHub] slajdy wykładowe (repozytorium https://github.com/pugging/vpn-test/blob/main/marketing/baza_wiedzy.txt) cytują "Napoleoncat (2026); WeAreSocial (2025) Digital 2026 Poland" z liczbami 27,1 / 25,7 / 14 / 12,4 / 9,5 mln użytkowników mediów społecznościowych w PL i odsetkiem kobiet 50,8% / 54,5% / 57,5% / 60,6% / 49,1% — ALE nazwy platform (logotypy) zostały utracone w transkrypcji, więc nie da się przypisać liczb do Facebooka/Instagrama. Wniosek ostrożny: największe platformy w PL to rząd ~25 mln użytkowników, a platformy o profilu wizualnym mają przewagę kobiet. Poziom D.
+| Implikacja: system nie powinien mieć "zaszytych" benchmarków rynkowych; zamiast tego: (a) szacowanie grupy docelowej z Ads Managera w momencie planowania, (b) narzędzie Meta Ads MCP `ads_insights_industry_benchmark` (porównanie zestawów reklam z grupą porównawczą podobnych reklamodawców) — dostępne w środowisku; (c) własne dane historyczne agencji.
+
+**M2. Benchmarki CPL/CTR dla Polski — brak wiarygodnych publicznych źródeł zebranych w sesji. Liczby krążące w polskich blogach agencyjnych (np. "CPL 20–80 zł") nie mają metodologii → poziom D.**
+| Implikacja: raportować względem własnych danych konta + wyniku jakościowego (CPQL), nie względem blogowych benchmarków.
+
+**M3. Zaufanie Polaków do reklam i opinii — brak zweryfikowanych polskich danych w sesji (luka). [WIEDZA] Globalnie (Nielsen Trust in Advertising 2021) najwyższe zaufanie mają rekomendacje znajomych i opinie online; dane specyficzne dla PL do uzupełnienia (np. badania UOKiK dot. opinii, IAB Polska, CBOS).**
+| Poziom: D
+
+**L12. RODO i DSA — uzupełnienie (przepisy UE; w sesji potwierdzone dosłowne brzmienie kluczowych zdań przez wyszukiwanie kodu na GitHub).**
+| Poziom: A | Źródła: [WYSZUKIWARKA-GitHub] RODO art. 7 — dokładne dopasowanie fraz "request for consent shall be presented in a manner which is clearly distinguishable" oraz "It shall be as easy to withdraw as to give consent" (np. https://github.com/enterpriseready/enterpriseready/blob/master/content/gdpr/gdpr-abridged.md) ; [WYSZUKIWARKA-GitHub] DSA art. 26 ust. 3 — dopasowanie frazy "Providers of online platforms shall not present advertisements on their interface based on profiling… using special categories of personal data" ; [WIEDZA] RODO art. 13 (klauzula informacyjna: administrator, cele, podstawa prawna, odbiorcy, okres przechowywania, prawa), art. 9 (dane szczególnej kategorii, w tym o zdrowiu), DSA art. 28 ust. 2 (zakaz reklam profilowanych do małoletnich).
+| Implikacja: zgoda marketingowa — oddzielona od innych treści, dobrowolna, niezaznaczona domyślnie, łatwa do wycofania; klauzula informacyjna przez link do polityki prywatności (Meta wymaga linku — F11); w formularzach zdrowotnych nie zbierać danych o stanie zdrowia bez podstawy z art. 9; targetowanie po "wrażliwych" zainteresowaniach i tak ograniczone przez Meta/DSA.
+
+## 3. Playbooki per typ biznesu
+
+> Format: co w kreacji → jaki dowód → jaka oferta → kanał/formularz → ryzyka (prawne i jakościowe). Poziomy dowodu: A/B/C/D jak wyżej; większość rekomendacji kreatywnych to C (do testowania), a ograniczenia prawne/platformowe to A.
+
+### 3.1 B2B (usługi dla firm, produkcja, IT, szkolenia firmowe, finanse B2B)
+- **Kreacja:** call-out ROLI i SYTUACJI firmy ("Dla właścicieli firm transportowych z flotą 10+ aut"), język branżowy, konkretny problem biznesowy + liczba (koszt, czas, ryzyko); twarz eksperta/założyciela; wideo 30–90 s "jak to działa" (C). Unikać ogólników "kompleksowe rozwiązania".
+- **Dowód:** case study z liczbami (za zgodą klienta), logotypy klientów (tylko za zgodą), certyfikaty (tylko posiadane — L1 pkt 2 ma zastosowanie do konsumentów, w B2B UZNK art. 16 — L2), liczba wdrożeń.
+- **Oferta:** audyt/diagnoza, kalkulator ROI, konsultacja z konkretnym wynikiem, webinar dla konkretnej roli; e-book tylko z pytaniami kwalifikującymi i kolejnym krokiem (F3, 2.6).
+- **Kanał/formularz:** formularz Higher Intent + prefill "job title, work email, company name" + walidacja e-maila służbowego (F12) + pytania: liczba pracowników, termin decyzji, największe wyzwanie (F3); albo landing z case study. Conversion leads z CAPI for CRM, gdy wolumen pozwala (F4/F5).
+- **Oczekiwania:** 95% odbiorców poza rynkiem (B1, poziom B) → wyższy CPL, dłuższy cykl; potrzebny retargeting/wideo edukacyjne.
+- **Ryzyka:** leady z prywatnymi e-mailami/"studentami" → walidacja e-maila; B2B-only finanse wyłączone z SAC kredytowej (F7), ale leasing konsumencki — nie.
+
+### 3.2 Usługa lokalna (instalatorzy, remonty, serwisy, gabinety kosmetyczne, szkoły jazdy)
+- **Kreacja:** nazwa miejscowości/powiatu w pierwszej linii i/lub na grafice; zdjęcia WŁASNYCH realizacji z regionu; twarz właściciela/ekipy; "od X zł" lub widełki; czas realizacji/dostępność terminów (tylko prawdziwa — L1 pkt 7) (C).
+- **Dowód:** liczba i średnia opinii Google (prawdziwe, aktualne — Q7, L1 pkt 25–26), zdjęcia przed/po z realizacji budowlanych (nie medycznych — L5/L6), lata działalności, gwarancja (z warunkami).
+- **Oferta:** bezpłatna wycena/wizja (jeśli naprawdę 0 zł), termin w tym tygodniu, konsultacja telefoniczna.
+- **Kanał:** formularz Higher Intent + OTP (F1, F12) + pytania: miejscowość (lub logika warunkowa "czy w obszarze X?" → close form), typ zlecenia, termin; dla usług pilnych: call ads/"callback requests" (F15). Emisja w godzinach, gdy ktoś oddzwania (F13).
+- **Ryzyka:** leady spoza obszaru (→ pytanie nokautujące), "łowcy wycen" (→ widełki cen w reklamie), wolny kontakt (→ SLA, powiadomienia).
+
+### 3.3 Droga usługa / high-ticket (OZE, budowa domów, nieruchomości, medycyna estetyczna, szkolenia premium)
+- **Kreacja:** edukacja + transparentność (Q2): "Ile kosztuje pompa ciepła do domu 150 m² — widełki i od czego zależą", proces krok po kroku, harmonogram; wideo z właścicielem/doradcą (nie aktor udający klienta — L1 pkt 22/26); konkretne parametry zamiast ogólników "eko" (L11).
+- **Dowód:** realne realizacje z liczbami (rachunek przed/po — tylko prawdziwe, z zastrzeżeniem warunków), opinie z imieniem i miejscowością, certyfikaty/autoryzacje producentów (posiadane), gwarancje z warunkami.
+- **Oferta:** wizja lokalna/audyt energetyczny, konsultacja z planem, kalkulator (oszczędności/rat — z RRSO, jeśli raty: L4/L10).
+- **Kanał:** Rich Creative/Higher Intent z intro "jak wygląda proces" (F16) albo landing z kalkulatorem; remarketing oglądających wideo; Conversion leads + CAPI for CRM (F4/F5) — najwyższy zwrot właśnie tu.
+- **Kategorie specjalne:** nieruchomości (sprzedaż/wynajem, pośrednictwo, finansowanie) = Housing SAC; raty/finansowanie = Credit/Financial SAC (F7) → selekcja przez kreację i formularz, nie targetowanie.
+- **Ryzyka prawne:** od 20.11.2026 ostrzeżenie kredytowe CCD2 (L10); od 27.09.2026 zakaz ogólnych twierdzeń środowiskowych (L11); obietnice oszczędności = "spodziewane wyniki" (UoPNPR art. 5 ust. 3 pkt 2); używanie nazw programów publicznych ("Czyste Powietrze", "Mój Prąd") tak, by sugerować powiązanie z instytucją = ryzyko art. 7 pkt 4 UoPNPR (twierdzenie o zatwierdzeniu przez organ publiczny) [interpretacja].
+- **Estetyka:** 18+ (F9), styl informacyjny (L6), bez lekarza "prezentującego" wyrób i bez nazw wyrobów/urządzeń albo z pełnym ostrzeżeniem (L5); "przed/po" — dozwolone przez Meta dla 18+, ale sporne w świetle zakazu reklamy lekarzy (sekcja 5).
+
+### 3.4 E-commerce (sklepy)
+- **Kreacja:** produkt w użyciu (demo), cena widoczna, główna korzyść, UGC (jeśli twórca jest opłacony — nie może udawać zwykłego klienta: L1 pkt 22/26).
+- **Dowód:** liczba opinii + średnia (zweryfikowane — L1 pkt 25), zwroty/gwarancja (prawa ustawowe nie jako "wyróżnik" — L1 pkt 10: "prezentowanie uprawnień przysługujących konsumentom z mocy prawa, jako cechy wyróżniającej ofertę"!).
+- **Oferta:** promocja z najniższą ceną z 30 dni (L3), darmowa dostawa tylko bez ukrytych opłat (L1 pkt 20), pakiety.
+- **Ryzyka:** "14 dni na zwrot" jako USP = praktyka zakazana (L1 pkt 10); przekreślone ceny bez 30-dniowej informacji (L3); fałszywe liczniki (L1 pkt 7).
+
+### 3.5 Oferta wymagająca dużego zaufania (finanse, prawo, zdrowie)
+- **Kreacja:** ekspert jako przewodnik po PROCESIE (co się dzieje na pierwszym spotkaniu, ile trwa, ile kosztuje), język informacyjny, bez presji czasu; call-out sytuacji ("Umowa kredytu we frankach — jak wygląda analiza dokumentów"), NIGDY cechy osoby ("Masz długi?", "Cierpisz na…") — F8.
+- **Dowód:** uprawnienia (numer wpisu na listę radców/adwokatów, rejestr KNF pośredników kredytowych, prawo wykonywania zawodu — tylko prawdziwe), doświadczenie liczbowe bez obietnic wyniku, transparentny cennik/konsultacja płatna.
+- **Oferta:** konsultacja/analiza dokumentów (płatna lub bezpłatna — jasno), poradnik (checklista dokumentów).
+- **Kanał:** formularz Higher Intent z pytaniem o rodzaj sprawy (bez danych szczególnych w polach otwartych — ostrzeżenie w opisie pola), albo wiadomości z szybkim kontaktem; CAPI for CRM gdy wolumen.
+- **Ryzyka:** finanse — RRSO/reprezentatywny przykład (L4), CCD2 (L10), SAC (F7), [WIEDZA] wytyczne KNF dot. reklamy usług finansowych (sprawdzić); prawnicy — [WIEDZA] zasady etyki (KERP art. 31, Zbiór Zasad Etyki Adwokackiej § 23 — tylko informacja, bez porównań, bez obietnic wyniku, bez ujawniania klientów bez zgody; zweryfikować aktualne brzmienie); zdrowie — L5, L6, L9, F9.
+
+## 4. Polskie prawo reklamy — checklista zgodności dla kreacji
+
+> ZASTRZEŻENIE: przegląd informacyjny na potrzeby systemu kreatywnego, NIE porada prawna. Przepisy cytowane z kopii tekstów (GitHub, API Sejmu/EUR-Lex); część tekstów jednolitych w repozytorium oznaczona jako nieaktualna — przed zastosowaniem wobec klienta zweryfikować aktualny tekst w ISAP/EUR-Lex. W przypadkach granicznych (medycyna, finanse, prawo, OZE z finansowaniem) → konsultacja z prawnikiem klienta.
+
+### 4.1 Każda kreacja (B2C i B2B)
+- [ ] Wszystkie twierdzenia faktograficzne prawdziwe i możliwe do udowodnienia (liczby, "nr 1", "najtańszy", "najszybszy") — UoPNPR art. 5; UZNK art. 16 ust. 1 pkt 2.
+- [ ] Brak fałszywej presji czasu/dostępności ("ostatnie 3 miejsca", "tylko do niedzieli") — chyba że prawdziwe i udokumentowane — UoPNPR art. 7 pkt 7.
+- [ ] "Bezpłatny/gratis/za darmo" tylko, jeśli konsument nie płaci nic (poza bezpośrednimi kosztami odpowiedzi/odbioru) — art. 7 pkt 20.
+- [ ] Certyfikaty, znaki jakości, nagrody, "autoryzowany partner", logo instytucji — tylko z uprawnieniem — art. 7 pkt 2 i 4.
+- [ ] Opinie/testimoniale: prawdziwe, niezniekształcone, nie "zlecone"; opłacony twórca/aktor nie udaje zwykłego klienta — art. 7 pkt 22, 25, 26.
+- [ ] Brak straszenia nierzetelnym ryzykiem ("jeśli nie kupisz, Twoja rodzina…") — art. 7 pkt 12; UZNK art. 16 ust. 1 pkt 3 (wywoływanie lęku).
+- [ ] Brak twierdzeń o leczeniu chorób (jeśli nieprawdziwe/niezgodne z prawem) — art. 7 pkt 17; Meta health policy (F9).
+- [ ] Ustawowe prawa konsumenta (zwrot 14 dni, rękojmia) nie są przedstawiane jako wyróżnik oferty — art. 7 pkt 10.
+- [ ] Reklama porównawcza — rzetelna, weryfikowalna, te same potrzeby — UZNK art. 16 ust. 3.
+- [ ] Cena dla konsumenta — z podatkami (brutto) lub jasny sposób obliczenia; w B2B oznaczyć "netto" — UoPNPR art. 6 ust. 4 pkt 3.
+- [ ] Obniżka ceny (towar LUB usługa) → obok informacja o najniższej cenie z 30 dni przed obniżką (także w reklamie z ceną) — ustawa o informowaniu o cenach, art. 4 ust. 2, 3, 5.
+- [ ] Treści "artykułopodobne"/natywne jasno oznaczone jako reklama (reklama w Meta ma etykietę platformy; landing/advertorial — oznaczyć) — UoPNPR art. 7 pkt 11; UZNK art. 16 ust. 1 pkt 4.
+
+### 4.2 Polityki Meta wpływające na copy (A)
+- [ ] Brak sugerowania cech osobistych odbiorcy (zdrowie, wiek, sytuacja finansowa, niepełnosprawność, religia, orientacja, rasa, imię) — także w formie pytań — F8.
+- [ ] Zdrowie/uroda: brak zawstydzania wyglądem, brak zbliżeń "problemowych" partii ciała, brak obietnic efektu w czasie bez zastrzeżeń; zabiegi estetyczne i przed/po tylko 18+ — F9.
+- [ ] Kategorie specjalne: nieruchomości (sprzedaż/wynajem/pośrednictwo/kredyt hipoteczny), zatrudnienie/rekrutacja, kredyt/finansowanie — zaznaczyć SAC; nie polegać na targetowaniu demograficznym — F7.
+- [ ] Reklamodawca/płatnik (DSA) ustawiony — F17.
+
+### 4.3 Moduły branżowe (włączane flagą w briefie)
+**Kredyt / raty / finansowanie (także "pompa na raty", "leczenie na raty"):**
+- [ ] Każda reklama kredytu konsumenckiego: RRSO — ustawa o kredycie konsumenckim art. 7b (co najmniej tak widoczne jak pozostałe informacje).
+- [ ] Jeśli podano jakikolwiek koszt (oprocentowanie, ratę, "0%"): stopa (stała/zmienna) + opłaty, całkowita kwota kredytu, RRSO; w stosownych przypadkach okres, całkowita kwota do zapłaty i rata, cena i zaliczka — na reprezentatywnym przykładzie — art. 7, 7a, 8.
+- [ ] Pośrednik (sprzedawca oferujący raty banku): zakres umocowania, czy współpracuje z kredytodawcami, ich nazwy — art. 7 ust. 4–5.
+- [ ] Od 20.11.2026 (CCD2, po wdrożeniu w PL): ostrzeżenie "Uwaga! Pożyczanie pieniędzy kosztuje" (lub równoważne; sprawdzić brzmienie polskiej ustawy); brak sugestii, że kredyt poprawi sytuację finansową/standard życia — dyrektywa 2023/2225 art. 7–8.
+- [ ] Meta SAC Credit/Financial products (Polska w zakresie) — F7.
+
+**Zdrowie — podmioty lecznicze, lekarze, dentyści, estetyka:**
+- [ ] Forma informacyjna (zakres świadczeń, przebieg, cennik, lokalizacja, zapisy); brak cech reklamy (superlatyw, obietnic, presji, promocji "handlowych") — ustawa o działalności leczniczej art. 14 ust. 1; [WIEDZA] Kodeks Etyki Lekarskiej/uchwały NRL.
+- [ ] Wyroby medyczne (w tym urządzenia i preparaty używane w zabiegach): bez wizerunku osób wykonujących zawody medyczne (ani osób udających) prezentujących wyrób; język zrozumiały dla laika; nazwa i zastosowanie wyrobu; ostrzeżenie „To jest wyrób medyczny. Używaj go zgodnie z instrukcją używania lub etykietą.” (grafika ≥10% powierzchni u dołu; wideo ≥15% + lektor ≥4 s); opinie użytkowników za korzyści oznaczone jako reklama — ustawa o wyrobach medycznych art. 55, 58, 60, 103 (kara do 2 mln zł); rozporządzenie MZ z 21.04.2023 § 3–4.
+- [ ] Brak danych o zdrowiu w polach formularza bez podstawy prawnej (RODO art. 9) [WIEDZA].
+- [ ] Meta: 18+ dla estetyki; brak personal attributes (F8, F9).
+
+**Apteki / leki:**
+- [ ] Apteki: tylko lokalizacja i godziny (reklama zakazana) — Prawo farmaceutyczne art. 94a.
+- [ ] Leki Rx/refundowane — zakaz reklamy publicznej (art. 57); OTC — ograniczenia art. 55 (m.in. bez osób z wykształceniem medycznym/farmaceutycznym, osób znanych, naukowców).
+
+**Suplementy diety:** [WIEDZA] obowiązują ogólne przepisy (UoPNPR, rozporządzenie 1924/2006 o oświadczeniach żywieniowych i zdrowotnych — tylko dopuszczone oświadczenia); status ewentualnej polskiej nowelizacji ograniczającej reklamę suplementów (np. z udziałem zawodów medycznych) — NIEZWERYFIKOWANY → sprawdzić przed kampanią.
+
+**OZE / budownictwo / "eko":**
+- [ ] Od 27.09.2026 (dyrektywa 2024/825 — sprawdzić polską ustawę wdrażającą): brak ogólnych twierdzeń środowiskowych ("eko", "zielony", "przyjazny środowisku", "neutralny klimatycznie") bez wykazanej uznanej doskonałej efektywności; brak własnych "etykiet eko" bez certyfikacji; brak neutralności opartej na kompensacji; konkretne, weryfikowalne parametry na tym samym nośniku.
+- [ ] Nazwy programów publicznych/dotacji: bez sugerowania, że firma działa w imieniu instytucji lub ma jej "akredytację", jeśli tak nie jest — UoPNPR art. 7 pkt 4.
+- [ ] Obietnice oszczędności/"rachunek 0 zł": tylko z warunkami i założeniami — UoPNPR art. 5 ust. 3 pkt 2.
+- [ ] Finansowanie ratalne → moduł kredytowy.
+
+**Zawody prawnicze (adwokaci, radcy):** [WIEDZA] tylko informacja o wykonywaniu zawodu (zakres, specjalizacja, kontakt, doświadczenie), bez porównań z innymi prawnikami, bez obietnic wyniku sprawy, bez ujawniania klientów bez zgody, bez form "natarczywych" — zweryfikować aktualne: Kodeks Etyki Radcy Prawnego (art. 31) i Zbiór Zasad Etyki Adwokackiej i Godności Zawodu (§ 23).
+
+**Nieruchomości:** Meta Housing SAC (F7); [WIEDZA] ustawa deweloperska i przepisy o jawności cen mieszkań (2025) — sprawdzić obowiązki informacyjne dewelopera (ceny na stronie); ceny w reklamie zgodne z cennikiem.
+
+### 4.4 Formularz / dane osobowe
+- [ ] Link do polityki prywatności z klauzulą informacyjną (RODO art. 13) — wymagany też przez Meta (F11).
+- [ ] Cel kontaktu opisany w formularzu ("prosisz o kontakt telefoniczny w sprawie…").
+- [ ] Zgody marketingowe (telefon/SMS/e-mail/komunikatory) — osobne, nieobowiązkowe, niezaznaczone domyślnie, łatwe do wycofania — PKE art. 398; RODO art. 7.
+- [ ] Minimalizacja danych — tylko pytania potrzebne do kwalifikacji (RODO art. 5 ust. 1 lit. c) [WIEDZA].
+- [ ] Meta i reklamodawca = współadministratorzy danych z lead ads (F11).
+
+### 4.5 AI w kreacjach (od 2.08.2026)
+- [ ] Realistyczny obraz/wideo/audio wygenerowane lub zmanipulowane przez AI, które mogłyby uchodzić za autentyczne (osoby, miejsca, zdarzenia — "deep fake") → wyraźna informacja o sztucznym wygenerowaniu przy pierwszej ekspozycji — AI Act art. 50 ust. 4–5.
+- [ ] Nie przedstawiać wygenerowanych osób jako prawdziwych klientów/pacjentów/ekspertów, ani wygenerowanych "realizacji" jako rzeczywistych — UoPNPR art. 5, art. 7 pkt 26.
+- [ ] Chatbot w Messengerze/WhatsApp: informacja, że rozmowa jest z automatem/AI (AI Act art. 50 ust. 1 — obowiązek dostawcy; dobra praktyka dla wdrażającego).
+- [ ] Wizualizacje (np. dom z panelami, efekt remontu) oznaczone jako "wizualizacja".
+

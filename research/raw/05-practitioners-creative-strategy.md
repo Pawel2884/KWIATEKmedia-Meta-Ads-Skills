@@ -153,7 +153,114 @@
 - Diagnostyka → co iterować: niski CTR + wysoki CVR = problem hooka (chroń "body"); dobry CTR + niski hold = tempo/przejścia; rosnący CPA w czasie = zmęczenie. "Do not iterate on losing ads." Domyślnie 3 iteracje — "the MOST LIKELY iterations to drive a performance change". Zakaz przewidywania liczbowego efektu ("NEVER say 'This should improve CTR by 15%.'") i zakaz zmyślania statystyk (`[STAT NEEDED — verify before publishing]`).
 **Implikacja:** Gotowe reguły dla systemu: (1) definicja iteracji vs konceptu testem "back-to-back"; (2) iterujemy tylko zwycięzców; (3) diagnoza lejka (Motion 2.11/Evan Lee) wskazuje, który element zmieniać; (4) system nie obiecuje liczbowych efektów.
 
+### 2.16 Ben Heath (Heath Media, lead-gen/usługi) — mało reklam przy małym budżecie, osobna kampania testowa, jakość > ilość
+> Źródło: transkrypcje filmów YouTube Bena Heatha w publicznym repo https://github.com/blicktz/knowledge_base_repo/tree/main/content_repo/Ben_Heath_facebook_ads (pliki .txt; daty filmów nie są podane — tytuły z "2025" datują część). Czytane przez WebFetch → [PEŁNY] (streszczenie modelu z pełnego pliku). Poziom C (praktyk z dużym doświadczeniem w lead-gen dla usług; mało danych liczbowych).
+- **Liczba reklam vs budżet** ("The Best Facebook Ads Campaign Structure For 2025" — https://github.com/blicktz/knowledge_base_repo/blob/main/content_repo/Ben_Heath_facebook_ads/the_best_facebook_ads_campaign_structure_for_2025.txt): powołuje się na zalecenie Meta "use six or fewer creatives per ad set" i dodaje: "If you're spending $10 a day, $15 a day, $20 a day, I'd bring that down ... two ads, three ads, even one ad sometimes"; przy tysiącach USD dziennie "absolutely fine". Struktura: 1 kampania zimna (Advantage+ Audience/otwarte) + 1 ciepła, każda z **jednym** ad setem ("I would now recommend that most advertisers have one ad set").
+- **Testowanie** ("The Easy Way To Test Facebook Ads In 2025" — …/the_easy_way_to_test_facebook_ads_in_2025.txt): gdy stare reklamy zjadają budżet — "a separate testing campaign" z budżetami na poziomie ad setu, by "force Meta to spend on new ad creative" (akceptuje chwilowy spadek wyników); czas testu ~7–10 dni, przy ~5 konwersjach/tydz. "weeks, maybe longer"; kalkulator istotności statystycznej; "I'd much rather you focused on creating four really good creatives as opposed to 20 mediocre ones." Hierarchia testów: produkt/usługa → oferta → format (karuzela/obraz/wideo) → styl (UGC, influencer, founder, demo) → nagłówki → tekst główny → CTA → opis.
+- **Formaty dla usług** ("4 Facebook Ad Formats You Have To Try" — starszy film, …/4_facebook_ad_formats_you_have_to_try.txt): obraz — gdy decyzja szybka/niskie ryzyko (darmowa konsultacja, wycena, lead magnet): "your prospect can take a look at that ad and know instantly what it's about"; wideo — przy droższych usługach ("anything over $100, particularly anything over $1,000 video is likely to really help"); karuzela — wiele usług lub historia w kartach; slideshow — ruch bez kosztu produkcji wideo.
+- **Jakość leadów** (…/generate_higher_quality_leads_from_facebook_ads_with_this_strategy.txt): lead magnet → follow-up; świadomy kompromis: wyższy CPL ("double or higher"), ale lepszy kontakt i konwersja; test kampanii konwersji na stronę vs formularze.
+**Implikacja:** Dla typowych budżetów PL (kilkadziesiąt–kilkaset zł/dzień) liczba *jednocześnie aktywnych* reklam w ad secie powinna być mała (2–6), a dywersyfikację realizuje się *rotacją koncepcji w czasie* + wieloma assetami w jednej reklamie (A: "up to 10 creative assets"), a nie 30 reklamami naraz. To bezpośrednio przeczy "40–50 kreacji w ad secie" z Reddita (D).
+
+### 2.17 Meta (A) — limity, A/B testy, dynamic creative, Advantage+ creative (fakty do sporów)
+- Twarde limity: "you can have up to 50 ads in each ad set" — https://www.facebook.com/business/help/652738434773716 [PEŁNY]. Limit reklam na stronę (running/in review): 250 dla stron wydających <100 tys. USD w najwyższym miesiącu; "running too many ads at once can hurt performance" — https://www.facebook.com/business/help/766697140509126 [PEŁNY]. Dynamic creative/Advantage+ placements "counts as just one ad – even when that ad uses many creatives".
+- A/B testy: Meta zaleca narzędzie A/B zamiast "testing informally, such as by turning ad sets or campaigns on and off manually. this can lead to inefficient ad delivery and unreliable test results"; dla początkujących "starting with a single variable" — https://www.facebook.com/business/help/1738164643098669 ; https://www.facebook.com/business/help/1597318281091985 ; https://www.facebook.com/business/help/455527338244675 [PEŁNY].
+- Dynamic creative: nadal dostępny m.in. przy celu **Leads** (wyłączony od VI 2024 dla nowych ad setów Sales/App promotion); do 10 obrazów/wideo, do 5 tekstów/nagłówków/CTA; "it's better to combine 2 strong assets than several assets you're not as confident about"; "because results are shown as the aggregate performance across all variations, using dynamic creative as a substitute for split testing is not recommended." — https://www.facebook.com/business/help/170372403538781 ; https://www.facebook.com/business/help/257326614846024 ; https://www.facebook.com/business/help/344106239654869 [PEŁNY].
+- Advantage+ creative enhancements: "the media and text you upload may be adjusted"; "some enhancements are turned on by default"; część wyłącza się tylko w "advanced preview" — https://www.facebook.com/business/help/1082295769403815 [PEŁNY].
+**Implikacja:** (1) System nie może zakładać, że dynamic creative raportuje, który koncept wygrał — do porównania *konceptów* lepsze osobne reklamy (lub A/B test przy większym budżecie). (2) Checklista publikacji musi zawierać weryfikację domyślnie włączonych ulepszeń Advantage+ (ryzyko zniekształcenia przekazu, np. muzyka/przycięcie/zmiana tekstu — patrz skargi reklamodawców w 2.13).
+
+### 2.18 Lo-fi, humor, AI — Motion Creative Trends 2025 (dane opisowe)
+**Teza:** Wśród reklam o najwyższym wydatku 42% to lo-fi; humor jest nadreprezentowany wśród top-spenderów.
+**Poziom:** B- (duży zbiór — "$100M in ad spend", ankieta 500+ osób — ale dane *opisowe*: udział w topie, nie efekt przyczynowy; brak porównania z bazowym udziałem lo-fi).
+**Kto/źródła:** [WYSZUKIWARKA] Motion — 2025 Ad Creative & Creative Strategy Trends — https://motionapp.com/creative-trends ; [PEŁNY, wtórne] TLDR Marketing 2025-02-17 (streszczenie raportu): https://github.com/GaloisField2718/tldr_news/blob/main/generated/issues/tldr-marketing/2025/2025-02-17.json
+**Dane:** "25% of high-spend ads use comedic elements despite humor appearing in only 14% of total social ads"; "Lo-fi content remains dominant, accounting for 42% of top-spending ads"; "86% of advertisers are increasing AI use for research and 79% for creative production"; 68% planuje zwiększyć UGC. Uwaga: 42% lo-fi = 58% top-spenderów to NIE lo-fi → dane nie mówią "lo-fi zawsze wygrywa", tylko "lo-fi jest pełnoprawną, dużą częścią zwycięzców".
+**Implikacja:** Portfel kreacji powinien zawierać oba bieguny (natywne lo-fi i jawne DR/hi-fi) — zgodnie z "barbell rule" (2.14). Humor jako oś do przetestowania (nadreprezentacja 25% vs 14%), ale w usługach wysokiego zaufania (medycyna, finanse) ostrożnie.
+
+### 2.19 Luka: polskojęzyczne źródła
+Nie udało się dotrzeć do polskich materiałów (agencje, blogi, YouTube: "dywersyfikacja kreacji", "Andromeda Meta", "kreacje reklamowe Meta 2025/2026"): wspólny budżet WebSearch sesji (200 zapytań na wszystkich agentów) wyczerpał się po ~37 moich zapytaniach, a WebFetch do blogów/YouTube jest zablokowany; wyszukiwanie kodu GitHub po polskich frazach nie dało merytorycznych trafień (jedyny wynik: polski skill o hookach bez źródeł — https://github.com/Bartosh16/claude-skills/blob/main/hooki/references/hooki-wideo.md, poziom D). **Rekomendacja dla syntezy:** uzupełnić w kolejnej sesji (zapytania: "Andromeda Meta dywersyfikacja kreacji", "kreacje reklamowe Meta Ads 2026 leady", "Meta Ads lead generation Polska agencja kreacje", "ile reklam w zestawie reklam 2025", YouTube PL: kanały agencji performance). Do tego czasu system nie powinien twierdzić, że "polscy praktycy mówią X".
+
 ## 3. Frameworki
+
+> Ogólna uwaga: żaden framework praktyków nie ma walidacji eksperymentalnej (poziom C/D). Ich wartość to *generowanie systematycznej różnorodności* i *wspólny język*, a nie dowód skuteczności. Dla systemu kluczowe jest połączenie ich w jedną matrycę osi (F-SYNT na końcu).
+
+**F1. P.D.A. — Persona × Desire × Awareness (lub Angle)** — Pilothouse i blogi agencyjne (2.10).
+- Opis: dla każdej reklamy określ *kogo* (konkretna persona), *czego chce* (pragnienie/problem), *jak świadomy jest* (problem-/solution-/product-aware); w wersji Pilothouse trzecia oś to *kąt* (ton/struktura narracji). Kombinatoryka (5×4×6 = 120) → wybór 8–12 konceptów.
+- Mocne: prosty, wymusza różnice w *istocie* reklamy (kto/po co/na jakim etapie), a nie w kosmetyce; dobrze współgra z tezą Meta o "different people and contexts".
+- Słabe: brak osi *formatu*, *dowodu*, *mechanizmu*, *oferty*, *hooka*, *stylu wizualnego*; persona bywa "awatarem" (Levinger: "Avatars are a crutch"); kombinatoryka generuje dużo pustych, nierealnych kombinacji; liczby skuteczności (CTR +30%) bez metody.
+
+**F2. Pillar → Concept → Angle (Joanna Wallace) + łańcuch Objective → Insight → Angle → Concept → Hook → Execution** (2.11d; getcrux/Foreplay — [WYSZUKIWARKA] https://getcrux.ai/discover/creative-strategy).
+- Opis: filar = duży kubeł uczenia się (np. persona/segment); koncept = średnia egzekucja; kąt = wejście w sekwencję sprzedażową (rekomendacja, ekspert, negatywne ujęcie, osobiste doświadczenie). Plan kwartalny: 3–5 filarów, min. 3–4 koncepty na filar, 70/30 test/skalowanie.
+- Mocne: hierarchia pozwala planować portfel i raportować learningi na poziomie filaru; realistyczne liczby dla średnich marek.
+- Słabe: nazewnictwo niespójne między praktykami (u Farisa "angle" = pragnienie × korzyść; u Wallace "angle" = wejście retoryczne) → system musi mieć własny słownik.
+
+**F3. Andrew Faris — 3-częściowa dywersyfikacja (przekaz / format / talent) + 3x3x3** (2.12).
+- Opis: (1) różne komunikaty do różnych grup, (2) "same message, different sets of clothes", (3) różni ludzie na ekranie; test: 3 kąty × (3 natywne statyki + 3 wideo VO), każdy kąt w osobnym ad secie, w *głównej* kampanii, ocena po wydatku.
+- Mocne: bardzo operacyjny; tani w produkcji (statyki + VO), rozdziela test *przekazu* od test *formatu*; spójny z A (różnorodność assetów).
+- Słabe: DTC, bid cap/target ROAS — w lead-gen wydatek ≠ jakość leada; 6 reklam × 3 ad sety przy małym budżecie PL może rozproszyć dane (sprzeczne z Heath 2.16 i Meta "too many ads").
+
+**F4. Post-Andromeda "Levers" i "Ad Families" (Sophia Beauvoir)** (2.11a).
+- Opis: dźwignie znaczącej zmiany: wizual, talent, mashup, persona, punkt bólu, całe "body", format; zwycięzca → rodzina reklam wg persona/pragnienie/świadomość.
+- Mocne: łączy "double down" z dywersyfikacją — zwycięski *kąt* rozwija się w wielu formach.
+- Słabe: brak danych; ryzyko, że "rodzina" to znowu warianty tego samego.
+
+**F5. Drabina testowa Static → Video → High-production + 6 dźwigni iteracji + Green/Yellow (Viti Videtta)** (2.11b).
+- Mocne: minimalizuje koszt — kąty weryfikuje tania statyka (spójne z Motion 2.2: text-forward ma najwyższy hit rate); jasne reguły iteracji.
+- Słabe: niektóre kąty (emocjonalne, demonstracyjne) mogą przegrać w statyce, a wygrać w wideo → fałszywe negatywy; dane DTC.
+
+**F6. Ranking dowodów + Tiery kreacji + diagnoza marki + "double down" (Dara Denney)** (2.11c).
+- Mocne: priorytetyzacja wg pewności; przeciwwaga dla mody "dywersyfikuj wszystko"; wymóg 1–2-zdaniowej diagnozy przed testami.
+- Słabe: ranking oparty na doświadczeniu; "double down" bez dywersyfikacji wykonania grozi zmęczeniem.
+
+**F7. 50/25/25 + "Battleship" + "Two Extremes" (Eric Philippou)** (Motion bootcamp wk2 Thu — [PEŁNY] https://github.com/Motion-Creative/bootcamp/blob/main/references/week-02/thursday-coaching-research.md).
+- Opis: w fazie skalowania: 50% "blatant copies of the winners, just visually unique", 25% udramatyzowane iteracje zwycięzców, 25% testy pod-kątów; gdy *nic nie działa*: "Battleship" — duże, różne strzały, iteruj dopiero po częściowym trafieniu w jednej metryce ("<10% of ad ideas should be iterations when nothing is working"). Objawy "nic nie działa": nuda, złożoność (UVP ukryte), "CPM Hell", brak jasnego UVP. Case Flowell: zmiana persony (sportowcy → pacjenci z obrzękiem limfatycznym, narracja pielęgniarki) — CPM z >300 USD do <100 USD, hook rate 40–50%, sprzedaż ~0 → ~900 tys. USD w 2025; ten sam skrypt: aktorka ~9 s vs pielęgniarka 25+ s średniego oglądania (C, pojedynczy case).
+- Mocne: **stan konta determinuje proporcję eksploracji/eksploatacji** — kluczowa reguła dla systemu.
+- Słabe: proporcje arbitralne.
+
+**F8. T-E-E-P + mikro-momenty + mapa emocji (Sarah Levinger)** (2.11g).
+- Mocne: dostarcza *treści* kątów (realne momenty, język klienta), a wagi T/E/E/P łączą portfel z celem (np. obniżenie kosztu → więcej reklam "Exploration/Evaluation").
+- Słabe: przykłady konsumenckie; wagi procentowe to heurystyka.
+
+**F9. Poziomy świadomości Schwartza (Unaware → Most Aware)** — używany przez Denney (mapowanie topowych kreacji na 5 poziomów) i w P.D.A.
+- Mocne: klasyczny, szeroko znany; w lead-gen usług pomaga odróżnić reklamy "problemowe" od "ofertowych/cenowych".
+- Słabe: brak dowodu empirycznego na optymalny miks; w praktyce Meta sama dobiera odbiorców do kreacji.
+
+**F10. Barbell / "Make Ugly Ads" / natywność (Barry Hott, Alex Cooper, Evan Lee, Alysha Boehm)** (2.8, 2.11f, 2.14).
+- Mocne: konkretne "oznaki fake-ugly", reguła pierwszej klatki i settingu; spójne z danymi Motion (lo-fi 42% top-spenderów; text-only najwyższy hit rate).
+- Słabe: brak kontrolowanych testów; "native" szybko się starzeje ("stale in six months"); ryzyko wiarygodności w kategoriach regulowanych.
+
+**F11. Doktryna iteracji (parker-brain) — test "back-to-back", "signal-change ladder", iteruj tylko zwycięzców** (2.15).
+- Mocne: ostra definicja granicy iteracja/koncept; diagnoza lejka → co zmieniać.
+- Słabe: drabina sygnałów to hipoteza.
+
+**F12. Explore vs Exploit + Iteration Tool 2×2 + "Digging for Wells" (Daniel Rivera / Jade Heritage)** (Motion bootcamp wk6 — [PEŁNY] https://github.com/Motion-Creative/bootcamp/blob/main/references/week-06/tuesday-jade-daniel-winning-stories.md).
+- Opis: tryb Explore (szukamy kąta/persony) vs Exploit (skalujemy znany kąt w nowe formaty/osoby); 2×2: wizual V1/V2 × przekaz A/B; "Read the ground" (dane kto kupuje, recenzje + Reddit — "customers don't perform there, so language is honest", twórcy "w dziczy"). Mały budżet (Jade): "find your two to three strongest messages and nail those first"; 2–3 koncepty przy niskim wydatku, 5–10 równolegle przy wyższym. Case Harry's: grupa docelowa okazała się inna niż zakładano (starsze kobiety), wygrał hook "Smell like $200 for $8" — "The real buyer always beats the imagined one."
+- Mocne: bardzo przydatne dla małych budżetów lead-gen.
+
+**F13. Lejek diagnostyczny kreacji (Motion: Spend → Thumbstop → Hold → CTR → Konwersja)** (2.11e; wk5 — [PEŁNY] https://github.com/Motion-Creative/bootcamp/blob/main/references/week-05/tuesday-evan-analyze.md).
+- Opis: niski thumbstop → hook/wizual; wysoki thumbstop, niskie utrzymanie → body; dobre oglądanie, niski CTR → CTA/dopasowanie persony; dobry CTR, niska konwersja → strona/oferta ("You don't always have a creative problem"). Wynik hipotezy: winner → double down; loser → "don't iterate, avoid similar swings"; middling → więcej czasu/izolacja zmiennej.
+- Mocne: wprost przekłada się na decyzje. Słabe: w lead-gen na formularzach "konwersja" jest tania, a jakość nie jest widoczna w Meta → trzeba dodać etap CRM (kwalifikacja).
+
+**F14. Definicja dywersyfikacji Jona Loomera** (2.6): różne osoby i konteksty, wyraźne różnice wizualne, różne formaty, różne teksty; mikrozmiany "no longer good enough".
+
+**F15. Heurystyka "2 z 3" (adsuploader/Webtopia)** (2.5): nowa kreacja musi różnić się w ≥2 z: przekaz / egzekucja wizualna / format. Prosta i przydatna jako *bramka QA*; mechanizm "Entity ID" niepotwierdzony (C/D).
+
+**F-SYNT. Proponowana matryca osi dla systemu KWIATEKmedia (synteza — poziom D/C, do walidacji w testach)**
+Osie "rdzeniowe" (zmiana ≥2 z nich = NOWY KONCEPT):
+1. **Segment/persona** (kto, w jakiej sytuacji życiowej) — Faris, P.D.A., Levinger.
+2. **Moment/trigger** (konkretny mikro-moment, w którym problem staje się pilny) — Levinger, parker-brain "Trigger-Event".
+3. **Problem/potrzeba lub pragnienie** (ból vs aspiracja) — P.D.A., Alysha "pain or desire?".
+4. **Obietnica/rezultat** (co klient dostanie) — Faris "angle = desire × benefit".
+5. **Mechanizm** (dlaczego/jak to działa, co wyróżnia usługę) — Videtta "scale the mechanism behind the ad".
+6. **Poziom świadomości** (Schwartz).
+7. **Typ dowodu** (opinia klienta, case/liczby, ekspert/autorytet, demonstracja, gwarancja, media/press, certyfikat) — Motion formats "Testimonial/Case study/Authority".
+8. **Kąt retoryczny** (rekomendacja, ekspert, negatywne ujęcie/ostrzeżenie, osobista historia, porównanie "us vs them", edukacja, obalenie mitu, "permission") — Wallace, parker-brain.
+Osie "wykonawcze" (zmiana tylko tych = WARIANT/ITERACJA):
+9. **Format/kontener** (statyka: headline, notes app, screenshot posta, us-vs-them…; wideo: talking head, VO+B-roll, podcast, street interview…) — Motion/parker-brain.
+10. **Styl — biegun barbell** (natywny lo-fi vs jawny DR) — Adcrate, Alysha.
+11. **Talent/głos** (właściciel, pracownik, klient, ekspert, lektor, brak twarzy).
+12. **Setting** (miejsce jako sygnał trafności).
+13. **Hook** (typ i pierwsza klatka).
+14. **Oferta/CTA** (darmowa wycena, konsultacja, audyt, lead magnet, cena "od") — uwaga: zmiana oferty bywa *rdzeniowa* w lead-gen (Heath: oferta #2 w hierarchii testów).
+Reguła QA "nowej kreacji" (łącząca F11, F15 i A: "materially different"): nowa kreacja w portfelu musi (a) różnić się od każdej aktywnej w ≥2 osiach rdzeniowych LUB (b) mieć ten sam rdzeń, ale inny format + inny wizual (to "wariant rodziny", świadomie oznaczony). Zmiana samego koloru/zdjęcia w tym samym układzie/nagłówka/CTA = mikro-wariant → nie liczy się do różnorodności.
 
 ## 4. Taksonomia formatów
 

@@ -134,3 +134,181 @@ Udziały typu "~60% bez nagłówka" to ręczne zliczenie w próbce 30–40 rekla
 - Domy modułowe: prawie brak ceny w nagłówkach (wyjątek deweloperzy: Argali, Szetyński "Od 830 tys. zł"). **Okazja: cena od + czas + "na Twojej działce".**
 - Medycyna estetyczna: większość milczy w nagłówku. **Okazja: problem sezonowy + zakres zabiegu + cena**, w granicach prawa dla podmiotów leczniczych [PLIK 07, L5/L6].
 - Kursy: dominuje sztuczny termin ("Kup do 21:00", "Tylko do 30 września"). Wynik po kursie (zlecenie, pierwsza praca) jest rzadki — KLIKA wyróżnia się.
+
+### 2.4 Grupa 4 — E-commerce / produkty (darmowa dostawa, promocje, materac, suplement, odzież, kosmetyki naturalne)
+**Próba [PEŁNY]:** "darmowa dostawa" (20 076), "promocja -30%" (6 579), "materac" (2 737), "suplement diety" (3 684), "kosmetyki naturalne" (1 375), "odzież damska" (681).
+
+**Dominujące wzorce nagłówków**
+- **Rabat / promocja w nagłówku** — Zolmed.pl "Tylko dziś -50% + Darmowa Dostawa 👉" (x4, 23.09), Gadget Planet (EUR) "Promocja jesienna: 60% rabatu" (x11), Męski Taniec "🔥 Pakiety do 70% TANIEJ!", Defentor "-35% tylko teraz 🐁", Orientana "Do -30% na pielęgnację włosów" i "Mgiełki Orientana 1+1 -50%", Labify "Gut Shield na jelita 2+1 GRATIS!", Authletic "🔥 Kup 2, odbierz 1 gratis".
+- **Logistyka jako hook** — TakiLook "Darmowy Paczkomat!", Pinjole (USD) "🚚 Płatność przy odbiorze ✅ Darmowa dostawa" (wzorzec dropshippingu COD).
+- **Konstrukcja "[Rzeczownik], który/które [cecha]"** — Rose Anna (EUR) "Sztruks, który nie przegrzewa", "Elastyczne, ruszają się z Tobą"; Niho "Biustonosz, który wspiera postawę 😍"; Marta Kraków Moda (EUR) "Ciepło, które wygląda elegancko ✨" (x10); Ozonee "🔥 Styl, który przyciąga spojrzenia". Działa, gdy cecha jest fizyczna i sprawdzalna ("nie przegrzewa"); jest pusta, gdy abstrakcyjna ("przyciąga spojrzenia").
+- **Katalog (DPA)** — nagłówek = lista nazw produktów (Royal Fashion, Ozonee, Meble MWM, Empik, Amazon.pl). Nie do oceny jako copy.
+- **Butiki odzieżowe** — ok. połowa reklam bez nagłówka (boosty postów, transmisje LIVE).
+- **Suplementy: call-out wiekiem / sytuacją** — Orzax "Przespana noc po pięćdziesiątce", "Wsparcie prostaty po pięćdziesiątce", "Dla męża. Dla taty."
+- **Quiz doboru** — Anatomia Snu "Jaki materac jest dla Ciebie? Sprawdź w 60 sekund", Polemika "Wybierz swój poziom odnowy".
+- **Historia / advertorial** — Tullio.pl "Dzień 14: Stałam w drzwiach i płakałam ze wzruszenia. On naprawdę śpi! 🌙" (23.09), Vitalora Poland (EUR) "Hemoroidy wracały przez 16 lat. Aż do teraz", Karolina Gandziarska "To, co zobaczyłam, odebrało mi mowę", oraz szablon "Przeczytaj to, jeśli…" u trzech różnych stron (Mela Lucky, CasaPiuma, Tulika — ten sam produkt/temat rozejścia mięśni po porodzie, 23.09).
+
+**Dobre przykłady (C)**
+- Spectrum Herbs, 23.09: "10 kropli rano, 3,15 zł dziennie" — rytuał + cena dzienna (kotwica ceny). W tym samym zestawie "Melatonina pomaga skrócić czas zasypiania" — sformułowanie w stylu dopuszczonego oświadczenia zdrowotnego [WIEDZA: lista oświadczeń UE; do weryfikacji].
+- ilabu.pl, 23.09: "Kolagen bez cukru i bez smaku" — wyróżnik produktu wobec konkurencji w jednym zdaniu.
+- Rose Anna: "Sztruks, który nie przegrzewa" — obiekcja wobec kategorii zamieniona w cechę.
+- Anatomia Snu: quiz "w 60 sekund" — niski próg + personalizacja.
+- Orzax: call-out wiekiem ("po pięćdziesiątce") zamiast ogólnego "zadbaj o zdrowie".
+- Polemika, 23.09: "Twój przewodnik po retinalu", "Krem BB w 4 odcieniach", "Męska pielęgnacja w dwóch prostych krokach" — edukacja i konkret produktu.
+
+**Złe przykłady**
+- Men's Doctor (waluta PKR), 23.09: "✅ 386% gwarantowany rezultat! 👉" + nagłówki w kilkunastu językach "tylko dziś" — absurdalna obietnica, sygnał oszustwa.
+- Nutrilaben (waluta INR): "Oferta 0 PLN – tylko dziś"; Ruvbklo8 (USD): "🔥 Krem do pielęgnacji ran z nanokomórkami -50%!"; Good-Looking xip1 (USD): "Zniżka 80%." — typowe dla kont-wydmuszek.
+- Strona "𝐛𝐢𝐞𝐝𝐫𝐨𝐧𝐤𝐚 𝐒𝐤𝐥𝐞𝐩" (EUR, 24.09): "🚚 Darmowa dostawa" — nazwa znanej sieci pisana znakami Unicode = sygnał podszywania się.
+- BellMedi (EUR): "NAJWIĘKSZA PROMOCJA ROKU WRESZCIE JEST TUTAJ" — caps + superlatyw.
+- Clushabu Dagluckfrong (USD): "✨ Odkryj kolekcję wyjątkowych smaków! 🍓🍉🥭" — "Odkryj" + "wyjątkowych" = AI slop.
+- Zolmed "Tylko dziś -50%" — jeśli ta sama "tylko dziś" leci wiele dni, to fałszywa pilność [PLIK 07, L1]; Ad Library pokazuje 4 kopie z 23.09 (brak danych o wcześniejszych dniach).
+- Szablon "Przeczytaj to, jeśli…" u 3 stron naraz — przejedzony w swojej niszy.
+- Kilka sklepów z polsko brzmiącą nazwą rozlicza się w EUR/USD (Marta Kraków Moda, Rose Anna, Veraze PL, Home & Marker PL) — hipoteza (D): zagraniczni sprzedawcy z "lokalną" personą. Polski sklep może się wyróżnić prawdziwym, sprawdzalnym pochodzeniem (magazyn w PL, zwrot w PL).
+
+**Oferta:** rabat %, 2+1 / 1+1, darmowa dostawa/Paczkomat, płatność przy odbiorze, prezent do zamówienia (Crystallove "Prezent do zamówień już od 1 zł 🎁"), kod influencera (Boostyfoods "KOD RABATOWY -15% MIRA").
+
+**Luki i okazje**
+- Rabat to domyślny hook — różnicuje najsłabiej. Wyróżniają się: konkretna cecha produktu, cena dzienna, quiz doboru, call-out sytuacją.
+- Dowód społeczny w nagłówkach e-com jest rzadki (brak "N opinii 4,8/5" w próbce PL; ma go tylko turecka klinika). **Okazja: prawdziwa liczba opinii / klientów.**
+
+### 2.5 Grupa 5 — Oferty wymagające zaufania (kancelaria, frankowicze, upadłość, odszkodowania, ubezpieczenia, doradca kredytowy, klinika, terapia, inwestycje)
+**Próba [PEŁNY]:** "kancelaria" (3 979), "frankowicze" (51 — widać reklamy od maja), "upadłość konsumencka" (537), "odszkodowanie" (942), "ubezpieczenie na życie" (678), "doradca kredytowy" (87), "psychoterapia" (733), "inwestycje" (6 136), "klinika" (4 098) + page_ids Fundacja FAIR / ProBanking / Życie bez kredytu / Mediator CRN / Oddłużeniowa Kancelaria / Renvia.
+
+**Dominujące wzorce nagłówków**
+- **"Bezpłatna analiza" jako cała oferta** — frankowicze/SKD: Hantke&Piskor "Bezpłatna analiza Twojej umowy kredytowej" (11.08), Zwrotomatik "Skorzystaj z bezpłatnej analizy umowy" (05.08), Mędrecki Wilk "Bezpłatna analiza sytuacji" (03.08), Fundacja FAIR "Uzyskaj bezpłatną analizę 👉🏻" (od 29.06, odnawiane), ProBanking "Uzyskaj bezpłatną analizę 👉" (15.09); odszkodowania: Arbiter S.A. "Bezpłatna analiza" (x9), Pomoc Powypadkowa "Bezpłatna analiza". Kilkunastu reklamodawców, ta sama obietnica.
+- **"Odzyskaj pieniądze"** — strona "Odzyskaj Pieniądze z Kredytu Walutowego" (19.08, 25.08, 17.09), FAIR "Odzyskaj pieniądze ✅" (29.05, 22.06), LEXNORD "Sankcja Kredytu Darmowego (SKD) - Odzyskaj Pieniądze" (31.07), ProBanking "Kredyt w EURO? Odzyskaj swoje pieniądze!", BeWa LexGroup "Zdobądź odszkodowanie | Odzyskaj swoje pieniądze".
+- **Pytanie kwalifikujące progiem** — Oddłużeniowa Kancelaria "Masz długi powyżej 25 000 zł?" (15.07 i ponownie 22.09), Renvia "Masz 30 000 zł lub więcej długów?" (30.07), Omega "Masz kredyt walutowy?" (03.08), ProBanking "Odpowiedziałeś 3x TAK? Bezpłatnie sprawdź swoją umowę kredytową." (15.09), Salomon "[DARMOWY QUIZ] Sprawdź czy możesz usunąć długi." (22.09).
+- **Sytuacja / objaw** (upadłość) — Mediator CRN "Windykatorzy dzwonią codziennie? Upadłość wstrzymuje windykację. | Komornik zajął Ci wynagrodzenie? Jest legalny sposób, żeby to zatrzymać. | Nie otwierasz już listów poleconych? Rozumiemy. Ale dług sam nie zniknie." (21.09), Renvia "Codziennie odbierasz takie wiadomości?", Walerjańczyk "Masz długi i komornika?".
+- **Dowód liczbą / wyrokiem** — Franki Kancelaria "Kredyt w euro? Zwrot średnio 111 tys." (11.09), Pledziewicz "Zobacz przykładowe wyroki!" (15.09), Mediator CRN "Ponad 50 wynegocjowanych ugód z bankami", "Prowadzimy ludzi przez upadłość od 2017 roku", TDF "Doradca TDF porówna 26 banków ➡️" (16.09), Restartis "Czy słup na działce to pieniądze? | Do 90 000 zł za słup".
+- **Lead magnet treściowy** — KNF Team "Darmowy PDF 👉" (x8), Anyst (USD) "Do pobrania i przeczytania za darmo." (x11), Oppenheim "Upadłość konsumencka: 5 mitów!", Pledziewicz "Bezpłatny webinar online".
+- **Terapia / psychoterapia** — ~70% reklam (22/31 po odjęciu szumu) bez realnego nagłówka (puste, "www.fb.com", tytuł Instagrama, nazwa strony, "Medfile").
+
+**Reklamy długo działające [PEŁNY, sygnał C]**
+| Reklamodawca | Nagłówek | Utworzona | Aktywna ok. |
+|---|---|---|---|
+| Oddłużeniowa Kancelaria | "{{product.name}}" (reklama katalogowa/dynamiczna — token podmieniany przy emisji [WIEDZA]) | 22.01.2026 | ~8 mies. |
+| Fundacja FAIR | "Wciąż nie wierzysz, że da się wygrać? 🤔 \| ⏰ Ostatnia szansa na walkę z bankiem!" | 20.05.2026 | ~4 mies. |
+| Fundacja FAIR | "Czy Twój bank jest na liście?" | 27.05.2026 | ~4 mies. |
+| ProBanking | (pusty nagłówek) | 29.05.2026 | ~4 mies. |
+| Fundacja FAIR | "Odzyskaj pieniądze ✅" | 29.05 i 22.06.2026 | ~3–4 mies. |
+| Życie bez kredytu | "Zamów Analizę Umowy Kredytu WBOR ➡️" | 16.06.2026 | ~3 mies. |
+| Krakowska Szkoła Biznesu UEK | "Inwestycje deweloperskie" | 21.06.2026 | ~3 mies. |
+| Fundacja FAIR | "Uzyskaj bezpłatną analizę 👉🏻" (ten sam nagłówek w nowych reklamach 29.06, 09.07, 17.07, 21–22.09) | od 29.06.2026 | ~3 mies. |
+| Oddłużeniowa Kancelaria | "Masz długi powyżej 25 000 zł?" (+ nowe kopie 22.09) | 15.07.2026 | ~2,5 mies. |
+| Fundacja FAIR | "Obniż ratę nawet o 50% 💰" (x5) | 16.07.2026 | ~2,5 mies. |
+| Renvia | "Masz 30 000 zł lub więcej długów?" | 30.07.2026 | ~2 mies. |
+| LEXNORD | "Sankcja Kredytu Darmowego (SKD) - Odzyskaj Pieniądze" | 31.07.2026 | ~2 mies. |
+| Omega Kancelarie Prawne | "Masz kredyt walutowy?" (x4) | 03.08.2026 | ~1,5 mies. |
+
+Wspólne cechy long-runnerów (C/D): krótki nagłówek; pytanie kwalifikujące ("Masz…?", "Czy Twój bank…?") albo prosta obietnica korzyści ("Odzyskaj pieniądze", "Obniż ratę nawet o 50%"); oferta bez ryzyka (bezpłatna analiza); próg kwotowy odsiewający małe sprawy. Uwaga: FAIR prowadzi "⏰ Ostatnią szansę na walkę z bankiem!" od 4 miesięcy — długie działanie NIE znaczy, że komunikat jest uczciwy.
+
+**Dobre przykłady (C)**
+- Mediator CRN (upadłość / frankowicze / SKD), 07–21.09 — każdy zestaw DCO to jeden kąt: (1) objaw ("Komornik zajął Ci wynagrodzenie?…"), (2) proces ("Krok 1: bezpłatna analiza. | Krok 2: składamy wniosek. | Krok 3: umorzenie długów."), (3) cena ("Ile kosztuje upadłość? Powiemy wprost - i rozłożymy na raty.", "Bez ukrytych kosztów - pełną cenę poznajesz na starcie."), (4) wstyd ("Wstyd? Strach? Nie jesteś w tym sam.", "Myślisz „zawiodłem”? Posłuchaj, zanim tak siebie osądzisz."), (5) lęk przed syndykiem ("Boisz się syndyka? Większość obaw bierze się z niewiedzy."), (6) sytuacje frankowe ("Sprzedajesz mieszkanie, a kredyt walutowy blokuje hipotekę? Jest sposób.", "Ugoda na stole? Druga opinia przed podpisem nic nie kosztuje."), (7) success fee ("Płacisz głównie wtedy, gdy wygramy Twoją sprawę…"). Najpełniejsza mapa obiekcji w całej próbce. Minus: sporo zdań w konstrukcji "To nie X. To Y." (patrz 3.3).
+- Oddłużeniowa Kancelaria / Renvia — próg kwotowy w pytaniu (25 000 zł / 30 000 zł) — działa jako filtr i jest utrzymywany miesiącami.
+- Helpfind (16.09): "Spłacany czy spłacony - sprawdź umowę" — rozbraja obiekcję "już spłaciłem, to mnie nie dotyczy".
+- Franki Kancelaria (11.09): "Kredyt w euro? Zwrot średnio 111 tys." — call-out + liczba.
+- Piotr od Ubezpieczeń (22.09): "Co, jeśli kierowca umrze za granicą?" — konkretny scenariusz dla firm transportowych zamiast "zadbaj o bezpieczeństwo bliskich".
+- Kamil Góra – Fundacje (23.09): "Fundacja rodzinna, spółka czy testament? Sprawdź." — nagłówek-dylemat.
+- Ośrodek ISTDP (psychoterapia, 23.09): "Najpierw rozmowa o grupie" — niski, bezpieczny pierwszy krok.
+
+**Złe przykłady**
+- Ochrona Życia i Finansów: "Zadbaj o finansowe bezpieczeństwo swoje i bliskich" (x3); Doradca Kredytowy 24: "✅ Atrakcyjny Kredyt Online" (x4); Nieco Więcej: "Upadłość konsumencka z profesjonalnym wsparciem"; Konteksty: "Zaufany ośrodek - KONTEKSTY" (zaufanie deklarowane, nie pokazane).
+- Pomoc Poszkodowanym Online (USD): "Kliknij „Dowiedz się więcej”" — nagłówek opisuje przycisk.
+- Rynowiecka: "Odszkodowanie Majątkowe? Uzyskaj Więcej" — Title Case.
+- BeWa LexGroup: "Słup na działce? | Kredyt CHF? | Kredyt EUR? | SKD? | Zdobądź odszkodowanie" — pięć usług w jednej reklamie, zero specjalizacji.
+- PointBlank Answers / Bold Report / Press Track (USD, 3 strony, ten sam tekst): "Poznaj kroki związane z roszczeniem o odszkodowanie po szczepieniu przeciw COVID-19" — sieć stron arbitrażowych.
+- Centrum Ubezpieczeń "🔴 DZIŚ ZAPISAŁO SIĘ 25 OSÓB" — szablon fałszywego dowodu społecznego przeniesiony z OZE do ubezpieczeń.
+
+**Luki i okazje**
+- Frankowicze/SKD: "bezpłatna analiza" + "odzyskaj pieniądze" to towar — ma go prawie każdy. Wyróżniają się tylko: liczba ("średnio 111 tys."), dowód (wyroki, liczba ugód, rok startu), rozbrojenie obiekcji (spłacony kredyt, ugoda na stole), cena/success fee. **Okazja: nagłówek z dowodem albo obiekcją, "bezpłatna analiza" dopiero w tekście/CTA.**
+- Cena w usługach prawnych: tylko Mediator CRN mówi o cenie wprost. **Okazja o dużej sile (D): "Ile to kosztuje? Mówimy na starcie."**
+- Terapia: większość milczy. **Okazja: "pierwszy krok" + dla kogo + forma (online/stacjonarnie) + termin oczekiwania.**
+- Ubezpieczenia: dominują ogólniki o "bezpieczeństwie bliskich". Wyróżniają się scenariusze (kierowca za granicą), cena od (InBest "Polisa od 57 zł !"), zwrot składek (Elżbieta Mainka "💰 Składki mogą wrócić. Sprawdź!").
+
+## 3. Wnioski przekrojowe
+
+### 3.1 Najczęstsze błędy polskich reklam (w kolejności od najczęstszych w próbce)
+1. **Zmarnowane pole nagłówka** — pusty nagłówek, domena ("www.fb.com", "fb.me", "instagram.com"), nazwa strony, zassany meta-tytuł (Instagram, Booksy, Medfile, tytuł SEO). Skala (ręczne liczenie): stomatologia ~60%, medycyna estetyczna ~60%, psychoterapia ~70%, butiki odzieżowe ~50%; w lead gen / prawie / B2B ~15–25%. Uwaga: przy boostach postów i reklamach "wiadomości" nagłówek bywa niewidoczny w części umiejscowień — ale tam, gdzie się wyświetla, jest to stracone miejsce na hook (C/D).
+2. **Etykieta zamiast hooka** — "Biuro rachunkowe dla Twojej firmy", "Księgowość dla firm", "Fizjoterapia w Elblągu" (ta ostatnia przynajmniej z geo), "Kurs języka angielskiego online", "Ubezpieczenie na życie". Mówi, CZYM firma jest, a nie co odbiorca z tego ma.
+3. **Ogólnikowe przymiotniki bez dowodu** — "Rzetelna Księgowość", "profesjonalnym wsparciem", "Profesjonalna sprzedaż mieszkania lub domu", "Nowoczesna implantologia", "na najwyższym poziomie", "wiodący deweloper", "Zaufany ośrodek", "Atrakcyjny Kredyt Online", "Bezpieczne, Komfortowe i Ekonomiczne Ogrzewanie", "Kompleksowy Plan Leczenia", "Kompletna platforma sprzedaży".
+4. **Fałszywa / nieweryfikowalna pilność i dowód społeczny** — "🛑 Dziś zapisało się N osób!" (5 reklamodawców, liczba stała przez kilka dni), "⏰ Ostatnia szansa…" aktywna 4 miesiące (FAIR), "Tylko dziś -50%", "Kup do 21:00 👉72% taniej", "Szukamy 7 Kobiet…" odtwarzane codziennie, "Liczba miejsc ograniczona". Ryzyko prawne [PLIK 07, L1] i utrata wiarygodności (D).
+5. **CTA jako nagłówek** — "Kliknij tutaj!", "Kliknij 👉", "Kliknij „Dowiedz się więcej”", "Sprawdź ofertę", "Poznaj ofertę", "Wypełnij formularz", "Nie zwlekaj!", "Napisz do nas!", "Zobacz na żywo". Przycisk CTA już to robi; nagłówek powinien dać powód.
+6. **Forma niepolska / nieczytelna** — angielski Title Case ("Odzyskaj Brakujące Zęby", "Odszkodowanie Majątkowe? Uzyskaj Więcej", "Zamów Analizę Umowy Kredytu WBOR"), caps lock ("NAJWIĘKSZA PROMOCJA ROKU WRESZCIE JEST TUTAJ", "DOTACJA 2026 DLA CIEBIE", "NOWOCZESNA LASEROTERAPIA"), pogrubienie znakami Unicode ("𝗗𝗡𝗜 𝗢𝗧𝗪𝗔𝗥𝗧𝗘…"), literówki ("Usługowy", "ryzka", "dofinasowaniem"), zły przekład maszynowy ("Ostatnie trzy dni kampanii brandingowej, przegap!" — Dalalecca-mall), spacja przed wykrzyknikiem ("Polisa od 57 zł !").
+7. **Przesadne lub ryzykowne obietnice w zdrowiu** — "386% gwarantowany rezultat", "Prawda, którą ortopedzi przed Tobą ukrywają!", "Zabieg jest bezbolesny, szybki i precyzyjny", "Natychmiastowy efekt", "Krem… z nanokomórkami", "Delikatny ucisk, który usypia w 15 minut". [PLIK 07, L5/L6 + polityki Meta — ryzyko odrzucenia].
+8. **Wiele usług w jednej reklamie** — BeWa LexGroup (5 spraw w nagłówku), MDM Fotowoltaika (lista modeli paneli jako nagłówek).
+9. **AI slop / szablonowe konstrukcje** — "Odkryj kolekcję wyjątkowych smaków!", "Twój nowy ulubiony salon manicure", "Twój nowy rytuał z marką…", "Spokój, który zaskakuje 🌿", "Styl, który przyciąga spojrzenia", seria "To nie X. To Y." (patrz 3.3). Słowo "Odkryj" jest w nagłówkach PL rzadkie (3 przypadki na ~500 unikalnych) — polski slop w reklamach to częściej przymiotniki "kompleksowy / profesjonalny / nowoczesny / rzetelny" i konstrukcje "X, który Y" niż "Odkryj".
+
+### 3.2 Co wyróżnia reklamy długo działające (C/D, mała próba ~15 reklam)
+- **Krótkie, jednoznaczne nagłówki** (3–7 słów): "Masz długi powyżej 25 000 zł?", "Czy Twój bank jest na liście?", "Odzyskaj pieniądze ✅", "Obniż ratę nawet o 50% 💰", "Masz kredyt walutowy?".
+- **Pytanie kwalifikujące z progiem lub warunkiem** — odbiorca w 1 sekundę wie, czy go to dotyczy; niedopasowani odpadają przed formularzem.
+- **Oferta bez ryzyka dla klienta** (bezpłatna analiza umowy) — przy wysokiej stawce (zwrot dziesiątek tysięcy zł) prosta obietnica wystarcza; w tanich usługach to za mało.
+- **Zwycięski komunikat zostaje, kreacje się zmieniają** — Fundacja FAIR tworzy nowe reklamy z tym samym nagłówkiem "Uzyskaj bezpłatną analizę 👉🏻" co 1–3 tygodnie (29.06 → 09.07 → 17.07 → 21–22.09); Oddłużeniowa Kancelaria odtworzyła "Masz długi powyżej 25 000 zł?" po 2 miesiącach. Sygnał (C), że komunikat się broni, a zmęczenie dotyczy kreacji.
+- **Format katalogowy u usługodawcy** — Oddłużeniowa Kancelaria ma reklamę z tokenem `{{product.name}}` aktywną od 22.01.2026 (~8 mies.). Hipoteza (D): katalog "usług/produktów" (np. różne rodzaje długów/spraw) w formacie Advantage+ catalog działa też w lead gen.
+- Większość long-runnerów pochodzi z grupy 5 (finanse/prawo), gdzie stawka dla klienta jest wysoka, a lejek długi. W e-com i usługach lokalnych próba nie pokazała starszych reklam (sortowanie + duża liczba reklam) — brak wniosków dla tych grup.
+
+### 3.3 Przejedzone hooki (wszyscy ich używają — system powinien je ograniczać)
+| Wzorzec | Gdzie widziany [PEŁNY] | Dlaczego unikać |
+|---|---|---|
+| "🛑 Dziś zapisało się N osób!" | Sun Home, SM Project, Sol Voltage, AstroEnergy, Centrum Ubezpieczeń | szablon 5 firm; liczba stała przez dni = fałsz; ryzyko UoPNPR |
+| "Bezpłatna analiza / konsultacja / wycena" jako CAŁY nagłówek | ~15 reklamodawców (frankowicze, odszkodowania, doradcy, domy modułowe, stomatologia) | oferta-towar, nie różnicuje; lepiej w CTA/tekście |
+| "Odzyskaj (swoje) pieniądze" | FAIR, ProBanking, LEXNORD, BeWa, "Odzyskaj Pieniądze z Kredytu Walutowego" | cała nisza frankowa mówi to samo |
+| "Sprawdź, czy należy Ci się…" / "Sprawdź możliwość…" | Specjaliści od Świadczeń, Kamiński i Wróbel, Eko-Sept, Fotowoltaika Zachodniopomorskie | generyczny start bez korzyści |
+| "Ostatnia szansa / Tylko dziś / Tylko do…" | FAIR (od maja), Zolmed, Giganci Programowania (x10), KursyAutomatyki, Defentor, Live Spain | wszędzie, często nieprawdziwe; wiarygodne tylko z realną datą |
+| "Szukamy N [osób] z [miasto]…" | ZELEN (odtwarzane codziennie) | stały "limit" = sztuczny; lokalny call-out można zachować bez fałszywego limitu |
+| "Przeczytaj to, jeśli…" | Mela Lucky, CasaPiuma, Tulika (ten sam dzień, ta sama nisza) | szablon advertorialu e-com, wyczerpany w niszy |
+| "[Rzeczownik], który/które [abstrakcja]" | "Spokój, który zaskakuje", "Styl, który przyciąga spojrzenia", "Uśmiech, który dodaje pewności", "Ciepło, które wygląda elegancko", "Kurs, który dopasowuje się do Ciebie" | brzmi jak szablon/AI; OK tylko z fizyczną, sprawdzalną cechą ("Sztruks, który nie przegrzewa") |
+| "To nie X. To Y." / "X, nie Y" | Mediator CRN ("To nie poddanie się. To odzyskanie kontroli…", "Dług to nie wyrok. To sytuacja…"), agencje ("Klient gotowy do podpisu, nie lead", "50 klientów miesięcznie, nie kontaktów", "Podpisane umowy, nie paczki leadów") | najsilniejszy znany sygnał tekstu AI [PLIK 09, humanizer #1]; w agencjach lead gen to już standard pozycjonowania |
+| "Twój nowy…" / "Twój [rzeczownik]" | "Twój nowy ulubiony salon manicure", "Twój nowy rytuał…", "Twój Lexus czeka.", "Twój wymarzony drugi dom", "…Twoja droga do domu" | pusty zaimek zamiast konkretu |
+| "Odbierz rabat 👉" / "Sprawdź PROMOCJE" / "Poznaj ofertę" | Magicznie Beauty (x8), Glamour Day Spa, MG Bemo (x8), Kalime | brak treści |
+| "Nowoczesny / profesjonalny / kompleksowy / rzetelny / najwyższy poziom / wiodący" | patrz 3.1 pkt 3 | każdy może to powiedzieć o sobie |
+
+### 3.4 Obserwacje techniczne i rynkowe
+- **Masowe kopie i DCO**: wielu reklamodawców uruchamia 5–15 kopii tej samej reklamy z tym samym nagłówkiem (PG Partner Gospodarczy x9, Physio Gym x12, Sol Voltage x20+, Koh Samui x11). Część pokazuje w polu nagłówka 5–10 wariantów rozdzielonych " | " (DCO/Advantage+ creative). Najlepsi (MSEnergy, Mediator CRN, Clinica Fiorente, Modern Wages) testują RÓŻNE KĄTY; słabsi powtarzają ten sam tekst lub jego parafrazy (DM Homes "Zobacz na żywo" x7). (C)
+- **Konta w obcej walucie z polskimi nagłówkami** (USD/EUR/INR/PKR/TRY): arbitraż leadów ("CO WARTO WIEDZIEĆ O… 2026"), dropshipping COD, tureckie kliniki ("📍 Klinika stomatologiczna premium w Stambule w Turcji" — 3 kliniki, identyczny szablon), podejrzane oferty zdrowotne. Konkurują o uwagę tych samych odbiorców, co polskie firmy lokalne. (C)
+- **Reklamy w językach mniejszości** (RU/UA: "Ипотека в Польше", beauty/CRM) — segment imigrancki jest obsługiwany osobnymi stronami; okazja dla klientów obsługujących cudzoziemców (D).
+- **Sezonowość widoczna w danych** (koniec września): zapisy do szkół ("nowy rok szkolny 2026/2027"), "jesień to czas na naczynka", "Promocja jesienna", "Ochrona przed mrozem", "30 kontaktów mies. na zimę". (C)
+
+### 3.5 Jak reklamują się agencje lead gen w Polsce (konkurencja KWIATEKmedia) [PEŁNY, C]
+- Lemon Agency Polska (18.09): "Przestań dzwonić jako czwarty", "Fala spraw kredytowych. Kto podpisze?", "Klient gotowy do podpisu, nie lead 💎", "50 klientów miesięcznie, nie kontaktów", "Max 2 kancelarie w regionie. Koniec." oraz dla instalatorów "30 kontaktów mies. na zimę – w umowie", "Klienci na montaż przez 12 miesięcy".
+- Rafał Sobieszyński – Sosky (22.09): "Podpisane umowy, nie paczki leadów". Mango Agency: "📣 Podpisuj więcej umów!". Adroas: "Leady kwalifikowane dla Twojej branży". Maluga Marketing (nieruchomości): "Chcesz sprzedawać szybciej lokale? 1.6 MLN sprzedaży w 12 dni 👉". DobrzeTworze: "Biuro rachunkowe: 5 umów rocznie → 5 miesięcznie". Traffic Trends: "Zamień wyszukiwania w wizyty 🚀".
+- Wniosek (D): pozycjonowanie "umowy/klienci, NIE leady" + wyłączność regionalna + liczba w umowie to już standard w niszy. KWIATEKmedia wyróżni się raczej konkretnym, sprawdzalnym case'em (branża + liczby + okres) i przejrzystością procesu niż kolejnym "nie leady, tylko klienci".
+
+## 4. Implikacje dla systemu (reguły z poziomem dowodu)
+Poziom dotyczy obserwacji rynkowej z tego pliku; tam, gdzie reguła opiera się też na prawie, wskazuję plik 07.
+
+**Nagłówek (pole pod kreacją)**
+- **R1 (C).** Nigdy nie zostawiaj nagłówka pustego ani domyślnego. Walidator odrzuca: pusty, domenę, "www.fb.com"/"fb.me"/"instagram.com", nazwę strony, tytuł SEO/Booksy/Instagram. Podstawa: 50–70% reklam lokalnych i medycznych w próbce marnuje to pole.
+- **R2 (C).** Nagłówek niesie jeden z 5 typów: (a) pytanie kwalifikujące z progiem/warunkiem ("Masz długi powyżej 25 000 zł?"), (b) konkret oferty z liczbą (cena od, % wpłaty, czas realizacji: "Leasing auta dla firm od 10% wpłaty", "Higienizacja i przegląd - 250 zł", "Twój dom zmontujemy w 1–3 dni"), (c) sytuacja/objaw z życia odbiorcy ("Komornik zajął Ci wynagrodzenie?", "Budujesz dom? Okna nie powinny opóźniać budowy"), (d) obiekcja zamieniona w scenę ("Minus 20 na zewnątrz. Plus 21 w środku."), (e) dowód liczbą ("Zwrot średnio 111 tys.", "3 200 zł rocznie. Tyle średnio oszczędza nasz klient."). Etykieta kategorii i CTA-jako-nagłówek są odrzucane.
+- **R3 (C/D).** Długość nagłówka: 3–9 słów. Long-runnery w próbce miały 3–7 słów. Nagłówki-akapity (Exclusive Dental Studio) i listy produktów są odrzucane.
+- **R4 (C).** Lokalny biznes: miasto/dzielnica w nagłówku lub w pierwszym zdaniu ("Fotowoltaika Gliwice – Darmowa Wycena", "Warszawa: proteza na implantach", "Dom z ogrodem 3 km od Piotrkowa").
+
+**Pilność, dowód społeczny, liczby**
+- **R5 (C + prawo [PLIK 07, L1]).** Zakaz szablonu "Dziś zapisało się N osób" i każdego licznika/limitu, którego klient nie potwierdzi datą lub stanem. "Ostatnia szansa", "Tylko dziś", "Tylko do…", "Szukamy N osób" — tylko z realnym terminem/limitem w briefie i datą końca kampanii. System zapisuje datę wygaśnięcia i blokuje ten sam komunikat po terminie. Podstawa: 5 reklamodawców z identycznym szablonem i stałą liczbą; FAIR z "ostatnią szansą" od 4 miesięcy.
+- **R6 (C).** Każda liczba w reklamie (średni zwrot, oszczędność, liczba ugód, lata działania, liczba banków) wymaga źródła od klienta zapisanego w briefie. Bez źródła: nie używać.
+- **R7 (A dla prawa [PLIK 07, L4], C obserwacja).** Cena przekreślona / "X zł zamiast Y zł" / "-40%" → system pyta o najniższą cenę z 30 dni przed obniżką (Omnibus) albo zmienia komunikat na cenę bez przekreślenia.
+
+**Oferta i lead magnet**
+- **R8 (C).** "Bezpłatna analiza/konsultacja/wycena" nie może być jedynym wyróżnikiem nagłówka w niszach, gdzie ma ją każdy (frankowicze, odszkodowania, PV, doradztwo kredytowe). Przenieś ją do CTA/tekstu; w nagłówku postaw dowód, obiekcję albo próg kwalifikacji.
+- **R9 (C).** Preferowane lead magnety o niskim progu i osobistej wartości: quiz/test ("Jaki materac jest dla Ciebie? Sprawdź w 60 sekund", "✅ Sprawdź swój poziom", "Odpowiedziałeś 3x TAK?…"), spersonalizowany plan mailem ("Plan leczenia wysłany na Twojego maila"), wycena w X sekund/minut, "pierwszy krok" bez zobowiązań ("Najpierw rozmowa o grupie").
+- **R10 (D).** W usługach o wysokiej stawce (prawo, finanse, budowa) dodaj wariant z odpowiedzią na pytanie o cenę ("Ile to kosztuje? Mówimy na starcie." / raty / success fee). W próbce robi to jeden reklamodawca na kilkadziesiąt — luka.
+
+**Kąty i warianty**
+- **R11 (C).** Przy generowaniu 5–10 wariantów każdy wariant = inny kąt (problem, obiekcja, dowód, proces, cena, emocja, scena), nie parafraza. Wzór: MSEnergy, Mediator CRN, Modern Wages, aboutmedica. System wykrywa parafrazy (ten sam kąt innymi słowami) i je odrzuca.
+- **R12 (C).** Jeden problem = jedna reklama (aboutmedica: osobno "odprysk", "wędzidełko", "sedacja", "implant"). Zakaz "5 usług w jednej reklamie" (BeWa LexGroup).
+- **R13 (C/D).** Gdy komunikat działa, odświeżaj kreację i zostaw nagłówek (wzór FAIR / Oddłużeniowa Kancelaria). W raportach optymalizacyjnych rozróżniaj zmęczenie kreacji i zmęczenie komunikatu.
+
+**Język i forma (lint)**
+- **R14 (C).** Zakaz: angielski Title Case w polskim tekście, caps lock w całym nagłówku, pogrubienie znakami Unicode, spacja przed "!/?", literówki (walidacja pisowni), zdania-kalki z tłumacza.
+- **R15 (C + [PLIK 09]).** Lista ograniczeń stylu (ostrzeżenie, nie twardy zakaz): "To nie X. To Y." / "X, nie Y" (max 1 na zestaw), "[Rzeczownik], który [abstrakcja]" bez fizycznej cechy, "Twój nowy…", "Odkryj", "kompleksowy", "profesjonalny", "nowoczesny", "rzetelny", "na najwyższym poziomie", "wiodący", "wyjątkowy", "Sprawdź ofertę", "Poznaj ofertę", "Kliknij tutaj", "Nie zwlekaj".
+- **R16 (C).** Emoji w nagłówku: najwyżej 1, funkcyjne (📍 lokalizacja, ✅ kwalifikacja, 🩷 grupa docelowa). Seria emoji + caps ("🔥…🔥", "🛑", "🔴") kojarzy się z szablonami sprzedażowymi z próbki. (D co do wpływu na wynik)
+
+**Branże wrażliwe**
+- **R17 (C + [PLIK 07, L5/L6]).** Stomatologia, medycyna estetyczna, terapia: tryb informacyjny — usługa, dla kogo, przebieg, cena od, miasto, jak się umówić. Zakaz obietnic efektu ("bezbolesny", "natychmiastowy efekt", "gwarantowany rezultat"), superlatyw i "spiskowych" hooków ("Prawda, którą lekarze ukrywają").
+- **R18 (C).** Suplementy: tylko oświadczenia zdrowotne w dopuszczonym brzmieniu (wzorzec ostrożny: "Melatonina pomaga skrócić czas zasypiania"); preferuj konkret produktu ("bez cukru i bez smaku", "10 kropli rano, 3,15 zł dziennie") zamiast obietnic.
+
+**Analiza konkurencji (moduł research systemu)**
+- **R19 (C).** Moduł analizy Biblioteki Reklam musi: (a) szukać po frazie ORAZ po `page_ids` konkurentów (tylko tak widać starsze reklamy); (b) filtrować szum po walucie i języku (USD/EUR/INR/PKR przy polskiej frazie = często arbitraż/dropshipping); (c) grupować kopie po identycznym nagłówku; (d) oznaczać reklamy aktywne ≥ 60 dni jako "sygnał C", nigdy jako "sprawdzone"; (e) raportować przejedzone wzorce w niszy (np. "5 z 8 konkurentów mówi X") i proponować kąt, którego nikt nie używa.
+- **R20 (D).** Przy pozycjonowaniu samej KWIATEKmedia: nie używać "klienci/umowy, nie leady" ani "wyłączność w regionie" jako głównego hooka — to już standard agencji (Lemon Agency, Sosky). Lepszy kierunek: konkretny case z liczbami + przejrzysty proces.
+
+## 5. Lista wyszukiwań i źródeł

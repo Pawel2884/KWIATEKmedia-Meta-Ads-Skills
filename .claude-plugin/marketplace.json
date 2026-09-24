@@ -1,0 +1,17 @@
+{
+  "name": "kwiatekmedia",
+  "description": "Pluginy KWIATEKmedia do tworzenia reklam Meta Ads",
+  "owner": {
+    "name": "Paweł Kwiatek",
+    "url": "https://github.com/Pawel2884"
+  },
+  "plugins": [
+    {
+      "name": "kwiatekmedia-meta-ads",
+      "displayName": "KWIATEKmedia Meta Ads",
+      "source": "./plugins/kwiatekmedia-meta-ads",
+      "description": "System 10 skilli do tworzenia reklam Meta Ads po polsku: strategia kreacji, statyki, copy, wideo, hooki, audyt, dywersyfikacja, plan kampanii, iteracje.",
+      "category": "marketing"
+    }
+  ]
+}

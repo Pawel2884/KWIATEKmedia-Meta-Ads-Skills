@@ -72,3 +72,17 @@
 - A: SAC w PL: nieruchomości, praca, kredyty → brak wieku/płci/kodów/lookalike → kreacja przejmuje targetowanie, bez dyskryminacji.
 - A: sensational, profanity (także maskowane), clickbait, engagement bait, fałszywe elementy UI, celebrity-bait zakazane/karane; "improper grammar or punctuation" w checkliście Meta.
 - Spec tabela i checklista zgodności: plik 02 sekcje 4.1–4.5 (użyć w specyfikacje-meta.md i zgodnosc.md). Strefy 9:16 wg najostrzejszego: góra 14%, dół 35% (40% z disclaimerem), boki 6%.
+
+## Z 10 (format pluginu) — decyzje architektoniczne
+- Repo = marketplace "kwiatekmedia" (.claude-plugin/marketplace.json, source "./plugins/kwiatekmedia-meta-ads", nie "./").
+- Plugin: plugins/kwiatekmedia-meta-ads/.claude-plugin/plugin.json (name, displayName, version, description, author, repository, keywords); wersja tylko w plugin.json.
+- SKILL.md frontmatter: TYLKO name + description (+license/compatibility/metadata/allowed-tools) — inne pola = błąd uploadu na claude.ai. name kebab-case = folder, ASCII, ≤64, bez "claude"/"anthropic". description ≤1024, bez <>, 3. osoba, wyzwalacze na początku, w cudzysłowie/`>` jeśli ma ": ". Body <500 linii; referencje 1 poziom; plik ref >100 linii → spis treści.
+- Wiedza wspólna: shared/ w korzeniu repo (źródło prawdy) + shared/mapa.json → scripts/build.py kopiuje do skills/<skill>/references/ (kopie commitowane, nagłówek WYGENEROWANE). SKILL.md odwołuje się tylko do references/<plik>.md.
+- Nie używać $ARGUMENTS, ${CLAUDE_PLUGIN_ROOT}, !-komend. Pisać: "jeśli użytkownik podał brief — użyj; jeśli nie — zapytaj".
+- Master: tabela routingu + pipeline In/Out/Gate; uruchom skill narzędziem Skill (pełna nazwa kwiatekmedia-meta-ads:<skill>); fallback: przeczytaj ../<skill>/SKILL.md; fallback 2: poproś o włączenie skilla. Skille podrzędne BEZ disable-model-invocation. Wspólny kontrakt danych (karta oferty, format wyjścia).
+- Po auto-kompaktowaniu skille przycinane do 5000 tokenów każdy → SKILL.md zwięzłe.
+- Budowa ZIP: dist/kwiatekmedia-meta-ads.zip (+ .plugin), dist/skills/<skill>.zip (folder skilla w korzeniu ZIP, frontmatter tylko pola spec). Python zipfile ("/"), UTF-8 bez BOM, ASCII nazwy plików.
+- Walidacja: claude plugin validate . --strict; claude plugin validate plugins/kwiatekmedia-meta-ads --strict; build.py --check.
+- Evale: plugins/kwiatekmedia-meta-ads/evals/<case>/prompt.md + graders/*.md (regex, tool_used, tool_order, llm). Wyniki evals/results/ w .gitignore. Izolacja: brak MCP użytkownika.
+- Instalacja: Cowork/claude.ai: Customize → Plugins → + → Add marketplace → Pawel2884/KWIATEKmedia-Meta-Ads-Skills; lub upload ZIP. Claude Code: /plugin marketplace add https://github.com/Pawel2884/KWIATEKmedia-Meta-Ads-Skills.git → /plugin install kwiatekmedia-meta-ads@kwiatekmedia.
+- Ostrzeżenie: stare skille Pawła mają podobne wyzwalacze — wyłączyć przed użyciem (Paweł i tak chce je usunąć).
