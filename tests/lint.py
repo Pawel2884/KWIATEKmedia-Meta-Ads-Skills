@@ -200,7 +200,7 @@ def lint(text, brief=None):
     if "```" in text:
         issues.append(("blok_kodu", "odpowiedź zawiera blok kodu"))
     brief_l = (brief or "").lower()
-    for m in set(re.findall(r"\b[a-ząćęłńóśźż]{2,}[aeiouy](?:łem|łam)\b", text.lower())):
+    for m in set(re.findall(r"\b[a-ząćęłńóśźż]{2,}[aiey](?:łem|łam)\b", text.lower())):
         if m not in brief_l:
             issues.append(("rodzaj", f"forma 1. os. z rodzajem: '{m}' (używaj form neutralnych)"))
 
