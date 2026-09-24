@@ -71,6 +71,12 @@ Z limitem (najwyżej 1 na tekst):
 - Pytanie retoryczne z natychmiastową odpowiedzią („Drogo? Nie z nami.”).
 - Anafora (to samo słowo na początku 3 zdań).
 
+Częste błędy i kalki w reklamach:
+- „Umów 15 minut prezentacji” → „Umów 15-minutową prezentację”.
+- „regulowana lędźwia” → „regulowane podparcie lędźwi” (lędźwie mają tylko liczbę mnogą).
+- „Zarejestruj się” jako przycisk przy umawianiu rozmowy → „Zarezerwuj” albo „Wyślij zgłoszenie”.
+- „dedykowany dla” → „dla”, „aplikuj” → „zgłoś się”.
+
 ## 5. Interpunkcja i typografia
 
 - Pauza (—) i półpauza (–) nie łączą zdań w Primary Text, nagłówku, opisie ani na grafice. Zamiast nich kropka albo przecinek. Półpauza bez spacji w zakresach liczb i godzin jest poprawna: „7–10 dni”, „9:00–17:00”.

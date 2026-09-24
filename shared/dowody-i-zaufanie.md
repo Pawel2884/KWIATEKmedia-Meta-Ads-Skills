@@ -29,6 +29,7 @@ Wierność dowodu (A: UoPNPR art. 5, wprowadzanie w błąd):
 - Ten sam zakres i okres: „od 2021” to nie „sklep działa od 2021”.
 - Historia klienta tylko z tym, co podał klient. Scenę możesz opisać słowami klienta, ale bez nowych szczegółów (częstotliwość, kwoty, emocje, narzędzia).
 - Cytat dosłowny. Możesz skrócić, nie możesz zmienić sensu.
+- Bez zaokrąglania w górę: „1870 opinii” to nie „prawie 2 tysiące opinii”. Wynik z ankiety zostaje wynikiem z ankiety („klienci zgłaszają średnio 12% mniej”), nie staje się faktem („płacisz 12% mniej”).
 
 Brak dowodu w Karcie Oferty: nie wymyślaj. Wstaw `[UZUPEŁNIJ: …]` i napisz, jak go zdobyć (np. „poproś 3 ostatnich klientów o opinię w Google”, „policz realizacje z faktur”).
 
