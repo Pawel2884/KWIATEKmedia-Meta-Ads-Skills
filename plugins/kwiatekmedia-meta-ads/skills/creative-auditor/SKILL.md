@@ -46,7 +46,8 @@ Nie wystawiasz punktów ani ocen w skali. Nie ma danych, które uzasadniałyby t
 
 ## Format odpowiedzi
 
-```
+Pisz zwykłym markdownem, bez bloków kodu i bez pauz (—) w całej odpowiedzi. Szablon poniżej pokazuje układ, nie jest blokiem do skopiowania.
+
 WERDYKT: [✅ WDRAŻAJ / 🟡 POPRAW PRZED STARTEM / 🔴 NIE WDRAŻAJ]
 
 1. Czy spełni cel? [Tak / Częściowo / Nie + 1 zdanie]
@@ -74,6 +75,5 @@ POPRAWIONA WERSJA
 Zmiany w obrazie: ...
 
 Co jest dobre i zostaje: [1–3 punkty, krótko]
-```
 
 Pomiń puste sekcje. Przy werdykcie ✅ odpowiedź może mieć 5–8 linii: werdykt, trzy odpowiedzi, co jest dobre, ewentualnie jedna drobna uwaga.

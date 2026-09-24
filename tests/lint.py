@@ -25,11 +25,12 @@ SLOP_FILE = HERE / "slop_pl.txt"
 
 # Etykiety pól w wynikach skilli (format wyjścia jest ujednolicony w skillach).
 FIELD_PATTERNS = {
-    "primary": r"(?:primary text|tekst główny)",
+    "primary": r"(?:primary text(?: \(wariant[^)]*\))?|tekst główny)",
     "headline": r"(?:nagłówek|headline)",
     "description": r"(?:opis|description)",
-    "graphic": r"(?:tekst na grafice|napis na grafice)",
+    "graphic": r"(?:tekst na grafice|napis na grafice|grafika|tekst na ekranie)",
     "hook": r"(?:hook)",
+    "audio": r"(?:audio)",
 }
 
 LIMITS = {
@@ -62,7 +63,7 @@ def extract_fields(text):
         r"^\s*(?:[-*>]\s*)?(?:\*\*)?(" + "|".join(FIELD_PATTERNS.values()) + r")(?:\s*\([^)]*\))?(?:\*\*)?\s*[:：]?\s*(?:\*\*)?\s*(.*)$",
         re.IGNORECASE,
     )
-    stop_re = re.compile(r"^\s*(#{1,6}\s|KONCEPT|KREACJA|REKLAMA\s+\d|---|═|━)", re.IGNORECASE)
+    stop_re = re.compile(r"^\s*(#{1,6}\s|KONCEPT|KREACJA|REKLAMA\s+\d|STATYKA|WIDEO|KIERUNEK|---|═|━|(?:[-*]\s*)?\**[A-ZĄĆĘŁŃÓŚŹŻ][A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ /()]{1,28}:\**(?:\s|$))")
     fields = []
     current = None
     buf = []
@@ -132,7 +133,7 @@ def lint(text, brief=None):
             issues.append(("dlugosc", f"[nagłówek] {len(v.splitlines()[0])} zn. > {LIMITS['headline_chars']}: {v.splitlines()[0]}"))
         if k == "description" and len(v.splitlines()[0]) > LIMITS["description_chars"]:
             issues.append(("dlugosc", f"[opis] {len(v.splitlines()[0])} zn. > {LIMITS['description_chars']}: {v.splitlines()[0]}"))
-        if k == "primary":
+        if k in ("primary", "audio"):
             first = v.strip().splitlines()[0] if v.strip() else ""
             if len(first) > LIMITS["primary_first_line_chars"]:
                 issues.append(("dlugosc", f"[primary] pierwsza linia {len(first)} zn. > {LIMITS['primary_first_line_chars']}"))

@@ -11,6 +11,8 @@ Każdy skill oddaje wynik według tych zasad.
 
 ## Układ
 
+- Zwykły markdown. Nigdy nie owijaj odpowiedzi ani kart reklam w blok kodu (```), bo na telefonie tekst się nie zawija, a pogrubienia nie działają.
+- Nigdzie w odpowiedzi nie używaj pauzy (—) ani półpauzy (–) między zdaniami lub członami zdania. Półpauza tylko w zakresach liczb („7–10 dni”).
 - Nagłówki krótkie, do 5 słów.
 - Zamiast tabel: listy. Tabela tylko wtedy, gdy ma najwyżej 3 wąskie kolumny.
 - Akapity do 3 linii.
@@ -21,7 +23,6 @@ Każdy skill oddaje wynik według tych zasad.
 
 Każda karta reklamy używa dokładnie tych etykiet, każda w osobnej linii, treść w linii poniżej:
 
-```
 **Tekst na grafice:**
 **Primary Text:**
 **Nagłówek:**
@@ -29,7 +30,6 @@ Każda karta reklamy używa dokładnie tych etykiet, każda w osobnej linii, tre
 **CTA:**
 **Hook:**            (wideo i hooki)
 **Prompt graficzny:**
-```
 
 Stałe etykiety pozwalają skopiować pole bez szukania i pozwalają automatycznie sprawdzić jakość.
 

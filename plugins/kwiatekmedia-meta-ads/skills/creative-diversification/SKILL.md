@@ -60,7 +60,8 @@ Gdy dostajesz istniejące reklamy:
 
 ## Format odpowiedzi
 
-```
+Pisz zwykłym markdownem, bez bloków kodu i bez pauz (—) w całej odpowiedzi. Szablon poniżej pokazuje układ, nie jest blokiem do skopiowania.
+
 DYWERSYFIKACJA: [oferta]
 Start: [N] kierunków | Rezerwa: [M] | Budżet: [znany / założenie]
 
@@ -83,6 +84,5 @@ PIERWSZA PARTIA: [numery] (dlaczego)
 REZERWA: [numery]
 
 Czego nie robimy: [2–3 przykłady kosmetycznych wariantów, które kuszą w tej branży]
-```
 
 Na końcu, tylko jeśli są: `Do uzupełnienia:` (brakujące dowody, które odblokowałyby mocne kierunki).

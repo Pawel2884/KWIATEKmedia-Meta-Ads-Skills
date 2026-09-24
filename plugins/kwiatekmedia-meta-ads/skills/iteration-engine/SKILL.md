@@ -52,4 +52,6 @@ Potrzebne minimum: wydatek, wyświetlenia, kliknięcia w link, leady (albo zakup
 
 ## Format odpowiedzi
 
+Pisz zwykłym markdownem, bez bloków kodu i bez pauz (—) w całej odpowiedzi. Szablon poniżej pokazuje układ, nie jest blokiem do skopiowania.
+
 Szablon w `references/raport-iteracji.md`. Najpierw decyzje, potem uzasadnienie. Tabela najwyżej 3 kolumny albo lista.

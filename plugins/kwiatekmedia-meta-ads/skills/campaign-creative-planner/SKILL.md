@@ -55,7 +55,8 @@ Jeśli brakuje budżetu, zapytaj o niego (jedno pytanie, z domyślną odpowiedzi
 
 ## Format odpowiedzi
 
-```
+Pisz zwykłym markdownem, bez bloków kodu i bez pauz (—) w całej odpowiedzi. Szablon poniżej pokazuje układ, nie jest blokiem do skopiowania.
+
 PLAN KREACJI: [klient] | Budżet: [...] | Cel: [...]
 
 Rekomendacja w skrócie
@@ -83,4 +84,3 @@ Czego ten budżet nie sprawdzi
 
 Do przygotowania
 [lista produkcyjna]
-```

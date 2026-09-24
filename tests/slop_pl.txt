@@ -1,14 +1,122 @@
-# regex ;; powód  (lista startowa — rozszerzana po researchu 09)
-\bodkryj\w*;; puste wezwanie, typowe dla AI i korpo
-\bkompleksow\w*;; ogólnik bez informacji
-\bw dzisiejszych czasach\b;; banał otwierający
-\bw dobie\b;; banał otwierający
-\bnajwyższ\w* jakoś\w*;; deklaracja bez dowodu
-\bzaufaj\w*;; prośba o zaufanie zamiast dowodu
-\bindywidualn\w* potrzeb\w*;; ogólnik
-\bprofesjonali\w*;; deklaracja bez dowodu
-\bwieloletni\w* doświadczeni\w*;; ogólnik zamiast liczby lat
-\bjuż dziś\b;; sztuczna pilność
-\brewolucj\w*;; hype
-\bzmienia wszystko\b;; hype
-\bzasługuj\w* na więcej\b;; frazes
+# regex ;; powód   (Z = zakazane w tekście reklamy; podejrzane oznaczone "P:")
+\bw dzisiejszych czasach\b;; Z: banał otwierający
+\bw dzisiejszym (dynamicznym )?świecie\b;; Z: banał otwierający
+\bw dobie\b;; Z: banał otwierający
+\bw erze\b;; Z: banał otwierający
+\bw obliczu\b;; Z: banał otwierający
+\bdynamicznie zmieniając\w*;; Z: frazeologiczny autopilot
+\bwarto (zauważyć|podkreślić|zaznaczyć|wiedzieć)\b;; Z: metakomentarz
+\bnależy (pamiętać|zauważyć)\b;; Z: metakomentarz urzędowy
+\bnie sposób nie\b;; Z: hiperbola
+\bjak powszechnie wiadomo\b;; Z: pseudo-aksjomat
+\bco (istotne|ważne|ciekawe),;; Z: ocena przed faktem
+\bzanurz(my)? się\b;; Z: kalka dive into
+\bprzyjrzyjmy się\b;; Z: kalka
+\bodkryj\w*;; Z: kalka discover
+\bczego nikt (ci|Ci) nie mówi\b;; Z: fałszywy wgląd
+\bsekret tkwi\b;; Z: fałszywy wgląd
+\bczy kiedykolwiek zastanawiał\w*;; Z: szablon AI + forma rodzajowa
+\bpodsumowując\b;; Z: sygnał zakończenia
+\breasumując\b;; Z: sygnał zakończenia
+\bczas pokaże\b;; Z: pseudogłębia
+\bprzyszłość należy\b;; Z: pseudogłębia
+\bto dopiero początek\b;; Z: pseudogłębia
+\bbrzmi znajomo\b;; P: wyświechtany hook
+\bznasz to uczucie\b;; P: wyświechtany hook
+\bwyobraź sobie\b;; P: technika nadużywana przez AI
+\bzapraszamy\b;; P: formuła korporacyjna
+\bskontaktuj się z nami\b;; P: formuła bez treści
+\bkluczow\w*;; Z: kalka key/crucial
+\bkompleksow\w*;; Z: ogólnik
+\binnowacyjn\w*;; Z: bez dowodu
+\bnajnowszej generacji\b;; Z: bez dowodu
+\bprzełomow\w*;; Z: hiperbola
+\brewolucyjn\w*;; Z: hiperbola
+\brewolucj\w*;; Z: hiperbola
+\bbezprecedensow\w*;; Z: hiperbola
+\bniezrównan\w*;; Z: hiperbola
+\bunikaln\w*;; Z: pusty superlatyw
+\bwyjątkow\w*;; Z: pusty superlatyw
+\bholistyczn\w*;; Z: abstrakcja
+\bwszechstronn\w*;; Z: abstrakcja
+\bnajwyższ\w* jakoś\w*;; Z: frazes
+\bszeroki wachlarz\b;; Z: wata
+\bbogat\w* ofert\w*;; Z: wata
+\bszerok\w* gam\w*;; Z: wata
+\bbezproblemow\w*;; Z: kalka seamless
+\bbezstresow\w*;; Z: kalka
+\bniezwykle\b;; Z: wzmacniacz
+\bniesamowic\w*;; Z: wzmacniacz
+\babsolutnie\b;; Z: wzmacniacz
+\bzdecydowanie\b;; Z: wzmacniacz
+\bogromny potencjał\b;; Z: hiperbola
+\bnieograniczon\w* możliwoś\w*;; Z: hiperbola
+\bzmienia reguły gry\b;; Z: klisza
+\bgame changer\b;; Z: klisza
+\bna wyższy poziom\b;; Z: kalka next level
+\buwolnij\b;; Z: kalka unlock
+\bodblokuj\w*;; Z: kalka unlock
+\bzyskaj przewagę\b;; Z: kalka
+\b(twój|Twój|twoim|Twoim) partner\w*;; Z: frazes bez dowodu
+\bzaufan\w* partner\w*;; Z: frazes
+\brozwiązani\w* dla\b;; Z: korporacyjny ogólnik (rozwiązania dla…)
+\bstanowi (fundament|filar|integraln\w*)\b;; Z: unikanie „jest”
+\bdedykowan\w*;; Z: kalka dedicated
+\badresuj\w*|\badresować\b;; Z: kalka address
+\bimplement\w*;; Z: kalka
+\bwdrażamy rozwiązania\b;; Z: żargon
+\baplikuj\b;; Z: kalka apply
+\bbazując\w* na\b|\bbazuje na\b;; Z: kalka based on
+\brobi(ć|my) różnicę\b;; Z: kalka makes a difference
+\bna koniec dnia\b;; Z: kalka
+\btransparentn\w*;; Z: kalka
+\bkonsystentn\w*;; Z: kalka
+\bproaktywn\w*;; Z: kalka
+\bfinalizow\w*;; Z: kalka
+\bprofesjonal\w*;; P: deklaracja bez dowodu
+\bdoświadczon\w* zesp\w*;; P: deklaracja bez liczby
+\bskuteczn\w*;; P: ocena bez miary
+\bspersonalizowan\w*;; P: obietnica bez treści
+\bszyt\w* na miarę\b;; P: frazes
+\bperfekcyjn\w*;; P: pusty superlatyw
+\bz pasją\b;; P: frazes
+\bwyzwani\w*;; P: eufemizm zamiast problemu
+\brzeteln\w*;; P: deklaracja bez dowodu
+\bwiodąc\w*;; P: deklaracja bez dowodu
+\bdokona(ć|j|nia|nie) (zakupu|zgłoszenia|płatności|wyboru)\b;; Z: nominalizacja
+\brealizacj\w*|\brealizuj\w*|\brealizow\w*;; P: urzędowe (dozwolone tylko jako „nasze realizacje” = zdjęcia prac)
+\bw celu\b|\bcelem\b;; Z: urzędowe
+\bw ramach\b;; Z: urzędowe
+\bw zakresie\b;; Z: urzędowe
+\bposiada\w*;; Z: urzędowe (mieć)
+\bniniejsz\w*;; Z: urzędowe
+\bistnieje możliwość\b;; Z: rozwlekłe
+\bzapewniamy możliwość\b;; Z: rozwlekłe
+\bulec\w* (poprawie|pogorszeniu)\b;; Z: urzędowe
+\bz uwagi na\b;; Z: urzędowe
+\bw związku z\b;; Z: urzędowe
+\bzostanie (przygotowan|zrealizowan|wykonan)\w*;; Z: strona bierna
+\bnależy wypełnić\b;; Z: bezosobowe
+\bskorzystaj z (oferty|możliwości)\b;; P: formuła
+\bbiorąc pod uwagę\b;; P: ciężka składnia
+\bmając na uwadze\b;; P: ciężka składnia
+\bto nie\b[^.!?\n]{1,60}[.,]\s*to\b;; Z: konstrukcja „to nie X, to Y”
+\bnie tylko\b[^.!?\n]{1,60}\bale (także|również|też)\b;; Z: sztuczny paralelizm
+\bz jednej strony\b;; Z: sztuczna dialektyka
+\bniezależnie od tego, czy\b;; Z: kalka whether you're
+\b(sekret|efekt|najważniejsze|odpowiedź jest prosta)\s*[?:];; Z: odsłona z dwukropkiem
+^\s*(Proste|Tak po prostu|I to jest właśnie różnica)\.;; Z: jednozdaniowa puenta
+\b(ponadto|co więcej|dodatkowo)\b;; P: łącznik nawlekający
+\bmoże potencjalnie\b;; Z: asekuracja
+\bzrobiłeś\b|\bbyłbyś\b|\bjesteś gotow\w*|\bzastanawiałeś\b|\bzrobiłeś/aś\b|\w+eś/aś\b;; Z: forma rodzajowa
+\b(twój|Twój) now\w*;; Z: pusty zaimek (Twój nowy…)
+\b[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]+,? któr(y|a|e) (zmienia|przyciąga|zaskakuje|dopasowuje|daje|działa|przynos)\w*;; Z: konstrukcja „[rzeczownik], który [abstrakcja]”
+\bjuż dziś\b;; P: sztuczna pilność
+\btylko dziś\b;; Z: fałszywa pilność bez terminu
+\bostatnia szansa\b;; Z: fałszywa pilność bez terminu
+\bnie czekaj\b|\bnie zwlekaj\b;; P: presja (zakazana w ZDROWIU i PRAWIE)
+\bnajlepsz\w*;; P: superlatyw (wymaga dowodu; zakazany w ZDROWIU/PRAWIE)
+\bnumer 1\b|\bnr 1\b;; Z: superlatyw bez dowodu
+\bgwarantujemy\b|\bgwarantowan\w*;; P: gwarancja (tylko z warunkami)
+\bzaufaj\w*;; P: prośba o zaufanie zamiast dowodu
+\bwieloletni\w* doświadczeni\w*;; Z: ogólnik zamiast liczby lat

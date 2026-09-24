@@ -88,7 +88,6 @@ Wszystko inne da się wywnioskować, oznaczyć jako `[UZUPEŁNIJ]` albo przyją�
 
 ## 5. Wzór (skrót)
 
-```
 KARTA OFERTY: DachPro, wymiana pokryć dachowych (przykład)
 Oferta: wymiana pokrycia dachu z obróbkami i rynnami (podane)
 Po zgłoszeniu: oględziny dachu i wycena na piśmie w 3 dni robocze (podane)
@@ -101,4 +100,3 @@ Mechanizm: własna ekipa, termin startu w umowie, zdjęcia z każdego etapu (pod
 Dowody: 1200 dachów od 2015 (podane); opinie: brak
 Flagi: brak
 Braki: [UZUPEŁNIJ: opinie klientów], [UZUPEŁNIJ: czas kontaktu po zgłoszeniu]
-```

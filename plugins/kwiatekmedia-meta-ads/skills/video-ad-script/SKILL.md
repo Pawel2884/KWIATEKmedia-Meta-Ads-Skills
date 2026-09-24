@@ -61,13 +61,16 @@ Oferta lub koncept i informacja, co da się nagrać: kto może wystąpić (wła�
 - [ ] Hooki to różne typy, nie parafrazy; żaden nie pyta o cechę widza.
 - [ ] Brak zmyśleń, zgodność z modułami branżowymi.
 - [ ] Język mówiony naturalny: krótkie zdania, bez słów „Z”, formy neutralne płciowo.
+- [ ] Test konkurenta: nagłówek i pierwsza linia nie pasują do dowolnej firmy z branży (jest fakt, miejsce, liczba albo mechanizm tej firmy).
+- [ ] Brak konstrukcji szablonowych: „[rzeczownik], który [abstrakcja]”, „To nie X, to Y”, „Twój nowy…”, „Nie tylko…, ale także…”.
 - [ ] Wersja 9:16 z tekstem w środkowym pasie; wersja 4:5 do feedu i formularzy, jeśli potrzebna.
 
 ## Format odpowiedzi
 
+Pisz zwykłym markdownem, bez bloków kodu i bez pauz (—) w całej odpowiedzi. Szablon poniżej pokazuje układ, nie jest blokiem do skopiowania.
+
 Bez szerokich tabel. Każda scena jako blok.
 
-```
 WIDEO [nr]: [nazwa] | Szablon: [V#] | Długość: [s] | Format: 9:16 (+4:5)
 Teza: [1 zdanie] | Kąt: [K#] | Świadomość: [...]
 Kto występuje: [...] | Gdzie: [...]
@@ -107,6 +110,5 @@ Wskazówki nagrania: [3–6 punktów]
 **CTA:**
 ...
 ---
-```
 
 Na końcu (tylko jeśli są): `Do uzupełnienia:`, `Zgodność:`, `Założenia:`.

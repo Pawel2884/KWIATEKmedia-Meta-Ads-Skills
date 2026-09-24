@@ -77,7 +77,8 @@ Dobór formatu: z planu i z tego, co klient może nagrać lub dać (zdjęcia, tw
 
 ## Format pakietu
 
-```
+Pisz zwykłym markdownem, bez bloków kodu i bez pauz (—) w całej odpowiedzi. Szablon poniżej pokazuje układ, nie jest blokiem do skopiowania.
+
 PAKIET KAMPANII: [klient, oferta]
 
 DECYZJE NA START
@@ -107,6 +108,5 @@ DECYZJE NA START
 
 7. DO UZUPEŁNIENIA
 [lista UZUPEŁNIJ + jak zdobyć]
-```
 
 Bez wstępu. Jeśli pakiet jest długi, najpierw sekcja DECYZJE NA START i lista reklam w jednej linii każda, żeby Paweł na telefonie od razu widział całość.

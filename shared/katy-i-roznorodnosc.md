@@ -93,7 +93,6 @@ Jeśli masz dostęp do Biblioteki Reklam Meta (narzędzie `ads_library_search`),
 
 ## 6. Brief konceptu (szablon)
 
-```
 KONCEPT [nr]: [nazwa robocza, 2–5 słów]
 Dla kogo: [segment + sytuacja]
 Moment: [wyzwalacz]
@@ -108,7 +107,6 @@ Hook (typ): [H#]
 Filtry kwalifikacji: [które 2–4]
 Dlaczego to może zadziałać: [1 zdanie]
 Ryzyko: [1 zdanie]
-```
 
 ## 7. Najczęstsze błędy różnorodności
 

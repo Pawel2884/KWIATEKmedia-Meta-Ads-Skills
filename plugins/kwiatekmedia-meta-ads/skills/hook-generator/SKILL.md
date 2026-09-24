@@ -32,7 +32,8 @@ Oferta, koncept, gotowa reklama (nowe hooki do tego samego ciała) albo wyniki (
 3. **Filtr** (odrzuć, jeśli którykolwiek punkt się nie zgadza):
    - pyta lub twierdzi coś o cesze odbiorcy (zdrowie, wiek, finanse, rodzina…),
    - obiecuje więcej, niż daje ciało reklamy lub formularz,
-   - pasuje do każdej firmy w branży (brak konkretu),
+   - pasuje do każdej firmy w branży (test konkurenta: czy dowolny konkurent mógłby to powiedzieć? jeśli tak, odrzuć albo dodaj fakt z Karty),
+   - ma konstrukcję szablonową: „[rzeczownik], który [abstrakcja]” („Reklamy, które przynoszą zapytania”), „To nie X, to Y”, „Twój nowy…”, „Odkryj…”, „Czy kiedykolwiek…”,
    - jest parafrazą innego hooka,
    - jest clickbaitem, fałszywą pilnością albo przejedzonym szablonem,
    - zawiera liczbę spoza Karty Oferty,
@@ -57,7 +58,8 @@ Oferta, koncept, gotowa reklama (nowe hooki do tego samego ciała) albo wyniki (
 
 ## Format odpowiedzi
 
-```
+Pisz zwykłym markdownem, bez bloków kodu i bez pauz (—) w całej odpowiedzi. Szablon poniżej pokazuje układ, nie jest blokiem do skopiowania.
+
 HOOKI: [oferta / koncept]
 Teza: [1 zdanie]
 
@@ -71,6 +73,5 @@ Dlaczego: [1 zdanie] | Ryzyko: [1 zdanie albo „brak”]
 [kolejne]
 
 Testuj najpierw: [numery] ([1 zdanie dlaczego])
-```
 
 Na końcu, tylko jeśli są: `Do uzupełnienia:` (brakujące dowody, które odblokowałyby mocniejsze hooki).

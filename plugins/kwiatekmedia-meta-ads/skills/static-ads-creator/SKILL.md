@@ -57,11 +57,14 @@ Jeśli masz narzędzie do generowania obrazów (np. Canva, Higgsfield, generator
 - [ ] Zgodność: cechy osobiste, zdrowie (przed i po, wygląd), finanse, obietnice.
 - [ ] Język tekstu na grafice i copy: 0 słów „Z”, bez pauz łączących zdania, polski zapis liczb, bez Wielkich Liter W Każdym Słowie.
 - [ ] Grafika i Primary Text mówią to samo, formularz spełnia obietnicę.
+- [ ] Test konkurenta: nagłówek i pierwsza linia nie pasują do dowolnej firmy z branży (jest fakt, miejsce, liczba albo mechanizm tej firmy).
+- [ ] Brak konstrukcji szablonowych: „[rzeczownik], który [abstrakcja]”, „To nie X, to Y”, „Twój nowy…”, „Nie tylko…, ale także…”.
 - [ ] Jeśli kilka statyk: każda para różni się w co najmniej 2 osiach rdzeniowych i wygląda inaczej obok siebie.
 
 ## Format odpowiedzi
 
-```
+Pisz zwykłym markdownem, bez bloków kodu i bez pauz (—) w całej odpowiedzi. Szablon poniżej pokazuje układ, nie jest blokiem do skopiowania.
+
 STATYKA [nr]: [nazwa konceptu]
 Kąt: [K#] | Świadomość: [...] | Format: [S#] | Biegun: [natywny / oferta]
 
@@ -100,6 +103,5 @@ Nie może być: [lista]
 **CTA:**
 ...
 ---
-```
 
 Na końcu (tylko jeśli są): `Do uzupełnienia:` i `Zgodność:`. Jeśli klient ma zdjęcia, dodaj `Zdjęcie do użycia:` z opisem, jakie wybrać lub zrobić telefonem.

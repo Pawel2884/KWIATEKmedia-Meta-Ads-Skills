@@ -71,7 +71,6 @@ Dla każdej statyki podajesz w tej kolejności:
 
 Prompt piszesz po angielsku (dokumentacja i przykłady producentów są w tym języku). Po polsku tylko dosłowny tekst, jeśli wyjątkowo ma być w obrazie. Kolejność bloków: cel, scena, bohater, ludzie, realizm, miejsce na tekst, puste obiekty, wykluczenia (A: zalecenia OpenAI i Google).
 
-```
 [CEL] Photorealistic image for a Facebook/Instagram ad, vertical 4:5. Audience: [kto].
 [SCENA] [konkretne miejsce i czas w Polsce, np. a typical Polish apartment block kitchen, late afternoon, soft window light].
 [BOHATER] [produkt, efekt albo sytuacja] placed [gdzie w kadrze].
@@ -80,7 +79,6 @@ Prompt piszesz po angielsku (dokumentacja i przykłady producentów są w tym j�
 [MIEJSCE NA TEKST] Keep the [upper third] calm and uncluttered (plain wall / sky) for a headline added later. Keep key elements away from the edges.
 [PUSTE OBIEKTY] Every object is blank: [np. laptop lid closed, plain white mug without print, no posters, no signs, no screens, no papers with text, no license plates].
 [WYKLUCZENIA] No text, letters, numbers, logos, watermarks or brand names anywhere in the image.
-```
 
 Słowa, których nie używasz (dają „wygląd AI”): cinematic, epic, 8k, ultra detailed, hyperrealistic, masterpiece, flawless, perfect skin, studio lighting, dramatic lighting, glossy, vibrant colors, octane render.
 Słowa, które pomagają: real photograph taken on a smartphone, natural daylight, window light, real textures, slight imperfections, natural slightly muted colors, ordinary people not models, unposed.

@@ -77,12 +77,15 @@ Na prośbę albo gdy piszesz komplet do kampanii leadowej, dodaj teksty formular
 - [ ] Nagłówek ≤ 40 znaków, nie jest etykietą ani CTA. Opis ≤ 25 znaków, bez ceny i warunków.
 - [ ] Tekst pasuje do grafiki lub wideo i do formularza (ta sama obietnica).
 - [ ] Przeczytany na głos brzmi jak handlowiec przez telefon.
+- [ ] Test konkurenta: nagłówek i pierwsza linia nie pasują do dowolnej firmy z branży (jest fakt, miejsce, liczba albo mechanizm tej firmy).
+- [ ] Brak konstrukcji szablonowych: „[rzeczownik], który [abstrakcja]”, „To nie X, to Y”, „Twój nowy…”, „Nie tylko…, ale także…”.
 
 ## Format odpowiedzi
 
+Pisz zwykłym markdownem, bez bloków kodu i bez pauz (—) w całej odpowiedzi. Szablon poniżej pokazuje układ, nie jest blokiem do skopiowania.
+
 Tekst do skopiowania bez formatowania markdown w środku. Stałe etykiety pól.
 
-```
 REKLAMA [nr]: [kąt w 2–4 słowach]
 
 **Primary Text:**
@@ -102,6 +105,5 @@ REKLAMA [nr]: [kąt w 2–4 słowach]
 [nazwa przycisku] (co się dzieje po kliknięciu)
 
 Dlaczego tak: [1–2 zdania, bez teorii]
-```
 
 Na końcu, tylko jeśli są: `Do uzupełnienia:` (lista) i `Zgodność:` (flagi do sprawdzenia).

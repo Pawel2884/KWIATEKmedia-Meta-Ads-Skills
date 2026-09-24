@@ -79,7 +79,8 @@ Jedna rekomendacja: jaka oferta (wycena, konsultacja, demo, kalkulator…), jaki
 
 ## Format odpowiedzi
 
-```
+Pisz zwykłym markdownem, bez bloków kodu i bez pauz (—) w całej odpowiedzi. Szablon poniżej pokazuje układ, nie jest blokiem do skopiowania.
+
 STRATEGIA KREACJI: [klient, oferta]
 
 Najważniejsze
@@ -111,6 +112,5 @@ Dlaczego może zadziałać: [...]
 [lista UZUPEŁNIJ z tym, jak zdobyć każdy dowód]
 
 Następny krok: [np. „Napisz reklamy dla konceptów 1–4” albo „Uruchom plan kampanii”]
-```
 
 Bez tabel szerszych niż 3 kolumny. Bez wstępu. Jeśli Paweł poprosił tylko o fragment (np. same kąty), oddaj tylko ten fragment.

@@ -2,7 +2,6 @@
 
 ## Szablon
 
-```
 ITERACJA: [klient] | Okres: [daty] | Źródło: [Meta Ads / wklejone dane]
 
 DECYZJE (zrób teraz)
@@ -26,7 +25,6 @@ NASTĘPNA PARTIA ([N] reklam, start [termin])
 NASTĘPNY PRZEGLĄD: [data] | Szukamy: [...]
 
 Braki danych: [czego nie było i co zmieniłoby ocenę]
-```
 
 ## Statusy w praktyce
 

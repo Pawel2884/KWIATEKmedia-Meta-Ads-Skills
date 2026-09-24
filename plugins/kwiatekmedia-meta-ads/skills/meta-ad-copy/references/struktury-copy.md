@@ -96,7 +96,6 @@ Nazwy przycisków w polskim interfejsie mogą się różnić, podawaj najbliższ
 
 ## 5. Szablon tekstów formularza
 
-```
 FORMULARZ: [nazwa robocza, np. KLIENT_oferta_HI_v1]
 Typ: [Wyższa intencja / Rich creative / Więcej leadów] (dlaczego: ...)
 
@@ -124,7 +123,6 @@ Ekran końcowy
 Nagłówek (do 60 zn.): [np. „Dziękujemy. Oddzwonimy dziś do 18:00.”]
 Opis: [kto zadzwoni, z jakiego numeru, co przygotować]
 Przycisk (do 60 zn.): [Zadzwoń teraz / Umów termin / Zobacz realizacje]
-```
 
 Zamknięcie formularza dla osób spoza kryteriów: uprzejmie, z pomocą, bez oceniania („Ten obszar jest poza naszym zasięgiem. Tu znajdziesz poradnik, jak wybrać wykonawcę.”).
 
