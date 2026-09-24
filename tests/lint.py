@@ -201,7 +201,7 @@ def lint(text, brief=None):
         issues.append(("blok_kodu", "odpowiedź zawiera blok kodu"))
     brief_l = (brief or "").lower()
     for m in set(re.findall(r"\b[a-ząćęłńóśźż]{2,}[aiey](?:łem|łam)\b", text.lower())):
-        if m not in brief_l:
+        if m not in brief_l and not any(m[:-2].endswith(st) for st in ("dział", "kanał", "sygnał", "materiał", "potencjał", "kapitał", "ideał", "upał", "zapał", "pedał")):
             issues.append(("rodzaj", f"forma 1. os. z rodzajem: '{m}' (używaj form neutralnych)"))
 
     hooks = [v.splitlines()[0] for k, v in fields if k in ("hook", "primary") and v.strip()]
