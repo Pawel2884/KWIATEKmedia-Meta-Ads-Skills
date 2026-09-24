@@ -135,3 +135,19 @@
 - AI Act art. 50 od 2.08.2026: realistyczne AI (osoby, zdarzenia) → oznaczenie; wizualizacje oznaczać "wizualizacja".
 - RODO: polityka prywatności, cel kontaktu, osobne niezaznaczone zgody marketingowe (PKE art. 398); bez danych zdrowotnych w formularzu (art. 9).
 - Brak wiarygodnych benchmarków CPL PL → porównywać z danymi konta + ads_insights_industry_benchmark.
+
+## Z 05 (praktycy/strategia kreacji) — kluczowe (frameworki F1–F15 + F-SYNT: plik 05 sekcja 3; taksonomia formatów: sekcja 4; spory S1–S12: sekcja 5; reguły R1–R26: sekcja 6)
+- B-: Motion 2026 (578 tys. kreacji): więcej kreacji w czasie ↔ ~2× więcej winnerów; tylko 4–9% to winnerzy; winner = wydatek (nie CPQL!). Text-only 11,6% hit rate > product+text 8,75% > lifestyle 7,59% ≈ UGC 7,56% > high production. Lo-fi 42% top-spenderów (2025).
+- Rozstrzygnięcie "ile reklam": naraz mało (skalowane do budżetu), różnorodność przez koncepty między reklamami + assety w reklamie + rotację w czasie; wolumen Motion = w czasie, nie naraz.
+- F-SYNT (D/C): osie rdzeniowe 1 segment/persona, 2 moment/trigger, 3 problem/pragnienie, 4 obietnica, 5 mechanizm, 6 świadomość, 7 typ dowodu, 8 kąt retoryczny; osie wykonawcze 9 format, 10 biegun stylu (lo-fi natywny vs jawny DR), 11 talent, 12 setting, 13 hook, 14 oferta/CTA (w lead gen oferta bywa rdzeniowa). Nowy koncept = ≥2 osie rdzeniowe różne od każdej aktywnej; wariant rodziny = ten sam rdzeń + inny format i wizual; mikro-wariant (kolor, zdjęcie w tym samym układzie, nagłówek, CTA) nie liczy się. Test "back-to-back": "to to samo?".
+- Barbell (C): natywny lo-fi albo jawny DR; unikać "ładnej generycznej grafiki marki". "Fake-ugly" wyczuwalne.
+- Talent = część dowodu (Flowell: pielęgniarka 25 s vs aktorka 9 s oglądania; C).
+- Stan konta → miks: "nic nie działa" → ≥90% nowe koncepty (Battleship); "działa" → 70–80% rozwój zwycięskich kątów + 20–30% nowe.
+- Kąty testuj tanio (text-forward statyka / natywna / VO+B-roll), zwycięzców przenoś do droższych formatów; wyjątek: demonstracja/emocja → od razu krótkie wideo.
+- Źródła kątów: prawdziwy język klientów (opinie, rozmowy sprzedażowe, komentarze, grupy lokalne), mikro-momenty (Levinger T-E-E-P).
+- Hook's 3 jobs (Evan Lee): zatrzymać, zakwalifikować właściwą osobę, połączyć z historią sprzedażową.
+- W lead gen "winner" ≠ największy wydatek/najniższy CPL → CPQL.
+- Priorytetyzacja pomysłów wg pewności (Denney): sprawdzone kąty w nowym formacie > nowe hooki dla sprawdzonej persony > nowe persony z researchu > "działa u konkurencji".
+- Portfel formatów min. 2–3 kontenery w zestawie.
+- Brief kreacji (Caraway/Janae): tytuł konceptu, kąt ("dlaczego działa"), guardraile, obiekcje, 3–5 hooków, format, talent, setting, CTA/oferta.
+- Luka: brak polskich źródeł praktyków.
