@@ -151,3 +151,18 @@
 - Portfel formatów min. 2–3 kontenery w zestawie.
 - Brief kreacji (Caraway/Janae): tytuł konceptu, kąt ("dlaczego działa"), guardraile, obiekcje, 3–5 hooków, format, talent, setting, CTA/oferta.
 - Luka: brak polskich źródeł praktyków.
+
+## Z 09 (copy PL / anty-slop / prompty graficzne) — kluczowe (słownik 96 pozycji: plik 09 sekcja 3; prosty polski: sekcja 4; zapis: sekcja 5; szablon promptu: sekcja 6)
+- B: nadreprezentowane słownictwo LLM mierzalne (Kobak: ≥13,5% abstraktów 2024); słowa zmieniają się z wersjami modeli, wzorce składniowe zostają; najsilniejszy "to nie X, to Y"; liczy się nagromadzenie.
+- C: polski slop = język urzędowy (nominalizacje, strona bierna, "kluczowy", "w dobie", "realizacja", "w celu", "posiadać") + kalki (dedykowany, adresować, implementować, aplikuj, transparentny) + puste przymiotniki (kompleksowy, innowacyjny, profesjonalny, najwyższa jakość, wyjątkowy) + konstrukcje (nie tylko… ale także; trójki; "Z jednej strony…"; odsłona z dwukropkiem "Sekret? …"; puenty "Proste."; łączniki Ponadto/Co więcej; rotacja synonimów; formy rodzajowe "zrobiłeś").
+- Reguła tekstu reklamy: 0 trafień Z, max 1 trafienie P.
+- B/D pauzy: częstość em dash po LLM ~2× populacyjnie; reguła: pauza/półpauza nie łączy zdań w Primary/nagłówku/opisie; półpauza w zakresach (7–10 dni) dozwolona.
+- B/C: polski tekst dłuższy o ~14% (zdania) i ~28% (krótkie etykiety) niż EN; 33% polskich słów ma diakrytyk → hook w pierwszych ~90–110 znakach.
+- A (CLDR): 499 zł (spacja nierozdzielająca), 2500 zł (4 cyfry bez spacji), 12 500 zł, 49,99 zł, 20%, 28 tys. zł, „…”, zakres 7–10 dni bez spacji, 18:00.
+- C/D: formy neutralne płciowo: tryb rozkazujący, czas teraźniejszy, "Masz…?", bez "zrobiłeś/aś". Ty domyślnie; Państwo: prawo, medycyna, finanse premium, 60+, formalne B2B; nie mieszać.
+- A (OpenAI/Google): prompt jako brief: cel → scena → bohater → ludzie → realizm (smartfon, naturalne światło, niedoskonałości) → miejsce na tekst → puste obiekty → wykluczenia. Bez słów "cinematic, 8k, hyperrealistic, masterpiece, flawless, studio lighting". Polskie realia opisane. Produkt klienta jako referencja.
+- Przypadkowe napisy: nie wstawiać obiektów przyciągających napisy (ekrany, książki, tablice, szyldy, kubki z nadrukiem, koszulki z grafiką, tablice rejestracyjne); jeśli potrzebne → opisać jako puste; linia wykluczeń; Midjourney --no; kontrola 200%.
+- Dłonie: max 1–2 osoby, proste czynności dłoni.
+- D: domyślnie grafika bez tekstu + tekst w Canvie/Figmie (polskie znaki, kontrola, testy nagłówków); wyjątek: GPT Image 2 / Nano Banana Pro z literowaniem.
+- Proporcje: Nano Banana 4:5 i 9:16 natywnie; GPT Image 2 1088x1360 / 1152x2048; Imagen 4 brak 4:5; MJ --ar 4:5 --style raw.
+- AI Act art. 50 od 2.08.2026; nie przedstawiać wygenerowanych osób jako klientów; fotorealistyczne sceny — rozważyć oznaczenie.

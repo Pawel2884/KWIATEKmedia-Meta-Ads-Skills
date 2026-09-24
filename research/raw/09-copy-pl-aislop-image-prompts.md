@@ -1,6 +1,6 @@
 # 09 — Copy PL bez "AI slop", prosty polski, polski copywriting, prompty graficzne bez artefaktów (research surowy)
 
-> Agent researchowy: obszar 09. Data: 2026-09-24. Status: W TOKU (synteza częściowa)
+> Agent researchowy: obszar 09. Data: 2026-09-24. Status: GOTOWY (synteza kompletna; notatki robocze w Załączniku A)
 > Legenda trybu dostępu: [PEŁNY] = pełna treść przeczytana w sesji; [WYSZUKIWARKA] = tylko streszczenie/fragment z WebSearch; [WIEDZA] = wiedza modelu niepotwierdzona w sesji.
 > Poziomy dowodu: A = źródło pierwotne; B = badania / duże zbiory danych; C = praktycy z przykładami; D = opinia.
 > Korekta koordynatora (w trakcie): reguła "zero myślników/półpauz" nie jest wymaganiem Pawła, sprawdzona jako hipoteza (ustalenie 2.4).
@@ -107,7 +107,7 @@
 
 **2.17 Teza: producenci deklarują dobre renderowanie tekstu i wiele języków, ale sami zalecają iterację i kontrolę. Nie znalazłem publicznego testu dla polskich znaków. Przy 1/3 słów z diakrytykami tekst na grafikę bezpieczniej nakładać w edytorze (Canva/Figma) niż generować w modelu.**
 | Poziom: A (deklaracje) + B/C (pomiar diakrytyków) + D (rekomendacja) | Źródła: [PEŁNY] OpenAI Cookbook: "Reliable text rendering with crisp lettering"; "For tricky words (brand names, uncommon spellings), spell them out letter-by-letter"; "If text fidelity is imperfect, keep the prompt strict and iterate" ; [PEŁNY] Gemini Cookbook: Nano-Banana Pro "complex typography rendering"; "Multilingual Text Rendering & Translation (Nano-Banana Pro & 2)… in dozens of languages" ; [PEŁNY] Imagen notebook: "Render text effectively"; Imagen 4 Ultra "especially good at generating images with text" ; [PEŁNY — pomiar własny] 33,4% polskich słów z diakrytykiem (2.8)
-| Implikacja: rekomendacja w sekcji 6: domyślnie grafika bez tekstu + tekst w edytorze. Tekst w modelu tylko do szybkich koncepcji albo gdy napis ma być częścią sceny (opakowanie, szyld), i wtedy kontrola każdej litery w powiększeniu 200%. Do 2.17 dopisuję test do zrobienia (sekcja 7).
+| Implikacja: rekomendacja w sekcji 6: domyślnie grafika bez tekstu + tekst w edytorze. Tekst w modelu tylko do szybkich koncepcji albo gdy napis ma być częścią sceny (opakowanie, szyld), i wtedy kontrola każdej litery w powiększeniu 200%. Propozycja testu: sekcja 7, pkt 4.
 
 **2.18 Teza: proporcje 4:5 i 9:16 są dostępne natywnie w Nano Banana. W gpt-image-2 da się ustawić dowolny rozmiar w wielokrotnościach 16. Starsze gpt-image-1/1.5 i Imagen 4 wymagają kadrowania dla 4:5.**
 | Poziom: A | Źródła: [PEŁNY] Gemini Cookbook: tabela proporcji (4:5 = 896x1152, 9:16 = 768x1344 przy 1K; 2K/4K w NB2 i Pro) ; [PEŁNY] OpenAI Cookbook: gpt-image-2 "Both edges must be a multiple of 16", max krawędź < 3840 px, proporcja ≤ 3:1, 655 360–8 294 400 px, powyżej 2560x1440 "experimental"; gpt-image-1/1.5 tylko 1024x1024, 1024x1536, 1536x1024 ; [PEŁNY] Imagen notebook: proporcje 1:1, 3:4, 4:3, 16:9, 9:16 (bez 4:5) ; odsyłacz: pliki 03 i 06 [PEŁNY wg agentów] Meta: "vertical 4:5 is recommended for single-image ads" w feedzie; 9:16 dla Stories/Reels; strefy bezpieczne: "leave roughly 14% of the top and 20% of the bottom of your creative free" (Stories), "leave the bottom 40% of your ad free" przy disclaimerach w Reels — https://www.facebook.com/business/help/980593475366490
@@ -338,7 +338,7 @@ Rodzaj ujawnia się w czasie przeszłym ("zrobiłeś/zrobiłaś"), w trybie przy
 | Gotowy na zmianę? | Czas na zmianę? / Zacznij od pomiaru. | rzeczownik / rozkaźnik |
 | Zrobiłeś/aś, zrobił(a)ś | (zakaz) | nie zapisujemy wariantów z ukośnikiem |
 | Każdy klient otrzyma… | Dostaniesz… / Każda osoba, która… | 2. osoba albo "osoba, która" |
-| Byłeś u nas? | Już u nas byłeś? → Nasi klienci wracają, bo… | przebudowa na fakt |
+| Byłeś już u nas? | Znasz nas z wcześniejszego montażu? / Dla stałych klientów: rabat 10% | czas teraźniejszy albo fakt |
 
 Wyjątek: kampania kierowana wyłącznie do jednej płci (np. usługa tylko dla kobiet) może używać form żeńskich. Wtedy konsekwentnie w całej reklamie.
 
@@ -356,6 +356,158 @@ Wyjątek: kampania kierowana wyłącznie do jednej płci (np. usługa tylko dla 
 - Dwukropek: tak przy liście, godzinach, danych ("Godziny: 9:00–17:00"), nie jako "odsłona" ("Efekt: …", "Sekret? …").
 - Najwyżej jeden wykrzyknik na reklamę, zwykle zero.
 - Wielokropek tylko w cytacie urwanym, nie jako "napięcie" [D].
+
+## 6. Szablon promptu graficznego pod Meta Ads + zabezpieczenia + tekst: model czy edytor
+
+### 6.1 Szablon (prompt po angielsku, bo w tym języku są dokumentacja i przykłady producentów; polski tylko w dosłownym tekście do grafiki)
+
+Kolejność bloków według OpenAI: scena → obiekt → detale → ograniczenia + cel [PEŁNY, A]. Bloki 5–8 to zabezpieczenia z ustaleń 2.15–2.19.
+
+```
+[1 CEL]        Photorealistic image for a Facebook/Instagram lead generation ad, vertical 4:5 (or 9:16 for Stories/Reels).
+               Audience: [kto, np. owners of older single-family houses in Poland].
+[2 SCENA]      [Konkretne miejsce i czas, polski kontekst]: e.g. a typical Polish single-family house from the 1990s
+               in a suburb, late October afternoon, overcast soft daylight.
+[3 BOHATER]    [Produkt / efekt / sytuacja klienta] + położenie: e.g. new anthracite PVC windows on the ground floor,
+               in the lower two thirds of the frame.
+[4 LUDZIE]     (opcjonalnie, max 1–2 osoby) One woman in her 40s, ordinary look, casual everyday clothes, natural pose,
+               looking at the window, not at the camera. Hands relaxed and simple: holding a plain mug / in jacket pockets.
+[5 REALIZM]    Real photograph taken on a smartphone, eye level, slightly imperfect framing, natural colors,
+               real skin texture with pores, fabric wrinkles, everyday details, subtle grain.
+               Honest and unposed. No glamorization, no heavy retouching, no HDR look, no cinematic color grading.
+[6 MIEJSCE     Keep the upper 25% calm and uncluttered (plain sky / plain wall) for a headline added later.
+   NA TEKST]   Keep key elements away from the edges.
+[7 PUSTE       Every object is blank: plain white mug without print, no posters, no signs, no screens,
+   OBIEKTY]    no papers or books with titles, no visible license plates.
+[8 WYKLUCZ.]   No text, letters, numbers, logos, watermarks or brand names anywhere in the image.
+```
+
+Wariant z tekstem w grafice (tylko wyjątek, patrz 6.3):
+
+```
+Headline text (EXACT, verbatim, Polish, render exactly once, no extra characters): "Dotacja do 28 tys. zł"
+Spelling, letter by letter: D-o-t-a-c-j-a  d-o  2-8  t-y-s-.  z-ł  (the last letter is Polish "ł", L with a stroke)
+Typography: bold sans-serif, dark text on a light calm area, centered in the upper third, high contrast.
+No other text anywhere in the image.
+```
+
+Parametry per model:
+
+| Model | 4:5 | 9:16 | Uwagi | Źródło |
+|---|---|---|---|---|
+| GPT Image 2 (API) | size 1088x1360 → skaluj do 1080x1350 | 1152x2048 → skaluj do 1080x1920 | krawędzie podzielne przez 16; quality "high" przy tekście; w ChatGPT napisz "vertical 4:5" | [PEŁNY] OpenAI Cookbook |
+| gpt-image-1 / 1.5 | brak, 1024x1536 (2:3) i kadrowanie | brak, 1024x1536 i kadrowanie | legacy / migracja | [PEŁNY] OpenAI Cookbook |
+| Nano Banana 2 / Pro | aspect_ratio "4:5" (896x1152 przy 1K; wybierz 2K) | "9:16" (768x1344 przy 1K; 2K) | Pro: tekst, 4K, "thinking"; edycje wieloetapowe z zachowaniem postaci | [PEŁNY] Gemini Cookbook |
+| Imagen 4 / Ultra / Fast | brak (3:4 i kadrowanie) | 9:16 | Ultra najlepszy do tekstu; długie, opisowe prompty; zawsze SynthID | [PEŁNY] Imagen notebook |
+| Midjourney v7 | --ar 4:5 | --ar 9:16 | --style raw (mniej "estetyki MJ"); wykluczenia tylko przez --no text, letters, logo, watermark, signage; nie pisać "no text" w treści | [WIEDZA] |
+| FLUX (1/2) | dowolne | dowolne | FLUX.1 dev bez negative prompt, opisuj puste obiekty pozytywnie; FLUX.2: "prompt upsampling" pomaga przy tekście | [PEŁNY] flux2 README; reszta [WIEDZA] |
+| Ideogram 3 | --- | --- | uznawany za mocny w typografii; brak danych w sesji | [WIEDZA] |
+
+### 6.2 Lista zabezpieczeń przed artefaktami
+
+**Przypadkowe napisy na obiektach w tle (priorytet Pawła):**
+1. Nie wstawiaj do kadru obiektów, które "zapraszają" napisy: ekrany laptopów i telefonów, książki z grzbietami, tablice, szyldy, witryny, gazety, opakowania, kubki z nadrukiem, koszulki z grafiką, kalendarze, dokumenty, tablice rejestracyjne. Każdy taki obiekt musi mieć uzasadnienie w koncepcie.
+2. Jeśli obiekt jest potrzebny, opisz go jako pusty (to działa też w modelach bez negative prompt): "laptop lid closed" albo "laptop screen turned off, plain black glass"; "phone lying face down"; "plain white ceramic mug without any print"; "closed notebook with a plain grey cover, no label"; "whiteboard wiped clean and empty"; "plain t-shirt without graphics"; "car seen from the side, no license plate visible".
+3. Na końcu promptu jedna linia wykluczeń (GPT Image, Nano Banana): "No text, letters, numbers, logos or watermarks anywhere". W Midjourney tylko parametr --no.
+4. Kontrola po wygenerowaniu: powiększenie 200%, szukaj pseudo-liter, pseudo-logo, cyfr na zegarach i ekranach. Poprawka edycją: "Remove all text and logos from the [obiekt]. Change only that. Keep everything else the same." (wzór edycji OpenAI) albo gumka w Canvie/Photoshopie.
+
+**Dłonie i anatomia:**
+5. Najwyżej 1–2 osoby w kadrze. Proste czynności dłoni: trzyma kubek, ręce w kieszeniach, dłoń oparta o blat. Unikaj splecionych palców, uścisku dłoni, trzymania długopisu, liczenia na palcach, dłoni blisko twarzy.
+6. Jeśli dłonie są widoczne, opisz je: "both hands visible, natural relaxed grip" (OpenAI: "hands naturally gripping the handlebars" poprawia geometrię).
+7. Kontrola: liczba palców, zęby, uszy i kolczyki (symetria), okulary, kończyny, kierunek cieni, odbicia w szybach.
+
+**"AI look":**
+8. Nie używaj słów: cinematic, epic, 8k, ultra detailed, hyperrealistic, masterpiece, flawless, perfect skin, studio lighting, dramatic lighting, glossy, vibrant colors, octane render. [C/WIEDZA]
+9. Używaj: "real photograph taken on a smartphone", "natural daylight / window light", "real textures, slight imperfections", "natural, slightly muted colors", "ordinary people, not models", "unposed". [A: OpenAI]
+10. Polskie realia: architektura, wnętrza, pogoda, gniazdka, samochody bez tablic. Model domyślnie rysuje realia amerykańskie. [D]
+11. Produkt klienta: podaj prawdziwe zdjęcie produktu jako obraz referencyjny i edytuj scenę, zamiast generować produkt od zera ("label integrity", OpenAI). [A]
+12. Warianty jednej kreacji: ten sam obraz referencyjny + "change only X, keep everything else the same"; powtarzaj niezmienniki w każdej iteracji. [A]
+
+**Format i prawo:**
+13. Strefy bezpieczne (pliki 03/06, Meta [PEŁNY wg agentów]): 9:16 bez kluczowych elementów przy krawędziach; Stories: ok. 14% u góry i 20% u dołu wolne; Reels z disclaimerem: dolne 40% wolne; tekst najlepiej w środkowej części kadru.
+14. Nie generuj ludzi udających prawdziwych klientów, pacjentów, ekspertów ani zdjęć "przed/po". Nie pokazuj wygenerowanej realizacji jako realizacji firmy. Fotorealistyczną scenę, którą można wziąć za dokumentację, rozważ oznaczyć (2.20; nie jest to porada prawna).
+
+### 6.3 Rekomendacja: tekst w modelu czy w edytorze
+
+**Domyślnie: grafika z modelu bez tekstu + tekst nałożony w Canvie/Figmie.** Poziom: D (rekomendacja) oparta na A i B/C:
+- Polskie znaki: 33,4% polskich słów ma diakrytyk (pomiar własny). Nie znalazłem publicznego testu renderowania polskich znaków. OpenAI sam zaleca iterację, gdy tekst wychodzi niedokładnie, i literowanie trudnych słów. [PEŁNY]
+- Kontrola marki: krój, kolory, rozmiar i kontrast (WCAG, plik 03) ustawiasz dokładnie.
+- Testy: ten sam obraz z 3–5 nagłówkami to minuty pracy w edytorze. Generowanie każdego wariantu od nowa zmienia też obraz, więc test przestaje być czysty.
+- Strefy bezpieczne i poprawki klienta: tekst w edytorze przesuwasz i poprawiasz bez generowania.
+- Brak przypadkowych napisów: jeśli model ma zakaz jakiegokolwiek tekstu, łatwiej wyłapać każdy napis jako błąd.
+
+**Wyjątki (tekst w modelu):** szybkie koncepcje do akceptacji, napis będący częścią sceny (opakowanie, szyld, tablica w kadrze) albo koncept typograficzny. Wtedy: GPT Image 2 (quality high) albo Nano Banana Pro, tekst w cudzysłowie, literowanie, "render exactly once", kontrola każdej litery w powiększeniu 200%, w razie błędu poprawka edycją lub w edytorze.
+
+## 7. Sporne / niewiadome
+
+1. **Pauzy (—).** Wzrost częstości po LLM jest udokumentowany populacyjnie (B), ale dla pojedynczego tekstu to słaby dowód. Brak danych dla polszczyzny. Reguła "pauza nie łączy zdań" to decyzja stylistyczna ograniczająca ryzyko percepcji, nie udowodniona konieczność.
+2. **Reakcje konsumentów na reklamy AI.** Wszystkie badania w 2.6 to [WIEDZA]. Kierunek jest spójny (ujawnienie lub rozpoznanie AI obniża zaufanie), wielkość efektu i dane z Polski nieznane. Do weryfikacji przed cytowaniem w skillu.
+3. **Czy fotorealistyczna reklama z nieistniejącymi ludźmi to "deepfake" w rozumieniu AI Act.** Definicja mówi o podobieństwie do istniejących osób, miejsc, przedmiotów lub zdarzeń i o ryzyku uznania za prawdziwe. Nie czytałem Wytycznych KE (20.07.2026) ani Code of Practice (10.06.2026). Źródła wtórne różnią się co do daty art. 50(2) (2.08 vs 2.12.2026). Do sprawdzenia w pliku 07 i u prawnika.
+4. **Polskie znaki w generatorach grafik.** Brak testu. Proponowany test wewnętrzny: 20 polskich nagłówków (z ą ę ł ś ż ź ć ń ó) × 4 modele (GPT Image 2, Nano Banana Pro, Imagen 4 Ultra, Midjourney v7) × 3 próby; miara: odsetek nagłówków bez żadnego błędu litery. Nie uruchamiałem generacji, bo zużywa płatne kredyty Pawła.
+5. **Emoji, Ty/Państwo, wielka litera w "Ty".** Brak danych ilościowych dla polskich reklam. Traktować jako zmienne do testów A/B.
+6. **Limity znaków Meta (125 / 27–40 / 30).** [WIEDZA]; do potwierdzenia w aktualnym Ads Guide (facebook.com zablokowany w tej sesji).
+7. **Jasnopis/FOG-PL, ISO 24495-1, zasady PPP.** Szczegóły z pamięci modelu. Nie zweryfikowałem progów (np. klasa trudności dla reklamy).
+8. **Polskie listy "słów AI".** Brak polskiego badania korpusowego na miarę Kobaka. Listy (miodkuj, sztuczny-miodek, Wolniewicz, DBest) to kuratorska praktyka (C/D). Istnieją polskie prace stylometryczne (PolEval 2025 SMIGIEL, humanistyka.dev, StyloMetrix), których nie czytałem; adresy w miodkuj docs/sources.md.
+9. **Czy reguły anty-slop poprawiają wyniki reklam.** Brak danych A/B o wpływie np. trójek lub pauz na CTR/CPL. Uzasadnienie to zaufanie i "natywność" (pliki 03/04/05). Warto sprawdzić testem: wersja "AI" vs "po redakcji".
+10. **Automatyczne etykiety AI w Meta dla grafik z zewnętrznych generatorów.** Nie wiadomo, czy metadane C2PA/IPTC z GPT Image lub Gemini (plus SynthID) wywołują etykietę "AI info" w zwykłej reklamie i czy eksport z Canvy je usuwa. Do sprawdzenia na koncie testowym.
+11. **Napięcie: "natywne/brzydkie" vs dopracowane.** Realizm "ze smartfona" może kłócić się z wizerunkiem marek premium. Decyzja per klient.
+
+## 8. Lista źródeł z trybem dostępu
+
+**[PEŁNY] (pełna treść przeczytana w sesji, głównie GitHub):**
+- berenslab/llm-excess-vocab (README + results/excess_words.csv) — https://github.com/berenslab/llm-excess-vocab
+- blader/humanizer, SKILL.md v3.0.0 — https://github.com/blader/humanizer
+- jalaalrd/anti-ai-slop-writing, references/banned-words.md — https://github.com/jalaalrd/anti-ai-slop-writing
+- sam-paech/antislop-sampler, README — https://github.com/sam-paech/antislop-sampler
+- bartekpucek/miodkuj: README, docs/research-summary.md, docs/sources.md, shared/references/polish-patterns.md, plain-polish.md, registers.md — https://github.com/bartekpucek/miodkuj
+- researchanddeploy/sztuczny-miodek: README, SKILL.md, manieryzm-ai.md — https://github.com/researchanddeploy/sztuczny-miodek
+- hardikpandya/stop-slop, SKILL.md — https://github.com/hardikpandya/stop-slop
+- OpenAI Cookbook: image-gen-models-prompting-guide.ipynb, image-gen-1.5-prompting_guide.ipynb — https://github.com/openai/openai-cookbook/tree/main/examples/multimodal
+- Google Gemini Cookbook: Get_Started_Nano_Banana.ipynb, Get_started_imagen.ipynb — https://github.com/google-gemini/cookbook/tree/main/quickstarts
+- GoogleCloudPlatform/generative-ai, gemini/nano-banana/nano_banana_recipes.ipynb — https://github.com/GoogleCloudPlatform/generative-ai/tree/main/gemini/nano-banana
+- black-forest-labs/flux2 README + docs/flux2_with_prompt_upsampling.md — https://github.com/black-forest-labs/flux2
+- Unicode CLDR, common/main/pl.xml, root.xml — https://github.com/unicode-org/cldr
+- GNOME, po/pl.po (gnome-shell, nautilus, gnome-control-center, gnome-software), pomiar własny — https://github.com/GNOME/gnome-shell
+- GSA/plainlanguage.gov: guidelines/words/avoid-hidden-verbs.md, concise/write-short-sentences.md, concise/use-positive-language.md, conversational/use-active-voice.md — https://github.com/GSA/plainlanguage.gov
+- satwikbasu/article50 README — https://github.com/satwikbasu/article50
+- seekdaseek/eu-ai-act-article-50 README — https://github.com/seekdaseek/eu-ai-act-article-50
+- thisisbremlo/ai-act-transparency-check README — https://github.com/thisisbremlo/ai-act-transparency-check
+- EdgeF-4/ai-act-kit README — https://github.com/EdgeF-4/ai-act-kit
+
+**[WYSZUKIWARKA] (tylko streszczenie z WebSearch):**
+- Kobak i in. 2025, Science Advances — https://www.science.org/doi/10.1126/sciadv.adt3813 ; PMC — https://pmc.ncbi.nlm.nih.gov/articles/PMC12219543/ ; arXiv — https://arxiv.org/abs/2406.07016 ; phys.org — https://phys.org/news/2025-07-massive-ai-fingerprints-millions-scientific.html
+- Liang i in. 2024 — https://arxiv.org/abs/2404.01268
+- Wikipedia:Signs of AI writing — https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing ; WikiProject AI Cleanup — https://en.wikipedia.org/wiki/Wikipedia:WikiProject_AI_Cleanup ; omówienia: https://www.forbes.com/sites/jodiecook/2025/09/08/the-10-giveaway-signs-of-ai-writing-wikipedia-reveals/ , https://www.makeuseof.com/wikipedia-best-ai-writing-detection-guide/
+- Antislop (arXiv 2510.15061) — https://arxiv.org/abs/2510.15061v1
+- "The em-dash em-beds in Congress" — https://arxiv.org/pdf/2608.05889
+- "Em-ergence of the em-dash" (medRxiv) — https://arxiv.org/pdf/2606.29540
+- generativeai.pub, em dash w abstraktach — https://generativeai.pub/the-em-dash-doubled-in-research-abstracts-since-2021-and-it-still-cant-tell-you-who-wrote-them-a09860041da5?gi=0dd4718d128e
+- Indiana Capital Chronicle, "Too many em dashes?" — https://indianacapitalchronicle.com/2025/08/05/too-many-em-dashes-spotting-text-written-by-chatgpt-is-still-more-art-than-science/
+- TechCrunch 14.11.2025 — https://www.techcrunch.com/2025/11/14/openai-says-its-fixed-chatgpts-em-dash-problem/ ; PCWorld — https://www.pcworld.com/article/2977726/openai-has-fixed-chatgpts-infamous-em-dash-obsession.html ; hAI Magazine — https://haimagazine.com/pl/ai_news/chatgpt-nie-bedzie-uzywac-pauzy/
+- Zwierciadło (pauza a ChatGPT) — https://zwierciadlo.pl/lifestyle/550236,1,ten-jeden-element-zdradza-ze-tekst-zostal-napisany-przez-chatgpt-zdemaskowaly-go-dziennikarki-z-pokolenia-z.read
+- jezykowaoaza.pl, myślnik a pauza — https://jezykowaoaza.pl/myslnik-pauza-roznica-zasady/
+- Jacek Wolniewicz, skaner 120 fraz — https://jacekwolniewicz.pl/skaner-po-polsku-ktory-lapie-120-fraz-naduzywanych-przez-ai/
+- DBest Content, GPT-izmy — https://dbest-content.com/jak-rozpoznac-tekst-z-ai-kompletny-przewodnik-po-gpt-izmach/
+- Senuto — https://www.senuto.com/pl/blog/jak-sprawdzic-czy-tekst-zostal-napisany-przez-ai/ ; Fundacja Orange — https://pracownieorange.pl/inspiration/jak-rozpoznac-tekst-napisany-przez-ai-praktyczny-przewodnik/ ; Top Online — https://toponline.pl/blog/jak-rozpoznac-tekst-napisany-przez-ai ; katsin.pl — https://katsin.pl/jak-rozpoznac-tekst-z-chatagpt/
+- developertoolkit.ai, "Skille anty-slop: unslop, miodkuj…" — https://developertoolkit.ai/pl/shared-workflows/skills-ecosystem/unslop/
+
+**Odsyłacze do innych plików researchu (tryb wg tamtych agentów):**
+- Plik 03 i 06: Meta "About text overlays and the safe zone" — https://www.facebook.com/business/help/980593475366490 ; "Best practices for image ads" — https://www.facebook.com/business/help/388369961318508 ; "native feel" — https://www.facebook.com/business/help/188534925073536 [PEŁNY wg agentów 03/06]
+- Pliki 06 i 07: Meta "About media created or edited with AI" — https://www.facebook.com/business/help/1486382031937045 [PEŁNY wg agentów 06/07]
+- Plik 01: Meta text generation (wejście EN/PT/ES) — https://www.facebook.com/business/help/180641596861873 [PEŁNY wg agenta 01]
+- Plik 04: persuasion knowledge i nachalne triki sprzedażowe; plik 05: Barry Hott, AI native ads — https://motionapp.com/library/talk/how-to-make-ai-native-ads-look-human-barry-hott-method/ [WYSZUKIWARKA wg agenta 05]
+
+**Adresy znalezione w plikach [PEŁNY], nieotwierane (źródła pierwotne do weryfikacji):**
+- EUR-Lex, Rozporządzenie (UE) 2024/1689 — https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng
+- KE, FAQ art. 50 — https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act ; Wytyczne — https://digital-strategy.ec.europa.eu/en/policies/guidelines-transparency-ai-generated-content ; Code of Practice — https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content
+- gov.pl, Prosty język — https://www.gov.pl/web/sluzbacywilna/prosty-jezyk , https://www.gov.pl/web/cyfryzacja/prosty-jezyk
+- Podręcznik Jasnopisu — https://jasnopis.pl/manual/
+- "Why Does ChatGPT Delve So Much?" — https://arxiv.org/html/2412.11385
+- Polska stylometria: https://blog.humanistyka.dev/2026/02/rozpoznawanie-tekstow-ai-piec-grup-cech-zamiast-jednego-wskaznika ; https://aclanthology.org/2025.poleval-main.3.pdf ; https://scienceinpoland.pl/en/news/news%2C108666%2Cai-chatbots-develop-distinctive-writing-styles-humans-polish-research-finds.html
+
+**Próby zablokowane (EGRESS_BLOCKED / 403), po jednej na domenę:** jasnopis.pl, www.gov.pl, artificialintelligenceact.eu, www.facebook.com, developers.googleblog.com, docs.midjourney.com, nielseniq.com, sjp.pwn.pl, en.wikipedia.org, api.openalex.org, export.arxiv.org, api.semanticscholar.org.
+
+**[WIEDZA] (niezweryfikowane w sesji):** Jakesch i in. 2023 (PNAS); Altay & Gilardi 2024 (PNAS Nexus); Longoni i in. 2022 (FAccT); Nightingale & Farid 2022 (PNAS); Cicek, Gursoy, Lu 2024 (J. Hospitality Marketing & Management); NielsenIQ 2024 (reklamy AI, neuro); Getty Images VisualGPS 2024; ISO 24495-1:2023; Jasnopis/FOG-PL; Pracownia Prostej Polszczyzny UWr; Poradnia PWN/RJP (Ty/Twój, zapis kwot); dokumentacja Midjourney (--no, --style raw, --ar); Google "semantic negative prompts"; Imagen negative prompt; FLUX.1 bez negative prompt; Meta "Made with AI" → "AI info" (07.2024); art. 3 pkt 60 i art. 50 ust. 4 AI Act; limity znaków Meta.
 
 ## Załącznik A. Notatki robocze (surowe, przed syntezą)
 
