@@ -21,10 +21,13 @@ Hook, który zatrzymuje „wszystkich ciekawskich”, podnosi CTR i obniża jako
 
 - **Upfront**: temat jasny od pierwszej sekundy. Luka dotyczy tylko „jak”, „ile”, „dlaczego” (B: badania „thin slices”, krzywoliniowa ciekawość).
 - **Trzy warstwy mówią to samo** (wideo): obraz 0–1 s, tekst na ekranie 3–7 słów, pierwsze zdanie audio od razu (A: Meta, Google ABCD).
-- **Pierwsze słowa to teza**, nie „Cześć, jestem…”, nie „Dzień dobry”.
+- **Pierwsze słowa to teza**, nie „Cześć, jestem…”, nie „Dzień dobry”. Nazwa nieznanej firmy („Gabinet Ruch w Rzeszowie.”) to nie hook: nikt się dla niej nie zatrzyma. Najpierw sytuacja, korzyść, liczba albo oferta, nazwa później.
 - **Obietnica spełniona**: w wideo przed połową długości, zawsze zgodnie z formularzem.
-- **Bez cech odbiorcy**: nie pytasz „Masz długi?”, „Boli Cię kręgosłup?”, „Masz 60+?”. Mówisz o sytuacji, usłudze, miejscu, roli (A: polityka Meta).
+- **Bez cech odbiorcy**: nie pytasz „Masz długi?”, „Boli Cię kręgosłup?”, „Masz 60+?” i nie zakładasz cechy w innych formach („Zanim weźmiesz kolejną chwilówkę…”, „Twój ból karku…”). Mówisz o sytuacji, usłudze, miejscu, roli (A: polityka Meta).
+- **Branże tylko informacyjne (zdrowie, prawo)**: hook nadal musi zatrzymać, ale informacją, nie zachętą. Wzory: sytuacja opisana bezosobowo i zakres usługi („Ból karku po pracy przy biurku. Tym zajmujemy się w gabinecie przy Hetmańskiej.”), przebieg pierwszej wizyty z konkretem („Pierwsza wizyta: 60 minut, badanie i plan terapii.”), fakt o dostępności („Termin u fizjoterapeuty w Rzeszowie: zwykle do 3 dni roboczych.”), demonstracja prawdziwej czynności w pierwszej klatce.
 - **Różne typy, nie parafrazy**: kierunek efektów cech nagłówka (pytanie, liczba, negatywność) jest w badaniach niestabilny (B). Dlatego do jednej reklamy dajesz 3–5 hooków różnych typów i testujesz.
+- **Pierwsza klatka to prawdziwa scena lub czynność** (ekipa przy pracy, produkt w użyciu, twarz mówiącej osoby). Nie ekran z panelem reklam, cennik, kalendarz, umowa, wykres ani ikony: na telefonie są nieczytelne i wyglądają jak slajd. Liczby, cena i warunki idą do napisu na ekranie.
+- **Bez twierdzeń o rynku i konkurencji bez danych**: „to rzadkość w branży”, „większość agencji…”, „roczna umowa zwykle chroni agencję” to opinie, nie fakty. Mów o sobie i swoich faktach.
 - **Po polsku naturalnie**: bez kalk („Hej, ty!”, „Stop scrollowania!”, „Czy wiesz, że…?”).
 
 ## 3. Typy hooków

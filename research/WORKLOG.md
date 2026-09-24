@@ -7,11 +7,11 @@
 - Meta Ads MCP `ads_library_search`: Biblioteka Reklam Meta.
 
 ## Etapy
-- [ ] 1. Research (11 agentów równolegle → research/raw/*.md)
-- [ ] 2. Synteza → RESEARCH.md, SOURCES.md, PRINCIPLES.md
-- [ ] 3. Architektura systemu + plugin
-- [ ] 4. Skille (10)
-- [ ] 5. Testy (5 biznesów) → TESTS.md, tests/
+- [x] 1. Research (11 agentów równolegle → research/raw/*.md, plus 12 weryfikacja 31 twierdzeń)
+- [x] 2. Synteza → RESEARCH.md, SOURCES.md (888 adresów), PRINCIPLES.md (42 zasady)
+- [x] 3. Architektura systemu + plugin (shared/ → references/ przez scripts/build.py)
+- [x] 4. Skille (10)
+- [~] 5. Testy: runda R1 (tests/run_matrix.sh r1), krytyk (tests/judge.sh r1), lint (tests/lint.py). Poprawki R1 w shared/ zapisane, skille po zakończeniu R1.
 - [ ] 6. Red team → poprawki (iteracje)
 - [ ] 7. Dokumentacja, paczka instalacyjna, CHANGELOG
 - [ ] 8. Commit + push, e-mail (draft Gmail)
@@ -21,3 +21,7 @@
 
 ## Agenci researchowi (uruchomieni 2026-09-24, wyniki → research/raw/)
 01 meta-delivery-andromeda | 02 meta-creative-placements-leadads | 03 attention-mobile-visual | 04 persuasion-trust-memory | 05 practitioners-creative-strategy | 06 video-hooks-formats | 07 leadgen-quality-pl-law | 08 testing-fatigue-iteration | 09 copy-pl-aislop-image-prompts | 10 claude-plugin-format | 11 ad-library-pl-analysis
+
+## Stan testów (aktualizuj)
+- R1: 30 uruchomień (10 skilli × 3 przypadki), wyniki tests/runs/r1, krytyka tests/runs/r1/krytyka.
+- Znalezione w R1 (systemowe): dopowiadanie faktów (jednostka dowodu, szczegóły historii, „bo…”), wstęp „Przygotowałem…” i formy męskie, nazwa firmy jako hook i pierwsze słowo, brak „co zyskam”, brak oczywistego kąta kategorii, opis > 30 znaków, ekrany/dokumenty/ikony w pierwszej klatce i ujęciach, pytanie o etap długu (komornik) w formularzu, hook „Zanim weźmiesz kolejną chwilówkę”, odpowiedzi formularza w formie męskiej, kryterium celu bez zamknięcia w formularzu, CTA „Zarejestruj się” przy umawianiu rozmowy.

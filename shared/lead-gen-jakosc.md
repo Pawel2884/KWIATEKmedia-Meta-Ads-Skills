@@ -54,6 +54,8 @@ Typ: Higher intent przy usługach z kontaktem (ekran przeglądu danych, tylko fe
 Pytania:
 - 2–4 pytania wielokrotnego wyboru z przedziałami: potrzeba lub zakres, termin, skala lub budżet projektu, warunek konieczny (lokalizacja, własność, typ obiektu).
 - Warunek konieczny obsłuż logiką warunkową: odpowiedź „poza obszarem” zamyka formularz uprzejmym ekranem (np. z poradnikiem).
+- Każde kryterium z celu klienta (liczba aut od 5, zmiana ogrzewania w 6 miesięcy, dom ocieplony, obszar) ma swoje pytanie. Odpowiedź spoza kryterium zamyka formularz albo trafia do osobnej ścieżki (np. „później niż za 6 miesięcy” → ekran z poradnikiem i zgodą na kontakt za kilka miesięcy). Nie zostawiaj odpowiedzi, która wprost łamie cel kampanii, jako zwykłego leada.
+- Odpowiedzi w formach neutralnych płciowo: „Dopiero porównuję oferty”, „Ta kwota jest dla mnie nowa”, nie „Nie znałem tej kwoty”, „Jestem zainteresowany”.
 - 0–1 pytanie otwarte, tylko jeśli odpowiedź sama kwalifikuje.
 - Zakazane pytania: dochód, długi, zdolność kredytowa, zdrowie, ubezpieczenia, karalność. Pytaj o zamiar, zakres, termin, preferencje.
 - Weryfikacja telefonu kodem SMS przy usługach z telefonem. E-mail firmowy w B2B.

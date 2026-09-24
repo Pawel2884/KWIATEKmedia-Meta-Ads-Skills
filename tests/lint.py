@@ -116,10 +116,39 @@ def sim(a, b):
     return len(A & B) / len(A | B)
 
 
+def strip_forms(text):
+    """Usuwa sekcje formularza (mają własne limity znaków i odpowiedzi z liczbami)."""
+    out, skip = [], False
+    for line in text.splitlines():
+        if re.match(r"^\s*(?:#+\s*)?(?:\*\*)?FORMULARZ", line):
+            skip = True
+            continue
+        if skip and re.match(r"^\s*(?:#+\s*)?(?:\*\*)?(REKLAMA|STATYKA|KONCEPT|KREACJA|WIDEO|SCENARIUSZ|Do uzupełnienia|Zgodność)", line):
+            skip = False
+        if not skip:
+            out.append(line)
+    return "\n".join(out)
+
+
+def graphic_words(v):
+    n = 0
+    for line in v.splitlines():
+        line = line.strip().lstrip("-* ")
+        if not line or re.match(r"^(Marka|Logo|Hierarchia)\b", line, re.I):
+            continue
+        quoted = re.findall(r"[„\"“]([^”\"“„]+)[”\"“]", line)
+        if quoted:
+            n += sum(len(re.findall(r"\w+", q)) for q in quoted)
+        else:
+            line = re.sub(r"^[^:]{1,30}:\s*", "", line)
+            n += len(re.findall(r"\w+", line))
+    return n
+
+
 def lint(text, brief=None):
     issues = []
     slop = load_slop()
-    fields = extract_fields(text)
+    fields = extract_fields(strip_forms(text))
     ad_text = "\n".join(v for _, v in fields)
 
     for pat, why in slop:
@@ -127,33 +156,48 @@ def lint(text, brief=None):
             issues.append(("slop", f"'{m.group(0)}' — {why}"))
 
     for k, v in fields:
-        if re.search(r"[–—]", v):
+        if re.search(r"[–—]", re.sub(r"\d\s?[–—]\s?\d", "", v)):
             issues.append(("pauza", f"[{k}] zawiera pauzę/półpauzę: {v[:80]}"))
         if k == "headline" and len(v.splitlines()[0]) > LIMITS["headline_chars"]:
             issues.append(("dlugosc", f"[nagłówek] {len(v.splitlines()[0])} zn. > {LIMITS['headline_chars']}: {v.splitlines()[0]}"))
-        if k == "description" and len(v.splitlines()[0]) > LIMITS["description_chars"]:
+        if k == "description" and len(re.sub(r"^\[\d\]\s*", "", v.splitlines()[0])) > LIMITS["description_chars"]:
             issues.append(("dlugosc", f"[opis] {len(v.splitlines()[0])} zn. > {LIMITS['description_chars']}: {v.splitlines()[0]}"))
         if k in ("primary", "audio"):
             first = v.strip().splitlines()[0] if v.strip() else ""
+            first = re.split(r"(?<=[.!?])\s+", first)[0]
             if len(first) > LIMITS["primary_first_line_chars"]:
-                issues.append(("dlugosc", f"[primary] pierwsza linia {len(first)} zn. > {LIMITS['primary_first_line_chars']}"))
+                issues.append(("dlugosc", f"[primary] pierwsze zdanie {len(first)} zn. > {LIMITS['primary_first_line_chars']}: {first[:80]}"))
             for sent in re.split(r"(?<=[.!?])\s+", v):
                 w = len(sent.split())
                 if w > LIMITS["sentence_words"]:
                     issues.append(("zdanie", f"[primary] zdanie {w} słów: {sent[:90]}"))
+            for para in re.split(r"\n\s*\n", v):
+                ns = len([x for x in re.split(r"(?<=[.!?])\s+", para.strip()) if x])
+                if ns > 3:
+                    issues.append(("akapit", f"[{k}] akapit ma {ns} zdań (max 2–3 na telefonie): {para.strip()[:70]}"))
             if v.count("!") > 1:
                 issues.append(("wykrzyknik", f"[primary] {v.count('!')} wykrzykników"))
         if k == "graphic":
-            words = len(re.findall(r"\w+", v))
+            words = graphic_words(v)
             if words > LIMITS["graphic_words"]:
                 issues.append(("grafika", f"[tekst na grafice] {words} słów > {LIMITS['graphic_words']}: {v[:90]}"))
 
     if brief is not None:
         allowed = numbers_in(brief)
         for k, v in fields:
-            for n in numbers_in(v):
+            v = re.sub(r"\d+(?:[.,]\d+)?\s?[–-]\s?\d+(?:[.,]\d+)?\s?s\b|\d+(?:[.,]\d+)?\s?(?:s|sek\.?|px|zn\.?)\b|#[0-9A-Fa-f]{6}|\b[HKSVI]\d{1,2}\b|^\s*\[?\d\]?[.)]?\s", "", v, flags=re.M)
+        for n in numbers_in(v):
                 if n not in allowed and not re.fullmatch(r"[0-9]", n):
                     issues.append(("liczba", f"[{k}] liczba '{n}' nie występuje w briefie — sprawdź, czy nie jest zmyślona"))
+
+    # cała odpowiedź: wstęp i formy męskie w 1. osobie (np. „zrobiłem”), jeśli nie pochodzą z briefu
+    first_line = next((l for l in text.splitlines() if l.strip()), "")
+    if re.match(r"^\W*(Zrobiłem|Zrobiłam|Przygotowałem|Przygotowałam|Napisałem|Napisałam|Poniżej|Oto |Świetnie|Jasne)", first_line):
+        issues.append(("wstep", f"odpowiedź zaczyna się od wstępu: {first_line[:80]}"))
+    brief_l = (brief or "").lower()
+    for m in set(re.findall(r"\b[a-ząćęłńóśźż]{2,}[aeiouy](?:łem|łam)\b", text.lower())):
+        if m not in brief_l:
+            issues.append(("rodzaj", f"forma 1. os. z rodzajem: '{m}' (używaj form neutralnych)"))
 
     hooks = [v.splitlines()[0] for k, v in fields if k in ("hook", "primary") and v.strip()]
     for (i, a), (j, b) in combinations(enumerate(hooks), 2):

@@ -109,6 +109,10 @@ Rodzaj wychodzi w czasie przeszłym, trybie przypuszczającym i przymiotniku po 
 | Jeśli kupiłeś dom… | Masz dom z lat 80.? |
 | Będziesz zadowolony. | Efekt zobaczysz po pierwszym tygodniu. |
 | Gotowy na zmianę? | Zacznij od pomiaru. |
+| Nie znałem tej kwoty (odpowiedź w formularzu) | Ta kwota jest dla mnie nowa |
+| Jestem zainteresowany | Chcę dostać wycenę |
+
+To samo dotyczy komentarzy w odpowiedzi skilla: bez „zrobiłem”, „przygotowałem”, „założyłem”. Pisz bezosobowo („Założenie: kolor marki #2F6F4E”) albo od razu dawaj materiał.
 
 Wyjątek: oferta tylko dla jednej płci może używać jej form, konsekwentnie.
 

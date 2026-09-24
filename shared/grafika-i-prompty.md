@@ -16,12 +16,13 @@
 
 - Jeden punkt skupienia: jeden dominujący obiekt lub scena, ciasny kadr wokół tego, co ważne (A: Meta).
 - Przy celu „leady” i „sprzedaż” na pierwszym planie oferta, efekt lub produkt. Człowiek jako kontekst, podobny do odbiorcy, w realnym otoczeniu (A: Meta).
-- Zero ozdobników: bez naklejek, ramek, ikon, faktur, gradientów dla ozdoby, kolaży z więcej niż 2 zdjęć. Najwyżej 2–3 kolory i 1 akcent (B: szum wizualny szkodzi uwadze na markę).
+- Zero ozdobników: bez naklejek, ramek, ikon, faktur, gradientów dla ozdoby, kolaży z więcej niż 2 zdjęć, dekoracyjnych linii i strzałek „wzrostu”, wykresów bez danych, konfetti. Najwyżej 2–3 kolory i 1 akcent (B: szum wizualny szkodzi uwadze na markę).
 - Ciekawa kompozycja jest dozwolona: nietypowy kadr, kontrast skali, jeden zaskakujący element (B: złożoność projektu pomaga).
 - Typowa, rozpoznawalna scena kategorii wygrywa w krótkiej ekspozycji (B). Kształt głównego obiektu czytelny nawet na rozmytej miniaturze.
 - Natywnie: zdjęcie z telefonu, naturalne światło, bez przesadnego retuszu (A: „avoid overly photoshopped images”).
 - Spojrzenie osoby świadomie: gdy ważny jest produkt lub nagłówek, osoba patrzy na niego. Gdy chodzi o kontakt i zaufanie, patrzy w obiektyw (B).
-- Zero napisów na obiektach w kadrze. Każdy ekran, książka, kubek, tablica, szyld, koszulka, opakowanie jest pusty albo go nie ma.
+- Zero napisów na obiektach w kadrze. Każdy ekran, książka, kubek, tablica, szyld, koszulka, opakowanie jest pusty albo go nie ma. W wideo to samo: bez zbliżeń na kartki, plany, kalendarze, ekrany telefonów i dokumenty z czytelną treścią. Jeśli czynność tego wymaga (plan terapii, raport z aplikacji), pokaż ją z daleka albo z boku, a treść daj w napisie na ekranie.
+- Brak zdjęć u klienta nie oznacza grafiki z samym tekstem na płaskim tle w każdej statyce. Jeśli oferta opiera się na osobie (agencja, ekspert, gabinet), zaplanuj zdjęcie tej osoby z telefonu i podaj, jak je zrobić.
 - Logo małe, w stałym miejscu. Nie plansza z logo.
 
 ## 2. Hierarchia informacji

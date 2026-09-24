@@ -24,6 +24,12 @@ Każda reklama odpowiada na: „kto to mówi?” i „dlaczego mam mu wierzyć?�
 Dowód lokalny i podobny do odbiorcy działa lepiej niż „tysiące zadowolonych” (B, normy społeczne; efekt realny, ale umiarkowany).
 Historia plus liczba razem: statystyka mocniej zmienia przekonania, historia mocniej zmienia intencję (B: Zebregs 2015, Freling 2020). Emocjonalne i ryzykowne kategorie (zdrowie, dom, bezpieczeństwo): prowadź historią, podeprzyj liczbą. Racjonalne i B2B: prowadź liczbą, zilustruj historią.
 
+Wierność dowodu (A: UoPNPR art. 5, wprowadzanie w błąd):
+- Ta sama jednostka: „38 000 sprzedanych krzeseł” nie zamieniasz na „38 000 zadowolonych klientów” ani „38 000 osób w Polsce”.
+- Ten sam zakres i okres: „od 2021” to nie „sklep działa od 2021”.
+- Historia klienta tylko z tym, co podał klient. Scenę możesz opisać słowami klienta, ale bez nowych szczegółów (częstotliwość, kwoty, emocje, narzędzia).
+- Cytat dosłowny. Możesz skrócić, nie możesz zmienić sensu.
+
 Brak dowodu w Karcie Oferty: nie wymyślaj. Wstaw `[UZUPEŁNIJ: …]` i napisz, jak go zdobyć (np. „poproś 3 ostatnich klientów o opinię w Google”, „policz realizacje z faktur”).
 
 ## 3. Liczby i konkret
@@ -55,7 +61,7 @@ Brak dowodu w Karcie Oferty: nie wymyślaj. Wstaw `[UZUPEŁNIJ: …]` i napisz, 
 
 - Problem czy korzyść na start: decyzja kontekstowa i testowa. Ramka straty nie jest z definicji lepsza (B: różnice w meta-analizach praktycznie zerowe; awersja do strat zależna od kontekstu). Zimni odbiorcy: zwykle rozpoznawalna sytuacja. Ciepli: oferta i korzyść.
 - Strach i ryzyko tylko w pakiecie: zagrożenie + konkretne rozwiązanie + dowód + łatwy pierwszy krok (B: apele strachu działają, d = 0,29, tylko z komponentem skuteczności).
-- Mechanizm w jednym zdaniu: jak to działa i czym różni się od alternatyw. Przy każdej nietypowej obietnicy (tanio, szybko, bezpłatnie, gwarancja) prawdziwe „bo…” (A: Langer 1978; przy dużych prośbach działa tylko prawdziwy powód).
+- Mechanizm w jednym zdaniu: jak to działa i czym różni się od alternatyw. Przy każdej nietypowej obietnicy (tanio, szybko, bezpłatnie, gwarancja) prawdziwe „bo…” (A: Langer 1978; przy dużych prośbach działa tylko prawdziwy powód). Powód musi pochodzić od klienta. Jeśli go nie podał: `[UZUPEŁNIJ: dlaczego możecie dać 5 lat gwarancji?]`, a w tekście sam fakt bez uzasadnienia.
 - Korzyść przeliczona na jednostki klienta: złote miesięcznie, dni, godziny, „bez kucia ścian”. Nie cecha techniczna.
 - Nie normalizuj problemu: zamiast „8 na 10 osób robi ten błąd” pokaż, co robią ci, którzy wybrali dobrze (B: efekt bumerangu norm opisowych).
 
