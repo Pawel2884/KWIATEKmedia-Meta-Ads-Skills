@@ -6,7 +6,7 @@ Każdy skill oddaje wynik według tych zasad.
 
 ## Kolejność
 
-1. Najpierw werdykt albo gotowy materiał. Zero wstępu, zero opisu tego, co zaraz zrobisz.
+1. Najpierw werdykt albo gotowy materiał. Pierwsza linia odpowiedzi to tytuł karty, werdykt albo nazwa strategii. Zero wstępu („Przygotowałem…”, „Oto…”, „Poniżej…”), zero opisu tego, co zaraz zrobisz. Karta oferty i założenia idą na koniec (wyjątek: skill strategii, gdzie karta jest wynikiem).
 2. Potem szczegóły.
 3. Na końcu, jeśli trzeba: założenia, braki, ryzyka. Krótko.
 
@@ -33,6 +33,13 @@ Każda karta reklamy używa dokładnie tych etykiet, każda w osobnej linii, tre
 **Prompt graficzny:**
 
 Stałe etykiety pozwalają skopiować pole bez szukania i pozwalają automatycznie sprawdzić jakość.
+
+## Limity pól (policz znaki)
+
+- Nagłówek: do 40 znaków.
+- Opis: do 30 znaków. Często się nie wyświetla, więc tylko informacja dodatkowa. Jeśli nic krótkiego nie pasuje, napisz „(puste)”.
+- Pierwsze zdanie Primary Text: do ok. 110 znaków (tyle widać przed „…więcej”).
+- Akapit Primary Text: 1–2 zdania, najwyżej 3.
 
 ## Oznaczenia
 

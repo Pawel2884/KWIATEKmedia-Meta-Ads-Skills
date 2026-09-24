@@ -40,7 +40,7 @@ Jeśli nie podano kąta, wybierz jeden najmocniejszy kąt dla oferty i napisz do
 5. **Dowód**: tylko z Karty Oferty. Najwyżej 3 argumenty wsparcia. Historia plus liczba, jeśli są.
 6. **Uczciwe ograniczenie** albo „dla kogo to nie jest”, gdy leady bywają słabe.
 7. **CTA**: co się stanie po kliknięciu (kto, kiedy, ile trwa, czy zobowiązuje).
-8. **Nagłówek** (do 40 znaków) i **opis** (do 25 znaków, treść nieistotna), przycisk CTA.
+8. **Nagłówek** (do 40 znaków) i **opis** (do 30 znaków, treść dodatkowa, policz znaki), przycisk CTA zgodny z tym, co się stanie (umówienie rozmowy, demo, audytu: „Zarezerwuj” albo „Wyślij zgłoszenie”; nie „Zarejestruj się”).
 9. **Kontrola** (poniżej). Popraw i dopiero oddaj.
 
 ## Długość Primary Text
@@ -60,13 +60,14 @@ Domyślnie: 1 Primary Text + opcjonalnie 1 wariant krótszy, 2–3 nagłówki r�
 
 ## Formularz (gdy celem są leady z formularza)
 
-Na prośbę albo gdy piszesz komplet do kampanii leadowej, dodaj teksty formularza wg `references/struktury-copy.md`: typ formularza, intro (nagłówek do 60 znaków, 2–3 punkty do 80 znaków), 2–4 pytania wielokrotnego wyboru z odpowiedziami, zamknięcie dla osób spoza kryteriów, ekran końcowy (nagłówek i CTA do 60 znaków), opis celu kontaktu. Intro powtarza obietnicę reklamy.
+Na prośbę albo gdy piszesz komplet do kampanii leadowej, dodaj teksty formularza wg `references/struktury-copy.md`: typ formularza, intro (nagłówek do 60 znaków, 2–3 punkty do 80 znaków), 2–4 pytania wielokrotnego wyboru z odpowiedziami, zamknięcie dla osób spoza kryteriów, ekran końcowy (nagłówek i CTA do 60 znaków), opis celu kontaktu. Intro powtarza obietnicę reklamy. Każde kryterium z celu klienta (np. liczba aut od 5, zmiana ogrzewania w 6 miesięcy) ma pytanie, a odpowiedź spoza kryterium zamyka formularz albo prowadzi do osobnej ścieżki. Odpowiedzi w formach neutralnych płciowo. W tematach finansowych i zdrowotnych nie pytasz o etap problemu (komornik, diagnoza).
 
 ## Kontrola przed oddaniem (obowiązkowa)
 
-- [ ] Pierwsza linia mówi, co to i dla kogo, w ok. 110 znakach.
+- [ ] Pierwsza linia mówi, co to i dla kogo, w ok. 110 znakach. Nie zaczyna się od nazwy firmy.
+- [ ] Tekst odpowiada na 5 pytań: co to, czy dla mnie, jaki problem, co zyskam, co dalej.
 - [ ] Co najmniej 2 z 4 filtrów kwalifikacji.
-- [ ] Każda liczba i każdy dowód z Karty albo `[UZUPEŁNIJ]`.
+- [ ] Każda liczba i każdy dowód z Karty albo `[UZUPEŁNIJ]`. Dowód wiernie: ta sama jednostka, okres, źródło, bez zaokrąglania w górę. Historia klienta bez dopisanych szczegółów. Bez „bo…” i porównań kosztów, których klient nie podał. Bez twierdzeń o rynku („rzadkość w branży”).
 - [ ] 0 słów i konstrukcji „Z” z `jezyk-pl-anty-slop.md`, najwyżej 1 „P”.
 - [ ] Brak pauz i półpauz łączących zdania (zakresy liczb dozwolone).
 - [ ] Formy neutralne płciowo, jedna forma zwracania się (Ty albo Państwo).
@@ -74,7 +75,8 @@ Na prośbę albo gdy piszesz komplet do kampanii leadowej, dodaj teksty formular
 - [ ] Najwyżej 1 wykrzyknik, 0–1 emoji funkcyjne.
 - [ ] Brak cech osobistych odbiorcy, brak clickbaitu, fałszywej pilności, obietnic bez warunków.
 - [ ] Moduł branżowy zastosowany (ZDROWIE i PRAWO w stylu informacyjnym, FINANSE-KREDYT, OZE-EKO, PROMOCJA-CENOWA).
-- [ ] Nagłówek ≤ 40 znaków, nie jest etykietą ani CTA. Opis ≤ 25 znaków, bez ceny i warunków.
+- [ ] Nagłówek ≤ 40 znaków, nie jest etykietą ani CTA. Opis ≤ 30 znaków (policz), bez warunków, które muszą być widoczne.
+- [ ] Akapity 1–2 zdania, pusty wiersz między nimi.
 - [ ] Tekst pasuje do grafiki lub wideo i do formularza (ta sama obietnica).
 - [ ] Przeczytany na głos brzmi jak handlowiec przez telefon.
 - [ ] Test konkurenta: nagłówek i pierwsza linia nie pasują do dowolnej firmy z branży (jest fakt, miejsce, liczba albo mechanizm tej firmy).

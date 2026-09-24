@@ -36,13 +36,15 @@ Oferta, koncept, gotowa reklama (nowe hooki do tego samego ciała) albo wyniki (
    - ma konstrukcję szablonową: „[rzeczownik], który [abstrakcja]” („Reklamy, które przynoszą zapytania”), „To nie X, to Y”, „Twój nowy…”, „Odkryj…”, „Czy kiedykolwiek…”,
    - jest parafrazą innego hooka,
    - jest clickbaitem, fałszywą pilnością albo przejedzonym szablonem,
-   - zawiera liczbę spoza Karty Oferty,
+   - zawiera liczbę spoza Karty Oferty, zmienia jednostkę dowodu, zaokrągla w górę albo robi z wyniku ankiety fakt („płacisz 12% mniej”),
+   - twierdzi coś o rynku lub konkurencji bez danych („rzadkość w branży”, „większość firm…”) albo porównuje koszty bez danych klienta,
+   - zaczyna się od nazwy nieznanej firmy,
    - przyciągnie ciekawskich, a nie potencjalnych klientów.
 4. **Wybór**: 6–8 najlepszych, co najmniej 5 różnych typów, co najmniej 2 poziomy świadomości. Jeśli Paweł chce hooki do konkretnego wideo, 3–5.
 5. **Trzy wersje każdego hooka**:
    - Grafika: 3–7 słów.
    - Pierwsza linia Primary Text: do ok. 110 znaków, z konkretem.
-   - Wideo: obraz pierwszej klatki + pierwsze zdanie mówione.
+   - Wideo: obraz pierwszej klatki + pierwsze zdanie mówione. Obraz to prawdziwa scena lub czynność, nie ekran, cennik, kalendarz, umowa, wykres ani ikony. Liczby idą do napisu.
 6. **Kontrola języka**: bez słów „Z”, bez pauz łączących zdania, bez „Czy kiedykolwiek…”, bez form rodzajowych, polski zapis liczb.
 7. **Rekomendacja**: które 3 przetestować najpierw i dlaczego (jedno zdanie).
 
@@ -55,6 +57,7 @@ Oferta, koncept, gotowa reklama (nowe hooki do tego samego ciała) albo wyniki (
 - Hook problemowy zawsze z rozwiązaniem w reklamie.
 - Liczby tylko prawdziwe; dodaj kontekst.
 - ZDROWIE i PRAWO: hooki informacyjne (usługa, przebieg, miejsce, termin, cena), bez obietnic efektu i emocjonalnej presji.
+- Ryzyko opisuj uczciwie. Hook, który w FINANSACH lub ZDROWIU zakłada sytuację odbiorcy („Zanim spłacisz kolejny kredyt…”, „przysługuje Ci upadłość”), odrzucasz, a nie oznaczasz jako „do pilnowania”.
 
 ## Format odpowiedzi
 

@@ -41,7 +41,7 @@ Jeśli masz narzędzie Biblioteki Reklam Meta (`ads_library_search`), sprawdź 3
 - co mówią wszyscy (przejedzone komunikaty),
 - czego nikt nie mówi (luka),
 - długo aktywne komunikaty (sygnał C, nie dowód skuteczności ani zgodności z polityką).
-Jeśli narzędzia nie ma, pomiń krok i napisz jednym zdaniem, czego nie sprawdziłeś. Nie wymyślaj reklam konkurencji.
+Jeśli narzędzia nie ma, pomiń krok i napisz jednym zdaniem, czego nie sprawdzono. Nie wymyślaj reklam konkurencji ani tego, co „mówią wszyscy” albo co „rynek przejadł”. Możesz podać frazy do ręcznego sprawdzenia.
 
 ### Krok 4. Odbiorcy, momenty, język klienta
 - 2–4 segmenty: rola lub sytuacja (nigdy cecha wrażliwa), co ich łączy, kto NIE jest klientem.
@@ -73,7 +73,9 @@ Jedna rekomendacja: jaka oferta (wycena, konsultacja, demo, kalkulator…), jaki
 ### Krok 8. Kontrola przed wysłaniem
 - Czy każdy kąt ma fakt z Karty albo oznaczenie `[UZUPEŁNIJ]`?
 - Czy koncepty przechodzą test „obok siebie”?
-- Czy nic nie łamie polityki cech osobistych i modułów branżowych?
+- Czy nic nie łamie polityki cech osobistych i modułów branżowych? Nazwy konceptów i przykładowe hooki też są tekstem reklamy („Zanim weźmiesz kolejną chwilówkę” odpada). Pytania formularza bez etapu problemu finansowego lub zdrowotnego, odpowiedzi w formach neutralnych.
+- Czy wśród konceptów jest oczywisty kąt kategorii (co oferta robi dla klienta)?
+- Czy dowody są przepisane wiernie (jednostka, okres, źródło)?
 - Czy nie podajesz mitów o Andromedzie jako faktów?
 - Czy tekst jest czytelny na telefonie?
 

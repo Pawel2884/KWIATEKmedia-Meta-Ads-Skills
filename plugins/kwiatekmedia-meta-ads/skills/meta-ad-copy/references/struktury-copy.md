@@ -83,11 +83,11 @@ Zakazane: pusty nagłówek, sama nazwa firmy, domena, „Sprawdź ofertę”, �
 
 ## 4. Opis i przycisk
 
-Opis (do 25 znaków) może się nie wyświetlić. Tylko treść nieistotna: „Oględziny bez opłat”, „Pon.–sob. 8:00–18:00”, „Lublin i okolice”. Nigdy cena, warunek, disclaimer.
+Opis (do 30 znaków, policz) może się nie wyświetlić. Tylko treść nieistotna: „Oględziny bez opłat”, „Pon.–sob. 8:00–18:00”, „Lublin i okolice”. Nigdy cena, warunek, disclaimer.
 
 Przycisk: wybierz intencję zgodną z tym, co się stanie:
 - formularz z wyceną: „Uzyskaj wycenę” / „Wyślij zgłoszenie”,
-- rezerwacja terminu: „Zarezerwuj”,
+- rezerwacja terminu, umówienie rozmowy, demo, konsultacji, audytu: „Zarezerwuj” (albo „Wyślij zgłoszenie”); „Zarejestruj się” tylko przy zapisie na wydarzenie, webinar lub listę,
 - informacja: „Dowiedz się więcej”,
 - wiadomość: „Wyślij wiadomość”,
 - telefon: „Zadzwoń”,
@@ -111,6 +111,7 @@ Pytania
    - [odpowiedź A]
    - [odpowiedź B]
    - [odpowiedź C → zamyka formularz: tekst ekranu dla osób spoza kryteriów]
+(każde kryterium z celu klienta ma pytanie i zamknięcie albo osobną ścieżkę; odpowiedzi w formach neutralnych: „Dopiero porównuję oferty”, nie „Jestem zainteresowany”)
 2. ...
 (2–4 pytania wielokrotnego wyboru; pytaj o zakres, termin, skalę projektu, warunek konieczny; nigdy o dochód, długi, zdrowie, ubezpieczenia)
 

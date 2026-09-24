@@ -66,5 +66,5 @@ ${brief}"
 export -f run_one
 export OUT PLUGIN
 
-echo "$MATRIX" | grep -v '^$' | grep -- "${FILTER}" | tr '\n' '\0' | xargs -0 -P "$PAR" -I{} bash -c 'run_one "$@"' _ {}
+echo "$MATRIX" | grep -v '^$' | grep -E -- "${FILTER}" | tr '\n' '\0' | xargs -0 -P "$PAR" -I{} bash -c 'run_one "$@"' _ {}
 echo "ROUND $ROUND FINISHED"

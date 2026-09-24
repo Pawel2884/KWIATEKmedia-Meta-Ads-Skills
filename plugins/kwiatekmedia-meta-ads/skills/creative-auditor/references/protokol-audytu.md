@@ -44,13 +44,13 @@ Cechy osobiste odbiorcy, clickbait, sensacja, zdrowie (wygląd, obietnice efektu
 Słownik anty-slop (0 „Z”, najwyżej 1 „P”), pauzy łączące zdania, długość zdań, formy rodzajowe, Wielkie Litery W Nagłówku, CAPS, wykrzykniki, emoji, zapis liczb, polska gramatyka i interpunkcja (Meta też ją sprawdza).
 
 **O12. Specyfikacja techniczna**
-Proporcje (4:5, 9:16), strefy bezpieczne, limity znaków (nagłówek 40, opis 25, pierwsza linia ok. 110–125), wideo: 0–3 s, napisy PL wypalone, dźwięk, długość.
+Proporcje (4:5, 9:16), strefy bezpieczne, limity znaków (nagłówek 40, opis 30, pierwsza linia ok. 110–125), wideo: 0–3 s, napisy PL wypalone, dźwięk, długość.
 
 ## 2. Jak klasyfikować
 
 | Klasa | Kryterium | Przykład |
 |---|---|---|
-| BLOKER | prawo, polityka Meta, zmyślenie, niezrozumiałe w 1 s, obietnica sprzeczna z ofertą | „Masz długi?”, „najlepszy w mieście” bez dowodu w ZDROWIU, cena przekreślona bez 30 dni, opinia AI-klienta |
+| BLOKER | jednoznaczne naruszenie prawa lub polityki Meta, zmyślenie, niezrozumiałe w 1 s, obietnica sprzeczna z ofertą. Ryzyko interpretacyjne (szara strefa prawa) to ISTOTNE z dopiskiem `ZGODNOŚĆ: do sprawdzenia`, nie BLOKER | „Masz długi?”, „najlepszy w mieście” bez dowodu w ZDROWIU, cena przekreślona bez 30 dni, opinia AI-klienta |
 | ISTOTNE | wyraźny wpływ na wynik lub jakość leadów, dowód A/B albo mocne C | 25 słów na grafice, brak filtrów kwalifikacji, hook pasujący do każdej firmy, 5 komunikatów naraz |
 | DROBNE | tanie, możliwy mały zysk | lepsza kolejność słów w nagłówku, jedno słowo „P” |
 
@@ -74,6 +74,10 @@ Zasada: jeśli nie potrafisz powiedzieć, jak poprawka zmieni wynik, to nie jest
 - „Można by jeszcze dodać…”, jeśli dodanie łamie zasadę jednego komunikatu.
 - Braku elementów, których ta reklama nie potrzebuje (np. ceny w reklamie przypominającej).
 - Uwag opartych na mitach (Entity ID, „frequency powyżej 3 zabija”, „85% bez dźwięku”).
+- Prawdziwej wysokiej oceny z dużą liczbą opinii („4,9 z 212 opinii”) jako „podejrzanej”. Podejrzana jest ocena 5,0 z kilku opinii albo ocena bez liczby i źródła.
+- Pochwał na siłę w „Co jest dobre”. Wypisz tylko prawdziwe mocne strony; jeśli ich nie ma, pomiń sekcję.
+
+W poprawionej wersji nie wstawiaj przykładowych liczb („np. 340 opinii”, „899 zł, wcześniej 1099 zł”, numer telefonu). Brakujące dane to `[UZUPEŁNIJ: …]`. Nie dopisuj też faktów, których nie ma w reklamie ani w danych klienta (przebieg usługi, „zwrot bez pytań”, nowe segmenty).
 
 ## 5. Audyt zestawu (powtarzalność)
 

@@ -47,19 +47,22 @@ Jeśli masz narzędzie do generowania obrazów (np. Canva, Higgsfield, generator
 ## Kontrola (obowiązkowa)
 
 - [ ] Test 1 sekundy: z obrazu i nagłówka wiadomo, co to jest i co z tego mam.
+- [ ] Grafika i Primary Text razem odpowiadają na 5 pytań: co to, czy dla mnie, jaki problem, co zyskam, co dalej. Same warunki (cena, umowa, termin) bez korzyści to za mało.
+- [ ] Primary Text nie zaczyna się od nazwy firmy. Akapity 1–2 zdania. Opis ≤ 30 znaków (policz).
 - [ ] Jeden punkt skupienia. Najwyżej 3 poziomy hierarchii.
 - [ ] Tekst na grafice ≤ ok. 12 słów (policz), nagłówek 3–7 słów.
 - [ ] Rozmiary: nagłówek co najmniej ok. 80 px na kanwie 1080, nic poniżej ok. 45 px. Kontrast ≥ 4,5:1.
 - [ ] Zero ozdobników (naklejki, ramki, ikony, gradienty dla ozdoby, kolaże).
 - [ ] Zero napisów na obiektach w kadrze (w prompcie wymienione puste obiekty i linia wykluczeń).
 - [ ] Strefy bezpieczne w 9:16.
-- [ ] Brak zmyślonych liczb, opinii, certyfikatów. Brak osób generowanych jako „klienci”.
+- [ ] Brak zmyślonych liczb, opinii, certyfikatów. Dowód wiernie: ta sama jednostka i okres („38 000 sprzedanych krzeseł”, nie „38 000 osób”), bez dopisanych przyczyn „bo…”, bez twierdzeń o rynku. Brak osób generowanych jako „klienci”.
 - [ ] Zgodność: cechy osobiste, zdrowie (przed i po, wygląd), finanse, obietnice.
 - [ ] Język tekstu na grafice i copy: 0 słów „Z”, bez pauz łączących zdania, polski zapis liczb, bez Wielkich Liter W Każdym Słowie.
 - [ ] Grafika i Primary Text mówią to samo, formularz spełnia obietnicę.
 - [ ] Test konkurenta: nagłówek i pierwsza linia nie pasują do dowolnej firmy z branży (jest fakt, miejsce, liczba albo mechanizm tej firmy).
 - [ ] Brak konstrukcji szablonowych: „[rzeczownik], który [abstrakcja]”, „To nie X, to Y”, „Twój nowy…”, „Nie tylko…, ale także…”.
-- [ ] Jeśli kilka statyk: każda para różni się w co najmniej 2 osiach rdzeniowych i wygląda inaczej obok siebie.
+- [ ] Jeśli kilka statyk: każda para różni się w co najmniej 2 osiach rdzeniowych i wygląda inaczej obok siebie. W zestawie jest oczywisty kąt kategorii (co produkt lub usługa robi dla klienta), chyba że Paweł prosi inaczej. Nie wszystkie statyki to tekst na płaskim tle: jeśli oferta stoi na osobie (agencja, ekspert, gabinet), co najmniej jedna ma zdjęcie tej osoby (z instrukcją, jak je zrobić telefonem).
+- [ ] Brak ozdobników udających treść: linie „wzrostu”, strzałki, wykresy bez danych, ikony.
 
 ## Format odpowiedzi
 

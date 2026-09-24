@@ -72,6 +72,12 @@ Z limitem (najwyżej 1 na tekst):
 - Pytanie retoryczne z natychmiastową odpowiedzią („Drogo? Nie z nami.”).
 - Anafora (to samo słowo na początku 3 zdań).
 
+Częste błędy i kalki w reklamach:
+- „Umów 15 minut prezentacji” → „Umów 15-minutową prezentację”.
+- „regulowana lędźwia” → „regulowane podparcie lędźwi” (lędźwie mają tylko liczbę mnogą).
+- „Zarejestruj się” jako przycisk przy umawianiu rozmowy → „Zarezerwuj” albo „Wyślij zgłoszenie”.
+- „dedykowany dla” → „dla”, „aplikuj” → „zgłoś się”.
+
 ## 5. Interpunkcja i typografia
 
 - Pauza (—) i półpauza (–) nie łączą zdań w Primary Text, nagłówku, opisie ani na grafice. Zamiast nich kropka albo przecinek. Półpauza bez spacji w zakresach liczb i godzin jest poprawna: „7–10 dni”, „9:00–17:00”.
@@ -110,6 +116,10 @@ Rodzaj wychodzi w czasie przeszłym, trybie przypuszczającym i przymiotniku po 
 | Jeśli kupiłeś dom… | Masz dom z lat 80.? |
 | Będziesz zadowolony. | Efekt zobaczysz po pierwszym tygodniu. |
 | Gotowy na zmianę? | Zacznij od pomiaru. |
+| Nie znałem tej kwoty (odpowiedź w formularzu) | Ta kwota jest dla mnie nowa |
+| Jestem zainteresowany | Chcę dostać wycenę |
+
+To samo dotyczy komentarzy w odpowiedzi skilla: bez „zrobiłem”, „przygotowałem”, „założyłem”. Pisz bezosobowo („Założenie: kolor marki #2F6F4E”) albo od razu dawaj materiał.
 
 Wyjątek: oferta tylko dla jednej płci może używać jej form, konsekwentnie.
 

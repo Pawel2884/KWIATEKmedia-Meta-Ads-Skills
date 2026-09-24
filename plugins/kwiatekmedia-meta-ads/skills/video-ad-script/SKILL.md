@@ -33,12 +33,12 @@ Oferta lub koncept i informacja, co da się nagrać: kto może wystąpić (wła�
 1. **Jedna teza** filmu (co widz ma zrozumieć).
 2. **Szablon**: wybierz z `references/szablony-wideo.md` według celu, poziomu świadomości, ceny i materiałów. Domyślnie dla formularzy: V1 15 s. Przy drogich decyzjach: V2, V4 albo V3. Tani test kąta: V9.
 3. **Długość i limit słów**: mowa ok. 2–2,5 słowa na sekundę. 15 s ≤ ok. 35 słów, 30 s ≤ ok. 70, 60 s ≤ ok. 140. Policz słowa audio.
-4. **Hook (0–3 s)**: trzy warstwy mówią to samo: obraz w pierwszej klatce (ruch, twarz w zbliżeniu albo efekt), tekst na ekranie 3–7 słów, pierwsze zdanie audio od razu. Bez „Cześć, jestem…”. Marka wpleciona (strój, auto, miejsce, produkt) i powiedziana w 0–5 s.
+4. **Hook (0–3 s)**: trzy warstwy mówią to samo: obraz w pierwszej klatce (ruch, twarz w zbliżeniu albo efekt), tekst na ekranie 3–7 słów, pierwsze zdanie audio od razu. Bez „Cześć, jestem…”. Pierwsze słowa to sytuacja, korzyść, liczba albo oferta, nie nazwa nieznanej firmy. Marka wpleciona (strój, auto, miejsce, produkt) i powiedziana w 0–5 s.
 5. **Scenariusz scena po scenie**: czas, obraz, tekst na ekranie, audio. Zmiana obrazu co ok. 1,5–3 s (cięcie, zbliżenie, przebitka). Obietnica hooka spełniona przed połową filmu. Jedna korzyść, jedno CTA, mówione i napisane. Plansza końcowa: marka i CTA.
 6. **Test bez dźwięku**: czy sama kolumna „tekst na ekranie” opowiada hook, problem, rozwiązanie, dowód i CTA? Jeśli nie, popraw.
 7. **3–5 hooków różnych typów** do tego samego ciała filmu (każdy: obraz, tekst, audio, typ H#).
 8. **Napisy**: pełne polskie napisy do wypalenia (maks. 2 linie, ok. 30–40 znaków na linię, środkowy pas ekranu). Automatyczne napisy Meta nie działają po polsku.
-9. **Produkcja**: lista ujęć, kto, gdzie, światło, kadr (twarz lub obiekt wypełnia kadr, pionowo 9:16), dźwięk (mikrofon krawatowy albo cicho w pomieszczeniu), czego nie pokazywać (napisy na ubraniach, cudze logo, tablice rejestracyjne, dane klientów).
+9. **Produkcja**: lista ujęć, kto, gdzie, światło, kadr (twarz lub obiekt wypełnia kadr, pionowo 9:16), dźwięk (mikrofon krawatowy albo cicho w pomieszczeniu), czego nie pokazywać (napisy na ubraniach, cudze logo, tablice rejestracyjne, dane klientów, zbliżenia na kartki, plany, kalendarze, ekrany i dokumenty z czytelną treścią). Liczby, ceny i oceny pokazujesz napisem na ekranie, bez animowanych gwiazdek, ikon i wykresów.
 10. **Copy do wideo**: Primary Text (pierwsza linia z hookiem i ofertą), nagłówek, opis, przycisk.
 11. **Kontrola** (niżej).
 
@@ -59,7 +59,10 @@ Oferta lub koncept i informacja, co da się nagrać: kto może wystąpić (wła�
 - [ ] Zmiana obrazu co ok. 1,5–3 s, bez chaosu w talking head (cięcia, zbliżenia, przebitki).
 - [ ] Jedno CTA, mówione i napisane, plansza końcowa.
 - [ ] Hooki to różne typy, nie parafrazy; żaden nie pyta o cechę widza.
-- [ ] Brak zmyśleń, zgodność z modułami branżowymi.
+- [ ] Brak zmyśleń i dopowiedzeń: dowód wiernie (jednostka, okres, bez zaokrąglania w górę), bez twierdzeń o rynku („większość krzeseł…”, „zwykłe krzesło tego nie wytrzyma”), bez porównań kosztów bez danych klienta. Zgodność z modułami branżowymi.
+- [ ] Hook nie jest nazwą firmy. W ZDROWIU i PRAWIE hook informacyjny, ale konkretny (sytuacja opisana bezosobowo, przebieg wizyty, termin, demonstracja).
+- [ ] W ujęciach brak czytelnych kartek, ekranów, kalendarzy i ikon.
+- [ ] Primary Text w akapitach po 1–2 zdania.
 - [ ] Język mówiony naturalny: krótkie zdania, bez słów „Z”, formy neutralne płciowo.
 - [ ] Test konkurenta: nagłówek i pierwsza linia nie pasują do dowolnej firmy z branży (jest fakt, miejsce, liczba albo mechanizm tej firmy).
 - [ ] Brak konstrukcji szablonowych: „[rzeczownik], który [abstrakcja]”, „To nie X, to Y”, „Twój nowy…”, „Nie tylko…, ale także…”.

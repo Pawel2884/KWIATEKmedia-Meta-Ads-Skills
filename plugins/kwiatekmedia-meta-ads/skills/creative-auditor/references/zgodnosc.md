@@ -53,6 +53,8 @@ Przepisywanie (zasada: mów o usłudze, sytuacji zewnętrznej, miejscu albo roli
 | „Po 60-tce bolą Cię kolana?” | „Rehabilitacja stawu kolanowego w Lublinie” |
 | „Masz zły BIK?” | „Kredyt a historia w BIK: co sprawdzamy na pierwszej rozmowie” (i tak: moduł kredytowy) |
 | „Jesteś po rozwodzie?” | „Podział majątku: jak wygląda pierwsza konsultacja” |
+| „Zanim weźmiesz kolejną chwilówkę…” | „Kolejna pożyczka na spłatę poprzedniej. Kiedy lepszą drogą jest upadłość konsumencka?” |
+| „Boli Cię kark po pracy?” | „Ból karku u osób pracujących przy biurku. Tym zajmujemy się w gabinecie przy Hetmańskiej.” |
 
 Uwaga: długo działające polskie reklamy z pytaniami o długi lub zdrowie nie dowodzą, że to bezpieczne. Egzekwowanie jest nierówne, a naruszenia obniżają jakość konta.
 
@@ -63,7 +65,8 @@ Uwaga: długo działające polskie reklamy z pytaniami o długi lub zdrowie nie 
 - Prawo: podmiot leczniczy informuje o świadczeniach, ale treść i forma informacji nie mogą mieć cech reklamy (ustawa o działalności leczniczej art. 14). Od 31.10.2019 ten sam zakaz obejmuje wprost fizjoterapeutów (gabinety i praktyki indywidualne); Kodeks Etyki Zawodowej Fizjoterapeuty (2022) dopuszcza tylko informowanie.
 - Styl informacyjny (ZDROWIE zawsze w tym trybie): zakres usługi, dla kogo, przebieg wizyty, czas, cena, miejsce, termin, jak się umówić, kwalifikacje. Bez superlatyw („najlepszy”), obietnic efektu, zachęt i nakłaniania („nie czekaj”, „zadbaj o siebie już dziś”), presji czasu, promocji handlowych, porównań. Opinie pacjentów w reklamie: ostrożnie, najlepiej wcale (mogą być uznane za zachętę).
 - Kodeks Etyki Lekarskiej: od 1.01.2025 obowiązuje nowa wersja, która dopuszcza informowanie o usługach zgodnie z zasadami etyki (stary art. 63 z ogólnym zakazem reklamy nie obowiązuje). Art. 14 ustawy o działalności leczniczej nadal wymaga, by informacja nie miała cech reklamy.
-- Formularz: bez pytań o diagnozy i stan zdrowia.
+- Formularz: bez pytań o diagnozy i stan zdrowia. Pytaj o usługę („czego dotyczy wizyta: kręgosłup, uraz sportowy, rehabilitacja po zabiegu”), preferowany termin i porę kontaktu.
+- Nazwy usług prostym językiem pacjenta („ból dolnej części pleców”, „ból karku”), nie terminologią („odcinek lędźwiowy i szyjny”).
 - Twarz specjalisty: może informować o usłudze; nie może „polecać” wyrobu medycznego.
 
 **WYROB-MEDYCZNY**
@@ -81,6 +84,7 @@ Uwaga: długo działające polskie reklamy z pytaniami o długi lub zdrowie nie 
 - W praktyce dla obu: styl informacyjny (zakres spraw, przebieg współpracy, koszty, doświadczenie liczbowe, sposób kontaktu, poufność), spokojny ton, bez presji, bez straszenia, bez „wygraj”, „odzyskaj”, „pozbądź się długów” jako obietnicy wyniku.
 - Firmy doradcze, które nie są kancelarią radcy lub adwokata, nie podlegają kodeksom zawodowym, ale obowiązuje je UoPNPR.
 - Tematy finansowe (długi, upadłość) łączą się z zakazem cech osobistych Meta.
+- Formularz przy długach i upadłości: nie pytasz o etap problemu („mam wezwanie”, „mam komornika”, „ile mam długów”), bo to pytanie o sytuację finansową. Pytasz o usługę i kontakt: czego dotyczy rozmowa (upadłość osoby prywatnej, upadłość działalności, inna sprawa), kiedy możesz rozmawiać, preferowana pora telefonu.
 
 **NIERUCHOMOSCI, PRACA**
 - Meta: Special Ad Category (Polska na liście). Kreacja przejmuje targetowanie, bez dyskryminujących sformułowań (wiek, płeć, rodzina, pochodzenie).
