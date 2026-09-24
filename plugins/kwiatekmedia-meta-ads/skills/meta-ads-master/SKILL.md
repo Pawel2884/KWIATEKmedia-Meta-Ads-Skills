@@ -108,6 +108,6 @@ DECYZJE NA START
 - [inne pozycje ze zgodności]
 
 7. DO UZUPEŁNIENIA
-[lista UZUPEŁNIJ + jak zdobyć]
+[każda pozycja: [UZUPEŁNIJ: czego brakuje]. Jak zdobyć: … (kropka, nie półpauza)]
 
 Bez wstępu. Jeśli pakiet jest długi, najpierw sekcja DECYZJE NA START i lista reklam w jednej linii każda, żeby Paweł na telefonie od razu widział całość.

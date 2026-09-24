@@ -111,7 +111,7 @@ Dlaczego może zadziałać: [...]
 [jedna rekomendacja + pytania kwalifikujące]
 
 7. Braki do uzupełnienia
-[lista UZUPEŁNIJ z tym, jak zdobyć każdy dowód]
+[każda pozycja w formacie: [UZUPEŁNIJ: czego brakuje]. Jak zdobyć: … (kropka, nie półpauza)]
 
 Następny krok: [np. „Napisz reklamy dla konceptów 1–4” albo „Uruchom plan kampanii”]
 
