@@ -194,7 +194,7 @@ def lint(text, brief=None):
     first_line = next((l for l in text.splitlines() if l.strip()), "")
     if re.match(r"^\W*(Zrobił|Przygotował|Napisał|Przeczytał|Sprawdził|Przeanalizował|Poniżej|Oto |Świetnie|Jasne|Dobrze)", first_line):
         issues.append(("wstep", f"odpowiedź zaczyna się od wstępu: {first_line[:80]}"))
-    dashes = len(re.findall(r"[–—]", re.sub(r"\d\s?[–—]\s?\d", "", text)))
+    dashes = len(re.findall(r"[–—]|(?<=\w) - (?=\w)", re.sub(r"\d\s?[–—]\s?\d", "", text)))
     if dashes:
         issues.append(("pauza_w_odpowiedzi", f"{dashes} pauz/półpauz poza zakresami liczb w całej odpowiedzi"))
     if "```" in text:
