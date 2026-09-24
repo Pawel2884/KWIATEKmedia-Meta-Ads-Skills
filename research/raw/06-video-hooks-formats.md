@@ -129,9 +129,109 @@ Legenda poziomu: siła dowodu, że TEN TYP działa lepiej niż alternatywy. Wszy
 
 **Folklor / niepotwierdzone** (poziom D, nie traktować jako reguły): "nieparzyste liczby działają o 20% lepiej" (kompilacja BuzzSumo, bez metody); "musisz złapać uwagę w 1,7 s" (to średni czas na treść w feedzie, nie próg — raport 03 S2); "otwarta pętla sprawia, że zapamiętają" (Zeigarnik nie replikuje — 04 T4.6); "pytania zawsze działają lepiej" (dane mieszane, C5); "UGC zawsze wygrywa ze studiem" (Meta: telefon lepszy dla recall/intencji, studio dla świadomości — A11; Motion: produkcje "high production" w środku stawki — raport 05).
 
-## 4. Struktury scenariuszy
+## 4. Struktury scenariuszy (szablony z timingiem)
+
+### 4.0 Zasady pisania scenariusza (wszystkie szablony)
+1. **Dwie ścieżki równoległe** (A — Meta: "design for sound-off ... however, adding music or voiceover can enhance engagement"; "sound-on ... 2.25x higher cta ctr" — korelacja): kolumna **TEKST NA EKRANIE** musi sama opowiedzieć logikę reklamy (hook → problem → rozwiązanie → dowód → CTA); kolumna **AUDIO** może mówić więcej i naturalniej. Test: zakryj kolumnę audio — czy reklama nadal ma sens? Zakryj tekst — czy sam dźwięk ma sens?
+2. **Napisy dialogowe zawsze, wypalone** (A — Meta: auto-napisy tylko EN, Stories bez warstwy napisów; napisy "may increase watch time" w Reels): maks. 2 linie, duży bezszeryfowy krój, wysoki kontrast (obrys/tło), w środkowym pasie ekranu, synchronizacja z mową (A — Google "Supers & Text-Audio Synchronicity"). [D — wyprowadzenie] ok. 30–40 znaków na linię w 9:16, by nie zmniejszać czcionki.
+3. **Tekst na ekranie ≠ napisy**: nakładki z kluczowym komunikatem (3–7 słów) są osobną warstwą, większą niż napisy; jedna myśl na ekran (A — Meta "don't communicate too many messages").
+4. **Tempo mowy PL** [D — wyprowadzenie, zweryfikować nagraniem]: ok. 2–2,5 słowa/s w naturalnej mowie reklamowej → 15 s ≈ 30–35 słów, 30 s ≈ 60–70 słów, 60 s ≈ 120–140 słów. Scenariusz przekraczający limit = za szybka mowa albo za długi film.
+5. **Zmiana wizualna co ~1,5–3 s** (A — Google Overall Pacing <2 s/ujęcie, Dynamic Start <3 s; Meta Stories "short, concise scenes"), ale w talking head: jump-cuty, punch-in, b-roll zamiast wielu scen (B-teoria przeładowania — F2).
+6. **Marka zintegrowana i "pulsująca"** (A — Meta brand w 3 s; A — Google brand w 5 s "see and say"; B — Teixeira 2010 pulsing): nazwa marki powiedziana i widoczna w scenie (koszulka, auto, szyld, produkt) w 0–5 s; krótkie powroty; plansza końcowa z marką + CTA. Nie zaczynać od statycznej planszy z logo.
+7. **Format**: master 9:16 1080×1920; kluczowe elementy w środkowym obszarze (A5); wersja 4:5 dla feed i lead ads (A — lead ads spec "aspect ratio: 4:5", "up to 15 seconds"); w Reels z disclaimerem — dolne 40% wolne (A5); Stories — ok. 14% góra, 20% dół wolne (A11).
+8. **Jedna korzyść, jedno CTA** (A — Meta "promote a single benefit", "use a call to action and a consistent end card"); CTA mówione + tekstowe (A — Google "Call To Action (Text)/(Speech)"; TikTok tekstowy CTA +152%).
+
+### 4.1 S15 — "Upfront problem → rozwiązanie" 15 s (DOMYŚLNY dla prospectingu i lead ads)
+| Czas | Obraz | Tekst na ekranie | Audio (VO/mowa) | Funkcja |
+|---|---|---|---|---|
+| 0,0–1,5 | Twarz eksperta w zbliżeniu LUB efekt usługi w ruchu; marka w kadrze (koszulka/auto) | Teza 3–6 słów: "Zimno mimo ciepłych grzejników?" | Pierwsze zdanie od 0,2 s: "Grzejniki ciepłe, a w domu zimno? Zwykle to nie wina pieca." | Hook (3 kanały zgodne) |
+| 1,5–5 | Cięcie: kamera termowizyjna na ścianie / detal problemu | "Winne: 3 miejsca ucieczki ciepła" | "W domach z lat 90. ciepło ucieka głównie w trzech miejscach." | Problem + konkret |
+| 5–10 | Ekipa przy pracy (b-roll 2 ujęcia) | "Audyt termowizyjny w 1 h" | "[Marka] sprawdza to kamerą w godzinę i mówi, co naprawić najpierw." | Rozwiązanie + marka "see and say" |
+| 10–13 | Wynik/liczba lub klient kiwający głową | "Średnio −23% za ogrzewanie*" (*przypis o typowości) | "U naszych klientów rachunki spadają średnio o jedną piątą." | Dowód |
+| 13–15 | Ekspert wskazuje w dół / plansza końcowa: marka + CTA | "Umów bezpłatny audyt ↓" | "Kliknij i zostaw numer — oddzwonimy dziś." | CTA |
+Dowód szablonu: A (Meta 3 s, 6–15 s, jedna korzyść, end card; lead ads ≤15 s) + A (Google/TikTok elementy) + B (upfront). Liczby w przykładzie są ilustracyjne — system wstawia wyłącznie dane klienta.
+
+### 4.2 S30 — Hook–Problem–Agitacja–Rozwiązanie–Dowód–CTA (PAS+D) 25–35 s
+| Czas | Blok | Treść / wskazówki |
+|---|---|---|
+| 0–3 | **Hook** | Typ z 3.2 (H1/H4/H5/H6/H8). Twarz lub efekt w 1. klatce; tekst 3–6 słów; zdanie-teza. |
+| 3–8 | **Problem** | Konkretna sytuacja odbiorcy (miejsce, moment, koszt). Bez atrybutów osobistych (C4). |
+| 8–13 | **Agitacja (umiarkowana)** | Konsekwencja zwlekania — konkretna i prawdziwa; bez straszenia bez wyjścia (B — apele strachu działają z "efficacy", 04 T4.3). Max 1–2 zdania. |
+| 13–21 | **Rozwiązanie + mechanizm** | Co robi firma i DLACZEGO to działa (mechanizm w 1 zdaniu); pokaz usługi (b-roll). Marka powiedziana. |
+| 21–27 | **Dowód** | Historia klienta + liczba (B — 04 T1.6), zdjęcie realizacji, opinia z Google (prawdziwa), certyfikat. |
+| 27–30(35) | **CTA + redukcja ryzyka** | Jeden krok, niski próg ("bezpłatny pomiar", "wycena w 24 h"), kto oddzwoni i kiedy; ew. dla kogo NIE jest oferta (jakość leadów). |
+Dowód: A (TikTok okno 21–34 s dla konwersji; napisy + CTA) + B (elementy perswazji) + C (struktura PAS — framework copywriterski, sam w sobie nietestowany).
+
+### 4.3 TST — Testimonial prawdziwego klienta 20–40 s
+| Czas | Obraz | Tekst | Audio | Uwagi |
+|---|---|---|---|---|
+| 0–3 | Klient w swoim domu/firmie, zbliżenie, patrzy w kamerę lub na rozmówcę | Najmocniejszy konkret z wypowiedzi: "Rachunek z 612 na 138 zł" | Najmocniejsze zdanie klienta (wycięte z wywiadu) | Hook = wynik lub emocja klienta, nie "Dzień dobry" |
+| 3–12 | Klient + b-roll "przed" | "Przed: …" | Sytuacja przed, wątpliwości ("bałem się, że…") | Przekaz dwustronny zwiększa wiarygodność (B — 04 T1.5) |
+| 12–25 | B-roll realizacji, ekipa, marka | "Montaż: 1 dzień" | Jak przebiegła współpraca, co zaskoczyło | Marka w obrazie i w mowie klienta |
+| 25–35 | Klient + wynik | "Po: …" + przypis o typowości | Efekt po czasie | Typowość wyniku (FTC 255.2(b) jako wzorzec) |
+| 35–40 | Plansza marka + CTA | "Sprawdź, ile zaoszczędzisz ↓" | VO firmy lub klienta: "Polecam…" | CTA od firmy |
+Warunki prawne (A): prawdziwy klient, zgoda na wizerunek, wypowiedź nieprzeinaczona (UPNPR art. 7 pkt 26); jeśli klient dostał rabat/wynagrodzenie — ujawnić (UOKiK — [WIEDZA]); aktor zamiast klienta = oznaczenie (FTC 255.2(c) jako wzorzec).
+
+### 4.4 EXP — Talking head eksperta/właściciela "3 błędy / 3 powody / 3 pytania" 30–45 s
+| Czas | Treść |
+|---|---|
+| 0–2 | Twarz w ciasnym kadrze (A — Google tight framing ≥60%), teza: "3 błędy, przez które pompa ciepła zużywa 2× więcej prądu." Tekst: "3 błędy przy pompie ciepła" |
+| 2–4 | Wiarygodność w 1 zdaniu: "Montujemy je od 2012 roku, zrobiliśmy ponad 900 instalacji." (tylko prawda) |
+| 4–13 | Błąd 1 + b-roll/wizualny dowód; tekst "1. Za mała moc" |
+| 13–22 | Błąd 2; tekst "2. …" (punch-in / zmiana planu) |
+| 22–31 | Błąd 3; tekst "3. …" |
+| 31–38 | "Dlatego zanim cokolwiek kupisz, robimy bezpłatny dobór mocy." (rozwiązanie = oferta) |
+| 38–45 | CTA mówione + tekstowe; marka + twarz na planszy końcowej |
+Dowód: A (TikTok talking head +50% hooking power; Google direct-to-camera, voice early) + C (format listy — Motion "Listicle", "Expert Explained" w środku stawki — raport 05). Ryzyko: "3 błędy" = H7 → nie normalizować błędu (04 T5.2).
+
+### 4.5 DEMO — Proces usługi krok po kroku 20–30 s
+0–2: efekt końcowy lub najbardziej "wizualny" moment procesu (H8) + tekst "Tak wygląda montaż w 1 dzień" · 2–20: 4–6 kroków po 3–4 s, każdy z numerem na ekranie i 1 zdaniem VO ("1. Pomiar — 30 min", "2. …") · 20–25: wynik + klient/ekipa · 25–30: CTA ("Umów pomiar"). Dowód: A (Meta typ "demo"; Stories: dla celu leads "focus on products"; Google product visuals w 5 s) + C (Motion "Demo", "How-To" — raport 05).
+
+### 4.6 BAB — Before–After–Bridge 10–20 s
+0–2: split-screen PRZED | PO (ten sam kadr) + "Ta sama łazienka. 9 dni." · 2–6: PRZED — konkret problemu (1 zdanie) · 6–12: PO — co się zmieniło (2 konkrety) · 12–17: MOST — "Zrobiliśmy to tak: …" (mechanizm/proces 1 zdanie, marka) · 17–20: CTA. Dowód: C (Motion "Before & After", "Transformation" — raport 05) + A-ograniczenia polityki zdrowie/kosmetyka (C4). Tylko realne zdjęcia z realizacji.
+
+### 4.7 FND — Historia założyciela / "dlaczego to robimy" 45–75 s (feed, retargeting, wysoki koszt decyzji)
+0–3: hook z momentu zwrotnego ("W 2015 zamontowałem pierwszą pompę ciepła u własnych rodziców. Działała fatalnie.") · 3–20: problem w branży, który założyciel zobaczył · 20–40: co zrobił inaczej (standard, gwarancja, proces) — b-roll firmy · 40–60: dowód (liczby, klienci) · 60–75: zaproszenie + CTA. Dowód: B (transport narracyjny — 04 T6.3) + A (Meta: dłuższe do 60 s "may be appropriate", feed "active mindset") + C (Motion "Founder" dobry w wertykalach usługowych — raport 05). Uwaga: nawet tu kluczowy komunikat i marka w 0–5 s (B1: większość obejrzeń <3–10 s).
+
+### 4.8 UGC — Twórca/klient nagrywa telefonem 15–30 s
+0–2: selfie-kadr, ruch (wejście w kadr, pokazanie czegoś do kamery), pierwsze słowo w 0,3 s · 2–10: osobista sytuacja ("Szukałam kogoś do…"), mówione naturalnie, z drobnymi niedoskonałościami · 10–20: pokazanie usługi/efektu z ręki · 20–30: rekomendacja + CTA. Styl: lo-fi, kamera z ręki, naturalne światło (A — Google "Short Form Video Adaptation ... lo-fi aesthetics, handheld camera physics"; A — Meta "native feel"; A — Stories: telefon > studio dla recall i intencji). Prawo (A): prawdziwe doświadczenie twórcy; oznaczenie współpracy ("Reklama"/"Współpraca reklamowa z …" + etykieta Paid partnership); twórca nie udaje klienta, jeśli nim nie był.
+
+### 4.9 MICRO — Animowana statyka 5–10 s
+0–3: 1–2 elementy w ruchu (produkt, liczba, oferta), korzyść nieruchoma i czytelna · 3–8: drugi komunikat (dowód lub oferta) · 8–10: CTA + spójna plansza końcowa. Dowód: A (Meta "creative best practices for conversion testing": "animate your still image, with one or 2 elements in motion in the first 3 seconds", "ideally 5–10 seconds", kampanie statyka+wideo: konwersyjny lift "at a 17% higher rate"). Zastosowanie: tani test kąta komunikacji przed nagraniem pełnego wideo.
+
+### 4.10 LONG — Explainer / VSL 60–180 s (tylko: wysoki koszt decyzji, B2B, retargeting)
+Struktura: 0–5 hook + obietnica konkretnej wiedzy · 5–30 problem i jego koszt · 30–90 mechanizm rozwiązania, obiekcje (cena, czas, ryzyko) z odpowiedziami · 90–150 dowody (2 historie + liczby) · ostatnie 15–30 s oferta, kto dzwoni, co się stanie po zostawieniu kontaktu. Dowód: **C/D** — brak w sesji niezależnych danych porównawczych dla Meta lead gen; uzasadnienie teoretyczne B (ELM/argumenty przy wysokim zaangażowaniu — 04 T8.2). Ocena: retencja 25/50/75%, CPQL, odsetek umówionych spotkań — NIE hook rate/CPL.
+
+### 4.11 BUMPER 6 s
+0–2: obraz efektu + marka · 2–5: jedna korzyść w tekście i mowie · 5–6: CTA/marka. Dowód: A (Meta: Stories <10 s; ThruPlay 6 s jako cel), C.
 
 ## 5. Sporne / niewiadome
+
+| # | Teza obiegowa | Status | Uzasadnienie |
+|---|---|---|---|
+| S1 | "47% wartości reklamy wideo powstaje w 3 s" | **Nadinterpretacja** | Nielsen×Facebook 2015: metryki marki (recall, awareness, intencja), tylko kampanie z dodatnim liftem, zlecone przez FB, feed sprzed ery Reels. Nie mówi nic o CPL ani o tym, że reszta wideo jest zbędna (B1). |
+| S2 | "Marka musi być na samym początku" vs "logo na starcie = scroll" | **Oba prawdziwe warunkowo** | Meta/Google: marka w 3–5 s (A). Teixeira i in. 2010: silna, centralna obecność marki zwiększa porzucenie; pulsowanie zmniejsza (B, TV). Rozwiązanie: marka zintegrowana w scenie + powiedziana, krótkie pulsy, plansza na końcu. |
+| S3 | "Krócej = lepiej" | **Zależy od celu i placementu** | Meta: <15 s feed, <10 s Stories, 5–10 s dla testów konwersji, lead ads ≤15 s (A). TikTok: 21–34 s = +280% konwersji (A, korelacja). Feed ma "active mindset" (A). Brak publicznych danych dla usług PL o wysokim koszcie decyzji. |
+| S4 | "UGC zawsze bije produkcję studyjną" | **Uproszczenie** | Meta Stories: telefon lepszy dla recall i intencji, studio dla świadomości marki (A). Google Shorts premiuje "Everyday Person" i lo-fi (A — definicje). Motion: high production w środku stawki hit rate, UGC nieco wyżej (B — raport 05). Różnice umiarkowane; zależne od wertykalu. |
+| S5 | "Pytanie w hooku zwiększa zaangażowanie" | **Mieszane** | Dane redakcyjne: znak zapytania często słabszy (C); "jak/dlaczego" pomagają (C); Lai & Farbrot 2014 za pytaniami z samoodniesieniem ([WIEDZA]); Banerjee & Urminsky: kierunek efektów niestabilny (B). Plus ryzyko polityki Meta (A). |
+| S6 | "Negatywny hook zawsze wygrywa" | **Mały efekt, zależny od kontekstu** | +2,3% CTR na negatywne słowo w newsach (B); reanaliza: pozytywne słowa nie szkodzą przy mierze semantycznej (raport 04 T3.4); posty negatywne w social media — niższe zaangażowanie (arXiv 2507.19300 — tytuł). Polityki Meta ograniczają negatywną samoocenę. |
+| S7 | "Otwarta pętla/cliffhanger zatrzymuje i zapada w pamięć" | **Słabe** | Zeigarnik nie replikuje (meta-analiza 2025, raport 04 T4.6); "mystery ads" oceniane negatywnie przy krótkiej ekspozycji (raport 03 U5). Pętla tylko jako mała luka wokół jasno podanego tematu. |
+| S8 | "Dobry hook rate to X%" | **Brak metodologii** | Progi 25–30% / 30–45% (hook) i 15–50% (hold) krążą bez źródła (C/D). Zależą od placementu (autoplay w feedzie vs Reels), długości, grupy odbiorców. Porównywać wewnątrz konta. |
+| S9 | "Szybkie cięcia zawsze pomagają" | **Warunkowe** | Google definiuje "quick pacing" (A), Meta Stories: krótkie sceny (A); teoria LC4MP: zbyt szybkie tempo + gęsta informacja → gorsze zapamiętanie ([WIEDZA], B). W talking head nadmiar cięć może obniżać wiarygodność ([D] hipoteza). |
+| S10 | "85% ogląda bez dźwięku" | **Nieaktualne / nieoficjalne** | Dane wydawców z 2016 r. (raport 03 U29); Meta: "most users watch with sound off" (feed), ale Reels z dźwiękiem ~80% (03 U31). Projektować pod oba tryby. |
+| S11 | "Sound-on daje 2,25× CTR" | **Korelacja** | Osoby włączające dźwięk to zaangażowana podgrupa (selekcja). Nie da się "włączyć" dźwięku widzowi; można tylko dać powód do słuchania. |
+| S12 | "AI avatary/AI UGC są tak samo skuteczne i tańsze" | **Brak danych niezależnych** | Brak w sesji rzetelnych porównań CPL/CPA; praktycy sami przyznają brak benchmarków. Ryzyka prawne (AI Act art. 50 od 2.08.2026; fałszywe testimoniale) i ryzyko utraty zaufania po rozpoznaniu AI ([WIEDZA] NielsenIQ 2024). |
+| S13 | "Strefa bezpieczna Reels = 14% góra / 35% dół" | **Nieaktualne w Help Center** | Obecny artykuł Meta nie podaje procentów dla Reels (tylko "keep the edges ... free"; 40% dołu przy disclaimerze); dla Stories 14%/20% (CTA sticker). Procenty dla Reels — [WIEDZA] ze starszych wytycznych. |
+| S14 | "Partnership ads = −19% CPA" | **Dane Meta 2022, e-commerce** | Nowszy raport Agentio: vs licencjonowane UGC z konta marki tylko −5% CPA (B/C). Główny efekt wynika z formatu twórcy, nie z samego nagłówka. |
+| S15 | "Nie rób X" i "3 błędy" jako uniwersalny hook | **Ryzyko bumerangu** | Normy opisowe "wielu robi ten błąd" mogą normalizować błąd (raport 04 T5.2, B). Formułować jako ostrzeżenie przed decyzją + co robią ci, którzy wybrali dobrze. |
+
+**Niewiadome kluczowe dla KWIATEKmedia (do testów na kontach):**
+- N1: optymalna długość wideo dla lead ads w usługach lokalnych PL (15 s vs 30 s vs 60 s) mierzona CPQL, nie CPL.
+- N2: czy hooki "problem" vs "oferta" vs "dowód" różnią się jakością leadów (odsetek kontaktów/umówionych spotkań), a nie tylko CPL.
+- N3: właściciel/ekspert vs klient vs twórca jako twarz reklamy w usługach PL.
+- N4: 9:16 vs 4:5 w kampaniach lead ads z Advantage+ placements (koszt i jakość).
+- N5: wpływ jawnego oznaczenia AI (jeśli kiedykolwiek użyty narrator AI) na CTR i jakość leadów.
+- N6: realne tempo mowy PL w reklamach (słowa/s) i jego związek z hold rate.
 
 ## 6. Konkretne reguły do systemu
 

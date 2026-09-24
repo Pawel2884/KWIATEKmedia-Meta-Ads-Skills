@@ -361,3 +361,293 @@ Format: **Teza** | Poziom | Źródła [tryb] | Dane/cytat | Implikacja dla syste
 - *„we may consider an advertiser's historical compliance… when deciding whether a given ad warrants further review.”*
 - **Implikacja:** historia naruszeń konta klienta ma znaczenie. Checklista zgodności **przed** publikacją chroni konto, nie tylko pojedynczą reklamę.
 
+---
+
+## 3. Sporne / niewiadome
+
+| # | Kwestia | Co mówią źródła | Stan | Jak system ma to obsłużyć |
+|---|---|---|---|---|
+| S1 | **Dokładne procenty strefy bezpiecznej 9:16** | HC: opis jakościowy; Stories 14% góra / 20% dół (naklejka CTA); Reels z disclaimerem 40% dół. Blogi: „oficjalne” 14/35/6 od marca 2026 | Nie potwierdziłem 14/35/6 w źródle Meta (tylko [WYSZUKIWARKA]) | Stosować wariant **najostrzejszy**: 14% góra, 35% dół (40% przy disclaimerze), 6% boki |
+| S2 | **IG Feed: 1:1 czy 4:5** | 103816146375741: 1:1 dla single image IG feed; 430958953753149: „recommended aspect ratio of 4:5” | Sprzeczność w HC | Master 4:5 z kluczową treścią w środkowym 1:1; opcjonalny wariant 1:1 w asset customization |
+| S3 | **Description 25 czy 30 znaków** | Text best practices i karuzela: 25; lead ads spec: 30 | Sprzeczność (starszy vs nowszy artykuł) | ≤25 znaków i tylko treści nieistotne |
+| S4 | **Sound-off czy sound-on** | „most users watch with sound off” (IG video BP) vs „many people watch stories with their sound on” i „2.25x higher CTA CTR” przy sound-on | Oba prawdziwe w różnych kontekstach | Dual-track: napisy + głos/muzyka |
+| S5 | **Długość wideo dla leadów wysokiej jakości** | Meta: lead ads „up to 15 seconds”, feed <15 s; ale „longer videos (up to 60 seconds) may be appropriate”; w feedzie ludzie oglądają dłużej niż w Reels | Brak danych Meta o jakości leada vs długości | Hipoteza D: wideo 30–90 s „wyjaśniające” obniża liczbę leadów, ale podnosi ich jakość. Testować z metryką z CRM |
+| S6 | **Badania Facebook IQ (0,25 s; 47% / 74%; 1,7 / 2,5 s)** | Znane z drugiej ręki; artykuł źródłowy istnieje (URL z wyszukiwarki) | Nie przeczytałem oryginału; dane z 2016 r., głównie wskaźniki brandowe | Używać tylko jako uzasadnienia „front-loadingu”, nie jako twardej reguły konwersyjnej |
+| S7 | **Etykieta „AI info” dla reklam spoza SIEP z obrazami AI firm trzecich** | HC potwierdza: etykieta dla genAI Meta; automatyczna detekcja narzędzi zewnętrznych opisana tylko dla SIEP | Nieustalone | Założenie ostrożnościowe: fotorealistyczne AI może zostać oznaczone; nie udawać prawdziwych osób. Dodatkowo AI Act art. 50 [WIEDZA] |
+| S8 | **Qualified leads bez CAPI** | 782657799338685: od 04.2026 niedostępne dla nowych kampanii bez CAPI; 375478503258484: „set up and integrate your crm **or choose to connect to a meta source**” (np. WhatsApp) | Niejasne, czy „meta source” wystarcza po 04.2026 | Sprawdzić na koncie; strategicznie wdrażać CAPI for CRM |
+| S9 | **Kampanie CTM (WhatsApp/Messenger) w PL** | HC: część funkcji, metryk i celów niedostępna dla reklam do/z Europy i reklamodawców z Europy | Zakres dla konkretnego konta nieznany | Weryfikować dostępność celu „leads through messaging” i raportowania na koncie klienta przed rekomendacją |
+| S10 | **Ograniczenia danych dla zdrowia/wellness w UE** | HC opisuje mechanizm (kategorie źródeł danych); zakres 2025 znam z [WIEDZA] | Nieustalone dla PL | Audyt Events Manager u klientów medycznych |
+| S11 | **Czy „tekst na grafice” wciąż szkodzi** | HC: brak limitu, narzędzie usunięte; zalecenie „nie zasłaniać wizualu” | Brak aktualnych danych Meta o karze za tekst | Traktować jako kwestię czytelności i jakości, testować |
+| S12 | **Pytanie o budżet w formularzu** | Zakazane: dochód, majątek, długi, zdolność kredytowa. Budżet projektu nie jest wymieniony | Interpretacja (C) | Dozwolone jako **przedział budżetu na usługę** („Jaki budżet planujesz na…?”), nigdy jako dochód czy zdolność. W kategorii credit/finanse unikać |
+| S13 | **Partnership ads: liczby skuteczności** | HC: tylko deklaracja jakościowa | Liczby [WIEDZA] niepotwierdzone | Nie cytować liczb klientom bez źródła |
+| S14 | **Higher intent vs More volume: dane** | HC opisuje mechanizm, bez liczb | Brak twardych danych Meta | Test A/B, metryka: % leadów zakwalifikowanych w CRM |
+| S15 | **Advantage+ creative w PL** | Text generation nie obsługuje PL; inne ulepszenia (text improvements, enhance media text) mogą działać | Nie wiadomo, które ulepszenia działają na polskim tekście | Zawsze sprawdzić advanced preview; w branżach regulowanych domyślnie OFF |
+
+---
+
+## 4. Konkretne reguły do systemu
+
+### 4.1 Tabela specyfikacji (master assets)
+
+| Placement / format | Proporcje (zalecane) | Rozdzielczość eksportu | Strefa bezpieczna (tekst, logo, twarz, produkt) | Uwagi | Poziom |
+|---|---|---|---|---|---|
+| FB Feed (obraz/wideo) | **4:5** (także 1:1) | 1080×1350 (min. wg HC 1440×1800 dla 4:5) | Kluczowe elementy w środkowym kwadracie 1:1 (desktop pokazuje wideo 1:1); dolny pasek wolny | Od 03.2026 bez URL w stopce | A |
+| IG Feed (obraz) | **4:5** lub 1:1 | 1080×1350 / 1080×1080 | Wolne dolne i boczne krawędzie | Wyższe niż 4:5 obrazy są przycinane do 4:5 | A (sprzeczność S2) |
+| IG Feed (wideo 9:16) | 9:16 | 1080×1920 | Jak Reels | Od końca 2024 wysokie wideo nie jest przycinane | A |
+| Stories FB/IG | **9:16** | 1080×1920 (min. 600×1067) | **Góra 14%, dół 20% (naklejka CTA)**, dla bezpieczeństwa dół 35% | Obraz wyświetla się 5 s; wideo ≥10 s może być dzielone na karty; primary text <100 znaków, żeby uniknąć karuzelowania | A / B |
+| Reels FB/IG | **9:16** | 1080×1920 | **Góra 14% (~270 px), dół 35% (~670 px), boki 6% (~65 px)**; z disclaimerem dół **40%** | Dźwięk zalecany; bez licencjonowanej muzyki; bez watermarków; IG Reels ads do 15 min | A (40%) / B (14/35/6) |
+| WhatsApp Status | 9:16 | 1080×1920 (min. 500×320) | Jak Stories | 100% pikseli widocznych dla autoplay | A |
+| Karuzela | 1:1 (lub 9:16) | 1080×1080 | — | 2–10 kart (IG Stories 3); **wyłącz „highlight carousel card” przy narracji** | A |
+| Lead Ads (kreacja) | 1:1, 4:5 (wideo 4:5) | 1080×1080 / 1080×1350 | jw. | Wideo: rekomendacja „do 15 s” | A |
+| Pliki | JPG/PNG (RGB), MP4/MOV H.264 | obraz ≤30 MB, wideo ≤4 GB | — | Nie CMYK | A |
+
+### 4.2 Limity tekstu (copy)
+
+| Pole | Rekomendacja Meta | Reguła systemu | Poziom |
+|---|---|---|---|
+| Primary text | 125 znaków widocznych (1–3 linie) | Pierwsze **≤125 znaków** zawiera hook, ofertę i „dla kogo”. Dalsza część dozwolona (wyjaśnienie oferty), ale samodzielna. IG Stories: <100 znaków | A |
+| Headline | 40 | **≤40**, konkretna korzyść lub oferta; sensowna w oderwaniu od reszty | A |
+| Description | 25 (lub 30) | **≤25**, tylko treść nieistotna (może się nie wyświetlić) | A |
+| Display URL | ~25 znaków | Nie polegać na URL (brak w stopce FB Feed od 03.2026) | A |
+| Instant Form: intro headline | ≤60 (Rich creative ≤45) | Obietnica i co się stanie po wysłaniu | A |
+| Instant Form: punkty intro | ≤80 / punkt (Rich: korzyści ≤57, opis 81) | 3 punkty: co, dla kogo, następny krok | A |
+| Instant Form: ekran końcowy | Nagłówek ≤60, CTA ≤60 | Konkretny następny krok i termin kontaktu | A |
+| Pytania w formularzu | Maks. 15 | 2–4 pytania wielokrotnego wyboru z przedziałami, 0–1 otwarte | A (limit) / A (trade-off) |
+
+### 4.3 Reguły kreacji (z uzasadnieniem)
+
+1. **Mobile-first, pion domyślnie.** Każda koncepcja powstaje w 9:16 i 4:5 (plus opcjonalnie 1:1). *Uzasadnienie:* 98% trzyma telefon pionowo; 9:16 zalecane dla Stories, Reels i Status; 4:5 dla FB Feed. **A**
+2. **Pierwsza klatka = samodzielna reklama.** Teza i obraz czytelne bez ruchu i dźwięku (autoplay w IG Feed od 25% widoczności). **A**
+3. **Hook w 0–1 s, marka i kluczowy komunikat w ≤3 s, oferta i CTA wcześnie i ponownie na końcu.** *Uzasadnienie:* Meta HC; Facebook IQ/Nielsen 47% wartości w 3 s (B). **A/B**
+4. **Dual-track audio:** wypalone polskie napisy lub SRT `pl_PL` plus głos lub muzyka (Sound Collection albo własna). Auto-napisy Meta nie działają po polsku. **A**
+5. **Tekst na ekranie:** jedna myśl na scenę, duża bezszeryfowa czcionka, kontrast, w środkowej części kadru, w strefie bezpiecznej (4.1). **A**
+6. **Natywny wygląd:** nagranie telefonem, prawdziwa osoba (właściciel, ekspert, klient), bez watermarków i ramek. Studio tylko do celów brandowych. *Uzasadnienie:* „mobile shots tend to outperform studio shots for ad recall and intent”; „native feel… perform better”. **A (deklaracja)**
+7. **Portfel długości:** 6–15 s (zatrzymanie) plus 30–60 s (zrozumienie oferty). Jakość mierzyć w CRM. **A (krótkie) + D (długie dla jakości)**
+8. **Różnorodność „materially different”:** iteracja zmienia obraz lub wideo, a nie tylko tekst. ≤10 reklam na zestaw, zróżnicowanych koncepcyjnie; łączyć wideo i statyki. **A**
+9. **Uczciwy hook zamiast clickbaitu:** nazwać problem lub ofertę i ustawić oczekiwania. Zakaz „nie uwierzysz…”, „kliknij, żeby zobaczyć…”, engagement bait. *Uzasadnienie:* niższy komponent jakości, wyższe koszty, ryzyko dla konta. **A**
+10. **Modułowe copy:** każdy tekst ma sens sam i w dowolnej kombinacji z innymi (Meta miesza pola). **A**
+11. **Kreacja jako targetowanie** (szczególnie w SAC i broad targeting): w pierwszych sekundach i pierwszych 125 znakach nazwać, dla kogo jest oferta, bez przypisywania odbiorcy cech osobistych (np. „Dla właścicieli domów jednorodzinnych w powiecie X”, a nie „Masz dom i za wysokie rachunki?”). **A (polityka) + C (praktyka)**
+12. **Advantage+ creative: świadoma decyzja, nie domyślna.** Checklista przeglądu enhancements (także w advanced preview i w „test new optimizations” w ustawieniach konta). W branżach regulowanych i przy disclaimerach generatywne ulepszenia tekstu i overlayów domyślnie OFF. **A**
+13. **Karuzela narracyjna:** wyłączyć „highlight carousel card”. **A**
+14. **Poprawna polszczyzna:** błędy gramatyczne i interpunkcyjne to element checklisty Meta. **A**
+
+### 4.4 Reguły Lead Ads (pod cel „jakość, nie tani lead”)
+
+1. **Typ formularza:** domyślnie Higher intent albo Rich creative. More volume tylko świadomie (np. top-of-funnel, lead magnet). Pamiętać, że Higher intent = tylko FB/IG Feed mobile. **A**
+2. **Intro zawsze wypełnione:** co dostanie, dla kogo, kto i kiedy się odezwie, ewentualnie orientacyjna cena lub widełki. *Uzasadnienie:* „clearly communicate why people should fill out your form”; Rich creative „potentially increase lead quality”. **A**
+3. **Pytania kwalifikujące:** 2–4 pytania wielokrotnego wyboru (termin, zakres, lokalizacja, przedział budżetu usługi). *Uzasadnienie:* „more multiple choice questions typically results in more quality leads”. **A**
+4. **Twarde dyskwalifikatory przez conditional logic → „close form”** z pomocnym ekranem (np. poradnik). Klientowi komunikować, że CPL wzrośnie. **A**
+5. **Weryfikacja telefonu (OTP)** domyślnie ON dla usług z kontaktem telefonicznym (poza B2B ze stacjonarnymi numerami). **A**
+6. **Zakazane pytania (E6):** zero pytań o dochód, długi, zdolność kredytową, zdrowie, ubezpieczenia, karalność. Kontakt tylko przez prefill. **A**
+7. **Ekran końcowy = następny krok:** kalendarz („book time”), telefon, WhatsApp, plik. Konkretny termin kontaktu. **A**
+8. **Harmonogram reklam w godzinach, gdy zespół oddzwania** (Meta zaleca dla leadów i połączeń; +25,4% konwersji z połączeń w godzinach pracy). **A (deklaracja)**
+9. **Sygnał jakości do Meta:** CAPI for CRM z pełnym lejkiem i neutralnymi nazwami etapów. Cel „qualified leads” (od 04.2026 wymaga CAPI dla nowych kampanii). Oczekiwany czas do pełnej optymalizacji: 1–2 miesiące. **A**
+10. **Retargeting „otworzył, nie wysłał”** i lookalike z **klientów**, nie z leadów. **A**
+11. **Wersjonowanie formularzy:** opublikowanego formularza nie da się edytować, więc nazewnictwo `KLIENT_oferta_typ_vN_data`. **A**
+
+### 4.5 Checklista zgodności z polityką (przed publikacją) — PL/UE
+
+**Kategoria i targetowanie**
+- [ ] Czy oferta dotyczy **nieruchomości / pracy / kredytu lub finansowania**? Jeśli tak → Special Ad Category (PL jest na liście); kreacja bez dyskryminujących sformułowań (wiek, płeć, rodzina, pochodzenie). **A**
+- [ ] Czy treść dotyka **polityki / kwestii społecznych** (debata, apel o zmianę prawa)? Reklamy SIEP są w UE niedozwolone, więc przeformułować na komunikat produktowy. **A**
+- [ ] Zdrowie, estetyka, odchudzanie, suplementy, seksualność, alkohol, hazard, krypto → targetowanie 18+ i sprawdzenie zasad szczegółowych. **A**
+
+**Copy i grafika — cechy osobiste (G1)**
+- [ ] Brak zdań i pytań sugerujących, że odbiorca ma cechę: chorobę, nadwagę, niepełnosprawność, długi lub upadłość, wiek, rozwód lub samotne rodzicielstwo, religię, orientację, karalność. „Ty” jest OK, „Ty + cecha” nie. **A**
+- [ ] Test przeformułowania: czy zdanie da się zamienić na opis usługi lub korzyści w 3. osobie? **A (rada Meta: „focus your ad on the benefits”)**
+
+**Zdrowie i wygląd (G2)**
+- [ ] Brak zbliżeń na „fałdki” i ciała w ujęciu wstydzącym; brak słów deprecjonujących wygląd. **A**
+- [ ] Before/after tylko dla kosmetyki i medycyny estetycznej, 18+, bez tekstu atakującego wygląd; efekty w czasie z kwalifikatorem („efekty indywidualne”). **A**
+- [ ] Brak obietnic wyleczenia chorób z listy (cukrzyca, rak, łuszczyca…); zarządzanie objawami dozwolone. **A**
+- [ ] [WIEDZA] Sprawdzić polskie przepisy: reklama usług medycznych i zawodów medycznych, oświadczenia zdrowotne suplementów (UE 1924/2006), UOKiK. **do weryfikacji prawnej**
+
+**Obietnice, jakość, uczciwość (G6–G7)**
+- [ ] Brak gwarancji wyniku bez podstaw („100% skuteczności”, „zarobisz X zł”), brak nierealnych oczekiwań. **A**
+- [ ] Brak clickbaitu (ukrywanie informacji, sensacja), engagement bait („skomentuj…”) i treści szokujących. **A**
+- [ ] Brak fałszywych elementów UI (przycisk play, „nowa wiadomość”, pasek powiadomień). **A**
+- [ ] Brak wulgaryzmów, także maskowanych symbolami. **A**
+- [ ] Brak wizerunku znanych osób bez zgody (celebrity-bait). **A**
+- [ ] Poprawna gramatyka i interpunkcja. **A**
+- [ ] Landing page (jeśli jest) działa, bez pop-upów, zgodny z reklamą. **A**
+
+**AI i autentyczność (D3)**
+- [ ] Wygenerowane osoby i sceny nie są przedstawiane jako prawdziwi klienci, eksperci czy realizacje; opinie są prawdziwe i udokumentowane. **A (polityka „accurately represent”) + [WIEDZA] AI Act art. 50 / UOKiK**
+- [ ] Świadomość, że genAI Meta może nadać etykietę „AI info”. **A**
+
+**Formularz (E6)**
+- [ ] Brak zakazanych pytań (finanse osobiste, zdrowie, ubezpieczenia, karalność, poglądy, orientacja, związki zawodowe, identyfikatory, loginy, data urodzenia dziecka); dane kontaktowe tylko przez prefill. **A**
+- [ ] Polityka prywatności (URL, nie PDF); zgody RODO jako custom disclaimer z checkboxami, jeśli potrzebne. **A (+ RODO [WIEDZA])**
+
+**Advantage+ creative (D1)**
+- [ ] Przejrzane wszystkie enhancements (ad creative **i** advanced preview **i** ustawienia konta → „test new optimizations”); w branżach regulowanych genAI tekstu i overlayów OFF. **A**
+
+**Dane (E9)**
+- [ ] Nazwy zdarzeń CRM, konwersji niestandardowych i grup odbiorców bez informacji wrażliwych; parametry UTM bez danych osobowych. **A**
+
+---
+
+## 5. Lista źródeł z trybem dostępu
+
+### Meta Business Help Center / Instagram Help / Meta for Developers — [PEŁNY] (przez Meta Ads MCP `ads_get_help_article`)
+
+**Kreacja, placementy, specyfikacje**
+- About text overlays and the safe zone for ads on Facebook and Instagram — https://www.facebook.com/business/help/980593475366490
+- About ads on reels — https://www.facebook.com/business/help/437348354643456
+- Design requirements for Instagram Stories ads — https://www.facebook.com/business/help/2222978001316177
+- Adjust background colors for stories ads — https://www.facebook.com/business/help/266481863999300
+- Create Instagram Stories ads in Meta Ads Manager — https://www.facebook.com/business/help/1639197963055851
+- Recommended minimum image pixel requirements across placements — https://www.facebook.com/business/help/469767027114079
+- Design requirements for Instagram feed ads — https://www.facebook.com/business/help/430958953753149
+- Best practices for aspect ratios — https://www.facebook.com/business/help/103816146375741
+- Aspect ratios supported by placements — https://www.facebook.com/business/help/682655495435254
+- Best practices for Instagram video ads — https://www.facebook.com/business/help/188534925073536
+- Add captions to your video ad — https://www.facebook.com/business/help/1675722002698686
+- About auto-generated subtitles on Facebook reels — https://www.facebook.com/business/help/593107135335436
+- Video ad playing specifications by placement — https://www.facebook.com/business/help/2013114112289197
+- Video length specifications across placements — https://www.facebook.com/business/help/817989058548892
+- Best practices for image ads — https://www.facebook.com/business/help/388369961318508
+- About image ads across Meta technologies — https://www.facebook.com/business/help/217010726413426
+- Best practices for Instagram image ads — https://www.facebook.com/business/help/109732209367483
+- Creative best practices for text in ads — https://www.facebook.com/business/help/223409425500940
+- About destination links in your ad — https://www.facebook.com/business/help/152143699744690
+- Design specifications for collection ads — https://www.facebook.com/business/help/1449762585066179
+- Design specifications for carousel ads — https://www.facebook.com/business/help/1114358518575630
+- Show the best-performing cards first in a carousel ad — https://www.facebook.com/business/help/120435098301466
+- Creative best practices for stories — https://www.facebook.com/business/help/304846896685564
+- Create ads in stories on Facebook, Messenger and Instagram — https://www.facebook.com/business/help/190599608272281
+- Use stories templates — https://www.facebook.com/business/help/449517262468597
+- About creative optimizations for Instagram stories ads — https://www.facebook.com/business/help/348328642954708
+- Opt out of automatic Instagram stories ads creative optimizations — https://www.facebook.com/business/help/679041123045316
+- Opt out of automatic Instagram feed ads creative optimizations — https://www.facebook.com/business/help/429723408538832
+- Creative tools for customizing placements — https://www.facebook.com/business/help/1295976920753603
+- Available ad placements and ad formats by ad objectives — https://www.facebook.com/business/help/279271845888065
+- Create Instagram Reels ads in Meta Ads Manager — https://help.instagram.com/546362593027755
+- How to add music to ads using Ads Manager — https://help.instagram.com/759279452000505
+- Tips and best practices for Facebook reels — https://www.facebook.com/business/help/1708053352711643
+- Use sound collection for reels on Facebook — https://www.facebook.com/business/help/880459498798521
+- Best practices for cost-effective ad creative — https://www.facebook.com/business/help/1991663177718491
+- Best practices to make your ad more engaging — https://www.facebook.com/business/help/370852930116232
+- Use a GIF in your video ad — https://www.facebook.com/business/help/1006874066021923
+- Troubleshoot ad rendering incorrectly issues — https://www.facebook.com/business/help/418015731022150
+- About advertising settings and ad account settings — https://www.facebook.com/business/help/410559398627376
+
+**Advantage+ creative, AI, twórcy, dywersyfikacja**
+- About Advantage+ creative — https://www.facebook.com/business/help/297506218282224
+- Turn off Advantage+ creative enhancements — https://www.facebook.com/business/help/1082295769403815
+- Enable text improvements — https://www.facebook.com/business/help/620917123959992
+- About text generation — https://www.facebook.com/business/help/180641596861873
+- Create an ad with text generation — https://www.facebook.com/business/help/497610041230617
+- Generate image variations — https://www.facebook.com/business/help/1684513971952814
+- Add animation to an image — https://www.facebook.com/business/help/1766652437485798
+- About media created or edited with AI (SIEP) — https://www.facebook.com/business/help/1486382031937045
+- About branding for your ads — https://www.facebook.com/business/help/1749703022274336
+- How to add branding to your ads — https://www.facebook.com/business/help/1814872845933588
+- About flexible media — https://www.facebook.com/business/help/1126725172362626
+- About the flexible ad format — https://www.facebook.com/business/help/835561738423867
+- Create a flexible ad — https://www.facebook.com/business/help/1207773513713945
+- About dynamic creative — https://www.facebook.com/business/help/170372403538781
+- About creative fatigue recommendations — https://www.facebook.com/business/help/1346816142327858
+- About managing ad volume — https://www.facebook.com/business/help/2720085414702598
+- Ad limits per page — https://www.facebook.com/business/help/766697140509126
+- Understand creative-level performance in Meta ads reporting — https://www.facebook.com/business/help/243916866413404
+- About partnership ads — https://help.instagram.com/292748974937716
+- Measure partnership ad performance — https://help.instagram.com/441419756683855
+- How to use ad relevance diagnostics — https://www.facebook.com/business/help/436113280262012
+- About engagement rate ranking — https://www.facebook.com/business/help/2351270371824148
+- About ad relevance diagnostics — https://www.facebook.com/business/help/403110480493160
+- About learning limited — https://www.facebook.com/business/help/269269737396981
+- Cost per optimization event — https://www.facebook.com/business/help/1707952432550214
+
+**Lead Ads / Instant Forms / CRM / wiadomości / połączenia**
+- About instant form types — https://www.facebook.com/business/help/252352181957512
+- About lead ads with instant form — https://www.facebook.com/business/help/761812391313386
+- Supported features of lead ads across platforms and devices — https://www.facebook.com/business/help/588763988207510
+- About lead ads — https://www.facebook.com/business/help/1481110642181372
+- How to create a lead ad for Instagram — https://www.facebook.com/business/help/563690893827148
+- How to create a lead ad using Meta Ads Manager — https://www.facebook.com/business/help/375478503258484
+- Create an instant form from Meta Business Suite — https://www.facebook.com/business/help/179258984144385
+- Design specifications for lead ads with instant form — https://www.facebook.com/business/help/908491205873167
+- Best practices to create lead ads — https://www.facebook.com/business/help/435270316658768
+- Ask the right questions on your instant form — https://www.facebook.com/business/help/1607931762802448
+- Questions prohibited on your instant form — https://www.facebook.com/business/help/219356599612120
+- About prefill questions — https://www.facebook.com/business/help/438193446367413
+- Add custom questions — https://www.facebook.com/business/help/774623835981457
+- Add conditional answers — https://www.facebook.com/business/help/154286325106161
+- Use conditional logic to qualify your leads — https://www.facebook.com/business/help/3373123166040766
+- Add an intro section — https://www.facebook.com/business/help/1664458123767694
+- Add a message for leads (ending) — https://www.facebook.com/business/help/314132612401196
+- Add a custom disclaimer — https://www.facebook.com/business/help/1550411888622740
+- About privacy policies for lead ads — https://www.facebook.com/business/help/1247534515288168
+- Enable the SMS verification feature — https://www.facebook.com/business/help/898260175547909
+- About performance goals for lead ads (qualified leads, 04/2026, 21%, 9.5%) — https://www.facebook.com/business/help/782657799338685
+- Requirements to use maximize value of conversions — https://www.facebook.com/business/help/571188993373447
+- About Advantage+ leads campaigns — https://www.facebook.com/business/help/992035952809423
+- About CRM system integrations for lead ads — https://www.facebook.com/business/help/301355140655035
+- Use a partner to connect your CRM for conversion leads — https://www.facebook.com/business/help/317857030149451
+- Integrate Zapier with Conversions API for CRM — https://www.facebook.com/business/help/848158520256071
+- Set up your CRM for qualified leads — https://www.facebook.com/business/help/279369167153556
+- Qualified leads (metric) — https://www.facebook.com/business/help/344136647998618
+- Cost per qualified lead — https://www.facebook.com/business/help/294374640173607
+- Conversions API for CRM for platforms (Meta for Developers) — https://developers.facebook.com/docs/marketing-api/conversions-api/guides/conversions-api-crm-for-platforms
+- Create a lead ad with website form — https://www.facebook.com/business/help/983639606486840
+- Lead generation in Messenger with third-party apps — https://www.facebook.com/business/help/641772747298691
+- About ads that click to message — https://www.facebook.com/business/help/1816962591668838
+- About maximizing number of leads using ads that click to message — https://www.facebook.com/business/help/575610661605746
+- Messaging features unavailable due to privacy rules in Europe and Japan — https://www.facebook.com/business/help/574941489951914
+- Create ads that click to WhatsApp — https://www.facebook.com/business/help/447934475640650
+- Terms of use and security FAQ for lead generation in Messenger — https://www.facebook.com/business/help/342457653322253
+- About lead ads with calling — https://www.facebook.com/business/help/378168646496279
+- Supported objectives and placements for call ads — https://www.facebook.com/business/help/4107704079279896
+
+**Polityki**
+- Privacy violations and personal attributes policy — https://www.facebook.com/business/help/2557868957763449
+- About Meta advertising standards — https://www.facebook.com/business/help/488043719226449
+- Discriminatory practices policy — https://www.facebook.com/business/help/136164207100893
+- Health and wellness policy — https://www.facebook.com/business/help/2489235377779939
+- Ads for housing, employment or financial products and services — https://www.facebook.com/business/help/399587795372584
+- About ads for housing — https://www.facebook.com/business/help/1198401317374558
+- About ads for employment — https://www.facebook.com/business/help/1537759006681893
+- About ads for financial products and services — https://www.facebook.com/business/help/567423788405762
+- About audiences for HEC campaigns — https://www.facebook.com/business/help/2220749868045706
+- Sensational content policy — https://www.facebook.com/business/help/304110064285796
+- Profanity policy — https://www.facebook.com/business/help/1246599319516044
+- Drugs and pharmaceuticals policy — https://www.facebook.com/business/help/432240224665596
+- Online gambling and games policy — https://www.facebook.com/business/help/345214789920228
+- Drug and alcohol addiction treatment policy — https://www.facebook.com/business/help/383110896305204
+- Advertising policy basics checklist — https://www.facebook.com/business/help/757209948405699
+- Best practices to improve ad quality and performance — https://www.facebook.com/business/help/1767120243598011
+- How to avoid posting clickbait — https://www.facebook.com/business/help/503640323442584
+- How to avoid posting engagement bait — https://www.facebook.com/business/help/259911614709806
+- About ads in review — https://www.facebook.com/business/help/204798856225114
+- How to troubleshoot a rejected ad — https://www.facebook.com/business/help/1210227555661027
+- How SIEP ads are reviewed — https://www.facebook.com/business/help/313752069181919
+- Data sharing restrictions based on data source categories — https://www.facebook.com/business/help/511197658391698
+- About prohibited information — https://www.facebook.com/business/help/361948878201809
+- Policy sidenav (lista polityk) — https://www.facebook.com/business/help/434838534925385
+
+### Wyniki wyszukiwarki — [WYSZUKIWARKA] (tylko tytuł i streszczenie; 4 zapytania, potem wyczerpany limit sesji)
+- Facebook IQ — Capturing Attention in Feed: The Science Behind Effective Video Creative — https://www.facebook.com/business/news/insights/capturing-attention-feed-video-creative
+- Facebook IQ — Stand out in feed: Optimising video creative on mobile — https://en-gb.facebook.com/business/news/insights/stand-out-in-feed-optimizing-video-creative-on-mobile
+- Facebook IQ — TV and Mobile: A Facebook IQ Study — https://www.facebook.com/business/news/insights/mobile-and-tv-between-the-screens
+- Social Media Today — Facebook Releases New Report on Maximizing the Potential of Your Video Assets — https://www.socialmediatoday.com/social-business/facebook-releases-new-report-maximizing-potential-your-video-assets
+- TechCrunch — Facebook Lures Video Creators With Minutes Watched And 10-Second View Metrics (2016) — https://techcrunch.com/2016/02/18/facebook-video-metrics
+- Yans Media — 33 Facebook Video Statistics — https://www.yansmedia.com/blog/facebook-video-statistics
+- Mediakix — Facebook Video Statistics — https://mediakix.com/blog/facebook-video-statistics-everyone-needs-know/
+- Social Champ — 80+ Facebook Stats 2026 — https://www.socialchamp.com/blog/facebook-stats/
+- Adweek — How Brands Can Still Win Over Customers as Attention Spans Decrease on Social — https://www.adweek.com/brand-marketing/how-brands-can-still-win-over-customers-as-attention-spans-decrease-on-social/
+- Tobii — Facebook advertising research with eye tracking — https://www.tobii.com/resource-center/customer-stories/tv-advertising-research-for-facebook
+- behaviour.digital — Meta Reels Safe Zone 14% Top 35% Bottom 6% Sides: The 2026 Official Guide — https://behaviour.digital/post/meta-reels-safe-zone-14-top-35-bottom-6-sides-the-2026-official-guide
+- AdNabu — Meta Safe Zones for Ads: The Complete 2026 Guide — https://blog.adnabu.com/meta-ads/meta-safe-zones/
+- Billo — Meta Ads Safe Zones: A Guide to the 2026 Unified Creative Updates — https://billo.app/blog/meta-ads-safe-zones/
+- 1ClickReport — Meta Ads Safe Zones 2026: Pixel Specs + Free Template — https://www.1clickreport.com/blog/meta-ads-creative-safe-zones-2026-guide
+- First Pier — Instagram Ad Safe Zones (2026) — https://www.firstpier.com/resources/instagram-ad-safe-zones
+- AdsUploader — Meta Ads Safe Zones: The Complete Guide — https://adsuploader.com/blog/meta-ads-safe-zones
+
+### Wiedza własna modelu — [WIEDZA] (niepotwierdzone w tej sesji)
+- Historia reguły 20% tekstu (siatka, wycofanie narzędzia ok. 2020).
+- Facebook IQ 2016: przypominanie treści z mobilnego feedu po 0,25 s ekspozycji.
+- Zakres ograniczeń danych health & wellness z 2025 r. (pierwotnie USA).
+- AI Act art. 50 (obowiązki przejrzystości, m.in. deepfake) stosowany od 2 sierpnia 2026.
+- Polskie i unijne przepisy sektorowe (reklama usług medycznych, oświadczenia zdrowotne 1924/2006, UOKiK, RODO).
+- Liczbowe deklaracje Meta o skuteczności partnership ads.

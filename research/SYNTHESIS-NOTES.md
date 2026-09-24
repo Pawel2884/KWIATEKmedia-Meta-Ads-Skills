@@ -50,3 +50,25 @@
 - Prawo: fałszywa pilność zakazana (UCPD zał. I pkt 7; upnpr art. 7 pkt 7 — do potwierdzenia w 07).
 - Checklista zaufania 10 pytań (sekcja 4.9 pliku 04) → do CREATIVE AUDITOR.
 - Reguły R1–R35 w pliku 04 sekcja 4.
+
+## Z 02 (Meta kreacja/placementy/lead ads/polityki) — kluczowe
+- A: limity zalecane: primary 125 widocznych (1–3 linie), headline 40, description 25 (lead spec: 30) — description może się nie wyświetlić → tylko treści nieistotne. IG Stories primary <100 zn. URL w stopce FB Feed brak od 03.2026.
+- A: Meta miesza teksty między polami (optimize text per person, dynamic creative) → każdy tekst modułowy, bez "jak wyżej", disclaimer nie rozbity.
+- A: Meta przykłady skutecznych opcji tekstu: cena, dane liczbowe, cytat opinii, pytanie, doświadczenie, cechy.
+- A: dual-track audio; auto-napisy Meta TYLKO po angielsku → PL napisy wypalone albo SRT pl_PL (przypięte do wideo). 2,25× CTA CTR sound-on (korelacja).
+- A: Meta (IG video BP): do 10 kreacji na zestaw, top 5 evergreen, test ≥4 dni, mieszać wideo i statyki.
+- A: Advantage+ creative: text improvements (genAI, domyślnie ON), enhance media text, add overlays, enhance CTA (dopisuje "x% off"), image generation, music AI; część wyłączana tylko w advanced preview; "test new optimizations" w ustawieniach konta. → checklista OFF w branżach regulowanych.
+- A: genAI Meta niedostępne dla finansów/zdrowia/HEC/SIEP; text generation tylko EN/PT/ES.
+- A: "AI info" label dla genAI Meta; SIEP zakazane w UE; AI Act art. 50 od 2.08.2026 (WIEDZA).
+- A: Flexible format/media nie dla Instant Forms → dywersyfikacja na poziomie reklam (3–6 konceptów).
+- A: Formularze: More volume / Higher intent (tylko FB/IG Feed mobile) / Rich creative (więcej kontekstu, "potentially increase lead quality"). Intro ≤60 zn. nagłówek, punkty ≤80; Rich: nagł. ≤45, korzyści ≤57; zakończenie nagł./CTA ≤60; pytania max 15; formularza nie da się edytować po publikacji.
+- A: "fewer multiple choice questions → more submissions; more multiple choice → more quality leads"; "clearly communicate why people should fill out your form"; ad scheduling gdy zespół gotowy; lookalike z klientów nie leadów.
+- A: conditional logic "close form" filtruje nie-leady (↑CPL). OTP weryfikacja telefonu (może być domyślnie).
+- A: zakazane pytania w formularzu: dochód, zadłużenie, upadłość, zdolność kredytowa, zdrowie, ubezpieczenia, karalność, poglądy...; kontakt tylko przez prefill.
+- A: CAPI for CRM — etapy z neutralnymi nazwami; pełna optymalizacja 1–2 mies.
+- A: Messaging w UE: część funkcji/metryk niedostępna → weryfikować. Call ads z harmonogramem +25,4%.
+- A: Personal attributes: zakaz twierdzenia/sugerowania cech I PYTAŃ o nie (zdrowie, wiek, sytuacja finansowa, rodzina, karalność...). "Ty" OK, "Ty + cecha" nie. Przykłady Meta: "are you bankrupt? our firm has solutions" = naruszenie.
+- A: Health & wellness: zakaz negatywnej autopercepcji, zbliżeń na fałdki, obietnic wyniku w czasie bez kwalifikatora; before/after tylko 18+ (kosmetyka, med. estetyczna).
+- A: SAC w PL: nieruchomości, praca, kredyty → brak wieku/płci/kodów/lookalike → kreacja przejmuje targetowanie, bez dyskryminacji.
+- A: sensational, profanity (także maskowane), clickbait, engagement bait, fałszywe elementy UI, celebrity-bait zakazane/karane; "improper grammar or punctuation" w checkliście Meta.
+- Spec tabela i checklista zgodności: plik 02 sekcje 4.1–4.5 (użyć w specyfikacje-meta.md i zgodnosc.md). Strefy 9:16 wg najostrzejszego: góra 14%, dół 35% (40% z disclaimerem), boki 6%.
