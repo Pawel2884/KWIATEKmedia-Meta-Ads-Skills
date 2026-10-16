@@ -1,0 +1,38 @@
+{
+  "name": "kwiatek-crm-remotion",
+  "version": "1.0.0",
+  "description": "Kwiatek CRM: film sprzedażowy 60 s (9:16 i 16:9), Remotion",
+  "repository": {},
+  "license": "UNLICENSED",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  },
+  "private": true,
+  "dependencies": {
+    "@remotion/cli": "4.0.536",
+    "@remotion/transitions": "^4.0.536",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.536"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.536",
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "eslint": "10.12.0",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion bundle",
+    "upgrade": "remotion upgrade",
+    "lint": "eslint src && tsc",
+    "render:9x16": "remotion render KwiatekCRM-9x16 out/Kwiatek_CRM_9x16.mp4 --codec=h264",
+    "render:16x9": "remotion render KwiatekCRM-16x9 out/Kwiatek_CRM_16x9.mp4 --codec=h264",
+    "render:all": "npm run render:9x16 && npm run render:16x9"
+  },
+  "allowScripts": {
+    "esbuild": false
+  }
+}
