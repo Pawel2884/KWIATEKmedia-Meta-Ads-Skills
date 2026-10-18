@@ -7,11 +7,11 @@ export const Chips: React.FC<{items: string[]; at?: number}> = ({items, at = 10}
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const positions: Array<{x: number; y: number; r: number}> = [
-    {x: 560, y: 150, r: -3},
-    {x: 600, y: 300, r: 2},
-    {x: 540, y: 450, r: -2},
-    {x: 610, y: 600, r: 3},
-    {x: 560, y: 750, r: -1},
+    {x: 560, y: 140, r: -3},
+    {x: 590, y: 300, r: 2},
+    {x: 550, y: 465, r: -2},
+    {x: 600, y: 635, r: 3},
+    {x: 560, y: 805, r: -1},
   ];
   return (
     <AbsoluteFill>
@@ -30,13 +30,13 @@ export const Chips: React.FC<{items: string[]; at?: number}> = ({items, at = 10}
               opacity: p,
               fontFamily: FONT,
               fontWeight: 800,
-              fontSize: 34,
+              fontSize: 32,
               color: C.white,
               background: 'linear-gradient(135deg, rgba(255,122,26,0.95), rgba(139,92,246,0.95))',
               padding: '16px 24px',
               borderRadius: 18,
               boxShadow: '0 12px 40px rgba(0,0,0,0.5)',
-              maxWidth: 440,
+              width: 440,
               lineHeight: 1.15,
             }}
           >

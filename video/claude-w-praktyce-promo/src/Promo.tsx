@@ -83,7 +83,7 @@ export const Promo: React.FC = () => {
       <Scene id="solution">
         <ClipBox src="assets/v203_cards.mp4" kind="video" top={40} />
         <Flash at={0} />
-        <Caption at={0} y={70} align="left" lines={[{text: 'Nauczysz Claude:', size: 54, accent: true}]} />
+        <Caption at={0} y={70} align="left" lines={[{text: 'Nauczysz\u00A0Claude:', size: 54, accent: true}]} />
         <Chips at={12} items={['pamiętać Twoją firmę', 'robić raport w poniedziałek o 8:00', 'pisać szkice odpowiedzi do klientów', 'robić oferty według Twojego wzoru', 'zbierać faktury w jeden folder']} />
       </Scene>
 
