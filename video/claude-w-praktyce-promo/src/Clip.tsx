@@ -4,9 +4,16 @@ import {C} from './theme';
 
 /**
  * Square (1:1) source shown "contained" at full width inside the 4:5 frame,
- * with a blurred, zoomed copy filling the background so nothing of the
- * avatar gets cropped. `top` shifts the square inside the frame.
+ * with a pre-blurred copy (public/assets/blur/, made by tools/prep_blur.sh)
+ * filling the background so nothing of the avatar gets cropped and the
+ * render does not pay for a CSS blur on every frame.
  */
+const blurPath = (src: string) => {
+  const name = src.split('/').pop()!;
+  const base = name.replace(/\.[^.]+$/, '');
+  return name.endsWith('.mp4') ? `assets/blur/${base}.mp4` : `assets/blur/${base}.jpg`;
+};
+
 export const ClipBox: React.FC<{
   src: string;
   kind: 'video' | 'image';
@@ -18,22 +25,12 @@ export const ClipBox: React.FC<{
   const {durationInFrames, width} = useVideoConfig();
   const s = interpolate(frame, [0, durationInFrames], zoom, {extrapolateRight: 'clamp'});
   const file = staticFile(src);
-  const media =
-    kind === 'video' ? (
-      <OffthreadVideo src={file} muted style={{width: '100%', height: '100%', objectFit: 'cover'}} />
-    ) : (
-      <Img src={file} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
-    );
-  const mediaBg =
-    kind === 'video' ? (
-      <OffthreadVideo src={file} muted style={{width: '100%', height: '100%', objectFit: 'cover'}} />
-    ) : (
-      <Img src={file} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
-    );
+  const bg = staticFile(blurPath(src));
+  const fill: React.CSSProperties = {width: '100%', height: '100%', objectFit: 'cover'};
   return (
     <AbsoluteFill style={{backgroundColor: C.navy}}>
-      <AbsoluteFill style={{filter: 'blur(42px) brightness(0.45) saturate(1.3)', transform: 'scale(1.35)'}}>
-        {mediaBg}
+      <AbsoluteFill>
+        {kind === 'video' ? <OffthreadVideo src={bg} muted style={fill} /> : <Img src={bg} style={fill} />}
       </AbsoluteFill>
       <div
         style={{
@@ -48,7 +45,7 @@ export const ClipBox: React.FC<{
           boxShadow: '0 30px 80px rgba(0,0,0,0.55)',
         }}
       >
-        {media}
+        {kind === 'video' ? <OffthreadVideo src={file} muted style={fill} /> : <Img src={file} style={fill} />}
       </div>
       {darkenBottom ? (
         <AbsoluteFill
