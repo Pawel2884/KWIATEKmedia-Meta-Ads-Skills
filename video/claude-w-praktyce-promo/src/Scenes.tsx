@@ -125,33 +125,18 @@ export const NumbersScene: React.FC = () => {
   );
 };
 
-/** Scene 9: author, credibility. */
-export const AuthorScene: React.FC = () => {
+/** Scene 9: credibility, carried by the avatar (full-bleed 3:4 still, slow push-in). */
+export const ProofScene: React.FC = () => {
   const frame = useCurrentFrame();
-  const {fps} = useVideoConfig();
-  const p = spring({frame, fps, config: {damping: 15, stiffness: 100}});
+  const {durationInFrames} = useVideoConfig();
+  const z = interpolate(frame, [0, durationInFrames], [1.02, 1.12], {extrapolateRight: 'clamp'});
   return (
     <AbsoluteFill style={{backgroundColor: C.navy}}>
-      <Img src={staticFile('assets/bg_network.png')} style={{position: 'absolute', width: '100%', height: '100%', objectFit: 'cover', opacity: 0.7}} />
-      <AbsoluteFill style={{background: 'linear-gradient(to bottom, rgba(11,16,32,0.2), rgba(11,16,32,0.85))'}} />
-      <div
-        style={{
-          position: 'absolute',
-          left: 540 - 280,
-          top: 110,
-          width: 560,
-          height: 560,
-          borderRadius: 40,
-          overflow: 'hidden',
-          border: `6px solid ${C.orange}`,
-          transform: `scale(${0.8 + 0.2 * p})`,
-          opacity: p,
-          boxShadow: '0 30px 80px rgba(0,0,0,0.6)',
-        }}
-      >
-        <Img src={staticFile('assets/kurs-pawel.jpg')} style={{width: '100%', height: '100%', objectFit: 'cover', transform: `scale(${1 + frame / 1800})`}} />
-      </div>
-      <Img src={staticFile('assets/kurs-logo.webp')} style={{position: 'absolute', left: 60, top: 40, height: 56, opacity: 0.95}} />
+      <Img
+        src={staticFile('assets/s9_cover.png')}
+        style={{position: 'absolute', width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 20%', transform: `scale(${z})`, transformOrigin: '50% 30%'}}
+      />
+      <AbsoluteFill style={{background: 'linear-gradient(to bottom, rgba(11,16,32,0) 45%, rgba(11,16,32,0.78) 72%, rgba(11,16,32,0.97) 100%)'}} />
     </AbsoluteFill>
   );
 };

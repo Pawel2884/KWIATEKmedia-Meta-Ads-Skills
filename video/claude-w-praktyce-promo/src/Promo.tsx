@@ -2,7 +2,7 @@ import React from 'react';
 import {AbsoluteFill, Audio, Sequence, interpolate, staticFile, useCurrentFrame} from 'remotion';
 import {ClipBox} from './Clip';
 import {Caption, Tag} from './Caption';
-import {AuthorScene, Chips, EndCard, Flash, NumbersScene} from './Scenes';
+import {Chips, EndCard, Flash, NumbersScene, ProofScene} from './Scenes';
 import {ensureFont} from './fonts';
 import {C} from './theme';
 
@@ -99,10 +99,10 @@ export const Promo: React.FC = () => {
       </Scene>
 
       <Scene id="author">
-        <AuthorScene />
-        <Caption at={6} y={720} lines={[{text: 'Paweł Kwiatek', size: 56}, {text: 'KWIATEKmedia', size: 40}]} />
-        <Caption at={40} y={880} lines={[{text: 'Miesiąc pracy', size: 56}, {text: 'zamknięty w jednym kursie.', size: 56, accent: true}]} />
-        <Caption at={100} y={1060} lines={[{text: 'Moja agencja działa dokładnie', size: 42}, {text: 'na tym, czego uczę.', size: 42}]} />
+        <ProofScene />
+        <Flash at={0} />
+        <Caption at={4} until={84} y={880} lines={[{text: 'Miesiąc pracy', size: 60}, {text: 'zamknięty w jednym kursie.', size: 60, accent: true}]} />
+        <Caption at={86} y={860} lines={[{text: 'Konkretne instrukcje', size: 56}, {text: 'i gotowe wzory.', size: 56, accent: true}, {text: 'Ty wyznaczasz zadanie', size: 44}, {text: 'i sprawdzasz efekt.', size: 44}]} />
       </Scene>
 
       <Scene id="thumbs">
