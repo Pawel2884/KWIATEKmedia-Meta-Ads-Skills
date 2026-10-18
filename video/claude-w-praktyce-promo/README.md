@@ -41,3 +41,9 @@ Bez ceny w wideo (zgodnie z zasadą: cena to kontekst wewnętrzny).
 - Sprawdzenia: ffprobe (liczba klatek, czas, strumienie), pełne dekodowanie bez błędów, arkusz kontrolny 12 klatek, głośność muzyki ok. -14 LUFS.
 - Render: Remotion w sandboxie Higgsfield, 4 części po 450 klatek (`tools/render_chunks.sh`), sklejone bezstratnie, muzyka domiksowana z tą samą kopertą głośności co w kompozycji.
 - Kredyty Higgsfield: zużyte 49,37 z 49,41 (awatar 1,125; 9 grafik po 0,5; 7 klipów Kling po 6,25).
+
+## Wersja v2 (18.10.2026, bez zdjęcia i nazwiska autora)
+
+- Plik: `claude-w-praktyce-promo-4x5-v2.mp4`, 1080x1350, 30 fps, 1800 klatek, 60,0 s, H.264 + AAC, 40,6 MB, md5 `13d4e63b0119e224caea587c66da8fc8`.
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_32yhsDYuxebF2rAIGxl02sCOoO8/3681b9da-f341-4fd6-bd3e-f145ce4f4718.mp4 (media_id `3681b9da-f341-4fd6-bd3e-f145ce4f4718`).
+- Zmiana: scena 9 (41–47 s) prowadzona przez awatar z tabletem; przerenderowane części 2 i 3, reszta bez zmian.
