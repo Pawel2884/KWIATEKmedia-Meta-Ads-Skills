@@ -5,7 +5,9 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
 
-const OUT = path.join(__dirname, 'png');
+const PRO = process.env.PRO === '1'; // PRO=1: wersja z elementami w tle
+const { decor, proCss } = require('./decor');
+const OUT = path.join(__dirname, PRO ? 'png-pro' : 'png');
 fs.mkdirSync(OUT, { recursive: true });
 
 // Polskie sieroty: jednoliterowe słowa sklejone z następnym.
@@ -115,7 +117,9 @@ function html(cr, f, fmt) {
   .list li{font-weight:700;color:${c.fg};display:flex;gap:22px;align-items:baseline;line-height:1.15;
     border-top:3px solid rgba(255,255,255,.28);padding-top:${fmt === '9x16' ? 8 : 12}px}
   .list em{font-style:normal;font-weight:900;color:${c.accent};min-width:64px}
+  ${PRO ? proCss(c.accent) : ''}
   </style></head><body class="c${cr.id.slice(0, 2)} f${fmt}">
+  ${PRO ? decor(cr.id.slice(0, 2), f) : ''}
   <div class="safe" id="safe">
     <div class="logo">KWIATEK<span>media</span></div>
     <div class="main">
@@ -159,7 +163,7 @@ function html(cr, f, fmt) {
   await page.setContent(`<body style="margin:0;background:#2a2a2a;padding:40px;display:grid;gap:30px">
     <div style="display:flex;gap:30px">${feed.map((s) => `<img src="${s}" style="width:500px">`).join('')}</div>
     <div style="display:flex;gap:30px">${story.map((s) => `<img src="${s}" style="width:500px;height:auto;max-height:900px;object-fit:contain">`).join('')}</div></body>`);
-  await page.screenshot({ path: path.join(__dirname, 'podglad.png'), fullPage: true });
+  await page.screenshot({ path: path.join(__dirname, PRO ? 'podglad-pro.png' : 'podglad.png'), fullPage: true });
   await browser.close();
   console.table(report);
 })();

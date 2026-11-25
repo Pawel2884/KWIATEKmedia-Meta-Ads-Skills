@@ -35,3 +35,8 @@ Podczas indywidualnego spotkania przeanalizujemy Twoje reklamy i ustalimy, co wa
 Umów bezpłatną konsultację reklamową.
 
 Nagłówek: Bezpłatna konsultacja reklamowa
+
+## Wersja „pro” (z elementami w tle)
+
+Folder `png-pro/`, podgląd `podglad-pro.png`. Te same teksty i układy, dodatkowo: koncentryczne okręgi, siatka kropek lub kratka, miękkie poświaty, delikatne ziarno, kropka przy logo, cień pod CTA. Elementy tła: `decor.js`.
+Generowanie: `PRO=1 node render.js` i `PRO=1 node render-foto.js`. Wersja czysta zostaje w `png/` (do testu A/B).

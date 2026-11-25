@@ -4,7 +4,10 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
 
-const OUT = path.join(__dirname, 'png');
+const PRO = process.env.PRO === '1';
+const { decor, proCss } = require('./decor');
+const OUT = path.join(__dirname, PRO ? 'png-pro' : 'png');
+fs.mkdirSync(OUT, { recursive: true });
 const PHOTO = 'data:image/png;base64,' + fs.readFileSync(path.join(__dirname, 'zdjecia', 'pawel.png')).toString('base64');
 const SRC = { w: 941, h: 1672 };
 const pl = (s) => s.replace(/(^|[\s>])([aiouwzAIOUWZ])\s/g, '$1$2 ');
@@ -39,8 +42,10 @@ function html(f, fmt) {
   .cta{background:${C.accent};color:${C.onAccent};font-family:'Inter';font-weight:800;font-size:46px;
     line-height:1.12;padding:28px 12px;border-radius:18px;text-align:center;white-space:nowrap}
   .cta.bottom{position:absolute;left:60px;right:60px;bottom:${f.ctaBottom}px}
+  ${PRO ? proCss(C.accent) : ''}
   </style></head><body>
   <div class="photo" id="photo"></div>
+  ${PRO ? decor('06', { ...f, head: fmt === '9x16' ? { x: 540, y: 330 } : { x: 540, y: 820 } }) : ''}
   <div class="panel" id="panel">
     ${fmt === '4x5' ? '<div class="logo">KWIATEK<span>media</span></div>' : ''}
     <h1>${pl(HOOK)}</h1>
