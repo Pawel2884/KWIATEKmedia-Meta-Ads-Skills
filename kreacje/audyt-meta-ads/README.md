@@ -17,3 +17,21 @@ Uwagi do tekstów na grafice:
 - Pozostałe teksty dosłownie z briefu.
 
 Każda kreacja to inny kąt (agencja, lejek sprzedaży, budżet u agencji, rosnące koszty, samodzielne prowadzenie), więc nadają się do jednego zestawu reklam w teście.
+
+## 06: kreacja ze zdjęciem (konsultacja)
+
+Pliki: `png/06-zdjecie-konsultacja_4x5.png`, `png/06-zdjecie-konsultacja_9x16.png`. Generator: `node kreacje/audyt-meta-ads/render-foto.js` (zdjęcie: `zdjecia/pawel.png`).
+
+- Na grafice: hook 10 + CTA 7. CTA 10 („Dowiedz się, co możesz poprawić”) powtarzałoby końcówkę hooka, a CTA 7 pasuje do spotkania z rozwinięcia 10.
+- Rozwinięcie 10 jest w tekście reklamy, bo na grafice zasłoniłoby twarz.
+- 4:5: tekst na górze, zdjęcie poniżej, CTA na dole. 9:16: twarz u góry, tekst i CTA w środkowym pasie (do 1240 px), dolne 35% wolne.
+- Tło #1B1B20 dobrane do ściany na zdjęciu, krawędzie zdjęcia wtopione w tło.
+
+Tekst reklamy (Primary Text):
+Zanim wydasz kolejne pieniądze na Meta Ads, sprawdź, co możesz poprawić.
+
+Podczas indywidualnego spotkania przeanalizujemy Twoje reklamy i ustalimy, co warto zmienić.
+
+Umów bezpłatną konsultację reklamową.
+
+Nagłówek: Bezpłatna konsultacja reklamowa
