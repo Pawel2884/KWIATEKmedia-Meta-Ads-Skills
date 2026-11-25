@@ -36,7 +36,14 @@ Umów bezpłatną konsultację reklamową.
 
 Nagłówek: Bezpłatna konsultacja reklamowa
 
-## Wersja „pro” (z elementami w tle)
+## Wersja „pro” (główny obraz zamiast ozdobników)
 
-Folder `png-pro/`, podgląd `podglad-pro.png`. Te same teksty i układy, dodatkowo: koncentryczne okręgi, siatka kropek lub kratka, miękkie poświaty, delikatne ziarno, kropka przy logo, cień pod CTA. Elementy tła: `decor.js`.
-Generowanie: `PRO=1 node render.js` i `PRO=1 node render-foto.js`. Wersja czysta zostaje w `png/` (do testu A/B).
+Folder `png-pro/`, podgląd `podglad-pro.png`, generator `node render-pro.js`.
+Każda kreacja ma mockup, który pokazuje problem z hooka (zasada praktyków: kąt i główny obraz decydują o wyniku, ozdobniki nic nie wnoszą):
+- 01: karta „Raport agencji” (Zasięg ↑, Kliknięcia ↑, Leady ↑) obok „Twoja sprzedaż: bez zmian”.
+- 02: lejek Leady → Rozmowy → Umowy, przy umowach czerwony pasek i „?”.
+- 03: rachunek: obsługa opłacona ✓, budżet wydany ✓, nowi klienci ?.
+- 04: wykres: koszt reklam rośnie, sprzedaż płaska (poglądowy, bez liczb).
+- 05: karta audytu z 4 obszarami „do sprawdzenia”.
+- 06: zdjęcie właściciela (bez zmian).
+Rozwinięcia są w Primary Text. Wersja z okręgami (`decor.js`) odrzucona.
